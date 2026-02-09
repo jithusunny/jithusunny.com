@@ -1,0 +1,9 @@
+To avoid the familiar analysis-paralysis which is a manifestation of the Resistance Steven Pressfield talks about, I decided to pause on the research for a bit and do some work.
+So this is the decision:
+1. Keep the raw thoughts - raw. Follow a file structure like raw/2026/02/08/05.23.txt and keep the thoughts that started at that time in that file.
+2. All structure - IDs, timestamps, links, relationships, views, apps, sync, multi-device handling, Google drive support, etc, etc. - should live as derived layers on top of this raw text, not inside it.
+3. So we keep the system in such a way that the raw thoughts are not coupled/chained to the system. It can be exported/imported etc. without any problem. 
+
+Also, I started analysing and planning for all possible scenarios which started giving me the analysis-paralysis vibes.
+So I decided to stop thinking about the system and start doing something with the thoughts I already had.
+Updated the Github repo with the file structure, and also got the UI tweaked to show last 5 thoughts in home page, list days, etc. etc.
