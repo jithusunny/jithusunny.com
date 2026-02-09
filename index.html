@@ -1,31 +1,51 @@
-<!-- index.html -->
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      body{
-        font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        margin:0;
-        padding:24px 16px;
-      }
+      body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; padding:24px 16px;}
       .wrap{max-width:760px; margin:0 auto;}
-      a{color:#2563eb; text-decoration:none;}
-      a:hover{text-decoration:underline;}
-      .d{display:block; padding:12px 14px; margin:10px 0; border:1px solid #e5e7eb; border-radius:14px; background:#f9fafb;}
       h1{margin:0 0 10px 0;}
       .s{opacity:.7; font-size:12px; margin:0 0 14px 0; line-height:1.5;}
+      .row{display:flex; gap:10px; align-items:center; margin:14px 0 18px;}
+      input{font-size:16px; padding:10px 12px; border:1px solid #e5e7eb; border-radius:12px;}
+      button{font-size:16px; padding:10px 12px; border:1px solid #e5e7eb; border-radius:12px; background:#f9fafb; cursor:pointer;}
+      button:hover{background:#f3f4f6;}
+      a{color:#2563eb; text-decoration:none;}
+      a:hover{text-decoration:underline;}
+      .hint{opacity:.7; font-size:12px; line-height:1.5; margin-top:10px;}
     </style>
   </head>
   <body>
     <div class="wrap">
       <h1>Thoughts</h1>
-      <p class="s">Open a day. Add new days by adding one link line below.</p>
+      <p class="s">Pick a day to view. Data is read from your repo folder raw/YYYY/MM/DD/.</p>
 
-      <!-- Add new days here (one line each) -->
-      <a class="d" href="day.html?day=2026-02-06">2026-02-06</a>
-      <a class="d" href="day.html?day=2026-02-07">2026-02-07</a>
-      <a class="d" href="day.html?day=2026-02-08">2026-02-08</a>
+      <div class="row">
+        <input id="day" type="date" />
+        <button id="open">Open</button>
+      </div>
 
+      <div class="hint">
+        Tip: bookmark a day like <code>day.html?day=2026-02-06</code>.
+      </div>
     </div>
+
+    <script>
+      const dayInput = document.getElementById("day");
+      const openBtn = document.getElementById("open");
+
+      // Default to today in user's local timezone
+      const now = new Date();
+      const yyyy = now.getFullYear();
+      const mm = String(now.getMonth() + 1).padStart(2, "0");
+      const dd = String(now.getDate()).padStart(2, "0");
+      dayInput.value = `${yyyy}-${mm}-${dd}`;
+
+      openBtn.onclick = () => {
+        const day = dayInput.value;
+        if (!day) return;
+        location.href = `day.html?day=${encodeURIComponent(day)}`;
+      };
+    </script>
   </body>
 </html>

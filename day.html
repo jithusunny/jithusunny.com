@@ -1,31 +1,19 @@
-<!-- day.html -->
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      body{
-        font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        margin:0;
-        padding:24px 16px;
-      }
+      body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; padding:24px 16px;}
       .wrap{max-width:760px; margin:0 auto;}
       a{color:#2563eb; text-decoration:none;}
       a:hover{text-decoration:underline;}
       .top{display:flex; gap:12px; align-items:baseline; margin-bottom:14px;}
       .day{font-size:22px; margin:0;}
-      .m{
-        background:#f4f4f5;
-        border:1px solid #e5e7eb;
-        border-radius:16px;
-        padding:14px 16px;
-        margin:18px 0;
-        line-height:1.6;
-        font-size:15px;
-      }
+      .m{background:#f4f4f5; border:1px solid #e5e7eb; border-radius:16px; padding:14px 16px; margin:18px 0; line-height:1.6; font-size:15px;}
       .ts{font-size:12px; opacity:.7; display:block; margin-bottom:8px;}
       .txt p{margin:0;}
       .txt p + p{margin-top:10px;}
       .err{color:#b91c1c; white-space:pre-wrap; border:1px solid #fecaca; background:#fff1f2; border-radius:14px; padding:12px 14px; line-height:1.5;}
+      .muted{opacity:.7; font-size:12px; line-height:1.5; margin-top:6px;}
     </style>
   </head>
   <body>
@@ -34,11 +22,18 @@
         <a href="index.html">← Back</a>
         <h1 class="day" id="dayTitle"></h1>
       </div>
-
+      <div class="muted" id="sub"></div>
       <div id="root"></div>
     </div>
 
     <script>
+      // ===== CONFIG: set these once =====
+      // Your GitHub username/org and repo name that contains /raw
+      const GITHUB_OWNER = "jithusunny";
+      const GITHUB_REPO  = "jithusunny.com";
+      const GITHUB_BRANCH = "main"; // or "master"
+      // =================================
+
       function getDayParam() {
         const p = new URLSearchParams(location.search);
         return p.get("day");
@@ -48,58 +43,47 @@
         return /^\d{4}-\d{2}-\d{2}$/.test(day);
       }
 
-      function parseBlocks(raw) {
-        // Format:
-        // 08.50-08.55
-        // freeform text...
-        //
-        // 11.51-11.56
-        // freeform text...
-        const lines = raw.replace(/\r\n/g, "\n").split("\n");
-        const blocks = [];
-        let cur = null;
-
-        function pushCur() {
-          if (!cur) return;
-          const text = cur.text.join("\n").trim();
-          if (text.length === 0) return;
-          blocks.push({ range: cur.range, text });
-        }
-
-        for (let i = 0; i < lines.length; i++) {
-          const line = lines[i].trim();
-          const m = line.match(/^(\d{2})\.(\d{2})-(\d{2})\.(\d{2})$/);
-          if (m) {
-            pushCur();
-            cur = { range: `${m[1]}:${m[2]}–${m[3]}:${m[4]}`, text: [] };
-            continue;
-          }
-          if (!cur) continue; // ignore any header text before the first range
-          cur.text.push(lines[i]); // preserve original spacing
-        }
-
-        pushCur();
-        return blocks;
+      function dayToPath(day) {
+        const [Y, M, D] = day.split("-");
+        return `raw/${Y}/${M}/${D}`;
       }
 
-      function makeId(day, range) {
-        // stable, human-linkable id
-        return `${day}_${range.replace(/[:–]/g, "").replace("–","-")}`;
+      function parseTimeFromFilename(name) {
+        // supports: HH.MM.txt, HH.MM.SS.txt, HH.MM__2.txt, HH.MM.SS__2.txt
+        const base = name.replace(/\.txt$/i, "");
+        const m = base.match(/^(\d{2})\.(\d{2})(?:\.(\d{2}))?(?:__(\d+))?$/);
+        if (!m) return null;
+        return {
+          hh: m[1], mm: m[2], ss: m[3] || "00",
+          suffix: m[4] ? parseInt(m[4],10) : 0,
+          display: m[3] ? `${m[1]}:${m[2]}:${m[3]}` : `${m[1]}:${m[2]}`
+        };
+      }
+
+      function sortByTime(a, b) {
+        const ta = parseTimeFromFilename(a.name);
+        const tb = parseTimeFromFilename(b.name);
+        if (!ta && !tb) return a.name.localeCompare(b.name);
+        if (!ta) return 1;
+        if (!tb) return -1;
+        const ka = `${ta.hh}${ta.mm}${ta.ss}`;
+        const kb = `${tb.hh}${tb.mm}${tb.ss}`;
+        if (ka !== kb) return ka.localeCompare(kb);
+        return ta.suffix - tb.suffix;
       }
 
       function toParagraphs(text) {
         // blank lines => new paragraph
-        // single newlines => space (readable paragraphs while keeping easy capture)
-        const paras = text
+        // single newlines => space (readable while easy to write)
+        return text
           .trim()
           .split(/\n\s*\n/g)
           .map(p => p.replace(/\n+/g, " ").replace(/\s+/g, " ").trim())
           .filter(Boolean);
-        return paras;
       }
 
-      function bubble(day, range, text) {
-        const id = makeId(day, range);
+      function bubble(day, timeDisplay, fileName, text) {
+        const id = `${day}_${fileName.replace(/\.txt$/i,"")}`;
 
         const div = document.createElement("div");
         div.className = "m";
@@ -108,14 +92,13 @@
 
         const ts = document.createElement("span");
         ts.className = "ts";
-        ts.textContent = `${day} ${range}`;
+        ts.textContent = `${day} ${timeDisplay}`;
 
         const txt = document.createElement("div");
         txt.className = "txt";
-
         for (const p of toParagraphs(text)) {
           const el = document.createElement("p");
-          el.textContent = p; // safe (no HTML interpretation)
+          el.textContent = p;
           txt.appendChild(el);
         }
 
@@ -124,9 +107,30 @@
         return div;
       }
 
+      async function listDayFiles(path) {
+        const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) {
+          const t = await res.text().catch(() => "");
+          throw new Error(`GitHub API failed (${res.status}). Make sure repo is public and OWNER/REPO/BRANCH are correct.\n${t}`);
+        }
+        const items = await res.json();
+        if (!Array.isArray(items)) throw new Error("Unexpected GitHub API response.");
+        return items
+          .filter(x => x.type === "file" && /\.txt$/i.test(x.name))
+          .sort(sortByTime);
+      }
+
+      async function fetchText(downloadUrl) {
+        const res = await fetch(downloadUrl, { cache: "no-store" });
+        if (!res.ok) throw new Error(`Could not fetch file: ${downloadUrl}`);
+        return await res.text();
+      }
+
       async function run() {
         const day = getDayParam();
         const title = document.getElementById("dayTitle");
+        const sub = document.getElementById("sub");
         const root = document.getElementById("root");
 
         if (!day || !isValidDay(day)) {
@@ -139,32 +143,32 @@
 
         title.textContent = day;
 
-        try {
-          const url = `data/${day}.txt`;
-          const res = await fetch(url, { cache: "no-store" });
-          if (!res.ok) throw new Error(`Could not fetch ${url}`);
-          const raw = await res.text();
+        if (GITHUB_OWNER === "YOUR_GITHUB_OWNER" || GITHUB_REPO === "YOUR_GITHUB_REPO") {
+          const e = document.createElement("div");
+          e.className = "err";
+          e.textContent = "Set GITHUB_OWNER and GITHUB_REPO at the top of day.html.";
+          root.appendChild(e);
+          return;
+        }
 
-          const blocks = parseBlocks(raw);
-          if (blocks.length === 0) {
+        const path = dayToPath(day);
+        sub.textContent = `Reading: ${path}/`;
+
+        try {
+          const files = await listDayFiles(path);
+          if (files.length === 0) {
             const e = document.createElement("div");
             e.className = "err";
-            e.textContent =
-`No blocks found.
-
-Expected format inside data/${day}.txt:
-
-08.50-08.55
-Your freeform text...
-
-11.51-11.56
-More text...`;
+            e.textContent = `No .txt files found at ${path}/`;
             root.appendChild(e);
             return;
           }
 
-          for (const b of blocks) {
-            root.appendChild(bubble(day, b.range, b.text));
+          for (const f of files) {
+            const t = parseTimeFromFilename(f.name);
+            const timeDisplay = t ? t.display : f.name.replace(/\.txt$/i,"");
+            const text = await fetchText(f.download_url);
+            root.appendChild(bubble(day, timeDisplay, f.name, text));
           }
 
           if (location.hash) {
@@ -174,14 +178,7 @@ More text...`;
         } catch (err) {
           const e = document.createElement("div");
           e.className = "err";
-          e.textContent =
-`Could not load the day file.
-
-Make sure:
-- data/${day}.txt exists
-- you're viewing via GitHub Pages / a web server (not file://)
-
-Error: ${err.message}`;
+          e.textContent = `Error:\n${err.message}`;
           root.appendChild(e);
         }
       }

@@ -1,0 +1,17 @@
+I think we are complicating things too much for now.
+
+For the moment, I want to keep the source as simple as possible.
+No IDs, no links, no splitting, no metadata.
+
+Just start time, end time, and raw thought text.
+Everything written within a time range is one thought — one box.
+
+We can always split later.
+We can always add IDs later.
+We can always add structure later.
+
+Right now, the most important thing is to capture thoughts easily, without friction.
+I should be able to write this in a plain text editor, WhatsApp self chat, or notes app.
+
+This plain text should be the source of truth.
+All other layers - IDs, links, structure, views — should be derived from this later.
