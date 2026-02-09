@@ -12,33 +12,42 @@
       button:hover{background:#f3f4f6;}
       a{color:#2563eb; text-decoration:none;}
       a:hover{text-decoration:underline;}
-      .hint{opacity:.7; font-size:12px; line-height:1.5; margin-top:10px;}
+      .card{display:block; padding:12px 14px; margin:10px 0; border:1px solid #e5e7eb; border-radius:14px; background:#f9fafb;}
+      .meta{opacity:.7; font-size:12px; margin-bottom:6px;}
+      .preview{font-size:14px; line-height:1.5;}
+      .err{color:#b91c1c; white-space:pre-wrap; border:1px solid #fecaca; background:#fff1f2; border-radius:14px; padding:12px 14px; line-height:1.5; margin-top:14px;}
     </style>
   </head>
   <body>
     <div class="wrap">
       <h1>Thoughts</h1>
-      <p class="s">Pick a day to view. Data is read from your repo folder raw/YYYY/MM/DD/.</p>
+      <p class="s">Latest thoughts (across days). You can also open a full day.</p>
 
       <div class="row">
         <input id="day" type="date" />
-        <button id="open">Open</button>
+        <button id="open">Open day</button>
       </div>
 
-      <div class="hint">
-        Tip: bookmark a day like <code>day.html?day=2026-02-06</code>.
-      </div>
+      <div id="latest"></div>
     </div>
 
     <script>
+      // ===== CONFIG =====
+      const GITHUB_OWNER = "jithusunny";
+      const GITHUB_REPO  = "jithusunny.com";
+      const GITHUB_BRANCH = "main";
+      const LATEST_N = 10;
+      // ==================
+
       const dayInput = document.getElementById("day");
       const openBtn = document.getElementById("open");
+      const latest = document.getElementById("latest");
 
-      // Default to today in user's local timezone
+      // default day = today
       const now = new Date();
       const yyyy = now.getFullYear();
-      const mm = String(now.getMonth() + 1).padStart(2, "0");
-      const dd = String(now.getDate()).padStart(2, "0");
+      const mm = String(now.getMonth()+1).padStart(2,"0");
+      const dd = String(now.getDate()).padStart(2,"0");
       dayInput.value = `${yyyy}-${mm}-${dd}`;
 
       openBtn.onclick = () => {
@@ -46,6 +55,132 @@
         if (!day) return;
         location.href = `day.html?day=${encodeURIComponent(day)}`;
       };
+
+      function ghUrl(path){
+        return `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
+      }
+
+      function isDir(item){ return item && item.type === "dir"; }
+      function isTxt(item){ return item && item.type === "file" && /\.txt$/i.test(item.name); }
+
+      function parseTimeFromFilename(name) {
+        const base = name.replace(/\.txt$/i, "");
+        const m = base.match(/^(\d{2})\.(\d{2})(?:\.(\d{2}))?(?:__(\d+))?$/);
+        if (!m) return null;
+        return { hh:m[1], mm:m[2], ss:m[3]||"00", suffix:m[4]?parseInt(m[4],10):0,
+                 display: m[3] ? `${m[1]}:${m[2]}:${m[3]}` : `${m[1]}:${m[2]}` };
+      }
+
+      function dayFromParts(y,m,d){ return `${y}-${m}-${d}`; }
+
+      async function fetchJson(url){
+        const res = await fetch(url, {cache:"no-store"});
+        if (!res.ok) throw new Error(`GitHub API failed (${res.status}) for ${url}`);
+        return await res.json();
+      }
+
+      async function fetchText(url){
+        const res = await fetch(url, {cache:"no-store"});
+        if (!res.ok) throw new Error(`Could not fetch ${url}`);
+        return await res.text();
+      }
+
+      function firstLinePreview(text){
+        const t = text.trim().replace(/\r\n/g,"\n");
+        const line = t.split("\n").map(s=>s.trim()).filter(Boolean)[0] || "";
+        return line.length > 160 ? line.slice(0,160) + "…" : line;
+      }
+
+      async function listDirs(path){
+        const items = await fetchJson(ghUrl(path));
+        return items.filter(isDir).map(x=>x.name);
+      }
+
+      async function listTxtFiles(path){
+        const items = await fetchJson(ghUrl(path));
+        return items.filter(isTxt);
+      }
+
+      function sortDescNumeric(arr){
+        return arr.slice().sort((a,b)=> (b.localeCompare(a, undefined, {numeric:true})));
+      }
+
+      function sortFilesByTimeDesc(files){
+        return files.slice().sort((a,b)=>{
+          const ta = parseTimeFromFilename(a.name);
+          const tb = parseTimeFromFilename(b.name);
+          if (!ta && !tb) return b.name.localeCompare(a.name);
+          if (!ta) return 1;
+          if (!tb) return -1;
+          const ka = `${ta.hh}${ta.mm}${ta.ss}`;
+          const kb = `${tb.hh}${tb.mm}${tb.ss}`;
+          if (ka !== kb) return kb.localeCompare(ka); // DESC
+          return (tb.suffix - ta.suffix);
+        });
+      }
+
+      async function loadLatest(){
+        try{
+          // raw/YYYY/MM/DD/HH.MM.txt
+          // Walk backwards: years -> months -> days until we collect 10 thoughts
+          const years = sortDescNumeric(await listDirs("raw"));
+          const collected = [];
+
+          for (const Y of years){
+            const months = sortDescNumeric(await listDirs(`raw/${Y}`));
+            for (const M of months){
+              const days = sortDescNumeric(await listDirs(`raw/${Y}/${M}`));
+              for (const D of days){
+                const dayPath = `raw/${Y}/${M}/${D}`;
+                let files = await listTxtFiles(dayPath);
+                files = sortFilesByTimeDesc(files);
+
+                for (const f of files){
+                  collected.push({ Y, M, D, file: f });
+                  if (collected.length >= LATEST_N) break;
+                }
+                if (collected.length >= LATEST_N) break;
+              }
+              if (collected.length >= LATEST_N) break;
+            }
+            if (collected.length >= LATEST_N) break;
+          }
+
+          if (collected.length === 0){
+            latest.innerHTML = `<div class="err">No thoughts found under raw/</div>`;
+            return;
+          }
+
+          // Render cards (fetch each file for preview line)
+          for (const item of collected){
+            const day = dayFromParts(item.Y, item.M, item.D);
+            const t = parseTimeFromFilename(item.file.name);
+            const timeDisplay = t ? t.display : item.file.name.replace(/\.txt$/i,"");
+            const text = await fetchText(item.file.download_url);
+            const preview = firstLinePreview(text);
+
+            const a = document.createElement("a");
+            a.className = "card";
+            a.href = `thought.html?day=${encodeURIComponent(day)}&file=${encodeURIComponent(item.file.name)}`;
+
+            const meta = document.createElement("div");
+            meta.className = "meta";
+            meta.textContent = `${day} ${timeDisplay}`;
+
+            const pv = document.createElement("div");
+            pv.className = "preview";
+            pv.textContent = preview;
+
+            a.appendChild(meta);
+            a.appendChild(pv);
+            latest.appendChild(a);
+          }
+        } catch (e){
+          latest.innerHTML = `<div class="err">${String(e.message || e)}</div>`;
+        }
+      }
+
+      loadLatest();
     </script>
   </body>
 </html>
