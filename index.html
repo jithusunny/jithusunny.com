@@ -1,186 +1,124 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; padding:24px 16px;}
-      .wrap{max-width:760px; margin:0 auto;}
-      h1{margin:0 0 10px 0;}
-      .s{opacity:.7; font-size:12px; margin:0 0 14px 0; line-height:1.5;}
-      .row{display:flex; gap:10px; align-items:center; margin:14px 0 18px;}
-      input{font-size:16px; padding:10px 12px; border:1px solid #e5e7eb; border-radius:12px;}
-      button{font-size:16px; padding:10px 12px; border:1px solid #e5e7eb; border-radius:12px; background:#f9fafb; cursor:pointer;}
-      button:hover{background:#f3f4f6;}
-      a{color:#2563eb; text-decoration:none;}
-      a:hover{text-decoration:underline;}
-      .card{display:block; padding:12px 14px; margin:10px 0; border:1px solid #e5e7eb; border-radius:14px; background:#f9fafb;}
-      .meta{opacity:.7; font-size:12px; margin-bottom:6px;}
-      .preview{font-size:14px; line-height:1.5;}
-      .err{color:#b91c1c; white-space:pre-wrap; border:1px solid #fecaca; background:#fff1f2; border-radius:14px; padding:12px 14px; line-height:1.5; margin-top:14px;}
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <h1>Thoughts</h1>
-      <p class="s">Latest thoughts (across days). You can also open a full day.</p>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
+    .wrap{max-width:760px;margin:0 auto}
+    h1{margin:0 0 6px}
+    h2{margin:28px 0 10px;font-size:18px}
+    .sub{opacity:.7;font-size:13px;margin-bottom:14px}
+    .card{display:block;padding:12px 14px;margin:8px 0;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb}
+    .meta{font-size:12px;opacity:.7;margin-bottom:4px}
+    .txt{font-size:14px;line-height:1.5}
+    .row{display:flex;gap:10px;align-items:center;margin-top:10px}
+    input,button{font-size:15px;padding:10px 12px;border:1px solid #e5e7eb;border-radius:12px}
+    button{background:#f9fafb;cursor:pointer}
+    button:hover{background:#f3f4f6}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Thoughts</h1>
+  <div class="sub">Quick glance at what’s recent.</div>
 
-      <div class="row">
-        <input id="day" type="date" />
-        <button id="open">Open day</button>
-      </div>
+  <h2>Latest thoughts</h2>
+  <div id="latest"></div>
 
-      <div id="latest"></div>
-    </div>
+  <h2>Recent days</h2>
+  <div id="days"></div>
 
-    <script>
-      // ===== CONFIG =====
-      const GITHUB_OWNER = "jithusunny";
-      const GITHUB_REPO  = "jithusunny.com";
-      const GITHUB_BRANCH = "main";
-      const LATEST_N = 10;
-      // ==================
+  <h2>Pick a day</h2>
+  <div class="row">
+    <input id="day" type="date" />
+    <button id="open">Open day</button>
+  </div>
+</div>
 
-      const dayInput = document.getElementById("day");
-      const openBtn = document.getElementById("open");
-      const latest = document.getElementById("latest");
+<script>
+const OWNER="jithusunny", REPO="jithusunny.com", BRANCH="main";
+const MAX_THOUGHTS=5, MAX_DAYS=5;
 
-      // default day = today
-      const now = new Date();
-      const yyyy = now.getFullYear();
-      const mm = String(now.getMonth()+1).padStart(2,"0");
-      const dd = String(now.getDate()).padStart(2,"0");
-      dayInput.value = `${yyyy}-${mm}-${dd}`;
+const gh=p=>`https://api.github.com/repos/${OWNER}/${REPO}/contents/${p}?ref=${BRANCH}`;
+const $=id=>document.getElementById(id);
 
-      openBtn.onclick = () => {
-        const day = dayInput.value;
-        if (!day) return;
-        location.href = `day.html?day=${encodeURIComponent(day)}`;
-      };
+function previewText(t,max=220){
+  t=t.trim().replace(/\s+/g," ");
+  if(t.length<=max) return t;
+  const cut=t.slice(0,max);
+  const p=cut.lastIndexOf(".");
+  return (p>80?cut.slice(0,p+1):cut)+" …";
+}
 
-      function ghUrl(path){
-        return `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
-      }
+function humanDate(d){
+  return new Date(d).toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
+}
 
-      function isDir(item){ return item && item.type === "dir"; }
-      function isTxt(item){ return item && item.type === "file" && /\.txt$/i.test(item.name); }
+function humanTime(day,time){
+  const d=new Date(day), now=new Date();
+  const diff=Math.floor((now-d)/86400000);
+  if(diff===0) return `Today · ${time}`;
+  if(diff===1) return `Yesterday · ${time}`;
+  return `${humanDate(day)} · ${time}`;
+}
 
-      function parseTimeFromFilename(name) {
-        const base = name.replace(/\.txt$/i, "");
-        const m = base.match(/^(\d{2})\.(\d{2})(?:\.(\d{2}))?(?:__(\d+))?$/);
-        if (!m) return null;
-        return { hh:m[1], mm:m[2], ss:m[3]||"00", suffix:m[4]?parseInt(m[4],10):0,
-                 display: m[3] ? `${m[1]}:${m[2]}:${m[3]}` : `${m[1]}:${m[2]}` };
-      }
+async function j(url){const r=await fetch(url);if(!r.ok)throw Error();return r.json()}
+async function t(url){const r=await fetch(url);return r.text()}
 
-      function dayFromParts(y,m,d){ return `${y}-${m}-${d}`; }
+async function load(){
+  try{
+    const years=(await j(gh("raw"))).filter(x=>x.type==="dir").map(x=>x.name).sort().reverse();
+    const thoughts=[], days=new Set();
 
-      async function fetchJson(url){
-        const res = await fetch(url, {cache:"no-store"});
-        if (!res.ok) throw new Error(`GitHub API failed (${res.status}) for ${url}`);
-        return await res.json();
-      }
-
-      async function fetchText(url){
-        const res = await fetch(url, {cache:"no-store"});
-        if (!res.ok) throw new Error(`Could not fetch ${url}`);
-        return await res.text();
-      }
-
-      function firstLinePreview(text){
-        const t = text.trim().replace(/\r\n/g,"\n");
-        const line = t.split("\n").map(s=>s.trim()).filter(Boolean)[0] || "";
-        return line.length > 160 ? line.slice(0,160) + "…" : line;
-      }
-
-      async function listDirs(path){
-        const items = await fetchJson(ghUrl(path));
-        return items.filter(isDir).map(x=>x.name);
-      }
-
-      async function listTxtFiles(path){
-        const items = await fetchJson(ghUrl(path));
-        return items.filter(isTxt);
-      }
-
-      function sortDescNumeric(arr){
-        return arr.slice().sort((a,b)=> (b.localeCompare(a, undefined, {numeric:true})));
-      }
-
-      function sortFilesByTimeDesc(files){
-        return files.slice().sort((a,b)=>{
-          const ta = parseTimeFromFilename(a.name);
-          const tb = parseTimeFromFilename(b.name);
-          if (!ta && !tb) return b.name.localeCompare(a.name);
-          if (!ta) return 1;
-          if (!tb) return -1;
-          const ka = `${ta.hh}${ta.mm}${ta.ss}`;
-          const kb = `${tb.hh}${tb.mm}${tb.ss}`;
-          if (ka !== kb) return kb.localeCompare(ka); // DESC
-          return (tb.suffix - ta.suffix);
-        });
-      }
-
-      async function loadLatest(){
-        try{
-          // raw/YYYY/MM/DD/HH.MM.txt
-          // Walk backwards: years -> months -> days until we collect 10 thoughts
-          const years = sortDescNumeric(await listDirs("raw"));
-          const collected = [];
-
-          for (const Y of years){
-            const months = sortDescNumeric(await listDirs(`raw/${Y}`));
-            for (const M of months){
-              const days = sortDescNumeric(await listDirs(`raw/${Y}/${M}`));
-              for (const D of days){
-                const dayPath = `raw/${Y}/${M}/${D}`;
-                let files = await listTxtFiles(dayPath);
-                files = sortFilesByTimeDesc(files);
-
-                for (const f of files){
-                  collected.push({ Y, M, D, file: f });
-                  if (collected.length >= LATEST_N) break;
-                }
-                if (collected.length >= LATEST_N) break;
-              }
-              if (collected.length >= LATEST_N) break;
-            }
-            if (collected.length >= LATEST_N) break;
+    for(const Y of years){
+      for(const M of (await j(gh(`raw/${Y}`))).filter(x=>x.type==="dir").map(x=>x.name).sort().reverse()){
+        for(const D of (await j(gh(`raw/${Y}/${M}`))).filter(x=>x.type==="dir").map(x=>x.name).sort().reverse()){
+          const day=`${Y}-${M}-${D}`;
+          days.add(day);
+          const files=(await j(gh(`raw/${Y}/${M}/${D}`)))
+            .filter(x=>x.name.endsWith(".txt"))
+            .sort((a,b)=>b.name.localeCompare(a.name));
+          for(const f of files){
+            thoughts.push({day,file:f});
+            if(thoughts.length>=MAX_THOUGHTS) break;
           }
-
-          if (collected.length === 0){
-            latest.innerHTML = `<div class="err">No thoughts found under raw/</div>`;
-            return;
-          }
-
-          // Render cards (fetch each file for preview line)
-          for (const item of collected){
-            const day = dayFromParts(item.Y, item.M, item.D);
-            const t = parseTimeFromFilename(item.file.name);
-            const timeDisplay = t ? t.display : item.file.name.replace(/\.txt$/i,"");
-            const text = await fetchText(item.file.download_url);
-            const preview = firstLinePreview(text);
-
-            const a = document.createElement("a");
-            a.className = "card";
-            a.href = `thought.html?day=${encodeURIComponent(day)}&file=${encodeURIComponent(item.file.name)}`;
-
-            const meta = document.createElement("div");
-            meta.className = "meta";
-            meta.textContent = `${day} ${timeDisplay}`;
-
-            const pv = document.createElement("div");
-            pv.className = "preview";
-            pv.textContent = preview;
-
-            a.appendChild(meta);
-            a.appendChild(pv);
-            latest.appendChild(a);
-          }
-        } catch (e){
-          latest.innerHTML = `<div class="err">${String(e.message || e)}</div>`;
+          if(thoughts.length>=MAX_THOUGHTS) break;
         }
+        if(thoughts.length>=MAX_THOUGHTS) break;
       }
+      if(thoughts.length>=MAX_THOUGHTS) break;
+    }
 
-      loadLatest();
-    </script>
-  </body>
+    for(const x of thoughts){
+      const time=x.file.name.replace(".txt","").replace(".",":");
+      const text=await t(x.file.download_url);
+      const a=document.createElement("a");
+      a.className="card";
+      a.href=`thought.html?day=${x.day}&file=${x.file.name}`;
+      a.innerHTML=`<div class="meta">${humanTime(x.day,time)}</div>
+                   <div class="txt">${previewText(text)}</div>`;
+      $("latest").appendChild(a);
+    }
+
+    [...days].slice(0,MAX_DAYS).forEach(d=>{
+      const a=document.createElement("a");
+      a.className="card";
+      a.href=`day.html?day=${d}`;
+      a.innerHTML=`<div class="txt">${humanDate(d)}</div>`;
+      $("days").appendChild(a);
+    });
+
+    const today=new Date();
+    $("day").value=today.toISOString().slice(0,10);
+    $("open").onclick=()=>location.href=`day.html?day=${$("day").value}`;
+
+  }catch{
+    $("latest").innerHTML=`<div class="err">Could not load thoughts.</div>`;
+  }
+}
+load();
+</script>
+</body>
 </html>

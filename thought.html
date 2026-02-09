@@ -1,130 +1,42 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; padding:24px 16px;}
-      .wrap{max-width:760px; margin:0 auto;}
-      a{color:#2563eb; text-decoration:none;}
-      a:hover{text-decoration:underline;}
-      .top{display:flex; gap:12px; align-items:baseline; margin-bottom:14px;}
-      .m{background:#f4f4f5; border:1px solid #e5e7eb; border-radius:16px; padding:14px 16px; margin:18px 0; line-height:1.6; font-size:15px;}
-      .ts{font-size:12px; opacity:.7; display:block; margin-bottom:8px;}
-      .txt p{margin:0;}
-      .txt p + p{margin-top:10px;}
-      .err{color:#b91c1c; white-space:pre-wrap; border:1px solid #fecaca; background:#fff1f2; border-radius:14px; padding:12px 14px; line-height:1.5;}
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="top">
-        <a href="index.html">← Home</a>
-        <a id="backDay" href="#">Day</a>
-      </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
+    .wrap{max-width:760px;margin:0 auto}
+    a{color:#2563eb;text-decoration:none}
+    .m{background:#f4f4f5;border:1px solid #e5e7eb;border-radius:16px;padding:16px 18px;margin-top:18px;line-height:1.6}
+    .ts{font-size:12px;opacity:.7;margin-bottom:10px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a id="back">←</a>
+  <div id="root"></div>
+</div>
 
-      <div id="root"></div>
-    </div>
+<script>
+const OWNER="jithusunny", REPO="jithusunny.com", BRANCH="main";
+const p=new URLSearchParams(location.search);
+const day=p.get("day"), file=p.get("file");
+const [Y,M,D]=day.split("-");
+const back=document.getElementById("back");
 
-    <script>
-      // ===== CONFIG =====
-      const GITHUB_OWNER = "jithusunny";
-      const GITHUB_REPO  = "jithusunny.com";
-      const GITHUB_BRANCH = "main";
-      // ==================
+back.textContent=`All thoughts from ${new Date(day).toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"})}`;
+back.href=`day.html?day=${day}`;
 
-      function getParam(k){
-        const p = new URLSearchParams(location.search);
-        return p.get(k);
-      }
+(async()=>{
+  const meta=await (await fetch(
+    `https://api.github.com/repos/${OWNER}/${REPO}/contents/raw/${Y}/${M}/${D}/${file}?ref=${BRANCH}`
+  )).json();
+  const text=await (await fetch(meta.download_url)).text();
+  const time=file.replace(".txt","").replace(".",":");
 
-      function isValidDay(day) {
-        return /^\d{4}-\d{2}-\d{2}$/.test(day);
-      }
-
-      function dayToPath(day) {
-        const [Y, M, D] = day.split("-");
-        return `raw/${Y}/${M}/${D}`;
-      }
-
-      function parseTimeFromFilename(name) {
-        const base = name.replace(/\.txt$/i, "");
-        const m = base.match(/^(\d{2})\.(\d{2})(?:\.(\d{2}))?(?:__(\d+))?$/);
-        if (!m) return {display: base};
-        return {display: m[3] ? `${m[1]}:${m[2]}:${m[3]}` : `${m[1]}:${m[2]}`};
-      }
-
-      function toParagraphs(text) {
-        return text
-          .trim()
-          .split(/\n\s*\n/g)
-          .map(p => p.replace(/\n+/g, " ").replace(/\s+/g, " ").trim())
-          .filter(Boolean);
-      }
-
-      async function fetchJson(url){
-        const res = await fetch(url, {cache:"no-store"});
-        if (!res.ok) throw new Error(`GitHub API failed (${res.status})`);
-        return await res.json();
-      }
-
-      async function fetchText(url){
-        const res = await fetch(url, {cache:"no-store"});
-        if (!res.ok) throw new Error(`Could not fetch file`);
-        return await res.text();
-      }
-
-      async function run(){
-        const day = getParam("day");
-        const file = getParam("file");
-        const root = document.getElementById("root");
-
-        if (!day || !file || !isValidDay(day) || !/\.txt$/i.test(file)) {
-          const e = document.createElement("div");
-          e.className = "err";
-          e.textContent = "Invalid URL. Use: thought.html?day=YYYY-MM-DD&file=HH.MM.txt";
-          root.appendChild(e);
-          return;
-        }
-
-        document.getElementById("backDay").href = `day.html?day=${encodeURIComponent(day)}`;
-
-        const path = `${dayToPath(day)}/${file}`;
-        const metaUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${encodeURIComponent(GITHUB_BRANCH)}`;
-
-        try{
-          const meta = await fetchJson(metaUrl);
-          const text = await fetchText(meta.download_url);
-
-          const t = parseTimeFromFilename(file);
-
-          const div = document.createElement("div");
-          div.className = "m";
-          div.id = `${day}_${file.replace(/\.txt$/i,"")}`;
-          div.title = div.id;
-
-          const ts = document.createElement("span");
-          ts.className = "ts";
-          ts.textContent = `${day} ${t.display}`;
-
-          const txt = document.createElement("div");
-          txt.className = "txt";
-          for (const p of toParagraphs(text)) {
-            const el = document.createElement("p");
-            el.textContent = p;
-            txt.appendChild(el);
-          }
-
-          div.appendChild(ts);
-          div.appendChild(txt);
-          root.appendChild(div);
-        } catch (e){
-          const err = document.createElement("div");
-          err.className = "err";
-          err.textContent = String(e.message || e);
-          root.appendChild(err);
-        }
-      }
-
-      run();
-    </script>
-  </body>
+  const d=document.createElement("div");
+  d.className="m";
+  d.innerHTML=`<div class="ts">${time}</div>${text.replace(/\n+/g,"<br><br>")}`;
+  document.getElementById("root").appendChild(d);
+})();
+</script>
+</body>
 </html>
