@@ -1,42 +1,44 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thought</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
-    .wrap{max-width:760px;margin:0 auto}
-    a{color:#2563eb;text-decoration:none}
-    .m{background:#f4f4f5;border:1px solid #e5e7eb;border-radius:16px;padding:16px 18px;margin-top:18px;line-height:1.6}
-    .ts{font-size:12px;opacity:.7;margin-bottom:10px}
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px 16px; }
+    .wrap { max-width: 720px; margin: auto; }
+    a { color: #2563eb; text-decoration: none; }
+    .box {
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 16px;
+      line-height: 1.6;
+    }
+    .time { font-size: 12px; opacity: .6; margin-bottom: 8px; }
   </style>
 </head>
 <body>
 <div class="wrap">
-  <a id="back">←</a>
-  <div id="root"></div>
+  <a id="back">← All thoughts</a>
+  <h1>Thought</h1>
+  <div class="box">
+    <div class="time" id="time"></div>
+    <div id="text"></div>
+  </div>
 </div>
 
 <script>
-const OWNER="jithusunny", REPO="jithusunny.com", BRANCH="main";
-const p=new URLSearchParams(location.search);
-const day=p.get("day"), file=p.get("file");
-const [Y,M,D]=day.split("-");
-const back=document.getElementById("back");
+const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
+const p = new URLSearchParams(location.search);
+const day = p.get("day");
+const file = p.get("file");
 
-back.textContent=`All thoughts from ${new Date(day).toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"})}`;
-back.href=`day.html?day=${day}`;
+const [y,m,d] = day.split("-");
+document.getElementById("back").href = `day.html?day=${day}`;
+document.getElementById("time").textContent = `${day} ${file}`;
 
-(async()=>{
-  const meta=await (await fetch(
-    `https://api.github.com/repos/${OWNER}/${REPO}/contents/raw/${Y}/${M}/${D}/${file}?ref=${BRANCH}`
-  )).json();
-  const text=await (await fetch(meta.download_url)).text();
-  const time=file.replace(".txt","").replace(".",":");
-
-  const d=document.createElement("div");
-  d.className="m";
-  d.innerHTML=`<div class="ts">${time}</div>${text.replace(/\n+/g,"<br><br>")}`;
-  document.getElementById("root").appendChild(d);
-})();
+fetch(`${BASE}/${y}/${m}/${d}/${file}.txt`)
+  .then(r => r.text())
+  .then(t => document.getElementById("text").innerHTML = t.replace(/\n/g,"<br>"));
 </script>
 </body>
 </html>

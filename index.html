@@ -1,106 +1,72 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thoughts</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
-    .wrap{max-width:760px;margin:0 auto}
-    h1{margin:0 0 6px}
-    h2{margin:26px 0 10px;font-size:18px}
-    .sub{opacity:.7;font-size:13px;margin-bottom:14px}
-    .card{display:block;padding:12px 14px;margin:8px 0;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb}
-    .meta{font-size:12px;opacity:.7;margin-bottom:4px}
-    .txt{font-size:14px;line-height:1.5}
-    .row{display:flex;gap:10px;align-items:center;margin-top:10px}
-    input,button{font-size:15px;padding:10px 12px;border:1px solid #e5e7eb;border-radius:12px}
-    button{background:#f9fafb;cursor:pointer}
-    button:hover{background:#f3f4f6}
-    a{color:#2563eb;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px 16px; }
+    .wrap { max-width: 720px; margin: auto; }
+    h1 { margin-bottom: 4px; }
+    h2 { margin: 24px 0 8px; font-size: 18px; }
+    .item {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin: 10px 0;
+    }
+    .time { font-size: 12px; opacity: .6; }
+    a { color: #2563eb; text-decoration: none; }
   </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Thoughts</h1>
-  <div class="sub">Quick glance.</div>
 
   <h2>Latest thoughts</h2>
   <div id="latest"></div>
 
   <h2>Recent days</h2>
   <div id="days"></div>
-
-  <h2>Pick a day</h2>
-  <div class="row">
-    <input id="day" type="date" />
-    <button id="open">Open day</button>
-  </div>
 </div>
 
 <script>
-const MAX_THOUGHTS = 5;
-const MAX_DAYS = 5;
+const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
 
-const $ = id => document.getElementById(id);
+const days = [
+  "2026-02-09",
+  "2026-02-08",
+  "2026-02-06"
+];
 
-function previewText(t,max=220){
-  t=t.trim().replace(/\s+/g," ");
-  if(t.length<=max) return t;
-  const cut=t.slice(0,max);
-  const p=cut.lastIndexOf(".");
-  return (p>80?cut.slice(0,p+1):cut)+" …";
-}
-
-function humanDate(d){
-  return new Date(d).toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
-}
-
-function humanTime(day,time){
-  const d=new Date(day), now=new Date();
-  const diff=Math.floor((now-d)/86400000);
-  if(diff===0) return `Today · ${time}`;
-  if(diff===1) return `Yesterday · ${time}`;
-  return `${humanDate(day)} · ${time}`;
-}
-
-(async()=>{
-  try{
-    const idx = await fetch("index.txt",{cache:"no-store"}).then(r=>r.text());
-    const lines = idx.split("\n").map(l=>l.trim()).filter(Boolean);
-
-    const latest = lines.slice(0,MAX_THOUGHTS);
-    const daySet = new Set();
-
-    for(const line of latest){
-      const [day,time,path] = line.split(" ");
-      daySet.add(day);
-
-      const text = await fetch(path,{cache:"no-store"}).then(r=>r.text());
-      const a=document.createElement("a");
-      a.className="card";
-      a.href=`thought.html?day=${day}&file=${path.split("/").pop()}`;
-      a.innerHTML=
-        `<div class="meta">${humanTime(day,time.replace(".",":"))}</div>
-         <div class="txt">${previewText(text)}</div>`;
-      $("latest").appendChild(a);
-    }
-
-    [...daySet].slice(0,MAX_DAYS).forEach(d=>{
-      const a=document.createElement("a");
-      a.className="card";
-      a.href=`day.html?day=${d}`;
-      a.innerHTML=`<div class="txt">${humanDate(d)}</div>`;
-      $("days").appendChild(a);
-    });
-
-    const today=new Date();
-    $("day").value=today.toISOString().slice(0,10);
-    $("open").onclick=()=>location.href=`day.html?day=${$("day").value}`;
-
-  }catch{
-    $("latest").innerHTML=`<div class="err">Could not load index.txt</div>`;
+async function load() {
+  const latest = [];
+  for (const d of days) {
+    const [y,m,da] = d.split("-");
+    try {
+      const idx = await fetch(`${BASE}/${y}/${m}/${da}/index.txt`).then(r=>r.text());
+      const files = idx.trim().split("\n").reverse();
+      for (const f of files) {
+        if (latest.length >= 5) break;
+        latest.push({ d, f });
+      }
+    } catch {}
   }
-})();
+
+  document.getElementById("latest").innerHTML = latest.map(t => `
+    <div class="item">
+      <div class="time">${t.d} ${t.f}</div>
+      <a href="thought.html?day=${t.d}&file=${t.f}">Open thought</a>
+    </div>
+  `).join("");
+
+  document.getElementById("days").innerHTML = days.map(d => `
+    <div class="item">
+      <a href="day.html?day=${d}">All thoughts from ${d}</a>
+    </div>
+  `).join("");
+}
+
+load();
 </script>
 </body>
 </html>

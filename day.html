@@ -1,13 +1,20 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
-    .wrap{max-width:760px;margin:0 auto}
-    a{color:#2563eb;text-decoration:none}
-    h1{margin:10px 0 18px}
-    .m{background:#f4f4f5;border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:14px 0;line-height:1.6}
-    .ts{font-size:12px;opacity:.7;margin-bottom:6px}
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px 16px; }
+    .wrap { max-width: 720px; margin: auto; }
+    a { color: #2563eb; text-decoration: none; }
+    .box {
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      line-height: 1.6;
+    }
+    .time { font-size: 12px; opacity: .6; margin-bottom: 6px; }
   </style>
 </head>
 <body>
@@ -18,27 +25,28 @@
 </div>
 
 <script>
-const OWNER="jithusunny", REPO="jithusunny.com", BRANCH="main";
-const gh=p=>`https://api.github.com/repos/${OWNER}/${REPO}/contents/${p}?ref=${BRANCH}`;
-const day=new URLSearchParams(location.search).get("day");
-const [Y,M,D]=day.split("-");
-document.getElementById("title").textContent=
-  `Thoughts from ${new Date(day).toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"})}`;
+const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
+const day = new URLSearchParams(location.search).get("day");
+const [y,m,d] = day.split("-");
 
-(async()=>{
-  const files=(await (await fetch(gh(`raw/${Y}/${M}/${D}`))).json())
-    .filter(x=>x.name.endsWith(".txt"))
-    .sort((a,b)=>a.name.localeCompare(b.name));
+document.getElementById("title").textContent =
+  `Thoughts from ${new Date(day).toDateString()}`;
 
-  for(const f of files){
-    const text=await (await fetch(f.download_url)).text();
-    const time=f.name.replace(".txt","").replace(".",":");
-    const d=document.createElement("div");
-    d.className="m";
-    d.innerHTML=`<div class="ts">${time}</div>${text.replace(/\n+/g,"<br><br>")}`;
-    document.getElementById("root").appendChild(d);
+async function load() {
+  const index = await fetch(`${BASE}/${y}/${m}/${d}/index.txt`).then(r=>r.text());
+  const files = index.trim().split("\n");
+
+  for (const f of files) {
+    const text = await fetch(`${BASE}/${y}/${m}/${d}/${f}.txt`).then(r=>r.text());
+    document.getElementById("root").innerHTML += `
+      <div class="box">
+        <div class="time">${f}</div>
+        ${text.replace(/\n/g,"<br>")}
+      </div>`;
   }
-})();
+}
+
+load();
 </script>
 </body>
 </html>
