@@ -4,23 +4,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thoughts</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px 16px; }
-    .wrap { max-width: 720px; margin: auto; }
-    h1 { margin-bottom: 4px; }
-    h2 { margin: 24px 0 8px; font-size: 18px; }
-    .item {
-      border: 1px solid #e5e7eb;
-      border-radius: 14px;
-      padding: 12px 14px;
-      margin: 10px 0;
-    }
-    .time { font-size: 12px; opacity: .6; }
-    a { color: #2563eb; text-decoration: none; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
+    .wrap{max-width:760px;margin:0 auto}
+    h1{margin:0 0 6px}
+    h2{margin:22px 0 10px;font-size:18px}
+    .sub{opacity:.7;font-size:13px;margin-bottom:14px}
+    .card{display:block;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb;padding:12px 14px;margin:10px 0}
+    .meta{font-size:12px;opacity:.65;margin-bottom:6px}
+    .txt{font-size:14px;line-height:1.5}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
   </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Thoughts</h1>
+  <div class="sub">Latest across days.</div>
 
   <h2>Latest thoughts</h2>
   <div id="latest"></div>
@@ -32,41 +32,73 @@
 <script>
 const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
 
-const days = [
-  "2026-02-09",
-  "2026-02-08",
-  "2026-02-06"
-];
+// Keep this list short. Add new days when needed.
+const DAYS = ["2026-02-09","2026-02-08","2026-02-06"];
 
-async function load() {
-  const latest = [];
-  for (const d of days) {
-    const [y,m,da] = d.split("-");
-    try {
-      const idx = await fetch(`${BASE}/${y}/${m}/${da}/index.txt`).then(r=>r.text());
-      const files = idx.trim().split("\n").reverse();
-      for (const f of files) {
-        if (latest.length >= 5) break;
-        latest.push({ d, f });
-      }
-    } catch {}
-  }
+const MAX_THOUGHTS = 5;
 
-  document.getElementById("latest").innerHTML = latest.map(t => `
-    <div class="item">
-      <div class="time">${t.d} ${t.f}</div>
-      <a href="thought.html?day=${t.d}&file=${t.f}">Open thought</a>
-    </div>
-  `).join("");
-
-  document.getElementById("days").innerHTML = days.map(d => `
-    <div class="item">
-      <a href="day.html?day=${d}">All thoughts from ${d}</a>
-    </div>
-  `).join("");
+function normFile(f){
+  f = (f||"").trim();
+  if(!f) return "";
+  return f.endsWith(".txt") ? f : (f + ".txt");
+}
+function preview(t, max=180){
+  t = t.trim().replace(/\s+/g," ");
+  return t.length>max ? (t.slice(0,max).trim()+"…") : t;
+}
+function esc(s){
+  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+function humanDay(d){
+  return new Date(d+"T00:00:00").toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
 }
 
-load();
+(async function load(){
+  const latestEl = document.getElementById("latest");
+  const daysEl = document.getElementById("days");
+
+  // days list
+  daysEl.innerHTML = DAYS.map(d =>
+    `<a class="card" href="day.html?day=${encodeURIComponent(d)}">
+       <div class="txt">All thoughts from ${humanDay(d)}</div>
+     </a>`
+  ).join("");
+
+  try{
+    const latest = [];
+    for(const day of DAYS){
+      const [y,m,d] = day.split("-");
+      const idxUrl = `${BASE}/${y}/${m}/${d}/index.txt`;
+      const idx = await fetch(idxUrl,{cache:"no-store"}).then(r=>r.ok?r.text():"");
+      const files = idx.split("\n").map(s=>s.trim()).filter(Boolean);
+      // newest first inside a day: take last items first
+      for(let i=files.length-1;i>=0 && latest.length<MAX_THOUGHTS;i--){
+        latest.push({day, file: normFile(files[i])});
+      }
+      if(latest.length>=MAX_THOUGHTS) break;
+    }
+
+    // render with previews (1 fetch per thought)
+    for(const t of latest){
+      const [y,m,d] = t.day.split("-");
+      const url = `${BASE}/${y}/${m}/${d}/${t.file}`;
+      const text = await fetch(url,{cache:"no-store"}).then(r=>r.ok?r.text():"");
+      const a = document.createElement("a");
+      a.className = "card";
+      a.href = `thought.html?day=${encodeURIComponent(t.day)}&file=${encodeURIComponent(t.file)}`;
+      a.innerHTML =
+        `<div class="meta">${t.day} ${t.file.replace(".txt","")}</div>
+         <div class="txt">${esc(preview(text))}</div>`;
+      latestEl.appendChild(a);
+    }
+
+    if(!latest.length){
+      latestEl.innerHTML = `<div class="err">No thoughts yet.</div>`;
+    }
+  }catch(e){
+    latestEl.innerHTML = `<div class="err">Could not load latest thoughts.</div>`;
+  }
+})();
 </script>
 </body>
 </html>

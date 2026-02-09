@@ -4,49 +4,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Day</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px 16px; }
-    .wrap { max-width: 720px; margin: auto; }
-    a { color: #2563eb; text-decoration: none; }
-    .box {
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 14px 16px;
-      margin: 16px 0;
-      line-height: 1.6;
-    }
-    .time { font-size: 12px; opacity: .6; margin-bottom: 6px; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
+    .wrap{max-width:760px;margin:0 auto}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .top{display:flex;gap:12px;align-items:baseline;margin-bottom:10px}
+    h1{margin:0;font-size:32px}
+    .box{border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:16px 0;line-height:1.6;background:#f9fafb}
+    .meta{font-size:12px;opacity:.65;margin-bottom:8px}
+    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
   </style>
 </head>
 <body>
 <div class="wrap">
-  <a href="index.html">← Home</a>
-  <h1 id="title"></h1>
+  <div class="top">
+    <a href="index.html">← Home</a>
+  </div>
+  <h1 id="title">Thoughts</h1>
   <div id="root"></div>
 </div>
 
 <script>
 const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
-const day = new URLSearchParams(location.search).get("day");
-const [y,m,d] = day.split("-");
+const p = new URLSearchParams(location.search);
+const day = p.get("day");
+const root = document.getElementById("root");
 
-document.getElementById("title").textContent =
-  `Thoughts from ${new Date(day).toDateString()}`;
-
-async function load() {
-  const index = await fetch(`${BASE}/${y}/${m}/${d}/index.txt`).then(r=>r.text());
-  const files = index.trim().split("\n");
-
-  for (const f of files) {
-    const text = await fetch(`${BASE}/${y}/${m}/${d}/${f}.txt`).then(r=>r.text());
-    document.getElementById("root").innerHTML += `
-      <div class="box">
-        <div class="time">${f}</div>
-        ${text.replace(/\n/g,"<br>")}
-      </div>`;
-  }
+function humanDay(d){
+  return new Date(d + "T00:00:00").toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
+}
+function normFile(f){
+  f = (f||"").trim();
+  if(!f) return "";
+  return f.endsWith(".txt") ? f : (f + ".txt");
+}
+function fileLabel(f){
+  return f.replace(".txt","");
+}
+function esc(s){
+  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 }
 
-load();
+document.getElementById("title").textContent = `Thoughts from ${humanDay(day)}`;
+
+(async function load(){
+  try{
+    if(!day) throw new Error("Missing day");
+    const [y,m,d] = day.split("-");
+    const idxUrl = `${BASE}/${y}/${m}/${d}/index.txt`;
+    const idxText = await fetch(idxUrl,{cache:"no-store"}).then(r=>r.ok?r.text():Promise.reject());
+    const lines = idxText.split("\n").map(s=>s.trim()).filter(Boolean);
+
+    for(const line of lines){
+      const f = normFile(line);
+      const url = `${BASE}/${y}/${m}/${d}/${f}`;
+      const text = await fetch(url,{cache:"no-store"}).then(r=>r.ok?r.text():"(missing file)");
+      const box = document.createElement("div");
+      box.className = "box";
+      box.innerHTML =
+        `<div class="meta">${day} ${fileLabel(f)} · <a href="thought.html?day=${encodeURIComponent(day)}&file=${encodeURIComponent(f)}">Open</a></div>
+         <div>${esc(text).replace(/\n/g,"<br>")}</div>`;
+      root.appendChild(box);
+    }
+  }catch(e){
+    root.innerHTML = `<div class="err">Could not load this day.</div>`;
+  }
+})();
 </script>
 </body>
 </html>

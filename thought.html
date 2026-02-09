@@ -4,16 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thought</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px 16px; }
-    .wrap { max-width: 720px; margin: auto; }
-    a { color: #2563eb; text-decoration: none; }
-    .box {
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 16px;
-      line-height: 1.6;
-    }
-    .time { font-size: 12px; opacity: .6; margin-bottom: 8px; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
+    .wrap{max-width:760px;margin:0 auto}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+    h1{margin:10px 0 14px}
+    .box{border:1px solid #e5e7eb;border-radius:16px;padding:16px;line-height:1.6;background:#f9fafb}
+    .meta{font-size:12px;opacity:.65;margin-bottom:10px}
+    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
   </style>
 </head>
 <body>
@@ -21,7 +19,7 @@
   <a id="back">← All thoughts</a>
   <h1>Thought</h1>
   <div class="box">
-    <div class="time" id="time"></div>
+    <div class="meta" id="meta"></div>
     <div id="text"></div>
   </div>
 </div>
@@ -30,15 +28,36 @@
 const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
 const p = new URLSearchParams(location.search);
 const day = p.get("day");
-const file = p.get("file");
+let file = (p.get("file")||"").trim();
 
-const [y,m,d] = day.split("-");
-document.getElementById("back").href = `day.html?day=${day}`;
-document.getElementById("time").textContent = `${day} ${file}`;
+function normFile(f){
+  if(!f) return "";
+  return f.endsWith(".txt") ? f : (f + ".txt");
+}
+function esc(s){
+  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
 
-fetch(`${BASE}/${y}/${m}/${d}/${file}.txt`)
-  .then(r => r.text())
-  .then(t => document.getElementById("text").innerHTML = t.replace(/\n/g,"<br>"));
+document.getElementById("back").href = `day.html?day=${encodeURIComponent(day)}`;
+
+(async function load(){
+  try{
+    if(!day) throw new Error("Missing day");
+    if(!file) throw new Error("Missing file");
+    file = normFile(file);
+
+    const [y,m,d] = day.split("-");
+    const url = `${BASE}/${y}/${m}/${d}/${file}`;
+    document.getElementById("meta").textContent = `${day} ${file.replace(".txt","")}`;
+
+    const res = await fetch(url,{cache:"no-store"});
+    if(!res.ok) throw new Error("Not found");
+    const t = await res.text();
+    document.getElementById("text").innerHTML = esc(t).replace(/\n/g,"<br>");
+  }catch(e){
+    document.getElementById("text").innerHTML = `<div class="err">404: Not Found</div>`;
+  }
+})();
 </script>
 </body>
 </html>
