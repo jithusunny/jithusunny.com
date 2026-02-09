@@ -6,99 +6,186 @@
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
     .wrap{max-width:760px;margin:0 auto}
-    h1{margin:0 0 6px}
-    h2{margin:22px 0 10px;font-size:18px}
-    .sub{opacity:.7;font-size:13px;margin-bottom:14px}
-    .card{display:block;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb;padding:12px 14px;margin:10px 0}
-    .meta{font-size:12px;opacity:.65;margin-bottom:6px}
-    .txt{font-size:14px;line-height:1.5}
+    h1{margin:0 0 6px 0;font-size:40px}
+    .sub{opacity:.7;font-size:13px;margin:0 0 18px 0;line-height:1.4}
+    h2{margin:22px 0 10px 0;font-size:16px}
+    .card{border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:12px 0;background:#f9fafb}
     a{color:#2563eb;text-decoration:none}
     a:hover{text-decoration:underline}
-    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
+    .meta{font-size:12px;opacity:.7;margin-bottom:6px}
+    .preview{font-size:14px;line-height:1.5}
+    .row{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}
+    input{font-size:16px;padding:10px 12px;border:1px solid #e5e7eb;border-radius:12px}
+    button{font-size:16px;padding:10px 12px;border:1px solid #e5e7eb;border-radius:12px;background:#f9fafb;cursor:pointer}
+    button:hover{background:#f3f4f6}
+    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px;margin-top:12px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
   </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Thoughts</h1>
-  <div class="sub">Latest across days.</div>
+  <p class="sub">Latest across days. Data is read from <code>raw/YYYY/MM/DD/</code> via <code>index.txt</code>.</p>
 
   <h2>Latest thoughts</h2>
-  <div id="latest"></div>
+  <div id="latest" class="grid"></div>
 
   <h2>Recent days</h2>
-  <div id="days"></div>
+  <div id="days" class="grid"></div>
+
+  <h2>Open a day</h2>
+  <div class="row">
+    <input id="day" type="date" />
+    <button id="open">Open day</button>
+  </div>
+
+  <div id="msg"></div>
 </div>
 
 <script>
 const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
 
-// Keep this list short. Add new days when needed.
-const DAYS = ["2026-02-09","2026-02-08","2026-02-06"];
+// Keep this list short & editable. Add new days here.
+// (This avoids GitHub API rate limits and keeps it lightning fast.)
+const DAYS = [
+  "2026-02-09",
+  "2026-02-08",
+  "2026-02-06"
+];
 
-const MAX_THOUGHTS = 5;
+const latestEl = document.getElementById("latest");
+const daysEl = document.getElementById("days");
+const msgEl = document.getElementById("msg");
 
+function esc(s){
+  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+function preview(t, max=220){
+  t = (t||"").trim().replace(/\s+/g," ");
+  return t.length>max ? (t.slice(0,max).trim()+"…") : t;
+}
 function normFile(f){
   f = (f||"").trim();
   if(!f) return "";
   return f.endsWith(".txt") ? f : (f + ".txt");
 }
-function preview(t, max=180){
-  t = t.trim().replace(/\s+/g," ");
-  return t.length>max ? (t.slice(0,max).trim()+"…") : t;
+function parseTimeFromFile(file){
+  // supports "1330.txt" and "08.50.txt"
+  let s = file.replace(".txt","").trim();
+  s = s.replace(".","");
+  if(!/^\d{4}$/.test(s)) return null;
+  const hh = Number(s.slice(0,2));
+  const mm = Number(s.slice(2,4));
+  return {hh, mm};
 }
-function esc(s){
-  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function dtFromDayFile(day, file){
+  const t = parseTimeFromFile(file);
+  if(!t) return null;
+  const dt = new Date(day + "T00:00:00");
+  dt.setHours(t.hh, t.mm, 0, 0);
+  return dt;
 }
-function humanDay(d){
-  return new Date(d+"T00:00:00").toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
+function humanWhen(dt){
+  // minimal + unambiguous
+  const now = new Date();
+  const startToday = new Date(now); startToday.setHours(0,0,0,0);
+  const startThat = new Date(dt); startThat.setHours(0,0,0,0);
+  const daysDiff = Math.round((startToday - startThat) / (24*3600*1000));
+
+  const time = dt.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+  if(daysDiff === 0) return `Today ${time}`;
+  if(daysDiff === 1) return `Yesterday ${time}`;
+  const date = dt.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+  return `${date} ${time}`;
+}
+function humanDay(day){
+  return new Date(day + "T00:00:00").toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
+}
+function dayPath(day){
+  const [y,m,d] = day.split("-");
+  return `${BASE}/${y}/${m}/${d}`;
 }
 
-(async function load(){
-  const latestEl = document.getElementById("latest");
-  const daysEl = document.getElementById("days");
+async function fetchText(url){
+  const r = await fetch(url, {cache:"no-store"});
+  if(!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.text();
+}
 
-  // days list
-  daysEl.innerHTML = DAYS.map(d =>
-    `<a class="card" href="day.html?day=${encodeURIComponent(d)}">
-       <div class="txt">All thoughts from ${humanDay(d)}</div>
-     </a>`
-  ).join("");
-
-  try{
-    const latest = [];
-    for(const day of DAYS){
-      const [y,m,d] = day.split("-");
-      const idxUrl = `${BASE}/${y}/${m}/${d}/index.txt`;
-      const idx = await fetch(idxUrl,{cache:"no-store"}).then(r=>r.ok?r.text():"");
-      const files = idx.split("\n").map(s=>s.trim()).filter(Boolean);
-      // newest first inside a day: take last items first
-      for(let i=files.length-1;i>=0 && latest.length<MAX_THOUGHTS;i--){
-        latest.push({day, file: normFile(files[i])});
-      }
-      if(latest.length>=MAX_THOUGHTS) break;
-    }
-
-    // render with previews (1 fetch per thought)
-    for(const t of latest){
-      const [y,m,d] = t.day.split("-");
-      const url = `${BASE}/${y}/${m}/${d}/${t.file}`;
-      const text = await fetch(url,{cache:"no-store"}).then(r=>r.ok?r.text():"");
-      const a = document.createElement("a");
-      a.className = "card";
-      a.href = `thought.html?day=${encodeURIComponent(t.day)}&file=${encodeURIComponent(t.file)}`;
-      a.innerHTML =
-        `<div class="meta">${t.day} ${t.file.replace(".txt","")}</div>
-         <div class="txt">${esc(preview(text))}</div>`;
-      latestEl.appendChild(a);
-    }
-
-    if(!latest.length){
-      latestEl.innerHTML = `<div class="err">No thoughts yet.</div>`;
-    }
-  }catch(e){
-    latestEl.innerHTML = `<div class="err">Could not load latest thoughts.</div>`;
+function renderDayLinks(){
+  // last 5 days max
+  const ds = DAYS.slice(0,5);
+  daysEl.innerHTML = "";
+  for(const d of ds){
+    const a = document.createElement("a");
+    a.className = "card";
+    a.href = `day.html?day=${encodeURIComponent(d)}`;
+    a.innerHTML = `<div>${esc(`All thoughts from ${humanDay(d)}`)}</div>`;
+    daysEl.appendChild(a);
   }
-})();
+}
+
+async function loadLatestThoughts(){
+  msgEl.textContent = "";
+  latestEl.innerHTML = "";
+
+  // Build a list of all (day, file) and sort by datetime desc
+  const all = [];
+
+  for(const day of DAYS){
+    const idxUrl = `${dayPath(day)}/index.txt`;
+    try{
+      const idx = await fetchText(idxUrl);
+      const files = idx.split("\n").map(normFile).filter(Boolean);
+
+      for(const f of files){
+        const dt = dtFromDayFile(day, f);
+        if(!dt) continue;
+        all.push({day, file:f, dt});
+      }
+    }catch(e){
+      // If a day is missing index.txt, skip it silently.
+    }
+  }
+
+  all.sort((a,b)=> b.dt - a.dt); // latest first
+
+  const top = all.slice(0,5);
+  for(const item of top){
+    const url = `${dayPath(item.day)}/${item.file}`;
+    let text = "";
+    try{
+      text = await fetchText(url);
+    }catch(e){
+      text = "404: Not Found";
+    }
+
+    const card = document.createElement("a");
+    card.className = "card";
+    card.href = `thought.html?day=${encodeURIComponent(item.day)}&file=${encodeURIComponent(item.file)}`;
+    card.innerHTML = `
+      <div class="meta">${esc(humanWhen(item.dt))} · ${esc(item.day)} ${esc(item.file.replace(".txt",""))}</div>
+      <div class="preview">${esc(preview(text, 240))}</div>
+    `;
+    latestEl.appendChild(card);
+  }
+
+  if(top.length === 0){
+    msgEl.innerHTML = `<div class="err">No thoughts found. Check your <code>raw/YYYY/MM/DD/index.txt</code> files.</div>`;
+  }
+}
+
+document.getElementById("open").onclick = () => {
+  const d = document.getElementById("day").value;
+  if(!d) return;
+  location.href = `day.html?day=${encodeURIComponent(d)}`;
+};
+
+// Default date picker = latest day
+document.getElementById("day").value = DAYS[0] || "";
+
+renderDayLinks();
+loadLatestThoughts();
 </script>
 </body>
 </html>

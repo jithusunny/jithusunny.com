@@ -8,54 +8,93 @@
     .wrap{max-width:760px;margin:0 auto}
     a{color:#2563eb;text-decoration:none}
     a:hover{text-decoration:underline}
-    h1{margin:10px 0 14px}
-    .box{border:1px solid #e5e7eb;border-radius:16px;padding:16px;line-height:1.6;background:#f9fafb}
-    .meta{font-size:12px;opacity:.65;margin-bottom:10px}
+    h1{margin:10px 0 12px 0;font-size:34px}
+    .box{border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:14px 0;line-height:1.6;background:#f9fafb}
+    .meta{font-size:12px;opacity:.7;margin-bottom:8px}
     .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
   </style>
 </head>
 <body>
 <div class="wrap">
-  <a id="back">← All thoughts</a>
+  <div id="back"></div>
   <h1>Thought</h1>
-  <div class="box">
-    <div class="meta" id="meta"></div>
-    <div id="text"></div>
-  </div>
+  <div id="root"></div>
 </div>
 
 <script>
 const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
 const p = new URLSearchParams(location.search);
 const day = p.get("day");
-let file = (p.get("file")||"").trim();
+let file = p.get("file") || "";
+const root = document.getElementById("root");
 
-function normFile(f){
-  if(!f) return "";
-  return f.endsWith(".txt") ? f : (f + ".txt");
-}
 function esc(s){
   return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 }
+function normFile(f){
+  f = (f||"").trim();
+  if(!f) return "";
+  return f.endsWith(".txt") ? f : (f + ".txt");
+}
+function parseTimeFromFile(file){
+  let s = file.replace(".txt","").trim();
+  s = s.replace(".","");
+  if(!/^\d{4}$/.test(s)) return null;
+  return {hh:Number(s.slice(0,2)), mm:Number(s.slice(2,4))};
+}
+function dtFromDayFile(day, file){
+  const t = parseTimeFromFile(file);
+  if(!t) return null;
+  const dt = new Date(day + "T00:00:00");
+  dt.setHours(t.hh, t.mm, 0, 0);
+  return dt;
+}
+function humanDay(d){
+  return new Date(d + "T00:00:00").toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
+}
+function humanWhen(dt){
+  const now = new Date();
+  const startToday = new Date(now); startToday.setHours(0,0,0,0);
+  const startThat = new Date(dt); startThat.setHours(0,0,0,0);
+  const daysDiff = Math.round((startToday - startThat) / (24*3600*1000));
 
-document.getElementById("back").href = `day.html?day=${encodeURIComponent(day)}`;
+  const time = dt.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+  if(daysDiff === 0) return `Today ${time}`;
+  if(daysDiff === 1) return `Yesterday ${time}`;
+  const date = dt.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+  return `${date} ${time}`;
+}
+function dayPath(day){
+  const [y,m,d] = day.split("-");
+  return `${BASE}/${y}/${m}/${d}`;
+}
+async function fetchText(url){
+  const r = await fetch(url,{cache:"no-store"});
+  if(!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.text();
+}
+
+file = normFile(file);
+
+document.getElementById("back").innerHTML =
+  `<a href="day.html?day=${encodeURIComponent(day)}">← All thoughts from ${esc(humanDay(day))}</a>`;
 
 (async function load(){
   try{
-    if(!day) throw new Error("Missing day");
-    if(!file) throw new Error("Missing file");
-    file = normFile(file);
+    if(!day || !file) throw new Error("Missing params");
+    const url = `${dayPath(day)}/${file}`;
+    const text = await fetchText(url);
 
-    const [y,m,d] = day.split("-");
-    const url = `${BASE}/${y}/${m}/${d}/${file}`;
-    document.getElementById("meta").textContent = `${day} ${file.replace(".txt","")}`;
+    const dt = dtFromDayFile(day, file);
+    const when = dt ? humanWhen(dt) : `${day} ${file.replace(".txt","")}`;
 
-    const res = await fetch(url,{cache:"no-store"});
-    if(!res.ok) throw new Error("Not found");
-    const t = await res.text();
-    document.getElementById("text").innerHTML = esc(t).replace(/\n/g,"<br>");
+    root.innerHTML =
+      `<div class="box">
+         <div class="meta">${esc(when)} · ${esc(day)} ${esc(file.replace(".txt",""))}</div>
+         <div>${esc(text).replace(/\n/g,"<br>")}</div>
+       </div>`;
   }catch(e){
-    document.getElementById("text").innerHTML = `<div class="err">404: Not Found</div>`;
+    root.innerHTML = `<div class="err">404: Not Found</div>`;
   }
 })();
 </script>

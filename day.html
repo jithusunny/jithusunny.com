@@ -8,18 +8,16 @@
     .wrap{max-width:760px;margin:0 auto}
     a{color:#2563eb;text-decoration:none}
     a:hover{text-decoration:underline}
-    .top{display:flex;gap:12px;align-items:baseline;margin-bottom:10px}
-    h1{margin:0;font-size:32px}
-    .box{border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:16px 0;line-height:1.6;background:#f9fafb}
-    .meta{font-size:12px;opacity:.65;margin-bottom:8px}
+    h1{margin:10px 0 12px 0;font-size:34px}
+    .box{border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:14px 0;line-height:1.6;background:#f9fafb}
+    .meta{font-size:12px;opacity:.7;margin-bottom:8px}
+    .preview{font-size:14px;line-height:1.5}
     .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
   </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="top">
-    <a href="index.html">← Home</a>
-  </div>
+  <a href="index.html">← Home</a>
   <h1 id="title">Thoughts</h1>
   <div id="root"></div>
 </div>
@@ -33,16 +31,42 @@ const root = document.getElementById("root");
 function humanDay(d){
   return new Date(d + "T00:00:00").toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"});
 }
+function esc(s){
+  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
 function normFile(f){
   f = (f||"").trim();
   if(!f) return "";
   return f.endsWith(".txt") ? f : (f + ".txt");
 }
-function fileLabel(f){
-  return f.replace(".txt","");
+function parseTimeFromFile(file){
+  let s = file.replace(".txt","").trim();
+  s = s.replace(".","");
+  if(!/^\d{4}$/.test(s)) return null;
+  return {hh:Number(s.slice(0,2)), mm:Number(s.slice(2,4))};
 }
-function esc(s){
-  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function dtFromDayFile(day, file){
+  const t = parseTimeFromFile(file);
+  if(!t) return null;
+  const dt = new Date(day + "T00:00:00");
+  dt.setHours(t.hh, t.mm, 0, 0);
+  return dt;
+}
+function humanTime(dt){
+  return dt.toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+}
+function preview(t, max=260){
+  t = (t||"").trim().replace(/\s+/g," ");
+  return t.length>max ? (t.slice(0,max).trim()+"…") : t;
+}
+function dayPath(day){
+  const [y,m,d] = day.split("-");
+  return `${BASE}/${y}/${m}/${d}`;
+}
+async function fetchText(url){
+  const r = await fetch(url,{cache:"no-store"});
+  if(!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.text();
 }
 
 document.getElementById("title").textContent = `Thoughts from ${humanDay(day)}`;
@@ -50,21 +74,49 @@ document.getElementById("title").textContent = `Thoughts from ${humanDay(day)}`;
 (async function load(){
   try{
     if(!day) throw new Error("Missing day");
-    const [y,m,d] = day.split("-");
-    const idxUrl = `${BASE}/${y}/${m}/${d}/index.txt`;
-    const idxText = await fetch(idxUrl,{cache:"no-store"}).then(r=>r.ok?r.text():Promise.reject());
-    const lines = idxText.split("\n").map(s=>s.trim()).filter(Boolean);
+    const idxUrl = `${dayPath(day)}/index.txt`;
+    const idxText = await fetchText(idxUrl);
 
-    for(const line of lines){
-      const f = normFile(line);
-      const url = `${BASE}/${y}/${m}/${d}/${f}`;
-      const text = await fetch(url,{cache:"no-store"}).then(r=>r.ok?r.text():"(missing file)");
+    let files = idxText.split("\n").map(normFile).filter(Boolean);
+    // sort + reverse => newest first
+    files.sort((a,b)=> a.localeCompare(b));
+    files.reverse();
+
+    for(let i=0;i<files.length;i++){
+      const f = files[i];
+      const url = `${dayPath(day)}/${f}`;
+      let text = "";
+      try{
+        text = await fetchText(url);
+      }catch(e){
+        text = "404: Not Found";
+      }
+
+      const dt = dtFromDayFile(day, f);
+      const timeLabel = dt ? humanTime(dt) : f.replace(".txt","");
+
+      const openLink = `thought.html?day=${encodeURIComponent(day)}&file=${encodeURIComponent(f)}`;
+
       const box = document.createElement("div");
       box.className = "box";
-      box.innerHTML =
-        `<div class="meta">${day} ${fileLabel(f)} · <a href="thought.html?day=${encodeURIComponent(day)}&file=${encodeURIComponent(f)}">Open</a></div>
-         <div>${esc(text).replace(/\n/g,"<br>")}</div>`;
+
+      if(i===0){
+        // latest: show full
+        box.innerHTML =
+          `<div class="meta">${esc(day)} ${esc(timeLabel)} · <a href="${openLink}">Open</a></div>
+           <div>${esc(text).replace(/\n/g,"<br>")}</div>`;
+      }else{
+        // rest: show preview only
+        box.innerHTML =
+          `<div class="meta">${esc(day)} ${esc(timeLabel)} · <a href="${openLink}">Open</a></div>
+           <div class="preview">${esc(preview(text))}</div>`;
+      }
+
       root.appendChild(box);
+    }
+
+    if(files.length===0){
+      root.innerHTML = `<div class="err">No thoughts listed in index.txt for this day.</div>`;
     }
   }catch(e){
     root.innerHTML = `<div class="err">Could not load this day.</div>`;
