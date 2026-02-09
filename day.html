@@ -3,15 +3,29 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:16px;}
-      .wrap{max-width:720px;}
+      body{
+        font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin:0;
+        padding:24px 16px;
+      }
+      .wrap{max-width:760px; margin:0 auto;}
       a{color:#2563eb; text-decoration:none;}
       a:hover{text-decoration:underline;}
-      .top{display:flex; gap:12px; align-items:baseline; margin-bottom:12px;}
-      .day{font-size:20px; margin:0;}
-      .m{background:#f4f4f5; border:1px solid #e5e7eb; border-radius:14px; padding:10px 12px; margin:10px 0; white-space:pre-wrap;}
-      .ts{font-size:12px; opacity:.7; display:block; margin-bottom:6px;}
-      .err{color:#b91c1c; white-space:pre-wrap; border:1px solid #fecaca; background:#fff1f2; border-radius:12px; padding:10px 12px;}
+      .top{display:flex; gap:12px; align-items:baseline; margin-bottom:14px;}
+      .day{font-size:22px; margin:0;}
+      .m{
+        background:#f4f4f5;
+        border:1px solid #e5e7eb;
+        border-radius:16px;
+        padding:14px 16px;
+        margin:18px 0;
+        line-height:1.6;
+        font-size:15px;
+      }
+      .ts{font-size:12px; opacity:.7; display:block; margin-bottom:8px;}
+      .txt p{margin:0;}
+      .txt p + p{margin-top:10px;}
+      .err{color:#b91c1c; white-space:pre-wrap; border:1px solid #fecaca; background:#fff1f2; border-radius:14px; padding:12px 14px; line-height:1.5;}
     </style>
   </head>
   <body>
@@ -73,6 +87,17 @@
         return `${day}_${range.replace(/[:–]/g, "").replace("–","-")}`;
       }
 
+      function toParagraphs(text) {
+        // blank lines => new paragraph
+        // single newlines => space (readable paragraphs while keeping easy capture)
+        const paras = text
+          .trim()
+          .split(/\n\s*\n/g)
+          .map(p => p.replace(/\n+/g, " ").replace(/\s+/g, " ").trim())
+          .filter(Boolean);
+        return paras;
+      }
+
       function bubble(day, range, text) {
         const id = makeId(day, range);
 
@@ -85,8 +110,17 @@
         ts.className = "ts";
         ts.textContent = `${day} ${range}`;
 
+        const txt = document.createElement("div");
+        txt.className = "txt";
+
+        for (const p of toParagraphs(text)) {
+          const el = document.createElement("p");
+          el.textContent = p; // safe (no HTML interpretation)
+          txt.appendChild(el);
+        }
+
         div.appendChild(ts);
-        div.appendChild(document.createTextNode(text));
+        div.appendChild(txt);
         return div;
       }
 
@@ -130,10 +164,9 @@ More text...`;
           }
 
           for (const b of blocks) {
-            root.appendChild(bubble(day, b.range, b.text.trim()));
+            root.appendChild(bubble(day, b.range, b.text));
           }
 
-          // If a hash is present, scroll to it
           if (location.hash) {
             const el = document.getElementById(location.hash.slice(1));
             if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
