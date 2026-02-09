@@ -5,7 +5,7 @@
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
     .wrap{max-width:760px;margin:0 auto}
     h1{margin:0 0 6px}
-    h2{margin:28px 0 10px;font-size:18px}
+    h2{margin:26px 0 10px;font-size:18px}
     .sub{opacity:.7;font-size:13px;margin-bottom:14px}
     .card{display:block;padding:12px 14px;margin:8px 0;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb}
     .meta{font-size:12px;opacity:.7;margin-bottom:4px}
@@ -22,7 +22,7 @@
 <body>
 <div class="wrap">
   <h1>Thoughts</h1>
-  <div class="sub">Quick glance at what’s recent.</div>
+  <div class="sub">Quick glance.</div>
 
   <h2>Latest thoughts</h2>
   <div id="latest"></div>
@@ -38,11 +38,10 @@
 </div>
 
 <script>
-const OWNER="jithusunny", REPO="jithusunny.com", BRANCH="main";
-const MAX_THOUGHTS=5, MAX_DAYS=5;
+const MAX_THOUGHTS = 5;
+const MAX_DAYS = 5;
 
-const gh=p=>`https://api.github.com/repos/${OWNER}/${REPO}/contents/${p}?ref=${BRANCH}`;
-const $=id=>document.getElementById(id);
+const $ = id => document.getElementById(id);
 
 function previewText(t,max=220){
   t=t.trim().replace(/\s+/g," ");
@@ -64,45 +63,29 @@ function humanTime(day,time){
   return `${humanDate(day)} · ${time}`;
 }
 
-async function j(url){const r=await fetch(url);if(!r.ok)throw Error();return r.json()}
-async function t(url){const r=await fetch(url);return r.text()}
-
-async function load(){
+(async()=>{
   try{
-    const years=(await j(gh("raw"))).filter(x=>x.type==="dir").map(x=>x.name).sort().reverse();
-    const thoughts=[], days=new Set();
+    const idx = await fetch("index.txt",{cache:"no-store"}).then(r=>r.text());
+    const lines = idx.split("\n").map(l=>l.trim()).filter(Boolean);
 
-    for(const Y of years){
-      for(const M of (await j(gh(`raw/${Y}`))).filter(x=>x.type==="dir").map(x=>x.name).sort().reverse()){
-        for(const D of (await j(gh(`raw/${Y}/${M}`))).filter(x=>x.type==="dir").map(x=>x.name).sort().reverse()){
-          const day=`${Y}-${M}-${D}`;
-          days.add(day);
-          const files=(await j(gh(`raw/${Y}/${M}/${D}`)))
-            .filter(x=>x.name.endsWith(".txt"))
-            .sort((a,b)=>b.name.localeCompare(a.name));
-          for(const f of files){
-            thoughts.push({day,file:f});
-            if(thoughts.length>=MAX_THOUGHTS) break;
-          }
-          if(thoughts.length>=MAX_THOUGHTS) break;
-        }
-        if(thoughts.length>=MAX_THOUGHTS) break;
-      }
-      if(thoughts.length>=MAX_THOUGHTS) break;
-    }
+    const latest = lines.slice(0,MAX_THOUGHTS);
+    const daySet = new Set();
 
-    for(const x of thoughts){
-      const time=x.file.name.replace(".txt","").replace(".",":");
-      const text=await t(x.file.download_url);
+    for(const line of latest){
+      const [day,time,path] = line.split(" ");
+      daySet.add(day);
+
+      const text = await fetch(path,{cache:"no-store"}).then(r=>r.text());
       const a=document.createElement("a");
       a.className="card";
-      a.href=`thought.html?day=${x.day}&file=${x.file.name}`;
-      a.innerHTML=`<div class="meta">${humanTime(x.day,time)}</div>
-                   <div class="txt">${previewText(text)}</div>`;
+      a.href=`thought.html?day=${day}&file=${path.split("/").pop()}`;
+      a.innerHTML=
+        `<div class="meta">${humanTime(day,time.replace(".",":"))}</div>
+         <div class="txt">${previewText(text)}</div>`;
       $("latest").appendChild(a);
     }
 
-    [...days].slice(0,MAX_DAYS).forEach(d=>{
+    [...daySet].slice(0,MAX_DAYS).forEach(d=>{
       const a=document.createElement("a");
       a.className="card";
       a.href=`day.html?day=${d}`;
@@ -115,10 +98,9 @@ async function load(){
     $("open").onclick=()=>location.href=`day.html?day=${$("day").value}`;
 
   }catch{
-    $("latest").innerHTML=`<div class="err">Could not load thoughts.</div>`;
+    $("latest").innerHTML=`<div class="err">Could not load index.txt</div>`;
   }
-}
-load();
+})();
 </script>
 </body>
 </html>
