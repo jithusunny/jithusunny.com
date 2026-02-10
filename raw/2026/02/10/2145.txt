@@ -1,0 +1,33 @@
+What is this whole thing about?
+
+This is the beginning of a new phase in my life.
+
+So far I have had so many experiences in my life - things that can be called negative, positive, neutral, etc.
+This is something that wants to be created out of all that.
+
+I want to capture the thoughts that occur to me, track all things that happen to me on a daily basis.
+That includes the food I'm eating, things I'm watching, people I'm talking to, chores I'm doing, money I'm spending,
+projects I'm working on, etc. etc. I believe that capturing all this info in a manner where all of that is interconnected has value.
+
+Who wants this kinda thing? I want it.
+
+I get so many ideas, thoughts, worries, etc etc. flickering through my mind that it is overwhelming.
+This can help organize my mind so that I can lead life in a sane way and do things that make me happy.
+I see similar problems happening to others also, but I don't want to force this on others. Let me see for myself first.
+
+Thoughts are the basis of our actions, and hence our life.
+So having clarity on the thoughts we have can lead to clarity in the things we want to do and finally would do.
+
+Along with thoughts, I want to also capture the various events like I described: eating, going, getting, giving, watching, doing, etc .etc.
+Soon I will also want all important documents to be saved, etc.
+
+I will also want to form a tool based on thoughts I'm having to manage different projects as well.
+This thought came up about this aspect in this project while I'm walking - I note that down, observation created, linked to project.
+This is a new project I could create - idea -> new project created. etc etc
+Think about the project requirements, capture main observations -> could be the basis for spec.
+Later I get another thought -> update spec -> update code, etc.
+
+The whole system will slowly get abilities: to chagne code, to deploy code, send message, read email, book calendar, send whatsapp message, buy storage, redeploy, edit video, regenerate Jithusunny story based on new events/thoughts, manage notes, etc. etc.
+So soon we can just have thoughts and with some confirmations, have the system change itself, make progress on projects, etc. etc. etc.
+
+You get me?

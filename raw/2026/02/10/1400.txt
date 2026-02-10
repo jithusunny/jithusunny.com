@@ -11,7 +11,7 @@ Let's follow these for now:
 2. Have a short pass over raw thoughts and extract thoughts.
 3. Have the same folder structure as raw for thoughts as well. One thought per file
 4. In thought file have thought, tags, source
-5. For tags, don't overdo. ASk "how would I want to get this thought back?".
+5. For tags, don't overdo. Ask "how would I want to get this thought back?".
 6. For extraction, don't overdo. Ask "If I forget this, is something important lost?"
 7. Thoughts missed to extract, tags missed to add - is fine. Can do later.
 
