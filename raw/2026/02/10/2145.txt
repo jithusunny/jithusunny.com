@@ -30,4 +30,20 @@ Later I get another thought -> update spec -> update code, etc.
 The whole system will slowly get abilities: to chagne code, to deploy code, send message, read email, book calendar, send whatsapp message, buy storage, redeploy, edit video, regenerate Jithusunny story based on new events/thoughts, manage notes, etc. etc.
 So soon we can just have thoughts and with some confirmations, have the system change itself, make progress on projects, etc. etc. etc.
 
+Some fun things I want to do along the way.
+I want to write a book about this - based on the events, thoughts, etc. etc.
+I want to create a daily log video: soon I will start recording bits and pieces of everyday happenings. I'll have some way to manage that as well - a YT channel, project, etc, etc
+
+I want to create a video out of this daily happenings, it should slowly start shaping up as a movie.
+This is something that I want to do generally everywhere where possible:
+- There will be simple raw truth - text/thought/note/event/spec/video clips/audio clips/photos/ etc etc.
+- And as that changes, the downstream(book/video/movie/system/software/blogpost/tutorial/etc. gets refreshed easily - no need to manually edit.
 You get me?
+
+Tagging rulebook:
+- Governs future → rule
+- I will / won’t → decision
+- Keeps pulling → pull
+- Feels wrong → tension
+- Changes understanding → insight
+- Limits me → constraint
