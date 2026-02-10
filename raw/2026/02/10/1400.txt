@@ -1,0 +1,18 @@
+Thoughts from brainstorming with ChatGPT 
+
+I want to pick up stuff from these thoughts and move them into lists/buckets so that I can see the things happening in my mind more clearly.
+
+Also, right now I'm just putting thoughts in .txt files to not tie the data itself to this system I'm building.
+
+The things that are derived from the raw thoughts—like the lists/buckets/graph or whatever—can reside in a server or DB or whatever. That also needs to be one-click exportable to an easy, universal format. That is another thing, but the point is: we want the next level that sits on top of these raw thoughts also to be somewhat plain, simple, etc., not too complex. Still we can use any fundamental data structure/format or whatever.
+
+Let's follow these for now:
+1. Let raw thoughts be immutable.
+2. Have a short pass over raw thoughts and extract thoughts.
+3. Have the same folder structure as raw for thoughts as well. One thought per file
+4. In thought file have thought, tags, source
+5. For tags, don't overdo. ASk "how would I want to get this thought back?".
+6. For extraction, don't overdo. Ask "If I forget this, is something important lost?"
+7. Thoughts missed to extract, tags missed to add - is fine. Can do later.
+
+Capture raw → extract what has charge → label lightly → repeat.
