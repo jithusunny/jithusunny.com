@@ -1,4 +1,6 @@
-Got the vision, spec and workflow polished with ChatGPT:
+Matrimony PDF maker project
+
+Got the vision, spec and workflow polished with ChatGPT: 
 
 Vision
 Build a mobile-first, document-centric matrimony profile creator that evolves in phases — starting as a clean, editable living document and progressively adding AI assistance — while preserving user control, clarity, reversibility, and visual simplicity at every stage.
