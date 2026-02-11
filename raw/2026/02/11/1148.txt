@@ -1,0 +1,28 @@
+I have been requested to create a matrimony profile for someone. I have created one for myself in the past, for others as well. This is a recurring thing. Somebody is thinking how to create a PDF file for profile today. I can create a profile generator thing, that can make this process easy.
+
+Got this vision and spec for the same formatted with ChatGPT:
+
+Vision
+Build the fastest, simplest mobile-first tool to create a clean, socially correct matrimony profile PDF through structured input, voice, or file upload — with instant preview, mandatory confirmation of extracted data, and zero formatting effort required from the user.
+
+Spec
+Single-page web app that generates a matrimony profile PDF in real time.
+
+Core Features
+- Always-visible live preview of the final PDF.
+- Structured field input (fixed schema).
+- Hold-to-speak voice input → transcribe → extract fields → require confirmation before commit.
+- Image upload (profile photo).
+- Any data from voice/free text/file → system displays: Field: Value Confirm? [Yes] [Edit]
+- No auto-commit.
+- Every confirmed change regenerates the PDF instantly.
+- No accounts, no storage.
+- No backend (direct LLM API calls from frontend).
+- Client-side PDF generation.
+
+Output
+- Clean, traditional, print-ready PDF.
+- Single-page default, auto-expand if needed.
+
+V2
+- Upload existing profile PDF → extract → map to schema → edit → regenerate.
