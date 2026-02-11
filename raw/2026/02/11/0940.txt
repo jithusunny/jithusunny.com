@@ -1,0 +1,55 @@
+So we are recording raw thoughts and saying we could extract thoughts from that. These thoughts may be tagged tension, pull, decision, intent, etc. And based on that we will do things. That is fine, but it constrains us from doing things spontaneously as well. May be spontaneous doing is what great things come out of - many people have that opinion. How to not prevent that spontaneous doing when it wants to happen?
+
+When it comes to building software for example, we might want to draw a component diagram, think about the whole architecture roughly a bit first, etc. etc. - Yes, but how is this raw thought -> thought thing a hindrance to that? Hmm, may be we are not allowed to draw on whiteboard, we cant just write things on paper, etc.?
+
+Who said you can't? - do it. This raw thought is just words, which are limited. How about recording a session? You may say stuff, you may type stuff, you may draw things on the drawing board, etc.? But you also restrain, stifle yourself up because you are being seen. So it becomes artificial? May be and may be not. 
+
+Could try that.
+
+Before we go there, I think we should try this text-only-thought based work a little bit.
+
+How? I think we need specs about everything
+
+For example, about jithusunny.com here's a spec:
+
+jithusunny.com is a system and a way of life to live with clarity and a sense of direction in this complicated world.
+
+jithusunny.com aims to self-destruct once it is no longer required.
+For example, when we finally go back to nature and live in harmony with it, that is it. Nothing more needed.
+
+But till then, I need to stop getting pushed left and right by the seemingly chaotic tides of time. I need to flow with it first, if I want to ride the tide and do all the fun stuff. To flow easily: see clearly, move freely, breathe normally, eat healthy, drink right, sleep sound, sit straight, talk right, practice agility, gather strength, choose authenticity more often, develop integrity, grow wealth, let the creative juice flow, take care of others, begin again everyday, have start up and shutdown rituals everyday(less baggage from yesterday, and for tomorrow), let go of things weighing me down, meditate and untie knots in heart.
+
+All these are interconnected: eating healthy is required to sleep sound, sleeping sound is how you have great mornings, then you can meditate, etc. etc.
+
+Wealth is important, we need money in the account to live. Ideally we shouldn't, but now we need it. So having a positive cash flow is important.
+
+We need to see clearly what the cash flow is like now, for that we need to take a note when we spend, get, subscribe, etc.
+
+I also need to have projects that can let me give others what they want using what I have - creative solutions to their problems - and get what I need - money. People giving me money is an expression of their gratitude for the Universe's creativity that flows through me that helped them or entertained them, or inspired them. Often they want more of it, the creative flow to continue, so they continue to engage. Where people find things that let them find the flow of creative juice, they pay attention, they pay money.
+
+Different folks, different strokes. The approach of jithusunny.com will not work for everybody although it is my earnest wish to have interfaces for the system that adapts and makes itself accessible to anybody - babies, dogs, plants, mom, etc.
+
+
+Okay, there needs to be a place for these things to be, outside raw thoughts.
+This does not look like a spec, but this is more important that the spec - this comes first.
+The spec is what we will need to build the system. But these raw thoughts is what specs come from. So we will need to let the mind free and spew all details and aspects and nuances and all that. Then we need to translate that into spec. Then after two days we have more thoughts - they may be adding to/contradicting/clarifying/etc the previous thoughts. The spec needs to be updated based on the incoming thoughts.
+
+Also, isn't it better to have everything above the thought layer to be generated from raw thoughts? Or it is too much work. I can see it will take a while before we can just think and let the exact thing happen on the other end raw thoughts -> thoughts -> spec -> actions -> software/video/story/etc. We may need multiple iterations before we can start seeing anything meaningful. 
+
+Hmm, I'm starting to feel resistance. A feeling inside me says: 'I
+m sleepy', 'This is not practical', 'This is not going to go anywhere', 'Will this work?', 'People are going to laugh at me', etc. etc.
+
+I think I need to show myself something before I go on like this.
+
+What is a good next step from here?
+
+Either extract thoughts manually from raw thoughts, tag them decision, intent, etc. etc.
+
+Or provide these raw thoughts to ChatGPT and let is come up with a story so far.
+And generate a video for that or something.
+
+We need to see something new, creative, inspiring, etc. That is the fuel to do more. The momentum is what keeps things going. How to snowball this a little bit?
+
+I already feel it is high time we started the project thing and channelled the thoughts about each in different channels/buckets/views/etc - have clarity and move forward on each and easily switch context, etc.
+
+Giving this to ChatGPT next and reflecting on this a little bit.
