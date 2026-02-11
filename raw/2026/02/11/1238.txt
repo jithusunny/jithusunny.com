@@ -1,86 +1,119 @@
 Got the vision, spec and workflow polished with ChatGPT:
 
 Vision
-Build a mobile-first, document-centric matrimony profile creator that converts natural conversation into a clean, socially correct, print-ready profile — with explicit user control, reversible changes, and zero formatting friction.
+Build a mobile-first, document-centric matrimony profile creator that evolves in phases — starting as a clean, editable living document and progressively adding AI assistance — while preserving user control, clarity, reversibility, and visual simplicity at every stage.
 
-Product Spec (v1)
-1. Core Model
-- Single structured JSON state represents entire profile.
+Product Specification
+Core Architectural Model (Applies to All Phases)
+- Entire profile stored as a single structured JSON state.
 - Live HTML document renders directly from state.
 - PDF export mirrors preview exactly.
-- All mutations are explicit and reversible.
+- All state mutations are explicit and reversible.
+- Snapshot-based undo/redo (minimum 30 steps).
+- No visual clutter. Document always dominates UI.
 
-2. Layout
-Mobile (Primary)
-- 90% scrollable document preview.
-- Minimal floating bottom bar: Undo, Redo, Speak, Edit, Export.
-- All editing in bottom-sheet modal.
-- No visible forms or side panels.
-
-Desktop
-- Centered A4-style preview.
-- Floating controls only.
-- No sidebars.
-- Document always dominates interface.
-
-3. Editing & AI
-- Inline Editing
-- Tap field → open editor.
-- Options: Manual Edit | AI Edit.
-
-AI Rules
-- AI returns structured diffs only (field.path → value).
-- No auto-commit.
-- User can Approve All, Approve Individually, Reject All.
-- AI cannot rewrite layout or entire document.
-
-4. Confirmation
-- Mandatory confirmation for:
-- Voice extraction
-- Free text extraction
-- File extraction
-- AI edits
-- Display Field path:
-  - Old value (if applicable)
-  - Proposed value: No silent mutations.
-
-5. Undo / Redo
-- Snapshot-based history.
-- Minimum 30 steps.
-- Applies to all confirmed mutations.
-- Full-state restoration.
-
-6. Rendering Rules
-- Clean, minimal typography.
+Rendering Rules
+- HTML-based preview.
+- A4 proportions.
 - Generous spacing.
-- No visual clutter.
-- Auto-expand vertically.
-- Preview and PDF visually identical.
+- Minimal typography hierarchy.
+- No dense blocks.
+- Auto-expand vertically (never compress to force single page).
+- Preview and PDF must match visually.
 
-7. Architecture (v1)
+Architecture
 - Static frontend.
-- Direct LLM API calls.
-- Client-side PDF generation.
+- Single JSON state object.
+- Snapshot history arrays.
+- Client-side PDF export.
+- Direct LLM API calls when needed
 - No backend.
-- No auth.
-- No storage.
+- No persistent storage.
 
-Iterative Build Workflow
-- Define Vision + Spec.
-- Cursor generates task breakdown from Spec.
-- Cursor generates code for tasks.
-- You test.
-- You collect feedback (behavioral, UX, edge cases).
-- Update Vision + Spec by appending “Iteration Update” section.
-- Provide Cursor:
-  - Updated Vision + Spec (including updates)
-  - Previous task list
-  - Existing codebase
-- Cursor generates next iteration tasks only.
-- Repeat.
+Phase 1 — Living Document Editor
+Objective: Make the editing experience perfect without AI.
 
-Rules:
-- Spec is source of truth.
-- Code must always reflect Spec.
-- Updates are additive unless explicitly marked as replacement.
-- No feature drift outside Spec.
+Features
+1. Layout
+- Mobile: 90% scrollable A4-style preview.
+- Minimal floating bottom bar: Undo, Redo, Edit, Export.
+- All edits via bottom-sheet modal.
+- No visible form panels.
+
+2. Editing
+
+- Tap any field → bottom-sheet editor.
+- Manual editing only.
+- On save:
+    - Push snapshot to history.
+    - Re-render preview.
+
+3. Export
+- PDF export matches preview exactly.
+
+Phase 2 — Voice AI
+Objective: Reduce typing friction while preserving control.
+
+Features
+1. AI Scope
+- Triggered only from a specific field.
+- Voice-only AI editing.
+- AI may propose changes only for active field (unless user explicitly allows multi-field extraction).
+
+2. Flow
+- Tap field → AI Edit → Hold-to-speak.
+- Transcription displayed live.
+- AI returns structured diff:
+  - field.path → proposed_value
+- User must confirm.
+- On confirm:
+ - Snapshot pushed.
+- State updated.
+- Voice mode ends.
+
+3. Confirmation Rules
+- No auto-commit.
+- Show old value → proposed value.
+
+4. Undo / Redo
+- Snapshot-based.
+- Applies to every confirmed change.
+
+Phase 3 — Document Upload
+Objective: Allow importing existing profiles safely.
+
+Features
+1. Upload
+- Accept PDF/image.
+- Extract text.
+- AI maps text to schema.
+
+2. Confirmation
+- Show structured diff (batch + individual approval).
+- No silent merge.
+
+3. State Update
+- Only after explicit confirmation.
+- Snapshot-based.
+
+
+Iterative Development Workflow
+
+Development Loop (Per Phase)
+1. Vision + Spec define scope.
+2. Cursor generates task list for current active phase only.
+3. Cursor generates code for those tasks.
+4. You test (mobile first).
+5. You document feedback as:
+ - Observed behavior
+ - Desired behavior
+6. Append feedback as “Iteration Update” under active phase.
+7. Provide Cursor:
+ - Updated Vision + Spec (with iteration updates appended)
+ - Previous task list
+ - Current codebase
+8. Cursor generates next iteration tasks (for same phase).
+9. Repeat until Phase Gate is satisfied.
+10. Unlock next phase.
+
+Created https://github.com/jithusunny/matrimony-pdf
