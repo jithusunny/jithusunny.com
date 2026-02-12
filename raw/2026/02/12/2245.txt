@@ -1,0 +1,73 @@
+Matrimony PDF maker phase 1 surprised me. 
+I did not even add the remaining fields to complete phase 1, but whatever was done was nice.
+
+It got me thinking - people will want to make all sorts of pdf forms that they want other people to fill or print.
+I can build that can let anybody click a photo of a form that they created using google docs or anything and create an online form thing quickly.
+I mean the output of this thing will be PDF, there is no manual document editing.
+
+We can have an AI interface where people can easily talk and get an updated pdf.
+
+I think this is more suitable for documents that have a set structure - matrimony pdf, bill, invoice, warranty, profile, etc etc.
+
+Can actually build a kind of marketplace where people can build documents - harder than consuming.
+But people can also consume
+
+Consumers will be 80% and builders will be 20% I guess. Exciting. But we will come to that later. Got a shoal of fish to fry.
+
+How about just dumping all the practical/home/daily things to be done?
+
+Check Kiddough bed rail return policy to see if I can actually order one more and try if that works for the headboard side as well.
+I can check this in 20 seconds. CHecking.. Duh, only replacement is possible. I guess I will have to try the existing rails and decide.
+
+Todo: Check with existing bedrails if there is space for fitting a rail on the 4th side as well.
+
+Check product: mobile holder - charger
+
+Product idea: non-inflammable mobile holder that can be hung on the charger with easy way to wrap wire around itself.
+
+Mridhu.in next steps?
+
+Had listed some things in 11/1226.txt
+
+Which brings me to a question that is coming up once in a while now.
+Next steps for mridhu.in or any project. Does it not need a place of its own? 
+Not a scary task list, not a dense note that I will never open again.
+Not anything that I will have to spend a lot of time to maintain, need a lot of time to load the context to understand all that, etc.
+Not also acting like a master ordering my future self to do things, unless it is like super clear that it is to be done.
+If that is so, my future selves will have to learn to be reasonable and do the should-do things.
+
+Which brings me to another thought I had today.
+
+Have a long todo list turns me off. It is like a liability, burden, boring. Something another person(my past self) has forced on me.
+I don't like my past self :P
+
+Always keep a pile of boring stuff for me while I just want to chill or do some fun things.
+
+Instead, how about future self gets a clear picture of what has happened, where it is at any point in time.
+Something like an ability to rise up and get a high level view of what has happened - not just a bunch of tasks. Rich, story-like thing with all the why's and when's and what's and all 
+that readily available for inspection at any level - zoom out to get a high level view, zoom in to see the details.
+
+Then comes the part which is still half baked - how about a soft plan? next steps/direction/breadcrumbs? - again not to overload by showing a huge list of things, etc.
+Something like a game where we see only the next immediate target(s)/direction(s)/breadcrumb(s). Some of these lead to the same area, some can take you to entirely different area, etc.
+In some cases it does not matter which immediate breadcrumb you go for. It is all adjacent or nearby points, you can cover them in any order.
+
+So in short we see the past, we see the possible futures and you pick one.
+Soon, I believe, I will find the flow of things. I will be flowing with what is soon. And then I can ride it.
+What is happening now has already happened. I am typing in english and not hebrew because of reasons that existed before me.
+We experience time in one direction - may be because of memory. But I, like many others, think that time flows backward as well.
+The best way to describe this is still the head-tail cat example from Alan Watts.
+Head did not cause the tail.
+Tail did not cause the head either.
+Head was seen first through the hole in the wall doesn't mean it is the cause and tail is the effect.
+
+We call the apple falling off the tree as the cause and the apple lying on the floor its result.
+But for an apple that is lying in that exact way in that exact place, etc. there will be an apple that will begin falling off from the tree in a specific way.
+Past is flowing back from present.
+
+So why I talk about all this pseudo-scientific things?
+Because I believe the system that I'm building will somehow demonstrate this interconnectedness and mutual arising nature of past-present-future.
+Hmm, more about it later.
+
+Time to wrap up this thought stream now.
+
+I want to proceed from here(recording raw thoughts) to the next step - will check next time.
