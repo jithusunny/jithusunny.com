@@ -1,0 +1,34 @@
+Let me check with chatgpt and all what the best tool for transcription is (duration, quality, cost, convenience, api, etc.)
+
+Also may be I will upload the audio to Google drive and keep it linked to the corresponding thought.
+
+Added audio files to Projects/Project Zero/Audio thoughts/2026/02/13
+
+No other link required, it will be easy to link the audio-thought via file path.
+May be just indicate in the text file, that this is a transcript.
+
+Summary of chat with ChatGPT on this:
+
+Transcription choice: AssemblyAI
+
+Why:
+- Handles long files (1–10 hrs, large sizes) without splitting or failures
+- High-quality Indian English transcription even with traffic/construction noise
+- Cloud-based, scalable, easy now and API-ready later
+- Low cost (~₹12–₹22/hour) with predictable billing
+- Reasonable security posture (encrypted, documented retention)
+
+Alternatives considered:
+- OpenAI Speech-to-Text — excellent accuracy, but file-size limits add operational friction
+- Google Cloud Speech-to-Text — reliable, but higher cost and setup overhead
+
+Okay getting transcription done using AssemblyAI now.
+
+
+I'm feeling a wave of relief after taking action. It works!!!
+I just had to get up from that rock I sat thinking thinking and thinking and just take a few steps towards the direction it felt right!
+It works!
+
+Will go have lunch and come back.
+
+Todo: Add note/video on how to to transcript thing using AssemblyAI - short. 50$ credit.
