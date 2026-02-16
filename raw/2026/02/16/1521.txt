@@ -1,0 +1,35 @@
+Came back after lunch and getting Elsa from office.
+
+Hoped to see the transcription process complete in AssemblyAI.
+But this error message greeted me: Server Error, developers have been alerted.
+
+Trying again.
+
+Did not work.
+
+Going for GCP.
+
+Setup autopay on jithusunny-com billing account using jithusunnyk@gmail.com google accoutn for gcp using debit card 2***
+Enabled speech to text api
+create project jithusunny-com
+created bucket jithusunny-com 
+created stt workspace jithusunny-com
+
+Converted m4a to mp3 using cloudconvert.com
+
+
+Turns out the issue was file format.
+Also GCP output was paying more attention to the phonetic accuracy, hence I got transcripts like this:
+"I dont want Tu fake i m doing all dis for myself Fame Mani and all that"
+
+AssemblyAI gave what I wanted:
+"I don't want to - I don't want to fake. I'm doing all this for myself. Fame, money, and all that."
+
+Maybe we can get GCP to do the same if I tweak, but at this stage I don't want to research this more.
+Going with AssemblyAI for now.
+
+Got the two thought sessions from 13/02 transcribed and added here!
+
+Deleted GCP bucket, project, disabled API.
+
+AssemblyAI for now.

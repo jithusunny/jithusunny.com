@@ -1,0 +1,18 @@
+Want to make the transcription flow smooth.
+
+Bought Easy recorder app pro version for now
+
+Setup autosave to Gogole drive
+
+
+Next going to setup the automation to transcribe recordings using AssemblyAI and notify.
+
+ChatGPT says:
+Use Make until it annoys you.
+When it annoys you, move to n8n.
+Only build custom when n8n annoys you.
+
+Will continue later, feeling sleepy.
+
+Also, should I just have gotten some app that does all of this?
+Is okay, I can use individual pieces going forward, etg: AssemblyAI, make.com, etc.....

@@ -1,0 +1,4 @@
+AssemblyAI transcription job had errored out for a long(50 min) audio file.
+
+I tried again, but this time without summary or topic detection. It completed so fast in minutes(myabe seconds, I came back to the tab and it was done)
+

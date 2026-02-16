@@ -1,0 +1,235 @@
+I think we need to— Hmm. I think we need to do that starting up, shutting down part on a daily basis. That is, um, we need, um, when we go to bed, there should be nothing pending from the day.
+
+When we go to bed— We should be done. We should be like, yeah, there's no half-baked recording left or anything like that. At least we should file things in the proper place.
+
+Okay, that, that was all spoken when I was in the influence of a certain kind of, uh, inhibition or stifleness, or what is that right word? Because there were people around me, about me, who were looking at me, and I was like, I cannot, I cannot be free. And I was acting in a way that they think I should act like, and all that. So what I think we should do is stop dreaming, stop dreaming so future, I mean, um, stop daydreaming or doing thinking about stuff that— It will never happen.
+
+Instead, focus on the— instead, focus on the breadcrumbs, right? Breadcrumbs that you can actually see now. So, what are the things that I see from where I am? Not physically here, maybe. I think, I think, I think— hey, don't trust your thoughts.
+
+Why not? Because the thought itself, what the thought says you should do, is not what you should do. You look at the thought and do as per that, but as per that doesn't mean do exactly what the thought is saying. Thought is like, a thought that comes up in your mind is like an advertisement.
+
+Okay, it depends on so many things. It's a conditional thing, comes up because of some causality. And the advertisement comes up because someone has created that kind of, uh, an advertisement for their business so that something can happen.
+
+It's calling for an action. Who is calling for an action? Some entity. Some entity who thinks that it is that entity.
+
+want you to do something so that that entity can live. So, thought is also, is also probably calling you to do some action. So, if you want to know whose thought it is, just pay attention to who is getting.
+
+Who gets? It is always— It is always the body that feels a certain kind of, um, a certain kind of experience, emotion, feeling. The thought itself is also maybe getting something. So they say there is something called ego.
+
+And ego is a structure, it's a psychological structure that thinks it is, thinks that it is a thing. I don't think it has a clear reference point or a centre or a permanent thing anywhere to say that this is my centre, this is who I am, this is where I am, or anything like that. But it, uh, definitely feels like the ego is acting from a center, like, I want to do this, I want to do this, I don't want this, things like that.
+
+So— So, right now, not right now, but now I'm recording my thoughts as audio. On my laptop, I'm recording my thoughts as text. And later on I'm moving that to jitusandhi.com.
+
+I think I need to move from here, from this place. What is the pain I'm facing right now? The pain is that I'm just dumping, dumping, dumping. I don't see any structure evolving from that.
+
+I don't see a clear organization. I don't even see at least, you know, segregated thoughts or atomic thoughts or anything like that. It's still remaining as a big dump.
+
+So, I'm trying to go for the best system design here. And the things that are, I think, constraining me is the need for perfection when it comes to the system design and the need for perfection when it comes to— —the process in which I am translating these thoughts or extracting stuff from the raw thoughts. So that process needs to be perfect because if it is not perfect, then it is going to affect everything.
+
+About that, right? That's what I'm thinking. But how about this? The raw thoughts, the raw thoughts never changes, and I can always build a view on top of that anytime, anytime, anytime. If some observation changes, let's say I'm having this thought today, And there is a certain observation comes out of this thought.
+
+I think it is AI's job to extract atomic thoughts from the raw thoughts. I cannot sit down and extract all that and file and put that in this folder, link it with that, etc., etc.
+
+I think the AI— LLM or whatever, should take up that job. It is a boring thing. That is clerical work, not something that I should be doing.
+
+Hmm, so I should hand over the clerical part of this to the LLM. And, uh, start moving. So what I will continue to do is record the raw thoughts.
+
+So whatever is popping up in my mind, I just stream it into a file. That's the first step. And the next immediate step has to be which should almost even happen real time, is the identification of atomic thoughts from this dump of raw thoughts, which also should know what each atomic thought is about.
+
+Okay, it should not be like, um, I started talking about mind and I then in subsequent sentences say it, it, it, and the splitting or extraction which gets us the atomic thoughts. It's dumb that it doesn't pay attention to this ambiguous it in each sentence. So what I think we should do is the atomic thoughts— There's also one more thing.
+
+The raw thoughts is actually messy. The way it comes out, the sentence structure, the English, those things may not be proper. It is wild, raw, unpolished, and crude, and not efficient, and all that.
+
+So, if we want the raw thought streaming process to be uninhibited, I should put lesser and lesser constraints. On how the rota should come out. Okay, how the rota should come out.
+
+I shouldn't say it should be like this, it should be perfect sentence, it should be English, it should be Malayalam, or anything like that. I should just— I should just faithfully just transfer whatever is coming up onto— words. It comes up, I mean, this thought comes up about language.
+
+Some thoughts are like prior to language, I believe. That is, it is, you can't really put everything into words and Also, when you put some things into words, they lose— it loses its meaning and it gets distorted. Because words and language and everything are limited.
+
+So when we try to force it into a linear, serial series of symbols, may not actually be efficient, but that's all we got, right? So let's do that. I think we can progress into something like instead of text, it can be a video which is more expressive when it comes to what is coming up. You don't have to describe everything, you can just sit.
+
+When you just sit, it is an input to the system. The same things, image recognition or processing— is going to be improving a lot, and it can understand from expressions and from training what each, um, expression is about and what each expression is saying and all that. So again, that That's after a long time.
+
+So currently we're talking about raw thoughts, dumping my raw thoughts into— as text into some files. I can even write it down and put it somewhere, and there is no insistence on when the atomic thoughts should be extracted from them. So I can do this out of order as well.
+
+I can do, um, a raw thought streaming today and extract the atomic thoughts from it tomorrow. I can also do another raw thought stream thing today and extract the thoughts from it today. What matters is When— not when error thought occurred to you.
+
+What matters is when you observed it, when you filed it, when you put it into the structure about the raw thought layer, which is what everything about that will depend on. So, hmm, that's a question that I'm not sure. So how about we put the source thought timestamp also along with it so that later on if you want to change something, you can always change it, right? So there is no thought, there is an atomic thought, just clear, like each atomic thought is like complete.
+
+It knows what that thought is about. And then, and then maybe we can have labels or tags for each atomic thought, right, to indicate what it is about. Is it about nutrition? Is it about the 'Project.'
+
+Okay, how about this? Okay, um, every, every, every atomic thought will be only about some certain project, something that you can do. It's about a journey, so something you want to do. There is no observation to make which is not about something that's actionable.
+
+If it is not actionable, forget it. Don't even record it, okay? How about that? That sounds like a great idea, but will we be missing many things? Um— Or how about this? For now, we will just extract atomic thoughts from the raw thoughts for projects only. If it is about a project, we'll extract.
+
+Otherwise, no. How about that? Yeah, that makes sense. Actually, I should see where I'm going with this.
+
+All right. Before that, let me ask this question: who will extract atomic thoughts? Will I sit down and extract atomic thoughts, um, from the raw thoughts and put it into this place and link it with that one and so on? Will I do that? Oh my God, I don't want to do that. It's boring, it's boring.
+
+I won't I won't keep doing it. If it is boring, I'll drop it and I'll leave. That's what I've seen before.
+
+So, and I also don't think it's efficient. I also don't think it requires my time. It is not respectful of my time.
+
+That work is not respectful of my time. Respecting my ability as a person. It doesn't need me, it's not my job.
+
+So what I think we can do is have the raw thoughts come through me into the file or whatever, and the next level needs to be prepared by, by LLM or AI, whatever. I can do it. But if LLMs are not a thing anymore, I can do it, no worries.
+
+I don't need a computer to do it. I can do it with paper and pen also, something like a zettelkasten. Okay.
+
+So, why do I pay attention to certain things? I pay attention to certain things because I want to do something about it. There are so many things my mind is saying I should do, I should do, I should do during the day. At some point it's saying, "Hey, you should be doing this."
+
+Another point is saying, "Hey, you should be paying attention to this." Another point is saying, "Hey, what about this?" Another point, "Hey, why didn't you do this?" "Isn't it late? Why haven't you done it yet?" It's like that person wants you to do this. Another point, they're like, "It's great if you do this," etc.,
+
+etc., etc., etc.
+
+So it's like so many, so many, so many things the mind wants to do, or needs to do, or thinks it should do. And slowly this is getting into the— this has already shaped the character, the attitude, the stance, the feeling of who I am like, what my mind is like. Mind has an image of itself.
+
+This is what I've seen so far. This is how I will act in a certain situation. This is what is going to happen, etc.,
+
+etc., etc. The mind has a very, very— the mind knows the most about itself, its patterns.
+
+It may be unconscious about its formation, but it knows. what kind of a person has that mind, or what kind of a mind it is, what kind of thought patterns it has, what kind of behaviors it gets into, and what will happen when this kind of situation comes up, um, etc. It knows everything.
+
+It knows, or it believes, and that belief makes it true, which means you have a certain attitude or tendency which you think you have. And so when a situation comes up, it is the easiest for the mind, for the processing part, to just default, go to the default which it thinks is the thing that it does when such a situation comes up. And so that gets reinforced.
+
+So, I think this Raw thoughts thing can throw light into this pattern, these patterns. And not to deviate from our system design part, uh, so the Raw Thoughts Lab, you can do it like this. You can just talk, talk, talk, talk, talk, or— You can write it down on a piece of paper.
+
+You are in woods or you are somewhere at the beach. Something, you can just write it down on a paper and later scan it and convert it into text. You can also record a video and get the text extracted from that.
+
+Um, and, um, uh, so I can talk to myself, I can write down, I can type, I can— So all these 3 things is like just text. But when it comes to— no, actually audio has the tonality, the sentiments, And, you know, the speed, the pacing, many other signals. So audio is different.
+
+Writing is different because they see how you write. You can do special things on paper, like you can leave space and that may be actually indicating something and so on. But when you're typing, it's the most primitive, limited thing, next thing.
+
+So you can actually type, or you can write, which is the next level, which has some more information. Or you can record your thoughts like audio and select the third layer. And then the fourth layer is— fourth level or kind or type of roth, of stream of consciousness session.
+
+will be just act, uh, video. So there's, um, just typing, there is writing down and photographs of the thing, and, uh, I don't want you to bite me, okay? I don't want you to bite me. Go.
+
+That was a doggy, eh? Yeah, I was scared of the dog. I didn't want to get bitten and so on. So I crossed the road and there was a woman walking, uh, kind of busy towards me.
+
+She's obviously late for work or something, but she understood that I'm crossing the road. I mean, if it was a deserted place or something, people can suspect I'm a I'm about to do something violent or criminal or anything, but this woman understood that I'm a nice guy, I'm a good guy, and I'm not trying to— I'm not going to, um, I'm not going to harm her or anything. I'm just trying to save myself from a dog bite.
+
+So she's like, "Haha, you're scared of the dog." How nice. Okay, so going back to The system, the system, the system, system, system.
+
+The system will allow me to get out of all systems. A system is like a limitation. A limitation should be used when it makes sense.
+
+For example, a road with Left side drive is like a limitation. You cannot drive on the right side is a limitation, isn't it? I mean, you're saying you cannot do this. It's saying you can only do this.
+
+But that is what is— But that is what makes driving there and driving here in a peaceful, sane way possible. That Rule is what makes driving possible in a way. I mean, you can say you don't need any rules, you just need a road, you can just drive.
+
+How can you say driving is possible? Because of rules. No, I will still say driving is not possible unless you have rules, because if you're not following any rule, you're driving on the road and you get hit by a truck and you're dead. So you cannot drive.
+
+So driving is possible only when there are rules. I know I'm exaggerating, but I wanted to convey the point, so that's why I pressed a little bit. Please accept this, we need rules.
+
+And this whole universe, the visible part that we can experience, is possible because of these rules, like rules of gravity. Laws of gravity, or this force, that force, this number, that constant, this thing, that thing, the speed of light is this, blah, blah, blah. All those things, all those things that have been set, or is set, or is there— is making this experience possible.
+
+Doesn't mean those laws are like final or ultimate or like somehow special or anything. That seems to be the most efficient, best suitable, appropriate set of laws or rules for this place and time. That is the most compatible one with this space-time.
+
+Or that is the rule that created the space-time like this. Okay. So we need some rules, and applies to systems as well.
+
+We need some systems if we want to do something meaningful. If you want to do something at all, we need some rules, we need some constraints, some, you know, basic game rules and laws and all that. Okay, so this ties into this idea that Hindus believe that this is all a play, a divine play, a divine game, rasa lila.
+
+And, um— For any game, there should be some kind of rules and laws and constraints and so on. Otherwise, you cannot play it. And so that's what the universe is.
+
+I mean, don't be afraid of constraints, but don't put artificial ones. Always be seeking to— delete artificial constraints because people may— I mean, these, uh, fundamental rules you cannot do anything about it, but the ones on top of them sometimes, most often, maybe, probably, sometimes, possibly are things that are maybe no longer required. You can do away with, you don't need anymore, does not make any sense to the current point in time and things like that.
+
+So, um, what I wanted to say is the system that we're talking about, let's revisit and refresh what the latest was on that one. So the raw thoughts needs to be paid attention to and streamed into something. It can be a piece of paper, it can be a file, it can be an audio file, it can be a video file, etc.,
+
+etc. Um, and from that needs to be extracted the atomic thoughts, which are like the basic units of thought. A thought is saying, "We should do this."
+
+There needs to be a system to— There needs to be a system to handle the thoughts that come up in our mind and make sense of it, organize it, make it easy to see what's going on and all that. So there is a main thought which is like we need a system of how do we split this into different thoughts. Let's take an example.
+
+So far I've talked about so many things, atomic thoughts among those that I would like to capture, the main ones would be We need to have a system which lets us handle our mind or deal with our mind or— let's talk in a positive way— lets us enhance our mind or see clearly what is happening in our mind, etc. We need to call that some name, isn't it? We need to call that some name. So this is like the— This is like the most foundational thing when it comes to my activities, my thoughts, my projects, and so on.
+
+This is like the base. So we need a name for that. We need a name for this thing that we're talking about, which is hard to describe.
+
+What is it? It is a project, isn't it? Yeah, it's a project, not adding anything to the universe which did not exist before. So it's just, I'm doing something, I'm creating something, and it'll go away at some point. So it's a project.
+
+And, uh, what is that project about? The project is about What is this? Who am I? What is happening? Where will I go? Where did I come from? That is what this project is about, okay? Because we don't know and we will never know that, okay? Since we will never know that, what should we do? We should still try to ask that question and find answer to it, because that is the point of life, maybe, maybe. Or we should not ask anything, we should keep doing and we should just die, not think too much. That also may be a point for some people.
+
+I don't know which is it. So my project is definitely about all these foundational things, and so I should get some name for this thing, at least for the time being. I can of course rename it later.
+
+I should get some name for this whole thing which indicates or includes all these aspects. So an appropriate name for this thing that I can use to refer to this when the thought comes about in the atomic thoughts would be helpful. So what is a— I need an easily rememberable name, something that I can remember easily.
+
+Something which is easy to say, something that is, um, something that is unambiguous. Okay, when I say it, um, this auto transcript things shouldn't mess it up. Maybe I should use a What should I do? Huh huh huh huh huh huh.
+
+I should have a name for this thing, which is what I'm going to use in Atomic Thoughts. So whatever are like foundation thoughts, I can just assign it to this one. So it goes into that folder.
+
+Right, how long have I been recording? So like I said, 35 minutes. So my point was I need a name, so I can think of a name, but once I have a name, I can use it to file thoughts. So what is the point of filing thoughts? What do I want to do with those is what I should think when I file the thoughts and add tags to it.
+
+Um, this tags will be my means to recover, retrieve these atomic thoughts. So, um, my means to recover these thoughts later from this big pile of thoughts. How do I get what I'm looking for? By tagging it appropriately so that when I want it, I can easily get it back.
+
+So, how will I be using these thoughts? These atomic thoughts, whatever I'm absorbing from or observing and, you know— polishing and keeping in a nice form and all that. How will I be using that? Mainly for projects, I would say. Okay.
+
+So, what are the projects that, um, what are the different projects that I will be working on? One is this itself, which is something that I said I need a name for. This is Um, like the meta project. But all these words are taken, I cannot just use it.
+
+I want something unambiguous as well. When I speak, the transcript thing should recognize it, recognize it. The transcript thing does not even recognize my name.
+
+So what should I do? I should, I think, say something like The Meta Project or something like that. The Meta Project. I am never going to talk about Facebook's Meta Project.
+
+Or I should, I should use some name which is never going to come up in any other place in this whole thing. But it's at the same time easy to remember, easy to say, unambiguous, transcript-friendly, and, uh, somehow compatible with this whole thing as well. What is such a name? Such a name.
+
+How about— how about— how about— This is— what is finally this? What is this? What will this become? This will become dust. Okay, let me sit for a while. Oh, sorry.
+
+So, what is this becoming? That's what I could think, right? I wanted to sit down and I saw a guy peeing next to that. That milestone or whatever. So I said, oh, I'm sorry, I didn't see you peeing, taking a pee or whatever.
+
+Okay, now that this guy is gone, I'm going to go back and sit somewhere away from that point where he peed. Hmm, I need a name. I need a name.
+
+Name for what? For this whole thing. Okay, isn't it a software? It is not a software, it's a way of life. Jituism, how about that? But that is not transcript-friendly though.
+
+The software things won't recognize it. Um, that's fine. I will have to keep, um, editing this again and again whenever I record stuff.
+
+When I write it down, it's fine, but when I record, or when I say that in the video, it's not going to recognize it. So I'll have to find some name which is transcript friendly. Um, transcript friendly, right? Yeah, the guy is looking at me and saw the mic and he's like, what the heck? I don't know.
+
+Um, what about jitusani.com? Jitusani.com is also not transcript-friendly, right? Only known English words can be— how about we're going to just say the system, okay? Is it a system in the first place? It is an anti-system.
+
+It wants to do away with all systems. It wants to destroy systems. Because systems are not required in this universe.
+
+Whatever is, is already perfect. We have messed things up, we have made it so complicated that we need some tools to navigate this mess or we will drown in this. So this is that, that, that, that boat that you are going to use to save yourself from thinking, in this shit, your own shit.
+
+So, this is the— okay, that's a thought, isn't it? Yeah, maybe you're wrong, isn't it? Maybe you're wrong? Could you be? Oh, what is the question tag for that? I don't know. So maybe this is not all shit. It is just a way of looking at the current state of affairs.
+
+Maybe this is not shitty, this is sacred in some way. So this is inevitable. What if that is the case? Then this analogy and the resulting name would not make sense.
+
+I want a universal, uh, name. So— And this is a unique perspective as well. Okay, I don't want to say this is blah blah blah.
+
+This is something that's happening to me. I mean, who I think I am. So I can keep saying jitusani.com,
+
+jitusani.com, maybe, but that isn't perfect. It is not, um, indicating that this is a bigger thing.
+
+It is not just a website, it's a way of life, or blah blah blah. Um, how about The System? No, we need a better name. The System is too generic.
+
+It can be referring to Maybe refer to anything else. Um, a better name— Jitu's System. What about that? Jitu's System.
+
+Jitsus. Oh my God, sounds like, um, porn video name or something. Oh, now everybody knows what my preferences are.
+
+Nah. So, um, I need a name for this whole thing, um, and it shouldn't be a true, you know, basic name, but basic can be fine, right? How about System for Life? System for Life. Now this is a project, this isn't— How about System for Life Project? It's too long.
+
+This is a system for life and this project is about building the system. 'For Life.' The system for life.
+
+TSFL. TSFL. The system for life.
+
+The system for life. People have already taken words like Life OS and all those things, probably for meaningless things. But— That was the most appropriate name for this thing.
+
+Something like Life OS, because this is about the whole— this is about the entirety of life, everything, all aspects, nothing missing, about the universe even. This is a highly ambitious, all-encompassing thing. LifeWise, actually, this project deserves to keep that name, but unfortunately that's already taken.
+
+Probably I haven't checked it, but I don't know who is using it. Maybe they are using it for some meaningful thing, but I doubt it. Um, so it is already taken, I'm sure about it.
+
+So what should I do? I should do— I should find another name. And it is so difficult to find a name. Oh my God, it's so frustrating.
+
+Why? How about Project One? How about Project Zero? Yeah, that is it, that is it. I got it, I got it. I got it.
+
+Oh my God, that's awesome. That's a great name. Project Zero is recognizable by the voice processing systems.
+
+Project Zero isn't that common. I haven't heard it before. Probably there are other websites already, like projectzero.com
+
+definitely would be there already. But I need a name for now. Later I will rename it or whatever.
+
+But for now, Project Zero is perfect. Let me check it anyway. Let me go to GoDaddy and let me search for projectzero.com.
+
+It's already taken. Oh, by the way, I don't need that, um, I don't need that, uh, what do you say, I don't need that domain. I can use that as a name of the project inside the thing.
+
+Inside jitsusunny.com or whatever, right? But projectzero.com is already taken.
+
+That's for sure. projectzero.com. Uh, it's some Amazon thing
+
+- transcript from audio
