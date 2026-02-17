@@ -1,0 +1,14 @@
+Thought:
+Each project needs a common view: what happened, what is happening, what could happen. This workflow applies across all projects — mridhu.in, SVK YouTube, personal YouTube, house, and Project Zero itself. Building it once benefits everything.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/17/0747.txt
+
+Source_time:
+2026-02-17 0747
+
+Extraction_time:
+2026-02-17 1300

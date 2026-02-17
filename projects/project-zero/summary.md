@@ -4,19 +4,18 @@
 Project Zero is a system and way of life for living with clarity and direction. It starts as a personal thought-tracking system on jithusunny.com — capturing raw thoughts in plain text files — and aims to grow into an interconnected system that handles thoughts, events, projects, and eventually automates actions. It aims to self-destruct once no longer needed.
 
 ## Highlights
-- Named the project "Project Zero" — transcript-friendly, carries productive charge that challenges the mind's negative associations
-- Raw thoughts captured as immutable plain text files (raw/YYYY/MM/DD/HHMM.txt), decoupled from the system, exportable without friction
-- AI/LLM extracts atomic thoughts from raw dumps — clerical work automated, not done manually
-- Extraction workflow defined: one thought per file, tagged by type (rule, decision, intent, insight, tension, pull, todo, spec, risk)
-- "Bigbang method" of creating: set initial config and rules, let it run, don't interfere mid-run — refine between iterations
-- Day treated as the unit of life — clean shutdown at night, fresh start each morning, observe energy levels
-- Set up audio thought recording pipeline: Easy Recorder → Google Drive autosave → AssemblyAI transcription
-- AssemblyAI chosen for transcription over GCP Speech-to-Text — better readable output, low cost, handles long files
-- Make.com chosen for workflow automation (escalate to n8n then custom as needed)
-- Long todo lists recognized as demotivating — prefer story-like summaries with game-like breadcrumbs for next steps
-- Projects support identified as the most important next step — enables tracking across all active projects
-- Published first thoughts on jithusunny.com, updated GitHub repo with file structure and basic UI
-- Recorded first audio thought stream during a morning walk; got it transcribed and added to the repo
+- Set up a Cursor rule to automate extraction of atomic thoughts and events from raw thoughts — first full batch processed
+- Transcribed morning walk audio and added to raw thoughts
+- Tension growing: fear that this is all thinking without visible output — need to produce proof, "show, don't tell"
+- Each project needs a common view: what happened, what is happening, what could happen — this workflow applies across all projects
+- Named the project "Project Zero" — transcript-friendly, carries productive charge
+- Raw thoughts captured as immutable plain text (raw/YYYY/MM/DD/HHMM.txt), decoupled from system, exportable
+- AI/LLM extracts atomic thoughts from raw dumps — clerical work automated
+- Extraction workflow: one thought per file, tagged by type (rule, decision, intent, insight, tension, pull, todo, spec, risk)
+- Audio thought pipeline set up: Easy Recorder → Google Drive autosave → AssemblyAI transcription
+- Make.com chosen for workflow automation (escalate to n8n then custom)
+- Long todo lists recognized as demotivating — prefer story-like summaries with game-like breadcrumbs
+- Projects support identified as the most important next step
 
 ## Next (could)
-Build projects support in jithusunny.com, automate the record→transcribe→notify pipeline using Make.com, or start turning extracted thoughts into short blog posts.
+Build the common "what happened / happening / could happen" project view, automate the record→transcribe→notify pipeline using Make.com, or produce a first visible artifact (blog post or Shopify site for Mridhu).

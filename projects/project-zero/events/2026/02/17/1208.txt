@@ -1,0 +1,14 @@
+Event:
+Set up a Cursor rule with ChatGPT's help to automate extraction of atomic thoughts and events from raw thoughts. Processed all existing raw thoughts using the new rule.
+
+Tags:
+setup, build
+
+Source:
+raw/2026/02/17/1208.txt
+
+Source_time:
+2026-02-17 1208
+
+Extraction_time:
+2026-02-17 1300

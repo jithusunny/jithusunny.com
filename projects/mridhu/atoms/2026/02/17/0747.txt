@@ -1,0 +1,14 @@
+Thought:
+Create a Shopify site for mridhu.in instead of building a custom e-commerce solution. No need to build something from scratch at this point — Shopify handles the platform, and we can move faster.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/17/0747.txt
+
+Source_time:
+2026-02-17 0747
+
+Extraction_time:
+2026-02-17 1300

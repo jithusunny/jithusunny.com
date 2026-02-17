@@ -1,0 +1,14 @@
+Thought:
+Posting products on Instagram has a date-visibility problem — items still unsold after 30 days look unattractive to new viewers. A Shopify-style storefront hides the post date and avoids this impression.
+
+Tags:
+insight
+
+Source:
+raw/2026/02/17/0747.txt
+
+Source_time:
+2026-02-17 0747
+
+Extraction_time:
+2026-02-17 1300

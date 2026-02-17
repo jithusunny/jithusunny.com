@@ -1,0 +1,14 @@
+Thought:
+Shoot an unboxing-style video for mridhu.in products — pack everything as if shipping to a customer, then open it on camera to showcase the bed sheet, pillow covers, etc. The unboxing part can be reused across products.
+
+Tags:
+intent
+
+Source:
+raw/2026/02/17/0747.txt
+
+Source_time:
+2026-02-17 0747
+
+Extraction_time:
+2026-02-17 1300
