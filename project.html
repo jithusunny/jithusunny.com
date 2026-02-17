@@ -4,24 +4,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      margin:0;
+      padding:24px 16px
+    }
     .wrap{max-width:760px;margin:0 auto}
     a{color:#2563eb;text-decoration:none}
     a:hover{text-decoration:underline}
-    h1{margin:10px 0 12px 0;font-size:34px}
-    .box{border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:14px 0;line-height:1.6;background:#f9fafb}
-    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
+
+    h1{
+      margin:10px 0 6px 0;
+      font-size:34px
+    }
+
+    .subtitle{
+      opacity:.6;
+      font-size:13px;
+      margin-bottom:18px
+    }
+
+    .box{
+      border:1px solid #e5e7eb;
+      border-radius:16px;
+      padding:18px 20px;
+      margin:14px 0;
+      line-height:1.6;
+      background:#f9fafb
+    }
+
+    /* summary typography */
+    .box h1{
+      font-size:22px;
+      margin:0 0 12px 0
+    }
+    .box h2{
+      font-size:16px;
+      margin:18px 0 6px 0;
+      opacity:.85
+    }
+    .box h3{
+      font-size:14px;
+      margin:14px 0 6px 0;
+      opacity:.75
+    }
+    .box p{
+      margin:8px 0
+    }
+    .box ul{
+      padding-left:18px;
+      margin:8px 0 12px 0
+    }
+    .box li{
+      margin:6px 0
+    }
+
+    .err{
+      color:#b91c1c;
+      border:1px solid #fecaca;
+      background:#fff1f2;
+      border-radius:14px;
+      padding:12px
+    }
   </style>
 </head>
 <body>
 <div class="wrap">
   <a href="index.html">← Home</a>
+
   <h1 id="title"></h1>
+  <div class="subtitle">Project summary</div>
+
   <div id="summary" class="box"></div>
 </div>
 
 <script>
-const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/projects";
+const BASE =
+  "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/projects";
+
 const p = new URLSearchParams(location.search);
 const project = p.get("project");
 
@@ -29,12 +89,34 @@ const titleEl = document.getElementById("title");
 const summaryEl = document.getElementById("summary");
 
 function esc(s){
-  return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  return s.replace(/[&<>"]/g,c=>(
+    {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]
+  ));
 }
+
 async function fetchText(url){
   const r = await fetch(url,{cache:"no-store"});
   if(!r.ok) throw new Error("HTTP "+r.status);
   return r.text();
+}
+
+function renderSummary(md){
+  let html = esc(md);
+
+  // headings
+  html = html.replace(/^### (.*)$/gm, "<h3>$1</h3>");
+  html = html.replace(/^## (.*)$/gm, "<h2>$1</h2>");
+  html = html.replace(/^# (.*)$/gm, "<h1>$1</h1>");
+
+  // bullets
+  html = html.replace(/^- (.*)$/gm, "<li>$1</li>");
+  html = html.replace(/(<li>.*<\/li>)/gs, "<ul>$1</ul>");
+
+  // paragraphs
+  html = html.replace(/\n{2,}/g, "</p><p>");
+  html = "<p>" + html + "</p>";
+
+  return html;
 }
 
 (async function load(){
@@ -43,8 +125,12 @@ async function fetchText(url){
 
     titleEl.textContent = project;
 
-    const summary = await fetchText(`${BASE}/${project}/summary.md`);
-    summaryEl.innerHTML = esc(summary).replace(/\n/g,"<br>");
+    const summary = await fetchText(
+      `${BASE}/${project}/summary.md`
+    );
+
+    summaryEl.innerHTML = renderSummary(summary);
+
   }catch(e){
     summaryEl.innerHTML =
       `<div class="err">Could not load project summary.</div>`;
