@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px}
+    .wrap{max-width:760px;margin:0 auto}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+    h1{margin:10px 0 12px 0;font-size:34px}
+    .box{border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;margin:14px 0;line-height:1.6;background:#f9fafb}
+    .err{color:#b91c1c;border:1px solid #fecaca;background:#fff1f2;border-radius:14px;padding:12px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a href="index.html">← Home</a>
+  <h1 id="title"></h1>
+  <div id="summary" class="box"></div>
+</div>
+
+<script>
+const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/projects";
+const p = new URLSearchParams(location.search);
+const project = p.get("project");
+
+const titleEl = document.getElementById("title");
+const summaryEl = document.getElementById("summary");
+
+function esc(s){
+  return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+async function fetchText(url){
+  const r = await fetch(url,{cache:"no-store"});
+  if(!r.ok) throw new Error("HTTP "+r.status);
+  return r.text();
+}
+
+(async function load(){
+  try{
+    if(!project) throw new Error("Missing project");
+
+    titleEl.textContent = project;
+
+    const summary = await fetchText(`${BASE}/${project}/summary.md`);
+    summaryEl.innerHTML = esc(summary).replace(/\n/g,"<br>");
+  }catch(e){
+    summaryEl.innerHTML =
+      `<div class="err">Could not load project summary.</div>`;
+  }
+})();
+</script>
+</body>
+</html>

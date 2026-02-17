@@ -27,6 +27,9 @@
   <h1>Thoughts</h1>
   <p class="sub">Latest across days. Data is read from <code>raw/YYYY/MM/DD/</code> via <code>index.txt</code>.</p>
 
+  <h2>Projects</h2>
+  <div id="projects" class="grid"></div>
+
   <h2>Latest thoughts</h2>
   <div id="latest" class="grid"></div>
 
@@ -45,6 +48,17 @@
 <script>
 const BASE = "https://raw.githubusercontent.com/jithusunny/jithusunny.com/main/raw";
 
+const PROJECTS = [
+  "project-zero",
+  "jithusunny-com",
+  "svk-youtube",
+  "mridhu",
+  "matrimony-pdf-maker",
+  "house"
+];
+
+const projectsEl = document.getElementById("projects");
+
 // Keep this list short & editable. Add new days here.
 // (This avoids GitHub API rate limits and keeps it lightning fast.)
 const DAYS = [
@@ -62,6 +76,18 @@ const DAYS = [
 const latestEl = document.getElementById("latest");
 const daysEl = document.getElementById("days");
 const msgEl = document.getElementById("msg");
+
+function renderProjects(){
+  if(!projectsEl) return;
+
+  for(const p of PROJECTS){
+    const a = document.createElement("a");
+    a.className = "card";
+    a.href = `project.html?project=${encodeURIComponent(p)}`;
+    a.textContent = p;
+    projectsEl.appendChild(a);
+  }
+}
 
 function esc(s){
   return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -190,6 +216,7 @@ document.getElementById("open").onclick = () => {
 // Default date picker = latest day
 document.getElementById("day").value = DAYS[0] || "";
 
+renderProjects();
 renderDayLinks();
 loadLatestThoughts();
 </script>
