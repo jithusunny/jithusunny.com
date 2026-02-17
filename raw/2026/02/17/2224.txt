@@ -1,0 +1,8 @@
+Updated the rule with the help of ChatGPT to make summaries story like and also added overall story thing too.
+
+Also updated html to keep main story at the home page.
+
+At some point, it would be nice to be able to have google maps style zoom in/out on the story - verbosity increases/decreases.
+Can also add some handy shortcut/gesture like hold Alt key and mouse wheel, etc.
+
+So people can adjust the story length as they like.

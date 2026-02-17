@@ -29,12 +29,12 @@ When reading a raw file, identify which project(s) each extracted item belongs t
 - If unclear, default to `project-zero`
 - Each extracted item must be assigned to EXACTLY ONE project
 
-## Output folders per project
+## Output per project
 For each project:
 - Atomic thoughts: `projects/<project>/atoms/YYYY/MM/DD/HHMM.txt`
 - Events:         `projects/<project>/events/YYYY/MM/DD/HHMM.txt`
 - Summary:        `projects/<project>/summary.md` (rewritten each run)
-
+- Story:          `story.md` (rewritten each run)
 Create folders if missing.
 
 ## Global story document (Jithu’s Story)

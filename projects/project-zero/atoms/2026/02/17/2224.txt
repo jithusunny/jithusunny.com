@@ -1,0 +1,14 @@
+Thought:
+Google Maps-style zoom in/out on the story — verbosity increases as you zoom in, decreases as you zoom out. Could use a shortcut like Alt + mouse wheel. People can adjust the story length to whatever level of detail they want.
+
+Tags:
+intent, spec
+
+Source:
+raw/2026/02/17/2224.txt
+
+Source_time:
+2026-02-17 2224
+
+Extraction_time:
+2026-02-17 2300

@@ -1,0 +1,14 @@
+Event:
+Tweaked the extraction rule to improve project summary quality — better narrative story, better timeline view.
+
+Tags:
+build
+
+Source:
+raw/2026/02/17/1945.txt
+
+Source_time:
+2026-02-17 1945
+
+Extraction_time:
+2026-02-17 2300

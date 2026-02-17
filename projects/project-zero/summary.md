@@ -30,10 +30,10 @@ But tension kept surfacing throughout: *Is this all just thinking? Where's the v
 - **Feb 12** — Realized long todo lists are demotivating. Reimagined the interface: past as a zoomable story, future as game-like breadcrumbs.
 - **Feb 13** — Recorded the first audio thought stream during a morning walk. Searched for a name for the whole endeavor. Landed on "Project Zero." Decided AI should extract atomic thoughts. Continued the walk and refined: thoughts should become blog posts, extraction rules should be codified for LLMs.
 - **Feb 16** — Four days had passed quickly and it stung. Decided to start projects support now and not get sidetracked building a notes system. Researched transcription tools, chose AssemblyAI. It errored. Set up GCP as fallback — the output was less readable. Came back to AssemblyAI, got the audio transcribed. Deleted the GCP setup. Bought Easy Recorder app, configured autosave to Google Drive. Chose Make.com for workflow automation.
-- **Feb 17** — Morning walk surfaced growing tension: all thinking, no visible output. Defined the common project view: *what happened, what is happening, what could happen.* Built a Cursor rule with ChatGPT to automate extraction. Processed all existing raw thoughts. Transcribed the morning walk audio and added it.
+- **Feb 17** — Morning walk surfaced growing tension: all thinking, no visible output. Defined the common project view: *what happened, what is happening, what could happen.* Built a Cursor rule with ChatGPT to automate extraction. Processed all existing raw thoughts. Transcribed the morning walk audio. Later, refined the extraction rule to produce story-like summaries instead of bullet-point reports. Created story.md — the first overall narrative. Updated the home page HTML to show the story. Imagined a Google Maps-style zoom on the story where verbosity changes with zoom level.
 
 ## Last seen breadcrumbs
-- The common project view (what happened / happening / could happen) is defined but not yet built as an interface
+- The zoomable story idea (Google Maps-style verbosity control) is described but not built
 - The record → transcribe → notify pipeline could be wired together with Make.com
-- Blog posts derived from extracted thoughts remain an unexplored output format — the most obvious "visible artifact"
-- There's a growing pile of atoms that hasn't been shown to anyone yet
+- Blog posts derived from extracted thoughts remain an unexplored output format
+- The story is now on the home page — the first visible artifact shown to anyone who visits
