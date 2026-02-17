@@ -1,18 +1,19 @@
 # Mridhu Summary
 
 ## Context
-Mridhu is an online boutique business (mridhu.in) being set up by the author's wife Elsa, selling bed sheets, dresses, and similar products. Domain bought, launching-soon page live, Instagram linked. Focus has shifted to getting a Shopify storefront up, product content ready, and shipping logistics in place.
+Mridhu is an online boutique business (mridhu.in) being set up by the author's wife Elsa, selling bed sheets, dresses, and similar products. Shopify store is up with domain connected, and Razorpay KYC is submitted for payments. Focus now shifts to configuring the store, adding products, and getting the first photos/videos shot.
 
 ## Highlights
-- Decision made: create a Shopify site for mridhu.in instead of building custom e-commerce — move faster, hide post-date visibility problem that Instagram has
-- Four main work areas identified: (1) Shopify site/platform, (2) product photos and videos, (3) packaging/logistics supplies, (4) accounts/registration/digital presence
-- Product photos and videos are the hardest part — requires confidence, attractive presentation, reference templates for angles and scripts
-- Plan to shoot an unboxing-style video — pack as if shipping, then open on camera to showcase product
-- Equipment ready: iPhone 17 Pro Max for photos, Insta360 Flow 2 Pro gimbal for stable video
-- Website can wait behind Shopify — product content and shipping readiness are higher priority
+- Shopify store created using mridhubyelsa@gmail.com — theme updated, mridhu.in domain connected via GoDaddy integration
+- Razorpay video KYC completed, pending processing — Stripe was unavailable in India
+- Using personal mobile/email for Razorpay for now — can switch to business-specific later
+- Dropped care@mridhu.in forwarding, Google Business Suite, and Zoho — too much friction. Gmail for everything for now
+- Decision: Shopify over custom e-commerce — move fast, avoid Instagram's date-visibility problem for unsold items
+- Four main work areas: (1) Shopify site/platform, (2) product photos and videos, (3) packaging/logistics supplies, (4) accounts/registration/digital presence
+- Photos/videos are the hardest part — plan to use iPhone 17 Pro Max + Insta360 Flow 2 Pro gimbal
+- Unboxing video concept: pack as if shipping, then open on camera to showcase product
+- Need: label printer, packaging covers, DTDC courier rates for Kerala
 - Need: WhatsApp Business account, Instagram profile pic from logo, first brand post
-- Need: label printer, packaging covers, and to check DTDC courier rates for Kerala
-- Elsa's energy and happiness directly tied to Mridhu progress — supporting this supports the whole family system
 
 ## Next (could)
-Create the Shopify site today, shoot first product photos/videos using iPhone + gimbal, or assess the delivery/fulfillment process to identify what supplies to order.
+Configure the Shopify store properly and add first products, shoot product photos/videos, or wait for Razorpay KYC approval and test the payment flow with UPI.

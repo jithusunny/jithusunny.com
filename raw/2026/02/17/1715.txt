@@ -1,0 +1,8 @@
+Did video KYC with RazorPay. 
+
+Need to get that processed from Razorpay end.
+
+Later on we can switch the mobile/email etc to business specific. Now using personal.
+
+Next steps would be to configure store properly, add a couple of products, make sure payment setup is proper, support UPI, etc.
+

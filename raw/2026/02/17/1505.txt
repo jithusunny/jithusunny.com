@@ -1,0 +1,20 @@
+Executing the plan from chatgpt for email/shopify for Mridhu
+
+Created mridhubyelsa@gmail.com (business type email, no g suite for now)
+ - Gave elsa's phone as mobile number for now (change later as required)
+ - Created business profile, added to map - then removed it - no address as of now (misleading)
+ - then I checked how to add care@mridhu.in in godaddy and forward to Gmail. It cannot be done or is hard to do (and maintain)
+ Too much trouble.
+ - Considered adding zoho and then forwarding to mridhubyelsa@gmail.com - all that felt a bit convoluted.
+ - I'm drawn to getting a GBusiness Suite for Mridhu.
+ - Submitted request via some Google admin thing to free up domain mridhu.in so that I can use it.
+ - OMG, this is too much work. I quit on the Gbusiness suite thing, zoho thing for now.
+ - will use mridhubyelsa@gmail.com for now for Shopify, Meta, Instagram and Waba. Can change later.
+
+ Signed up using mridhubyelsa@gmail.com, gave jithu's phone, credit card
+ updated theme based on description
+ tried adding Stripe payments, after a lot of time and steps it was told that India is not supported. Duh
+
+ Connected domain mridhu.in with shopify - was easy due to Godaddy+Shopify integration. Will take some time for this to come into effect it looks like.
+
+ Trying Razorpay

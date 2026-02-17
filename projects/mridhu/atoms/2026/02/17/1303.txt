@@ -1,0 +1,14 @@
+Thought:
+Email setup plan for mridhu.in: mridhubyelsa@gmail.com as Shopify owner login, recovery, payments, and admin. care@mridhu.in as customer-facing email. Principle: Gmail = control and safety, domain email = brand trust. Upgrade to Google Workspace later if needed.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/17/1303.txt
+
+Source_time:
+2026-02-17 1303
+
+Extraction_time:
+2026-02-17 1530

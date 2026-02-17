@@ -1,0 +1,14 @@
+Event:
+Stripe payments not supported in India for Shopify. Trying Razorpay as payment gateway instead.
+
+Tags:
+issue
+
+Source:
+raw/2026/02/17/1505.txt
+
+Source_time:
+2026-02-17 1505
+
+Extraction_time:
+2026-02-17 1530

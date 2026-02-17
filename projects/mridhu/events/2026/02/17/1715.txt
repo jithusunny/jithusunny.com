@@ -1,0 +1,14 @@
+Event:
+Completed video KYC with Razorpay for Mridhu Shopify payment gateway. Pending processing from Razorpay end.
+
+Tags:
+setup
+
+Source:
+raw/2026/02/17/1715.txt
+
+Source_time:
+2026-02-17 1715
+
+Extraction_time:
+2026-02-17 1730

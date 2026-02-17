@@ -1,0 +1,14 @@
+Event:
+Created email and Shopify setup plan with ChatGPT for mridhu.in — defined email strategy, Shopify signup steps, and domain connection plan.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/17/1303.txt
+
+Source_time:
+2026-02-17 1303
+
+Extraction_time:
+2026-02-17 1530

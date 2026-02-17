@@ -1,0 +1,14 @@
+Thought:
+Next steps for Mridhu Shopify store: configure store properly, add a couple of products, ensure payment setup works, support UPI. Using personal mobile/email for now — can switch to business-specific later.
+
+Tags:
+todo
+
+Source:
+raw/2026/02/17/1715.txt
+
+Source_time:
+2026-02-17 1715
+
+Extraction_time:
+2026-02-17 1730
