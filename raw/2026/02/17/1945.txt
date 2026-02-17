@@ -1,0 +1,2 @@
+Tweaking the rule a little bit so that the project summaries are better.
+Better story, better timeline view, etc.
