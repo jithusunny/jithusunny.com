@@ -1,0 +1,14 @@
+Thought:
+Need a way to mark thoughts as public or private. For now, avoiding private content in raw thoughts. Eventually support per-person access control.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/10/1949.txt
+
+Source_time:
+2026-02-10 1949
+
+Extraction_time:
+2026-02-17 1200

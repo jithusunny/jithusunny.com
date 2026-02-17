@@ -1,0 +1,14 @@
+Thought:
+Start projects support now — don't pause thought tracking to build a note-taking system. Maintain momentum. The note-taking part is itself a project within Project Zero.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/16/1324.txt
+
+Source_time:
+2026-02-16 1324
+
+Extraction_time:
+2026-02-17 1200

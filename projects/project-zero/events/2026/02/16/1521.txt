@@ -1,0 +1,14 @@
+Event:
+AssemblyAI errored with "Server Error" on long audio file. Set up GCP as fallback: enabled Speech-to-Text API, created project and bucket jithusunny-com, set up autopay on billing account.
+
+Tags:
+setup, issue
+
+Source:
+raw/2026/02/16/1521.txt
+
+Source_time:
+2026-02-16 1521
+
+Extraction_time:
+2026-02-17 1200

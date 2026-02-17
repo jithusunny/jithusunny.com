@@ -1,0 +1,14 @@
+Thought:
+Extraction workflow: one thought per file, same folder structure as raw, each file has thought + tags + source. For tags, ask "how would I want to get this thought back?" For extraction, ask "If I forget this, is something important lost?"
+
+Tags:
+spec
+
+Source:
+raw/2026/02/10/1400.txt
+
+Source_time:
+2026-02-10 1400
+
+Extraction_time:
+2026-02-17 1200

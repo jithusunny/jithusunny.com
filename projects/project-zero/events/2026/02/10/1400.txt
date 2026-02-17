@@ -1,0 +1,14 @@
+Event:
+Brainstormed extraction workflow with ChatGPT — defined initial rules for deriving atomic thoughts from raw thoughts.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/10/1400.txt
+
+Source_time:
+2026-02-10 1400
+
+Extraction_time:
+2026-02-17 1200

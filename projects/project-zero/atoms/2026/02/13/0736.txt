@@ -1,0 +1,14 @@
+Thought:
+Atomic thoughts must be self-contained. No ambiguous "it/this/that" references — each atomic thought should resolve what it is talking about. The raw text is messy and that is fine, but extracted thoughts must be clear.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/13/0735.txt
+
+Source_time:
+2026-02-13 0735
+
+Extraction_time:
+2026-02-17 1200

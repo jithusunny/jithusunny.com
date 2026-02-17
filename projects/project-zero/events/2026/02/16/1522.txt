@@ -1,0 +1,14 @@
+Event:
+Got two audio thought sessions from Feb 13 transcribed using AssemblyAI and added to the repo. AssemblyAI output was more readable than GCP.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/16/1521.txt
+
+Source_time:
+2026-02-16 1521
+
+Extraction_time:
+2026-02-17 1200

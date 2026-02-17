@@ -1,0 +1,14 @@
+Thought:
+Plain text is the source of truth. All other layers — IDs, links, structure, views — should be derived from this raw text later, not embedded in it.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/08/2030.txt
+
+Source_time:
+2026-02-08 2030
+
+Extraction_time:
+2026-02-17 1200

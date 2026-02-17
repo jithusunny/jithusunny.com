@@ -1,0 +1,14 @@
+Thought:
+Automate the transcription flow: record audio thought → autosave to Google Drive → transcribe via AssemblyAI → notify when done.
+
+Tags:
+intent, spec
+
+Source:
+raw/2026/02/16/1645.txt
+
+Source_time:
+2026-02-16 1645
+
+Extraction_time:
+2026-02-17 1200

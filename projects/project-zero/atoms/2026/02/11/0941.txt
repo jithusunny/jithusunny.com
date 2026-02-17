@@ -1,0 +1,14 @@
+Thought:
+Everything above the raw thought layer should ideally be generated from raw thoughts: raw thoughts → extracted thoughts → spec → actions → software/video/story/etc. Multiple iterations needed before this pipeline works.
+
+Tags:
+intent, spec
+
+Source:
+raw/2026/02/11/0940.txt
+
+Source_time:
+2026-02-11 0940
+
+Extraction_time:
+2026-02-17 1200

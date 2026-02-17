@@ -1,0 +1,14 @@
+Thought:
+SVK English Classes has a Google Drive-based workflow for sharing recorded videos with an editor who returns edited video and thumbnail. Want to onboard more editors, simplify the process, and reduce editing costs.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/10/1955.txt
+
+Source_time:
+2026-02-10 1955
+
+Extraction_time:
+2026-02-17 1200

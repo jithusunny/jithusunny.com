@@ -1,0 +1,14 @@
+Thought:
+Use AssemblyAI for transcription of audio thoughts. Handles long files (1-10 hrs), good Indian English quality even with noise, low cost (~12-22 rupees/hour), cloud-based and API-ready.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/16/1343.txt
+
+Source_time:
+2026-02-16 1343
+
+Extraction_time:
+2026-02-17 1200

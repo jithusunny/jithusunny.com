@@ -1,0 +1,14 @@
+Thought:
+Structured document PDF generation could generalize beyond matrimony profiles to bills, invoices, warranties, profiles, etc. Could build a marketplace where 20% of users build document templates and 80% consume them.
+
+Tags:
+insight, intent
+
+Source:
+raw/2026/02/12/2245.txt
+
+Source_time:
+2026-02-12 2245
+
+Extraction_time:
+2026-02-17 1200

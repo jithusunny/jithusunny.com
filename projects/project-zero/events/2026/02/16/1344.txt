@@ -1,0 +1,14 @@
+Event:
+Researched transcription tools with ChatGPT. Compared AssemblyAI, OpenAI Speech-to-Text, and Google Cloud Speech-to-Text. Chose AssemblyAI.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/16/1343.txt
+
+Source_time:
+2026-02-16 1343
+
+Extraction_time:
+2026-02-17 1200

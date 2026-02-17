@@ -1,0 +1,14 @@
+Event:
+Published first thought on jithusunny.com.
+
+Tags:
+publish
+
+Source:
+raw/2026/02/06/0850.txt
+
+Source_time:
+2026-02-06 0850
+
+Extraction_time:
+2026-02-17 1200

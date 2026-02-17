@@ -1,0 +1,14 @@
+Thought:
+Tagging rulebook for atomic thoughts: governs future → rule, I will/won't → decision, keeps pulling → pull, feels wrong → tension, changes understanding → insight, limits me → constraint.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/10/2145.txt
+
+Source_time:
+2026-02-10 2145
+
+Extraction_time:
+2026-02-17 1200

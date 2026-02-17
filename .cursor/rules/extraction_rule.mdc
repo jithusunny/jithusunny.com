@@ -1,0 +1,154 @@
+---
+description: Project Zero — extract project atoms, events, and rewrite summaries from new raw thoughts
+alwaysApply: true
+---
+
+# Project Zero — Extraction Rule (Perfect-for-now)
+
+## Source of truth
+- Raw thoughts live in `raw/YYYY/MM/DD/HHMM.txt`
+- Raw thoughts are immutable: NEVER edit or rewrite anything inside `raw/`
+
+## Idempotency / processed tracker
+- Tracker file: `state/processed_raw.txt`
+- Process ONLY raw files whose path is NOT listed (exact match) in `state/processed_raw.txt`
+- After successfully processing a raw file, append its path as a new line to `state/processed_raw.txt`
+- Never duplicate outputs for already-processed raw files
+
+## Active projects (slugs)
+- project-zero (jithusunny.com is part of this for now)
+- jithusunny-youtube
+- svk-youtube
+- mridhu
+- matrimony-pdf-maker
+- house
+
+## Project identification
+When reading a raw file, identify which project(s) each extracted item belongs to:
+- Prefer explicit mentions (names, domains, repos, “SVK”, “Mridhu”, “Matrimony PDF”, “Project Zero”, “house”)
+- If unclear, default to `project-zero`
+- Each extracted item must be assigned to EXACTLY ONE project
+
+## Output folders per project
+For each project:
+- Atomic thoughts: `projects/<project>/atoms/YYYY/MM/DD/HHMM.txt`
+- Events:         `projects/<project>/events/YYYY/MM/DD/HHMM.txt`
+- Summary:        `projects/<project>/summary.md` (rewritten each run)
+
+Create folders if missing.
+
+## Timestamp policy (ordering)
+- Base timestamp comes from the SOURCE raw file timestamp (from its filename `HHMM`)
+- Use SOURCE time for output filenames (NOT extraction time)
+- If multiple outputs come from the same raw file for the same project:
+  - increment minutes: HHMM, HH.(MM+1), HH.(MM+2) ...
+  - if minutes overflow, carry to next hour (HH+1, MM wraps)
+- Also store `Source_time:` inside each file for clarity
+- Also store `Extraction_time:` inside each file for clarity
+
+## What to extract
+You will extract TWO kinds of derived items:
+
+### A) Atomic thoughts (meaning-bearing, project-relevant)
+Extract ONLY if the statement has “charge” AND impacts a project.
+Valid atom types:
+- rule (governs future behavior/design)
+- decision (I will / I won’t / finalized choice)
+- intent (I want to / aim to)
+- insight (changes understanding; affects approach)
+- tension (feels wrong; resistance; anxiety; discomfort)
+- pull (recurring attraction toward something)
+- todo (specific next action)
+- spec (requirement / design constraint / workflow definition)
+- risk (danger, failure mode, fragility)
+
+Atomic thought quality rules:
+- Must be self-contained (no “it/this/that/he/she” without resolving what it refers to)
+- Keep closest to original meaning; light cleanup is allowed, no reinterpretation
+- Keep it short (1–5 lines). If longer, split into multiple atoms.
+
+### B) Events (factual happenings / actions taken)
+Extract events when the raw text states something happened, was done, was tried, was created, or a tool produced an outcome.
+Examples:
+- “Created repo …”
+- “Enabled API …”
+- “Bought app …”
+- “Published thought …”
+- “AssemblyAI errored …”
+- “Deleted GCP bucket …”
+
+Event quality rules:
+- Factual, concrete, past-tense
+- One event per file
+- No moralizing, no philosophy in events
+
+## What NOT to extract
+- Pure narration/imagination/philosophy that does not change a project decision/design
+- Repeated re-statements of the same idea in the same raw file (dedupe within the file)
+- Vague “maybe someday” unless it creates a project-relevant intent/spec/decision
+
+## File formats (plain text, no JSON/YAML inside)
+### Atomic thought file format
+Thought:
+<single clear atomic thought>
+
+Tags:
+<comma-separated tags from: rule, decision, intent, insight, tension, pull, todo, spec, risk>
+
+Source:
+<raw file path>
+
+Source_time:
+<YYYY-MM-DD HHMM>
+
+Extraction_time:
+<YYYY-MM-DD HHMM>
+
+### Event file format
+Event:
+<single factual event line>
+
+Tags:
+<optional, comma-separated from: build, publish, setup, issue, purchase, workflow, personal>
+
+Source:
+<raw file path>
+
+Source_time:
+<YYYY-MM-DD HHMM>
+
+Extraction_time:
+<YYYY-MM-DD HHMM>
+
+## Summary behavior (story, rewritten — not appended)
+For every processed raw file, update summaries for any affected projects.
+Summary file: `projects/<project>/summary.md`
+
+Rules:
+- REWRITE the entire summary each time (do not append blindly)
+- Keep it concise and readable as a story
+- Structure MUST be:
+
+1) Context (1–3 lines)
+- What the project is about (current understanding, can evolve)
+
+2) Highlights (5–12 bullets max)
+- Mix of “what was thought” (atoms) and “what happened” (events)
+- Most recent/highest-signal items first
+- Do not include low-value filler
+
+3) Next (could) (exactly one final line)
+- Start with: `Next (could): `
+- Suggest 1–3 plausible next directions, not orders, not a long task list
+- Must be consistent with latest atoms/events
+
+## Run instruction (what to do when user says “process”)
+When the user asks to process raw thoughts:
+1) Read `state/processed_raw.txt`
+2) Find raw files under `raw/` not yet processed
+3) For each new raw file:
+   - Extract atoms + events per rules above
+   - Write files to correct project folders
+   - Rewrite relevant project summaries
+   - Append raw file path to `state/processed_raw.txt`
+4) Do not modify raw files

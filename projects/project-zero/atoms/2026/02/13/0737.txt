@@ -1,0 +1,14 @@
+Thought:
+Raw thought input can come via typing, handwriting (scanned), audio (transcribed), or video. All modalities reduce to text for extraction. Audio carries tonality and pacing; handwriting carries spatial signals; video is most expressive.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/13/0735.txt
+
+Source_time:
+2026-02-13 0735
+
+Extraction_time:
+2026-02-17 1200

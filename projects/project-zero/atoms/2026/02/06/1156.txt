@@ -1,0 +1,14 @@
+Thought:
+The "bigbang method" of creating — set the initial configuration and rules of evolution, then let it run without interference. Refine the config and rules iteratively between runs, but never interfere mid-run.
+
+Tags:
+insight
+
+Source:
+raw/2026/02/06/1156.txt
+
+Source_time:
+2026-02-06 1156
+
+Extraction_time:
+2026-02-17 1200

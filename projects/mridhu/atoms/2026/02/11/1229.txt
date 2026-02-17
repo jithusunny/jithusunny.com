@@ -1,0 +1,14 @@
+Thought:
+Check with the local DTDC office about the rate for shipping a single courier to an address in Kerala.
+
+Tags:
+todo
+
+Source:
+raw/2026/02/11/1226.txt
+
+Source_time:
+2026-02-11 1226
+
+Extraction_time:
+2026-02-17 1200

@@ -1,0 +1,14 @@
+Event:
+AssemblyAI transcription completed successfully for 50-minute audio file after retrying without summary and topic detection features enabled.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/16/1716.txt
+
+Source_time:
+2026-02-16 1716
+
+Extraction_time:
+2026-02-17 1200

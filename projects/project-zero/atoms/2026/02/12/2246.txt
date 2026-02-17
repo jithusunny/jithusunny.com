@@ -1,0 +1,14 @@
+Thought:
+Show the past as a rich story with zoomable detail. Show the future as game-like breadcrumbs — only the next immediate targets/directions visible. See the past, see the possible futures, pick one.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/12/2245.txt
+
+Source_time:
+2026-02-12 2245
+
+Extraction_time:
+2026-02-17 1200

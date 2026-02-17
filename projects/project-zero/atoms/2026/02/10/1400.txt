@@ -1,0 +1,14 @@
+Thought:
+Raw thoughts are immutable. Have a short pass to extract what has charge. Label lightly. Repeat. Capture raw → extract what has charge → label lightly → repeat.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/10/1400.txt
+
+Source_time:
+2026-02-10 1400
+
+Extraction_time:
+2026-02-17 1200

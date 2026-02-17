@@ -1,0 +1,14 @@
+Thought:
+Matrimony PDF maker: build a mobile-first single-page web app that generates a matrimony profile PDF in real time. Live preview, structured field input, voice input with confirmation, image upload, no backend, client-side PDF generation, no accounts or storage.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/11/1148.txt
+
+Source_time:
+2026-02-11 1148
+
+Extraction_time:
+2026-02-17 1200

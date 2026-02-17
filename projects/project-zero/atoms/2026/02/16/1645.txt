@@ -1,0 +1,14 @@
+Thought:
+Use Make.com for workflow automation until it annoys, then move to n8n, then build custom only when n8n annoys.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/16/1645.txt
+
+Source_time:
+2026-02-16 1645
+
+Extraction_time:
+2026-02-17 1200

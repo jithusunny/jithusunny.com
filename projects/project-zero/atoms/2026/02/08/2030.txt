@@ -1,0 +1,14 @@
+Thought:
+Keep raw thoughts minimal — just start time, end time, and raw text. No IDs, no links, no splitting, no metadata for now. Can always add structure later.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/08/2030.txt
+
+Source_time:
+2026-02-08 2030
+
+Extraction_time:
+2026-02-17 1200

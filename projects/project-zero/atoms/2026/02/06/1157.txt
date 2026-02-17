@@ -1,0 +1,14 @@
+Thought:
+Rules and guidance can be extracted from raw thoughts. These extracted rules should govern future behavior and design decisions across projects.
+
+Tags:
+intent
+
+Source:
+raw/2026/02/06/1156.txt
+
+Source_time:
+2026-02-06 1156
+
+Extraction_time:
+2026-02-17 1200

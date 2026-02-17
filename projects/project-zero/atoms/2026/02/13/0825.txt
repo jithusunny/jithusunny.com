@@ -1,0 +1,14 @@
+Thought:
+Turn thoughts into short blog posts — tweet-like title, 2-3 paragraph body. Easy to read, easy to tweet about. A visible output that shows something is happening.
+
+Tags:
+intent
+
+Source:
+raw/2026/02/13/0825.txt
+
+Source_time:
+2026-02-13 0825
+
+Extraction_time:
+2026-02-17 1200

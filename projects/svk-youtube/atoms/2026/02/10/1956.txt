@@ -1,0 +1,14 @@
+Thought:
+Want to create a simple website for SVK English Classes video editing workflow, possibly based on Google Drive itself, to make things easier.
+
+Tags:
+intent
+
+Source:
+raw/2026/02/10/1955.txt
+
+Source_time:
+2026-02-10 1955
+
+Extraction_time:
+2026-02-17 1200

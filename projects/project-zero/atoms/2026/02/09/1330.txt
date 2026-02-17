@@ -1,0 +1,14 @@
+Thought:
+File structure for raw thoughts decided: raw/YYYY/MM/DD/HHMM.txt. All structure (IDs, timestamps, links, relationships, views, apps, sync) lives as derived layers on top of raw text, not inside it.
+
+Tags:
+decision, spec
+
+Source:
+raw/2026/02/09/1330.txt
+
+Source_time:
+2026-02-09 1330
+
+Extraction_time:
+2026-02-17 1200

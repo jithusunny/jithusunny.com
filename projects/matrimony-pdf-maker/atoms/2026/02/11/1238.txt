@@ -1,0 +1,14 @@
+Thought:
+Matrimony PDF maker follows phased development: Phase 1 (living document editor with perfect editing UX), Phase 2 (voice AI for reduced typing friction), Phase 3 (document upload and import). Architecture: static frontend, single JSON state, client-side PDF export, no backend.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/11/1238.txt
+
+Source_time:
+2026-02-11 1238
+
+Extraction_time:
+2026-02-17 1200

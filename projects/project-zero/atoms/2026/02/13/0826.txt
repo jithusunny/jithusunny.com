@@ -1,0 +1,14 @@
+Thought:
+LLM/AI handles extraction and organization of atomic thoughts using predefined rules. The rules need to know the list of active projects for tagging. Tag thoughts with project names so they can be easily retrieved and acted on.
+
+Tags:
+rule, spec
+
+Source:
+raw/2026/02/13/0825.txt
+
+Source_time:
+2026-02-13 0825
+
+Extraction_time:
+2026-02-17 1200

@@ -1,0 +1,14 @@
+Thought:
+Raw thoughts must not be coupled or chained to the system. They should be exportable and importable without any friction or dependency on the system.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/09/1330.txt
+
+Source_time:
+2026-02-09 1330
+
+Extraction_time:
+2026-02-17 1200

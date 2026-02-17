@@ -1,0 +1,14 @@
+Thought:
+Fix cameras in the kitchen, hall, and bedroom where the baby spends most time.
+
+Tags:
+todo
+
+Source:
+raw/2026/02/12/2245.txt
+
+Source_time:
+2026-02-12 2245
+
+Extraction_time:
+2026-02-17 1200

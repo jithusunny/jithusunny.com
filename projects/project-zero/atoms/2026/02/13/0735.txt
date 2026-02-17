@@ -1,0 +1,14 @@
+Thought:
+AI/LLM should handle the extraction of atomic thoughts from raw thoughts. It is clerical work — boring, not respectful of the author's time, not efficient to do manually. The author should focus on streaming raw thoughts.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/13/0735.txt
+
+Source_time:
+2026-02-13 0735
+
+Extraction_time:
+2026-02-17 1200
