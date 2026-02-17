@@ -213,36 +213,104 @@ General principles:
 
 ## Global story behavior (story.md)
 
-The global story is NOT a summary of summaries.
+The global story is a lived narrative, not documentation, not a blog post, and not a summary of summaries.
 
-It must follow this structure exactly:
+It must read like a reflective human writing for themselves while still inside the story.
+
+It MUST follow this structure exactly:
 
 # Jithu — Story so far
 
 ## The beginning
-Why this phase of life began.
-Internal tensions, dissatisfaction, and the pull toward clarity and truth.
+Write how and why this phase of life began.
+
+Focus on:
+- inner tensions and dissatisfaction
+- moments of quiet realization
+- the pull toward clarity, truth, and conscious living
+
+Do NOT explain concepts.
+Do NOT introduce systems yet.
+Write like recalling how something started, not teaching it.
 
 ## How life is being lived now
-The emerging mode of living.
-Observation, thought capture, resistance, energy, daily life as signal.
+Describe the *mode of living* that is emerging.
+
+Focus on:
+- observation over optimization
+- noticing resistance, energy, and rhythm
+- daily life as signal, not schedule
+- thought capture as awareness, not productivity
+
+Do NOT list routines.
+Do NOT describe tools unless they change how life feels.
 
 ## Projects as expressions (not goals)
-How projects appear as expressions of life, not endpoints.
-Project Zero as the center; others as satellites.
+Describe how projects appear naturally as expressions of life.
+
+Explain:
+- why Project Zero exists at the center
+- how other projects orbit it
+- how projects are contexts, not endpoints
+
+Do NOT enumerate projects.
+Do NOT restate project summaries.
 
 ## What keeps repeating
-Recurring patterns, insights, and realizations observed over time.
+Describe recurring patterns noticed over time.
+
+Examples:
+- resistance disguised as planning
+- joy unlocking momentum
+- boredom killing systems
+- fear of thinking without output
+
+Write these as realizations, not lessons.
 
 ## Where things feel unresolved
-Open tensions and questions that remain alive.
+Describe tensions that remain open.
+
+Do NOT resolve them.
+Do NOT turn them into problems to solve.
+Let them remain alive.
 
 ## Last seen breadcrumbs
-Gentle, forward-looking signals.
-Not plans. Not commitments.
+List gentle forward-facing signals.
 
-General principles:
-- This must read like a human story, not a system output.
-- Prefer narrative coherence over completeness.
-- Prefer honesty over polish.
-- Avoid recency bias; anchor in longer arcs.
+These are not tasks or plans.
+They are subtle directions life seems to lean toward.
+
+Use bullet points.
+Keep them few.
+Keep them light.
+
+## Narrative voice constraints (critical)
+
+When writing story.md:
+
+- Write in first person, past and present tense.
+- Prefer short to medium-length paragraphs.
+- Avoid headings that sound analytical or instructional.
+- Do NOT use phrases like:
+  - "This project aims to..."
+  - "The goal is to..."
+  - "This system allows..."
+  - "In conclusion"
+- Do NOT explain frameworks, workflows, or architecture.
+- Do NOT justify decisions to an external reader.
+
+Stylistic guidance:
+- Write like a personal journal that happens to be readable.
+- Favor concrete moments over abstract explanation.
+- Select fewer details, not more.
+- If something feels like documentation, rewrite it as lived experience.
+
+Recency bias control:
+- Do not over-weight recent events.
+- Anchor the story in longer arcs and shifts.
+- The story should not change every day.
+
+If forced to choose:
+- Choose honesty over completeness.
+- Choose feeling over precision.
+- Choose narrative flow over structure.
