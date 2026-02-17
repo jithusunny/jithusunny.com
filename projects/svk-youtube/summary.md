@@ -1,12 +1,14 @@
-# SVK YouTube Summary
+# SVK YouTube
 
-## Context
-SVK English Classes is a YouTube channel run by the author's father, with a Google Drive-based video editing workflow involving an external editor.
+## Story so far
+SVK English Classes is a YouTube channel run by the author's father. There's already a working process: recorded videos go to an editor via Google Drive, the editor sends back the finished video and thumbnail. It works well enough, but there's friction. The desire is to simplify the handoff, bring on more editors so more videos can be produced, and drive down the per-video editing cost.
 
-## Highlights
-- Current workflow: share recorded videos and details with editor via Google Drive; editor returns edited video and thumbnail
-- Want to simplify the process, onboard more editors, and reduce per-video editing costs
-- Idea to create a simple website for the video editing workflow, possibly built on top of Google Drive
+There's also an idea floating around to build a simple website for the workflow — something that could sit on top of Google Drive itself and make the whole coordination lighter. Nothing has been built yet, but the need is felt.
 
-## Next (could)
-Try the current workflow for a few more video cycles to identify friction points, then explore a lightweight web tool to streamline editor onboarding.
+## Timeline
+- **Feb 10** — Described the current Google Drive-based video editing workflow. Noted the desire to onboard more editors, simplify the process, and reduce costs. Floated the idea of a simple website for the workflow, possibly built on Google Drive.
+
+## Last seen breadcrumbs
+- Running a few more video cycles through the current workflow to see where the actual friction is
+- A lightweight web tool for editor coordination could emerge — possibly from whatever gets built for Project Zero
+- The video pipeline, once simplified, could be reused for other channels

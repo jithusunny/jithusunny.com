@@ -37,6 +37,23 @@ For each project:
 
 Create folders if missing.
 
+## Global story document (Jithu’s Story)
+
+Maintain a single root-level file:
+
+story.md
+
+This file represents the evolving narrative of Jithu’s life as revealed through:
+- raw thoughts
+- atomic thoughts
+- events
+- projects
+
+This file is fully rewritten on each run.
+It is derived and disposable.
+
+Do NOT reference internal file paths or tooling details unless essential to the story.
+
 ## Timestamp policy (ordering)
 - Base timestamp comes from the SOURCE raw file timestamp (from its filename `HHMM`)
 - Use SOURCE time for output filenames (NOT extraction time)
@@ -87,6 +104,17 @@ Event quality rules:
 - Repeated re-statements of the same idea in the same raw file (dedupe within the file)
 - Vague “maybe someday” unless it creates a project-relevant intent/spec/decision
 
+## Run instruction (what to do when user says “process”)
+When the user asks to process raw thoughts:
+1) Read `state/processed_raw.txt`
+2) Find raw files under `raw/` not yet processed
+3) For each new raw file:
+   - Extract atoms + events per rules above
+   - Write files to correct project folders
+   - Rewrite relevant project summaries
+   - Append raw file path to `state/processed_raw.txt`
+4) Do not modify raw files
+
 ## File formats (plain text, no JSON/YAML inside)
 ### Atomic thought file format
 Thought:
@@ -120,35 +148,101 @@ Source_time:
 Extraction_time:
 <YYYY-MM-DD HHMM>
 
-## Summary behavior (story, rewritten — not appended)
-For every processed raw file, update summaries for any affected projects.
-Summary file: `projects/<project>/summary.md`
+### Summary behavior (story, rewritten — not appended)
+Summaries are narrative documents, not activity logs.
 
-Rules:
-- REWRITE the entire summary each time (do not append blindly)
-- Keep it concise and readable as a story
-- Structure MUST be:
+For each project, maintain a single summary.md that is fully rewritten on each run.
 
-1) Context (1–3 lines)
-- What the project is about (current understanding, can evolve)
+The summary MUST follow this structure exactly:
 
-2) Highlights (5–12 bullets max)
-- Mix of “what was thought” (atoms) and “what happened” (events)
-- Most recent/highest-signal items first
-- Do not include low-value filler
+# <Project Name>
 
-3) Next (could) (exactly one final line)
-- Start with: `Next (could): `
-- Suggest 1–3 plausible next directions, not orders, not a long task list
-- Must be consistent with latest atoms/events
+## Story so far
+A concise narrative of the project’s origin and evolution.
+This should read like a story written for a thoughtful reader who has no prior context.
 
-## Run instruction (what to do when user says “process”)
-When the user asks to process raw thoughts:
-1) Read `state/processed_raw.txt`
-2) Find raw files under `raw/` not yet processed
-3) For each new raw file:
-   - Extract atoms + events per rules above
-   - Write files to correct project folders
-   - Rewrite relevant project summaries
-   - Append raw file path to `state/processed_raw.txt`
-4) Do not modify raw files
+Focus on:
+- why the project began
+- the core tensions or motivations
+- how understanding or direction changed over time
+
+Do NOT:
+- list recent actions
+- describe tools unless they are essential to the story
+- include every detail from atoms/events
+
+This section should be stable over time and only change when the underlying story truly changes.
+
+## Timeline
+A chronological timeline (oldest → newest) derived from atoms and events.
+
+Each entry should briefly capture:
+- what happened
+- why it mattered
+- what shifted because of it
+
+Include:
+- mistakes
+- dead ends
+- uncertainties
+- decisions
+- moments of clarity
+
+This is NOT a highlights list and NOT ordered by recency.
+
+## Last seen breadcrumbs
+A small set of forward-looking breadcrumbs.
+
+These are:
+- not tasks
+- not commitments
+- not commands
+
+They represent:
+- possible next experiments
+- emerging directions
+- things that feel alive or unresolved
+
+Phrase them gently.
+Use bullet points.
+
+General principles:
+- Prefer story over completeness.
+- Prefer meaning over recency.
+- Prefer human narrative over system output.
+
+## Global story behavior (story.md)
+
+The global story is NOT a summary of summaries.
+
+It must follow this structure exactly:
+
+# Jithu — Story so far
+
+## The beginning
+Why this phase of life began.
+Internal tensions, dissatisfaction, and the pull toward clarity and truth.
+
+## How life is being lived now
+The emerging mode of living.
+Observation, thought capture, resistance, energy, daily life as signal.
+
+## Projects as expressions (not goals)
+How projects appear as expressions of life, not endpoints.
+Project Zero as the center; others as satellites.
+
+## What keeps repeating
+Recurring patterns, insights, and realizations observed over time.
+
+## Where things feel unresolved
+Open tensions and questions that remain alive.
+
+## Last seen breadcrumbs
+Gentle, forward-looking signals.
+Not plans. Not commitments.
+
+General principles:
+- This must read like a human story, not a system output.
+- Prefer narrative coherence over completeness.
+- Prefer honesty over polish.
+- Avoid recency bias; anchor in longer arcs.
