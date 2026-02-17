@@ -1,0 +1,46 @@
+Okay, now let's create a shopify site for mridhu.in
+
+I think I need to use Elsa's email for the same.
+Or let's create a new email for mridhu business: mridhubyelsa@gmail.com
+or should I create care@mridhu.in?
+or how about I create mridhubyelsa@gmail.com and use care@mridhu.in for that?
+
+Let me check with ChatGPT.
+
+Plan ready:
+
+Email + Shopify plan (crisp journal bullets)
+
+1. Create mridhubyelsa@gmail.com
+ - Use as Shopify owner login
+ - Use for recovery, payments, Meta, admin
+
+2. Create care@mridhu.in
+ - Customer-facing email (site, orders, packaging)
+
+3. Set email forwarding
+ - care@mridhu.in → mridhubyelsa@gmail.com
+ - Done via domain provider (no cost)
+
+4. Configure Gmail
+ - Add Send mail as: care@mridhu.in
+ - Reply to customers from care@ address
+
+5. Shopify signup
+ - Sign up with mridhubyelsa@gmail.com
+ - Store name: Mridhu by Elsa
+ - Country: India | Currency: INR
+
+6. Shopify settings (immediately after signup)
+ - Contact email: care@mridhu.in
+ - Sender email: care@mridhu.in
+ - Keep Shopify default domain as backup
+
+7. Domain
+ - Connect mridhu.in to Shopify later
+ - Don’t delete existing DNS until verified
+
+8. Principle
+ - Gmail = control & safety
+ - Domain email = brand trust
+ - Upgrade to Workspace later if needed
