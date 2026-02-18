@@ -1,0 +1,14 @@
+Thought:
+Skipping GST registration for now — not needed up to Rs.40 lakh limit. Will revisit if revenue approaches that threshold.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/18/1500.txt
+
+Source_time:
+2026-02-18 1500
+
+Extraction_time:
+2026-02-18 1530

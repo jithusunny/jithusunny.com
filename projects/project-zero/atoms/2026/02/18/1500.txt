@@ -1,0 +1,14 @@
+Thought:
+Reference documents generated with ChatGPT (plans, guides, photoshoot specs) live in project docs folders — a middle ground between raw thoughts and losing info in a chat. They can be deleted without losing anything that came from the author.
+
+Tags:
+insight, rule
+
+Source:
+raw/2026/02/18/1500.txt
+
+Source_time:
+2026-02-18 1500
+
+Extraction_time:
+2026-02-18 1530

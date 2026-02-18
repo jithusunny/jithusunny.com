@@ -1,0 +1,14 @@
+Event:
+Added first product to Shopify store — Green cross stitched Bedsheet Queen size. Site is live with one product and looks good.
+
+Tags:
+publish
+
+Source:
+raw/2026/02/18/1500.txt
+
+Source_time:
+2026-02-18 1500
+
+Extraction_time:
+2026-02-18 1530

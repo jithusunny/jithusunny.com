@@ -1,0 +1,14 @@
+Event:
+Configured Shopify store end to end: general details, Heritage theme, order settings (manual fulfillment, auto-archive), return policy, terms, shipping (Kerala only, Rs.80), tax at 0%.
+
+Tags:
+setup
+
+Source:
+raw/2026/02/18/1500.txt
+
+Source_time:
+2026-02-18 1500
+
+Extraction_time:
+2026-02-18 1530

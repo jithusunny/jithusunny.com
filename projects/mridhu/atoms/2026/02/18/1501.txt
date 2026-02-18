@@ -1,0 +1,14 @@
+Thought:
+Razorpay website review must be completed before finishing payment setup. Will come back to this after review clears.
+
+Tags:
+todo
+
+Source:
+raw/2026/02/18/1500.txt
+
+Source_time:
+2026-02-18 1500
+
+Extraction_time:
+2026-02-18 1530

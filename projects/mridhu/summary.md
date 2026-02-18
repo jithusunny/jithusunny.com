@@ -11,9 +11,13 @@ Four work areas crystallized: the Shopify platform, product photos and videos (t
 
 Execution started the same day. An email and Shopify plan was sketched with ChatGPT. The original plan was elegant: mridhubyelsa@gmail.com for admin, care@mridhu.in for customers. But GoDaddy email forwarding was a pain. Google Business Suite felt like overkill. Zoho was convoluted. All of it was dropped. Just Gmail for everything, for now.
 
-Shopify got signed up, the theme updated, the domain connected via GoDaddy integration. Then the payments problem: Stripe doesn't support India. Pivoted to Razorpay, completed the video KYC. Now waiting for their approval.
+Shopify got signed up, the theme updated, the domain connected via GoDaddy integration. Then the payments problem: Stripe doesn't support India. Pivoted to Razorpay, completed the video KYC.
 
-There's an undercurrent running through all of this: Elsa's happiness and energy are directly tied to Mridhu's progress, and that affects everything else in the household. Supporting Mridhu isn't just about a business — it's about keeping the whole system running.
+By Feb 18, things moved from planning into real setup. Razorpay registration finished — Standard plan, free and postpaid, no fee till Rs.5000. The Razorpay Shopify plugin was installed, though website review needs to clear before payment setup is complete. GST registration was skipped — not needed up to Rs.40 lakh.
+
+That same day, Elsa and Jithu shot the first product photos — two bedsheets on the dining table at night, using the halo lamp. The pictures came out okay. A ChatGPT-generated plan for a better photoshoot with natural light was saved for next time.
+
+The Shopify store was configured end to end: general details filled in, Heritage theme selected, logo generated with ChatGPT and uploaded (primary color #C8A24D, secondary #1F1F1F), order settings tuned (manual fulfillment, auto-archive), policies set, shipping limited to Kerala at Rs.80, tax at 0%. The first product went up — Green cross stitched Bedsheet Queen size. The site is minimal, just one product, but it looks good.
 
 ## Timeline
 - **Feb 10** — First mention of Mridhu in the thought stream. Set priorities: product images and videos first, website can wait. Shipping supplies needed.
@@ -22,9 +26,11 @@ There's an undercurrent running through all of this: Elsa's happiness and energy
 - **Feb 17 early afternoon** — Created mridhubyelsa@gmail.com. Planned domain email forwarding via GoDaddy but abandoned it — too much friction. Tried Zoho and Google Workspace paths, abandoned those too. Decided: Gmail for everything for now.
 - **Feb 17 afternoon** — Signed up for Shopify with the new Gmail. Updated store theme. Connected mridhu.in domain. Discovered Stripe doesn't work in India — pivoted to Razorpay.
 - **Feb 17 evening** — Completed Razorpay video KYC. Pending approval from their end.
+- **Feb 18** — Completed Razorpay registration (Standard plan). Installed Razorpay Shopify plugin. Shot first product photos of two bedsheets with Elsa at night. Generated logo with ChatGPT and uploaded it. Configured entire Shopify store — theme, policies, shipping, tax. Added first product (Green cross stitched Bedsheet Queen size). Site is live and looks good.
 
 ## Last seen breadcrumbs
-- Razorpay approval should come through — then test a real payment with UPI
-- The store is empty — shooting first product photos and videos with the iPhone and Insta360 gimbal is the natural next move
-- The unboxing video idea is ready to try with whatever products are on hand
+- Razorpay website review needs to clear before payment setup is fully functional — then test a real UPI payment
+- The first product is up but natural-light photos could make it shine — a photoshoot plan is ready
+- The unboxing video idea is waiting to be tried with whatever products are on hand
 - Packaging supplies and label printer still need ordering
+- Shopify plan may need revisiting in May (brick-and-mortar vs. social starter)

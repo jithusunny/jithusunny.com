@@ -16,9 +16,11 @@ This wasn't about building an app or starting a business. Those things would com
 
 The days have a loose rhythm. I wake up, sometimes early. There are morning walks where I talk into my phone, recording whatever comes up. Sometimes it flows. Sometimes it's stilted because people are around, looking at the guy talking to himself. I come home, help with Ian — bathe him, play with him, take him downstairs for some sun. Elsa gets ready for work. I eat, maybe nap if the night was short. Then I sit down and try to do something.
 
-The "something" varies. Some days it's writing. Some days it's setting up a store for Elsa's business. Some days it's just thinking, which looks like nothing from the outside.
+The "something" varies. Some days it's writing. Some days it's setting up Elsa's store. Some days it's just thinking, which looks like nothing from the outside.
 
 I capture whatever comes up as raw text — messy, unstructured, stream-of-consciousness. The mess is the point. From those dumps, smaller pieces get extracted: decisions I've made, things I want to do, tensions I'm feeling, things that actually happened. That extraction used to be manual but it was boring, and I've learned that boring things get abandoned. So I handed it off to AI. I keep the thinking. The filing happens on its own.
+
+There's a new pattern emerging around reference material — plans and guides generated in conversation with AI that aren't my thoughts but are too useful to let vanish in a chat window. They go in docs folders now, near the projects they belong to. They can be deleted without losing anything that came from me. A middle ground.
 
 Time is noticed more carefully now. Four days can vanish and it stings. I've started treating each day as a full cycle — wake up clean, shut down clean, don't carry yesterday's unfinished weight into tomorrow. I watch my energy throughout the day. Don't sit in front of a screen late at night. Don't eat heavy at noon. Go with the grain.
 
@@ -32,17 +34,17 @@ Projects are not goals. They're contexts — places where life energy is flowing
 
 At the center sits the thing I've started calling Project Zero. It's the practice of capturing thoughts, extracting what matters, and organizing it by the areas of life it touches. But it's more than that. It's a way of paying attention — to my mind, to my days, to what keeps pulling me and what keeps resisting. It wants to make itself unnecessary eventually, which is part of what makes it feel right.
 
-Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. My father's YouTube channel, which has a working process that could be smoother. A pull toward capturing daily life on video that hasn't been acted on yet but keeps surfacing. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general. Cameras for the rooms where the baby spends his time.
+Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. That one has moved fast — from an idea and a domain name to a live Shopify store with a real product, a logo, payment setup in progress, and the first product photos shot on the dining table at night. It's the most tangible proof that things are moving. My father's YouTube channel, which has a working process that could be smoother. A pull toward capturing daily life on video that hasn't been acted on yet but keeps surfacing. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general. Cameras for the rooms where the baby spends his time.
 
 None of these are separate from each other. A morning walk can touch three of them at once. Progress on one often unblocks another. They're not compartments — they're different angles on the same life.
 
 ## What keeps repeating
 
-Resistance keeps wearing the mask of planning. I'll research one more tool, define one more spec, think through one more edge case — and call it preparation. The moments of actual progress have always come from interrupting that loop and just starting. Publishing the first thought. Signing up for Shopify. The relief afterward is always larger than I expected.
+Resistance keeps wearing the mask of planning. I'll research one more tool, define one more spec, think through one more edge case — and call it preparation. The moments of actual progress have always come from interrupting that loop and just starting. Publishing the first thought. Signing up for Shopify. Putting the first product up. The relief afterward is always larger than I expected.
 
 If a process is boring, I will abandon it. I've seen this enough times to stop pretending otherwise. It's not a character flaw — it's a design constraint. The work has to stay interesting, or at least not feel like a chore, or it won't last. Alan Watts said to make it like play. That keeps proving true.
 
-Small visible results unlock energy for everything else. The first thought published, a store taking shape, a surprisingly good PDF preview — each one creates momentum. The absence of visible results drains it. This is why the fear of "all thinking, no output" is not irrational. It's a signal.
+Small visible results unlock energy for everything else. The first thought published, a store taking shape, a surprisingly good PDF preview, a live site with one product that actually looks good — each one creates momentum. The absence of visible results drains it. This is why the fear of "all thinking, no output" is not irrational. It's a signal.
 
 Most of what runs through my mind on any given day already ran through it yesterday. Writing it down makes the loops visible. And seeing them — just seeing them — seems to loosen their grip slightly.
 
@@ -64,7 +66,7 @@ And there is the recurring doubt about whether any of this will actually lead so
 
 ## Last seen breadcrumbs
 
-- Elsa's store is nearly functional — products, photos, and a real payment are close
+- Elsa's store is live with one product — natural-light photos, a working payment flow, and a second product could make it real
 - There might be a short piece of writing somewhere in all these captured thoughts that's worth showing to someone
 - The morning walk recordings are already happening — adding video would be the smallest possible step toward that channel that keeps pulling
 - The story is now on the home page, which means anyone who visits can see what this is about for the first time

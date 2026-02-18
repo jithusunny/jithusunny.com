@@ -1,0 +1,14 @@
+Event:
+Shot first product photos and videos of two bedsheets with Elsa — placed on dining table at night using halo lamp. Pics are okay but ChatGPT recommends natural light.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/18/1500.txt
+
+Source_time:
+2026-02-18 1500
+
+Extraction_time:
+2026-02-18 1530

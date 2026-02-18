@@ -1,0 +1,14 @@
+Event:
+Completed Razorpay registration — selected Standard plan (free, postpaid, no fee till Rs.5000, 2.5% after). Installed Razorpay Shopify Plugin.
+
+Tags:
+setup
+
+Source:
+raw/2026/02/18/1500.txt
+
+Source_time:
+2026-02-18 1500
+
+Extraction_time:
+2026-02-18 1530
