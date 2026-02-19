@@ -1,0 +1,14 @@
+Thought:
+Need to move from GitHub static site to own dynamic website. Scared of the effort and whether the spec-to-code approach will actually work. Decision: face the fear and start small — so the future self tomorrow has a little more courage to go deeper.
+
+Tags:
+decision, tension
+
+Source:
+raw/2026/02/19/2201.txt
+
+Source_time:
+2026-02-19 2201
+
+Extraction_time:
+2026-02-19 2230

@@ -23,7 +23,17 @@ A new pattern emerged around generated reference material — ChatGPT-produced p
 
 Then a new tension surfaced: self-censorship. The system works best when thoughts flow freely, but some thoughts — about people, conflicts, sensitive situations — can't safely be public. The censoring is already happening, and it's cutting off a gold mine of self-understanding. Some of those situations deserve to be tracked as projects in their own right. The need for privacy layers is clear: marking things private or public, with access levels. But architecturally, it's tricky — public projects may rest on private thought foundations, and building visible outer layers without exposing private building blocks is an unsolved problem.
 
+The privacy question deepened further. The decision crystallized: raw thoughts should not be shared publicly — maybe after 5 years, but not now. Too hard to mask sensitive info and not worth the effort. Share more refined forms of content instead. The system should hold the full truth, but the world sees only what's been processed and cleared.
+
 Alongside the privacy question, a new intent emerged: release a first version of the thought tracker that other people can use. Something that resembles a product. But privacy, safety, and data migration need upfront thought — once people start using it, changes get hard. The guiding constraint: any software built must be a direct translation of thoughts and decisions into code — generatable, not hand-maintained. Otherwise code rots.
+
+The "don't-touch-code" idea matured into a fuller vision. Thoughts become specs, specs regenerate all levels — code, docs, architecture diagrams, project demos, videos. Manual code editing creates tech debt. Modularity and reuse across projects, like polylith architecture, keep regeneration efficient. Making software is the main way to create value for others, and a portfolio of real-problem-solving projects is how that gets shown to the world.
+
+A deeper insight also emerged about why all of this matters: the world constantly bombards with inputs that shift focus and break momentum. A YouTube video, a restaurant, a radio jockey, a security guard's opinion — each carries its own philosophy. The mind gets pulled in every direction. The antidote is to become your own radio jockey — curate what enters your mind, set your own context. Can't outsource that to others who don't know your journey.
+
+The concrete capabilities needed began to take shape: notes with sync across devices, daily event tracking (finance, food, conversations), thought documentation with atomic extraction, project management, a portfolio page. All sitting on a common foundation. The GitHub static site needs to give way to a proper dynamic website — and while there's fear about the effort involved, the decision is to face it and start small.
+
+An internal tension was named: the planner/builder split. The planner flies high with ideas, while the builder bears the pressure of making things real. Plans, projects, and approaches shift constantly — the builder can't build steadily if the ground keeps moving. Is the relief of planning just the planner in disguise?
 
 The latest concern is friction. Thoughts happen everywhere — not just at the desk. The system needs to meet that. A concrete automation pipeline took shape: record with Easy Voice Recorder, auto-save to Google Drive, Make.com moves the file to the right dated folder, AssemblyAI transcribes it, the transcript lands in the git repo. Processing and extraction come after — Cursor handles that for now. The repo-based approach will eventually give way to a proper backend, but setting up the automation now is worth the short-term smoothness. Some rework is acceptable.
 
@@ -41,11 +51,12 @@ But tension kept surfacing throughout: *Is this all just thinking? Where's the v
 - **Feb 17** — Morning walk surfaced growing tension: all thinking, no visible output. Defined the common project view: *what happened, what is happening, what could happen.* Built a Cursor rule with ChatGPT to automate extraction. Processed all existing raw thoughts. Transcribed the morning walk audio. Later, refined the extraction rule to produce story-like summaries instead of bullet-point reports. Created story.md — the first overall narrative. Updated the home page HTML to show the story. Imagined a Google Maps-style zoom on the story where verbosity changes with zoom level.
 - **Feb 18** — Recognized the need for a middle ground for generated reference material (ChatGPT plans, guides). Adopted project docs folders — not raw thoughts, not lost in chat, deletable without losing anything original.
 - **Feb 19 (early)** — Self-censorship recognized as a real problem — cutting off a gold mine of self-understanding. Privacy layers (private/public with access levels) identified as a need but architecturally complex. Intent to release a thought tracker for others crystallized. Rule established: software must be generatable from specs, not hand-maintained. Also felt a pull toward recording songs.
-- **Feb 19 (later)** — Felt the need to capture thoughts from mobile more easily. Sketched a concrete automation pipeline: Easy Voice Recorder → Google Drive → Make.com → AssemblyAI → git repo. Decided the repo-based approach is temporary but worth the short-term smoothness — rework is acceptable.
+- **Feb 19 (mid)** — Felt the need to capture thoughts from mobile more easily. Sketched a concrete automation pipeline: Easy Voice Recorder → Google Drive → Make.com → AssemblyAI → git repo. Decided the repo-based approach is temporary but worth the short-term smoothness — rework is acceptable.
+- **Feb 19 (night)** — Deeper reflection. The world bombards with inputs that break momentum — need to become your own radio jockey. Decided raw thoughts should stay private (maybe public in 5 years). The don't-touch-code vision matured: specs regenerate all levels, polylith-style modularity. Concrete capabilities list emerged (notes, events, thoughts, projects, portfolio). Decision to face fear and move from static GitHub site to dynamic website. Named the planner/builder tension — is the relief of planning just the planner in disguise?
 
 ## Last seen breadcrumbs
+- Moving from GitHub static site to a dynamic website is the next technical leap — scary but decided
 - The voice-to-repo automation pipeline is fully specced and ready to be wired up with Make.com
-- Privacy layers are the most pressing design problem — without them, the raw stream stays censored
-- A first public version of the thought tracker could be the next visible artifact — radically minimal, careful about data migration
-- The zoomable story idea (Google Maps-style verbosity control) is described but not built
-- Songs and music keep surfacing as a pull — a different kind of output entirely
+- The don't-touch-code approach needs to be tested on a real project — the thought tracker or portfolio could be the first attempt
+- The planner/builder tension was named — the builder needs to start, even if the ground is still shifting
+- A portfolio of real-problem-solving software is how the value gets shown to others

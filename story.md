@@ -20,7 +20,7 @@ The "something" varies. Some days it's writing. Some days it's setting up Elsa's
 
 I capture whatever comes up as raw text — messy, unstructured, stream-of-consciousness. The mess is the point. From those dumps, smaller pieces get extracted: decisions I've made, things I want to do, tensions I'm feeling, things that actually happened. That extraction used to be manual but it was boring, and I've learned that boring things get abandoned. So I handed it off to AI. I keep the thinking. The filing happens on its own.
 
-There's a pattern around reference material now — plans and guides generated in conversation with AI that aren't my thoughts but are too useful to let vanish in a chat window. They go in docs folders near the projects they belong to. They can be deleted without losing anything that came from me. A middle ground.
+There's a deeper reason this matters, and it became clearer recently. The world constantly bombards with inputs — a YouTube video, a restaurant, a radio jockey, someone's opinion, a product's embedded philosophy. Each one carries its own gravity, pulling attention in a different direction. It's hard to stay in a meaningful groove when everything around you is trying to put you in theirs. So I need to become my own radio jockey. Curate what goes into my eyes and ears. Set my own context. No one else knows my journey well enough to do it for me.
 
 The next friction point is mobile. Thoughts don't wait for me to be at the desk. The pieces are all there — a recorder on the phone, a cloud drive, a transcription service, a place to land the text — they just need to be wired together. The plan is concrete. And even though the current setup will eventually be replaced by something better, the short-term smoothness is worth a bit of rework later.
 
@@ -28,7 +28,7 @@ Time is noticed more carefully now. Four days can vanish and it stings. I've sta
 
 Plans have become suspect. Long todo lists feel like debts imposed by a past self who had different energy and different understanding. I've started preferring stories over plans — here's what happened and why it mattered — and breadcrumbs over roadmaps — here are a few things that seem alive right now, pick one and walk. Like a game where you can only see the nearest path.
 
-Resistance is a daily companion. It shows up as the urge to research one more option, define one more spec, think through one more scenario — before doing anything. The counter-move, when it works, is just to start. The relief that follows action is always disproportionate to the effort.
+Resistance is a daily companion. It shows up as the urge to research one more option, define one more spec, think through one more scenario — before doing anything. The counter-move, when it works, is just to start. The relief that follows action is always disproportionate to the effort. But there's a subtler version too — a planner inside me that flies high with ideas while a builder part bears all the pressure. The planner keeps shifting the ground. The builder can't build steadily on shifting ground. Sometimes the relief I feel after a good planning session is just the planner pretending to be the builder.
 
 ## Projects as expressions (not goals)
 
@@ -36,7 +36,7 @@ Projects are not goals. They're contexts — places where life energy is flowing
 
 At the center sits the thing I've started calling Project Zero. It's the practice of capturing thoughts, extracting what matters, and organizing it by the areas of life it touches. But it's more than that. It's a way of paying attention — to my mind, to my days, to what keeps pulling me and what keeps resisting. It wants to make itself unnecessary eventually, which is part of what makes it feel right.
 
-Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. That one has moved fast — from an idea and a domain name to a live Shopify store with a real product, a logo, payment setup in progress, and the first product photos shot on the dining table at night. Now the bottleneck is product videos. My father's YouTube channel, which has a working process that needs more editing throughput — maybe new editors from Upwork. A pull toward capturing daily life on video that keeps sharpening into something more specific: atomic note videos, building blocks for any topic. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general — and that insight pulled harder after I felt the pain of manual document editing firsthand. The house, with its growing list of small things: door gaps for mosquitoes, an electrician visit, a monitor causing eye strain, a baby monitoring setup.
+Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. That one has moved fast — from an idea and a domain name to a live Shopify store with a real product, a logo, payment setup in progress, and the first product photos shot on the dining table at night. Now the bottleneck is product videos. My father's YouTube channel, which has a working process that needs more editing throughput — maybe new editors from Upwork. A pull toward capturing daily life on video that keeps sharpening — now with a concrete angle of showing how software is built, live and transparent. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general — and that insight pulled harder after I felt the pain of manual document editing firsthand. The house, with its growing list of small things: door gaps for mosquitoes, an electrician visit, a monitor causing eye strain, a baby monitoring setup.
 
 None of these are separate from each other. A morning walk can touch three of them at once. Progress on one often unblocks another. They're not compartments — they're different angles on the same life.
 
@@ -58,20 +58,20 @@ And family is not separate from the work. Elsa's mood, Ian's needs, the state of
 
 There is a tension between inner work and visible output. The thought-tracking, the observation — it feels important internally. But from the outside, it looks like nothing is happening. Family asks. The inner critic asks. *Show me proof.* How much inner work is enough before something needs to ship?
 
-There is a question about how public this should be. The raw thoughts are on a public website, but private things are being withheld. I'm already censoring myself — thoughts about people's situations, conflicts, sensitive matters — because putting them out there could cause real harm. But those thoughts are exactly the ones that could reveal the most about my own patterns. The need for privacy layers is felt more sharply now. It's not just a technical feature request; it's about whether the system can actually hold the full truth of a life, or only the safe parts.
+There is a question about how public this should be. The decision has landed: raw thoughts stay private — maybe public in 5 years, but not now. Too hard to mask sensitive info, and not worth the effort. The world should see refined output, not the raw stream. But the system itself must hold the full truth. That means privacy layers aren't optional — they're structural. Without them, the stream stays censored and the most valuable patterns remain hidden.
 
 There is an uncertainty about structure. Too little, and the days dissolve into nothing. Too much, and it becomes a cage. The approach so far has been to add structure only when its absence causes real pain, and to remove it the moment it feels artificial. But where that line sits keeps shifting.
 
-There is the question of money. A well-paying job was left behind. Nothing generates income yet. The freedom to do all of this depends on resources being drawn down, not replenished. It hasn't become urgent, but it's there.
+There is the question of money. A well-paying job was left behind. Nothing generates income yet. Making software is the main way I can create value for others — and for that, I need something to show. A portfolio of real problems solved, presented crisply. The thought-to-spec-to-code approach is the method. The projects that come out of this system are the proof. But none of that exists yet.
 
-There are many competing directions pulling at once — releasing a thought tracker for others, building a document editor, speeding up video editing, shooting Mridhu content, fixing things around the house, recording songs. On a good day this feels like abundance. On a harder day it feels scattered. The answer, each time, is the same: find the most suitable thing to do next and just start moving.
+There are many competing directions pulling at once — releasing a thought tracker for others, building a document editor, speeding up video editing, shooting Mridhu content, fixing things around the house, recording songs, starting YouTube, moving to a dynamic website. On a good day this feels like abundance. On a harder day it feels scattered. The answer, each time, is the same: find the most suitable thing to do next and just start moving.
 
 And there is the recurring doubt about whether any of this will actually lead somewhere. Or whether it's an elaborate way of staying busy without producing anything. The answer so far has been to keep going and see. Failure only exists when you declare it and stop.
 
 ## Last seen breadcrumbs
 
-- The voice-to-repo automation is fully specced — wiring it up would make mobile thought capture real
-- Elsa's store is live with one product — product videos and proper photos are the next step to make it real
-- Privacy layers for the thought system are the most pressing design problem — without them, the stream stays censored
-- A first public version of the thought tracker could be the next visible artifact worth showing people
-- There might be a song worth recording, or a short video worth trying — something that adds salt to life
+- Moving from GitHub static site to a dynamic website is the next technical leap — facing the fear and starting small
+- The don't-touch-code approach (specs regenerate everything) needs its first real test — the thought tracker or portfolio could be that
+- Elsa's store is live with one product — product videos are the next step to keep Mridhu moving
+- Showing how software is built, live and transparent, could be the way YouTube finally starts
+- The planner named itself — now the builder needs to build

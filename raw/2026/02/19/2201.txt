@@ -1,0 +1,145 @@
+There is this thought that I had sometime back about focus, grooves, etc.
+
+The idea is, you feel motivated, inspired by something that you hear on youtube. Then you go into the restaurant and see that hotel business is fun.
+Then on the way back, the radio jockey takes you to he fun thing that happened in Kochi. Security man greets you and immediately jumps into his opinion
+about the current government and it is not easy to escape without insulting him. Then some satsang video calms you down saying all is good, etc.
+Even when you hold a product in your hand, it has a philosophy of its own that it is presenting to you. The philosophy that created it.
+The attitudes, taste, inclinations, thought patterns, etc. of the person or group that created it. Even a look that you see on someone's face can bring to you
+a whole different way of looking at things. 
+
+That's a lot of variety, it can be good. But how it can be bad is, it is hard to stay in a meaningful journey, to snowball, to have momentum, to pursue a thing, to go consistently in a direction until you find the next meaningful one.
+Every thing you see, hear, touch, eat, do, etc. has an effect on you. And these days there's just too much stuff and people and things and events and food and all that you get in contact with.
+Our minds are bombarded with all kinds of inputs, attitudes, offers, patterns, etc. that it is hard to keep going the way - it can be any way doesn't matter - it thought it wanted to go.
+
+So I need to feed myself. I need to curate what goes into my eyes, ears, nose, mouth, mind, etc. I need to become my own radio jockey.
+I need to hear my own music, I need to see my own inspirational videos. I need to set the context for my time by myself.
+Can't outsource it to someone else. They don't know my vibe. They don't know my journey.
+Most of the cases, they don't know their own journey. They are pursuing something for a while and then another thing and so on.
+Not knowing that this is happening. Most people I see today are just living like puppets. They dont pursue a meaningful direction.
+
+So this whole thing is a way for me to be able to pursue things that are meaningful to me.
+I will let my thoughts go free. I look into the world within.
+I see who all are there, I see what they want, I see what they want to create, I see what their fears are, I see how I can help them, I let them free.
+That will make life lighter, but richer by being able to harmonize all the goodness that the existence is abundant with.
+
+A thought just occurred to me. Alright, that's all sweet to hear. Let's talk business.
+
+What about money? Where is that going to come from?
+
+I was reading Naval's thoughts some time back. 
+
+I've read this before, but again he says we better set a high hourly rate for ourselves and ruthlessly spend to save time based on that.
+If my hourly rate is Rs.2000 and I go out for 1 hour to get something that can be courier-ed for Rs.200, I'm throwing away Rs.1800.
+There are also second order consequences. May be I saw something while driving that shifts my focus for the day, I get tired, I want to drink something sweet, etc. etc.
+This reminds me of Sam Ovens saying he plans his day on the day before. So there is no confusion, decision making, etc.
+That I did for 2 days some time back. But then I stopped.
+
+Hmm, let me follow this thread: I can invest time in time to get more time.
+Let's say I'm invited for something that I can skip.
+I skip that and use that time to plan time better or identify more things that can be avoided to save time, then I get more time.
+May be there are things that I do everyday which is also takin away a lot of my energy that I'm not really taking a real look at.
+If I invest some time in analysing the time I spend everyday, then I may uncover such things and can straight away maybe get that time back on a daily basis.
+That will be a huge win. etc. etc.
+
+I'm already noting down the things happening in my life on a daily basis.
+I could get that moved into this system and get a better view of what is happening, etc. etc.
+
+To do that I will need to move from github static website to own dynamic website. That's some work.
+Also due to the thought in mind that software should all be generated from thoughts/spec/etc and data should be migrated across versions easily - I'm scared of the effort involved and whether it will turn out to  be a success or not.
+I think I should face the fear and start doing just that for a little bit. So that my future self tomorrow will have little more courage to go a little more deeper into
+the darkness in that direction and so on.
+
+So right now I'm using Obsidian to track things happening in my life - this includes how much time I spend in the toilet!
+I can't put that out there. Maybe after 2 years yes. But not now. 
+
+And like I thought earlier, the raw thoughts better not be shared with the world.
+Maybe after 5 years, but not now.
+
+It is hard to mask sensitive info and not really worth the effort may be.
+Also it won't be of much use to others. Can share more refined forms of content that comes out of that with the world.
+
+One situation it would be helpful to people is when I create a thought tracker like thing. Then people can see how I'm using it and do the same.
+But not now. And I could do demo sessions of stream of consciousness thing for that also.
+
+I better think about making software.
+That is one of the main ways I can create value for others.
+
+And for others to see that I can do that in a good way, I need something to show.
+
+The things that form out of project zero includes software also.
+
+There are thoughts like I indicated above about the way in which software should be created today.
+As much as possible the software that I create should try to follow that.
+
+And I should be able to show what I have created and how I have created it - which should convince people I'm the guy they are looking for.
+
+So let's think backwards a little bit.
+
+Somebody comes across me the software guy. They want to create something.
+So they checkout my page where I tell them what I can do w.r.t software, quickly. I also try to present things in a crisp, attractive, positive way.
+The attitude matters. I should be an inspiring component of any endeavor that others do with me.
+
+So they see I can do software, I give an overview of how I do it, my rate, my approach, support, etc. etc.
+Then they would like to see what I've done so far. I should have a portfolio website(can be different with videos, be creative, etc.)
+There I list the projects I have done, and there should be links to the specific project pages.
+The projects aren't there to convince these people who should give me work. The projects are there because they solve a real problem.
+
+Somebody is wasting their valuable life doing something that they shouldn't. For example, chatting with ChatGPT and updating a document.
+Everytime they give some input, it changes the document that isn't intended. They have to scan the document after each iteration and this saps their energy soon and not bad for eyes.
+I create a solution that streamlines the document editing which saves 80% of their time and energy.
+They use it. 
+
+Somebody is drowning in the things in their mind, and they shouldn't. They need to sweep and mop the sacred abode that their mind is.
+Greet the spirits and give them tea once in a while and so on. I create a solution to do just that.
+They use it.
+
+Somebody wants to create software but is fed up of maintaining the junk that they end up with after undisciplined vibe coding.
+They want to try the software development method I follow. They checkout my projects, may be I create a course for the same.
+
+Somebody wants to create short videos to post in youtube. But they don't know video editing.
+I create a platform that connects video producers and editors. 
+Something using which producers can share source files with simple, unambiguous instructions that editors can access, edit video and share output.
+With clean, reasonable payments, etc.
+
+Somebody wants to use a note app that is not as heavy or costly like obsidian. 
+Free for one device. Maybe $1 for multi-device sync.
+
+As much as possible these things should be build using the dont-touch-code approach. Any change required, have thoughts what needs to be different, translate that to spec and regenerate all levels like code, documentation, architecture diagram, update project demo video, project development video, project architecture video, etc. etc.
+So the boring parts are automated. Things that can bring in tech-debt like manual editing is eliminated. etc etc.
+
+This will be perfected through iterations and I will be able to take projects from other people and create solutions that same way.
+I could even give a live realtime view of how things are progressing. They can access the current state of the solution anytime, they can see me building it, they can see the process, etc.
+
+I think that is a good way to start the Youtube thing. I create videos showing how I build, etc.
+
+But I think there the things that is stopping me are these:
+- malayalam/English?
+- one channel vs. Multiple?
+
+Will need to think about it.
+
+But I think better not delay the software part any more.
+
+Also as much as possible I need to reuse things across projects.
+Regenerate always doesn't mean LLM freshly generates entire codebase. To make this efficient and also to promote reuse, things should be designed to be modular, plug and play, etc.
+Like the polylith architecture.
+
+Hmm, okay put many thoughts around these things that have been coming up these last few days. Feeling some relief now.
+It is the builder's sign of relief I think. The planner usually thinks up all kinds of crazy things and the builder is bearing extra pressure due to that.
+Planner is flying high in the sky and builder is getting all the blame for not making anything happen. How can the builder build steadily if the plans and ideas and projects and approaches - all shift always?!
+
+Hmm, this has been going on for a while. Is this really the builder part? Or planner in disguise?
+
+Let me plan anyway.
+
+Apps I need: notes app, thoughts app, projects app, video editing pipeline app,
+
+Or maybe I can think in terms of capabilities:
+1. capability to take notes and sync across devices
+2. capability to track daily events(separate apps also possible for finance, food, conversations, etc. etc.)
+3. capability to document thoughts and extract atomic thoughts, etc. from them
+4. capability to create projects, organize data about them
+5. have a portfolio page
+ 
+ Next I need to see how to have the common foundation, server, architecture, workflow, etc. etc.
+ And the order in which to build, etc.

@@ -1,0 +1,14 @@
+Thought:
+A good way to start YouTube: create videos showing how software is built — live, transparent development process. Open questions remain: Malayalam or English? One channel or multiple?
+
+Tags:
+intent
+
+Source:
+raw/2026/02/19/2201.txt
+
+Source_time:
+2026-02-19 2201
+
+Extraction_time:
+2026-02-19 2230

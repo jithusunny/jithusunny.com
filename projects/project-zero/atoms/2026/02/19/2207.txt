@@ -1,0 +1,14 @@
+Thought:
+Capabilities needed: (1) notes + sync across devices, (2) daily event tracking (finance, food, conversations, etc.), (3) thought documentation + atomic extraction, (4) project creation and organization, (5) portfolio page. Need a common foundation, server, architecture, and workflow underneath. Order of building to be determined.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/19/2201.txt
+
+Source_time:
+2026-02-19 2201
+
+Extraction_time:
+2026-02-19 2230

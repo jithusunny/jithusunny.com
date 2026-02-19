@@ -1,0 +1,14 @@
+Thought:
+Don't-touch-code approach: thoughts become specs, specs regenerate all levels — code, docs, architecture diagrams, project demos, videos. Manual code editing creates tech debt. Modularity and reuse across projects (like polylith architecture). Regenerate doesn't mean LLM generates entire codebase fresh each time — modular, plug-and-play design makes it efficient.
+
+Tags:
+spec, rule
+
+Source:
+raw/2026/02/19/2201.txt
+
+Source_time:
+2026-02-19 2201
+
+Extraction_time:
+2026-02-19 2230
