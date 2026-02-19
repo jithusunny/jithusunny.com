@@ -1,0 +1,14 @@
+Thought:
+The repo-based approach for storing thoughts will eventually be replaced by a proper backend. But setting up the voice-to-repo automation now is worth it — short-term smoothness matters more than avoiding rework.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/19/1438.txt
+
+Source_time:
+2026-02-19 1438
+
+Extraction_time:
+2026-02-19 1500

@@ -22,6 +22,8 @@ I capture whatever comes up as raw text — messy, unstructured, stream-of-consc
 
 There's a pattern around reference material now — plans and guides generated in conversation with AI that aren't my thoughts but are too useful to let vanish in a chat window. They go in docs folders near the projects they belong to. They can be deleted without losing anything that came from me. A middle ground.
 
+The next friction point is mobile. Thoughts don't wait for me to be at the desk. The pieces are all there — a recorder on the phone, a cloud drive, a transcription service, a place to land the text — they just need to be wired together. The plan is concrete. And even though the current setup will eventually be replaced by something better, the short-term smoothness is worth a bit of rework later.
+
 Time is noticed more carefully now. Four days can vanish and it stings. I've started treating each day as a full cycle — wake up clean, shut down clean, don't carry yesterday's unfinished weight into tomorrow. I watch my energy throughout the day. Don't sit in front of a screen late at night. Don't eat heavy at noon. Go with the grain.
 
 Plans have become suspect. Long todo lists feel like debts imposed by a past self who had different energy and different understanding. I've started preferring stories over plans — here's what happened and why it mattered — and breadcrumbs over roadmaps — here are a few things that seem alive right now, pick one and walk. Like a game where you can only see the nearest path.
@@ -68,8 +70,8 @@ And there is the recurring doubt about whether any of this will actually lead so
 
 ## Last seen breadcrumbs
 
+- The voice-to-repo automation is fully specced — wiring it up would make mobile thought capture real
 - Elsa's store is live with one product — product videos and proper photos are the next step to make it real
 - Privacy layers for the thought system are the most pressing design problem — without them, the stream stays censored
 - A first public version of the thought tracker could be the next visible artifact worth showing people
-- The document builder concept keeps getting more relevant — the pain of manual editing with AI was felt firsthand
 - There might be a song worth recording, or a short video worth trying — something that adds salt to life

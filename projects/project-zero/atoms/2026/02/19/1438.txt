@@ -1,0 +1,14 @@
+Thought:
+Make it possible to note thoughts from mobile. Everything starts with a thought, so capture should be as frictionless as possible.
+
+Tags:
+intent
+
+Source:
+raw/2026/02/19/1438.txt
+
+Source_time:
+2026-02-19 1438
+
+Extraction_time:
+2026-02-19 1500

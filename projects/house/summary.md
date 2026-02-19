@@ -9,9 +9,11 @@ Two unused purchases also came into focus. A walking pad that never made it into
 
 And there's the baby monitoring setup: an iPad that should have ezycam+ installed so anyone in the house can check in on the baby without needing Jithu's phone. Plus an uncle's old iPhone waiting to be reset and returned.
 
+The AC got serviced — a technician came and cleaned it. One of those small maintenance events that happen in the background of everything else.
+
 ## Timeline
 - **Feb 12** — Noted the need to install cameras in the kitchen, hall, and bedroom where the baby spends most time.
-- **Feb 19** — Home maintenance backlog surfaced: mosquito doors, electrician work, leaking pipes, bathroom stands. Recognized the walking pad and wide monitor are unused and need decisions. iPad baby monitoring setup identified. Uncle's iPhone needs resetting.
+- **Feb 19** — Home maintenance backlog surfaced: mosquito doors, electrician work, leaking pipes, bathroom stands. Recognized the walking pad and wide monitor are unused and need decisions. iPad baby monitoring setup identified. Uncle's iPhone needs resetting. AC serviced by a technician.
 
 ## Last seen breadcrumbs
 - The wide monitor situation is the most urgent — it's actively causing eye strain and needs resolution soon

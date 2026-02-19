@@ -25,6 +25,8 @@ Then a new tension surfaced: self-censorship. The system works best when thought
 
 Alongside the privacy question, a new intent emerged: release a first version of the thought tracker that other people can use. Something that resembles a product. But privacy, safety, and data migration need upfront thought — once people start using it, changes get hard. The guiding constraint: any software built must be a direct translation of thoughts and decisions into code — generatable, not hand-maintained. Otherwise code rots.
 
+The latest concern is friction. Thoughts happen everywhere — not just at the desk. The system needs to meet that. A concrete automation pipeline took shape: record with Easy Voice Recorder, auto-save to Google Drive, Make.com moves the file to the right dated folder, AssemblyAI transcribes it, the transcript lands in the git repo. Processing and extraction come after — Cursor handles that for now. The repo-based approach will eventually give way to a proper backend, but setting up the automation now is worth the short-term smoothness. Some rework is acceptable.
+
 But tension kept surfacing throughout: *Is this all just thinking? Where's the visible output?* The fear of being stuck in dreams without proof. The counter-thought, borrowed from Kobe: *I don't know what failure is. I do things, I see how it goes. I do things again.*
 
 ## Timeline
@@ -38,11 +40,12 @@ But tension kept surfacing throughout: *Is this all just thinking? Where's the v
 - **Feb 16** — Four days had passed quickly and it stung. Decided to start projects support now and not get sidetracked building a notes system. Researched transcription tools, chose AssemblyAI. It errored. Set up GCP as fallback — the output was less readable. Came back to AssemblyAI, got the audio transcribed. Deleted the GCP setup. Bought Easy Recorder app, configured autosave to Google Drive. Chose Make.com for workflow automation.
 - **Feb 17** — Morning walk surfaced growing tension: all thinking, no visible output. Defined the common project view: *what happened, what is happening, what could happen.* Built a Cursor rule with ChatGPT to automate extraction. Processed all existing raw thoughts. Transcribed the morning walk audio. Later, refined the extraction rule to produce story-like summaries instead of bullet-point reports. Created story.md — the first overall narrative. Updated the home page HTML to show the story. Imagined a Google Maps-style zoom on the story where verbosity changes with zoom level.
 - **Feb 18** — Recognized the need for a middle ground for generated reference material (ChatGPT plans, guides). Adopted project docs folders — not raw thoughts, not lost in chat, deletable without losing anything original.
-- **Feb 19** — Self-censorship recognized as a real problem — cutting off a gold mine of self-understanding. Privacy layers (private/public with access levels) identified as a need but architecturally complex. Intent to release a thought tracker for others crystallized. Rule established: software must be generatable from specs, not hand-maintained. Also felt a pull toward recording songs.
+- **Feb 19 (early)** — Self-censorship recognized as a real problem — cutting off a gold mine of self-understanding. Privacy layers (private/public with access levels) identified as a need but architecturally complex. Intent to release a thought tracker for others crystallized. Rule established: software must be generatable from specs, not hand-maintained. Also felt a pull toward recording songs.
+- **Feb 19 (later)** — Felt the need to capture thoughts from mobile more easily. Sketched a concrete automation pipeline: Easy Voice Recorder → Google Drive → Make.com → AssemblyAI → git repo. Decided the repo-based approach is temporary but worth the short-term smoothness — rework is acceptable.
 
 ## Last seen breadcrumbs
+- The voice-to-repo automation pipeline is fully specced and ready to be wired up with Make.com
 - Privacy layers are the most pressing design problem — without them, the raw stream stays censored
 - A first public version of the thought tracker could be the next visible artifact — radically minimal, careful about data migration
 - The zoomable story idea (Google Maps-style verbosity control) is described but not built
-- The record → transcribe → notify pipeline could be wired together with Make.com
 - Songs and music keep surfacing as a pull — a different kind of output entirely

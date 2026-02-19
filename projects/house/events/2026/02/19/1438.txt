@@ -1,0 +1,14 @@
+Event:
+AC servicing/cleanup done by a technician at home.
+
+Tags:
+personal
+
+Source:
+raw/2026/02/19/1438.txt
+
+Source_time:
+2026-02-19 1438
+
+Extraction_time:
+2026-02-19 1500

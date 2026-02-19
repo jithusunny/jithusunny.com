@@ -1,0 +1,14 @@
+Thought:
+Automation pipeline for mobile thought capture: record with Easy Voice Recorder → auto-save to Google Drive → Make.com moves file to the right dated folder → Make.com gets transcript from AssemblyAI → saves to git repo. Processing and extraction is the next step after this (currently done by Cursor).
+
+Tags:
+spec
+
+Source:
+raw/2026/02/19/1438.txt
+
+Source_time:
+2026-02-19 1438
+
+Extraction_time:
+2026-02-19 1500
