@@ -1,0 +1,28 @@
+Wrote a note sometime back called "Everything in its own place" - the reasons for doing that.
+And just now when I noticed things scattered on the table - this sentence came to my mind.
+What is the place for a nail cutter, for a toy, for this that and everything. There should be a place for that.
+If we want to overdo that we could track everything in this house and the place for each.
+Editing that note to add one more advantage that I just came across.
+
+
+One thought I had while I was watching the AC cleanup was being done by the technician: as we move to recording more and more facts about life(conversation -> booked technician for AC cleanup at so and so time ,etc. -> add appointment or something or have some heads up thing ready that it can push to me at the right time or have ready if I want to ready - these are the things you should know to get the AC servicing done correctly.
+Not for now.
+
+Hmm, also I think something I can do is make it possible to note thoughts from mobile also. Since everything starts with a thought, it may be better to make it a little more easier to document.
+
+That would be possible to do if I setup the automation involving easy voice recorder, Google drive, make.com, Github repo edits - add file, commit
+
+But soon I would be moving away from thoughts being written into repo to something else. So that would be rework. But that is fine maybe?
+Yes, it will take more time until we have that kinda backend and setup.
+
+This can make things smoother in the short term.
+
+So these are the steps:
+1. I record
+2. This saves the file with name like hh-mm.wav in Google drive in place (cant customize this)
+3. make.com watches that folder and moves it into the right place in google drive (projects/project-zero/yyyy/mm/dd/)
+4. make.com watches that folder also and gets transcript for that from AssemblyAI
+5. make.com saves that in git repo
+
+There is one more step of processing the raw thoughts, extracting atomic thoughts, updating project summaries and overall story.
+But that can be the next step. It is being done by cursor as of now. Can do that as next step.
