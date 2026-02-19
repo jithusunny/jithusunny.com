@@ -21,6 +21,10 @@ By mid-February, a Cursor rule was built to automate the extraction pipeline. Al
 
 A new pattern emerged around generated reference material — ChatGPT-produced plans, guides, and specs that aren't raw thoughts but are too useful to lose in a chat history. The solution: project docs folders. They sit outside the thought stream. They can be deleted without losing anything that came from the author. A middle ground between capturing everything and losing useful context.
 
+Then a new tension surfaced: self-censorship. The system works best when thoughts flow freely, but some thoughts — about people, conflicts, sensitive situations — can't safely be public. The censoring is already happening, and it's cutting off a gold mine of self-understanding. Some of those situations deserve to be tracked as projects in their own right. The need for privacy layers is clear: marking things private or public, with access levels. But architecturally, it's tricky — public projects may rest on private thought foundations, and building visible outer layers without exposing private building blocks is an unsolved problem.
+
+Alongside the privacy question, a new intent emerged: release a first version of the thought tracker that other people can use. Something that resembles a product. But privacy, safety, and data migration need upfront thought — once people start using it, changes get hard. The guiding constraint: any software built must be a direct translation of thoughts and decisions into code — generatable, not hand-maintained. Otherwise code rots.
+
 But tension kept surfacing throughout: *Is this all just thinking? Where's the visible output?* The fear of being stuck in dreams without proof. The counter-thought, borrowed from Kobe: *I don't know what failure is. I do things, I see how it goes. I do things again.*
 
 ## Timeline
@@ -34,10 +38,11 @@ But tension kept surfacing throughout: *Is this all just thinking? Where's the v
 - **Feb 16** — Four days had passed quickly and it stung. Decided to start projects support now and not get sidetracked building a notes system. Researched transcription tools, chose AssemblyAI. It errored. Set up GCP as fallback — the output was less readable. Came back to AssemblyAI, got the audio transcribed. Deleted the GCP setup. Bought Easy Recorder app, configured autosave to Google Drive. Chose Make.com for workflow automation.
 - **Feb 17** — Morning walk surfaced growing tension: all thinking, no visible output. Defined the common project view: *what happened, what is happening, what could happen.* Built a Cursor rule with ChatGPT to automate extraction. Processed all existing raw thoughts. Transcribed the morning walk audio. Later, refined the extraction rule to produce story-like summaries instead of bullet-point reports. Created story.md — the first overall narrative. Updated the home page HTML to show the story. Imagined a Google Maps-style zoom on the story where verbosity changes with zoom level.
 - **Feb 18** — Recognized the need for a middle ground for generated reference material (ChatGPT plans, guides). Adopted project docs folders — not raw thoughts, not lost in chat, deletable without losing anything original.
+- **Feb 19** — Self-censorship recognized as a real problem — cutting off a gold mine of self-understanding. Privacy layers (private/public with access levels) identified as a need but architecturally complex. Intent to release a thought tracker for others crystallized. Rule established: software must be generatable from specs, not hand-maintained. Also felt a pull toward recording songs.
 
 ## Last seen breadcrumbs
+- Privacy layers are the most pressing design problem — without them, the raw stream stays censored
+- A first public version of the thought tracker could be the next visible artifact — radically minimal, careful about data migration
 - The zoomable story idea (Google Maps-style verbosity control) is described but not built
 - The record → transcribe → notify pipeline could be wired together with Make.com
-- Blog posts derived from extracted thoughts remain an unexplored output format
-- The story is now on the home page — the first visible artifact shown to anyone who visits
-- Project docs folders are a new convention — worth seeing if they accumulate naturally or become clutter
+- Songs and music keep surfacing as a pull — a different kind of output entirely

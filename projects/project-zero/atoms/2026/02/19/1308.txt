@@ -1,0 +1,14 @@
+Thought:
+Privacy layering is architecturally complex: public projects may have private thought foundations. How to build visible outer layers without exposing private building blocks? Needs figuring out, but currently at risk of disproportionate research before action.
+
+Tags:
+tension, spec
+
+Source:
+raw/2026/02/19/1305.txt
+
+Source_time:
+2026-02-19 1305
+
+Extraction_time:
+2026-02-19 1330

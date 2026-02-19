@@ -1,0 +1,14 @@
+Thought:
+Start YouTube videos like a building being built — atomic note videos that form interdependent sets explaining any topic, project, or concept. Eventually could auto-generate videos from atomic notes. Do the notes equivalent first, but don't be completely blocked — try small videos still.
+
+Tags:
+intent, spec
+
+Source:
+raw/2026/02/19/1305.txt
+
+Source_time:
+2026-02-19 1305
+
+Extraction_time:
+2026-02-19 1330

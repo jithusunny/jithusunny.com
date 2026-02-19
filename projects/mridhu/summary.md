@@ -19,6 +19,8 @@ That same day, Elsa and Jithu shot the first product photos — two bedsheets on
 
 The Shopify store was configured end to end: general details filled in, Heritage theme selected, logo generated with ChatGPT and uploaded (primary color #C8A24D, secondary #1F1F1F), order settings tuned (manual fulfillment, auto-archive), policies set, shipping limited to Kerala at Rs.80, tax at 0%. The first product went up — Green cross stitched Bedsheet Queen size. The site is minimal, just one product, but it looks good.
 
+By Feb 19, the next bottleneck became clear: product videos. Video editing is needed for Mridhu product content, and it's the main thing blocking forward motion. Proper product photos and videos still need to be shot the right way, and a WhatsApp Business number needs setting up.
+
 ## Timeline
 - **Feb 10** — First mention of Mridhu in the thought stream. Set priorities: product images and videos first, website can wait. Shipping supplies needed.
 - **Feb 11** — Listed concrete todos: WhatsApp business account, Instagram profile pic from logo, first brand post, label printer, check DTDC courier rates for Kerala.
@@ -27,10 +29,11 @@ The Shopify store was configured end to end: general details filled in, Heritage
 - **Feb 17 afternoon** — Signed up for Shopify with the new Gmail. Updated store theme. Connected mridhu.in domain. Discovered Stripe doesn't work in India — pivoted to Razorpay.
 - **Feb 17 evening** — Completed Razorpay video KYC. Pending approval from their end.
 - **Feb 18** — Completed Razorpay registration (Standard plan). Installed Razorpay Shopify plugin. Shot first product photos of two bedsheets with Elsa at night. Generated logo with ChatGPT and uploaded it. Configured entire Shopify store — theme, policies, shipping, tax. Added first product (Green cross stitched Bedsheet Queen size). Site is live and looks good.
+- **Feb 19** — Identified video editing as the next main blocker. Need to shoot proper product photos/videos and get WABA number set up.
 
 ## Last seen breadcrumbs
-- Razorpay website review needs to clear before payment setup is fully functional — then test a real UPI payment
-- The first product is up but natural-light photos could make it shine — a photoshoot plan is ready
-- The unboxing video idea is waiting to be tried with whatever products are on hand
+- Product video editing is the next step to keep moving — may overlap with the SVK YouTube editor search
+- Razorpay website review needs to clear before payment setup is fully functional
+- Natural-light product photos could elevate what's already on the store — a photoshoot plan is ready
+- The unboxing video idea is waiting to be tried
 - Packaging supplies and label printer still need ordering
-- Shopify plan may need revisiting in May (brick-and-mortar vs. social starter)

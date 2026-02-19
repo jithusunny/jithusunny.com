@@ -20,7 +20,7 @@ The "something" varies. Some days it's writing. Some days it's setting up Elsa's
 
 I capture whatever comes up as raw text — messy, unstructured, stream-of-consciousness. The mess is the point. From those dumps, smaller pieces get extracted: decisions I've made, things I want to do, tensions I'm feeling, things that actually happened. That extraction used to be manual but it was boring, and I've learned that boring things get abandoned. So I handed it off to AI. I keep the thinking. The filing happens on its own.
 
-There's a new pattern emerging around reference material — plans and guides generated in conversation with AI that aren't my thoughts but are too useful to let vanish in a chat window. They go in docs folders now, near the projects they belong to. They can be deleted without losing anything that came from me. A middle ground.
+There's a pattern around reference material now — plans and guides generated in conversation with AI that aren't my thoughts but are too useful to let vanish in a chat window. They go in docs folders near the projects they belong to. They can be deleted without losing anything that came from me. A middle ground.
 
 Time is noticed more carefully now. Four days can vanish and it stings. I've started treating each day as a full cycle — wake up clean, shut down clean, don't carry yesterday's unfinished weight into tomorrow. I watch my energy throughout the day. Don't sit in front of a screen late at night. Don't eat heavy at noon. Go with the grain.
 
@@ -34,7 +34,7 @@ Projects are not goals. They're contexts — places where life energy is flowing
 
 At the center sits the thing I've started calling Project Zero. It's the practice of capturing thoughts, extracting what matters, and organizing it by the areas of life it touches. But it's more than that. It's a way of paying attention — to my mind, to my days, to what keeps pulling me and what keeps resisting. It wants to make itself unnecessary eventually, which is part of what makes it feel right.
 
-Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. That one has moved fast — from an idea and a domain name to a live Shopify store with a real product, a logo, payment setup in progress, and the first product photos shot on the dining table at night. It's the most tangible proof that things are moving. My father's YouTube channel, which has a working process that could be smoother. A pull toward capturing daily life on video that hasn't been acted on yet but keeps surfacing. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general. Cameras for the rooms where the baby spends his time.
+Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. That one has moved fast — from an idea and a domain name to a live Shopify store with a real product, a logo, payment setup in progress, and the first product photos shot on the dining table at night. Now the bottleneck is product videos. My father's YouTube channel, which has a working process that needs more editing throughput — maybe new editors from Upwork. A pull toward capturing daily life on video that keeps sharpening into something more specific: atomic note videos, building blocks for any topic. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general — and that insight pulled harder after I felt the pain of manual document editing firsthand. The house, with its growing list of small things: door gaps for mosquitoes, an electrician visit, a monitor causing eye strain, a baby monitoring setup.
 
 None of these are separate from each other. A morning walk can touch three of them at once. Progress on one often unblocks another. They're not compartments — they're different angles on the same life.
 
@@ -56,18 +56,20 @@ And family is not separate from the work. Elsa's mood, Ian's needs, the state of
 
 There is a tension between inner work and visible output. The thought-tracking, the observation — it feels important internally. But from the outside, it looks like nothing is happening. Family asks. The inner critic asks. *Show me proof.* How much inner work is enough before something needs to ship?
 
-There is a question about how public this should be. The raw thoughts are on a public website, but private things are being withheld. The deeper question isn't technical — it's about vulnerability. How much of the mess is worth showing? Who is this for?
+There is a question about how public this should be. The raw thoughts are on a public website, but private things are being withheld. I'm already censoring myself — thoughts about people's situations, conflicts, sensitive matters — because putting them out there could cause real harm. But those thoughts are exactly the ones that could reveal the most about my own patterns. The need for privacy layers is felt more sharply now. It's not just a technical feature request; it's about whether the system can actually hold the full truth of a life, or only the safe parts.
 
 There is an uncertainty about structure. Too little, and the days dissolve into nothing. Too much, and it becomes a cage. The approach so far has been to add structure only when its absence causes real pain, and to remove it the moment it feels artificial. But where that line sits keeps shifting.
 
 There is the question of money. A well-paying job was left behind. Nothing generates income yet. The freedom to do all of this depends on resources being drawn down, not replenished. It hasn't become urgent, but it's there.
 
+There are many competing directions pulling at once — releasing a thought tracker for others, building a document editor, speeding up video editing, shooting Mridhu content, fixing things around the house, recording songs. On a good day this feels like abundance. On a harder day it feels scattered. The answer, each time, is the same: find the most suitable thing to do next and just start moving.
+
 And there is the recurring doubt about whether any of this will actually lead somewhere. Or whether it's an elaborate way of staying busy without producing anything. The answer so far has been to keep going and see. Failure only exists when you declare it and stop.
 
 ## Last seen breadcrumbs
 
-- Elsa's store is live with one product — natural-light photos, a working payment flow, and a second product could make it real
-- There might be a short piece of writing somewhere in all these captured thoughts that's worth showing to someone
-- The morning walk recordings are already happening — adding video would be the smallest possible step toward that channel that keeps pulling
-- The story is now on the home page, which means anyone who visits can see what this is about for the first time
-- A way to zoom in and out on the story — more detail, less detail — keeps coming to mind
+- Elsa's store is live with one product — product videos and proper photos are the next step to make it real
+- Privacy layers for the thought system are the most pressing design problem — without them, the stream stays censored
+- A first public version of the thought tracker could be the next visible artifact worth showing people
+- The document builder concept keeps getting more relevant — the pain of manual editing with AI was felt firsthand
+- There might be a song worth recording, or a short video worth trying — something that adds salt to life

@@ -1,0 +1,14 @@
+Thought:
+Home maintenance backlog: mosquito-proof door gaps, electrician work (LED strip in kitchen, plug point for robocleaner, leaking bathroom pipes, replace bathroom stands).
+
+Tags:
+todo
+
+Source:
+raw/2026/02/19/1305.txt
+
+Source_time:
+2026-02-19 1305
+
+Extraction_time:
+2026-02-19 1330

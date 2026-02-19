@@ -1,0 +1,14 @@
+Thought:
+Document builder — the generalized version of matrimony maker — feels actually relevant now. Felt the pain of manually editing documents and comparing before/after with ChatGPT. Could specialize for legal, software, architecture domains. Would be genuinely useful for people.
+
+Tags:
+pull, insight
+
+Source:
+raw/2026/02/19/1305.txt
+
+Source_time:
+2026-02-19 1305
+
+Extraction_time:
+2026-02-19 1330

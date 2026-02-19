@@ -1,0 +1,14 @@
+Thought:
+Want to create and release a first version of the thought tracker that people can use — something to show others that resembles a product. But privacy, safety, and data migration need thought upfront. Must stay radically minimal so speed isn't lost.
+
+Tags:
+intent
+
+Source:
+raw/2026/02/19/1305.txt
+
+Source_time:
+2026-02-19 1305
+
+Extraction_time:
+2026-02-19 1330

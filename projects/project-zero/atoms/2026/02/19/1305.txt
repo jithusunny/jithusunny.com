@@ -1,0 +1,14 @@
+Thought:
+Already censoring thoughts because sensitive matters — opinions about people's situations, conflicts — could cause real harm if published. But those private thoughts are a gold mine for self-understanding. Some situations deserve to be tracked as projects. Need a way to mark things private and public with access levels.
+
+Tags:
+tension, spec
+
+Source:
+raw/2026/02/19/1305.txt
+
+Source_time:
+2026-02-19 1305
+
+Extraction_time:
+2026-02-19 1330

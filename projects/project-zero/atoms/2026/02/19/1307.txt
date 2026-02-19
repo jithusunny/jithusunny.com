@@ -1,0 +1,14 @@
+Thought:
+Any software created must not take a lot of time to maintain. It should be a direct translation of thoughts, preferences, and decisions into code — generatable, not hand-crafted. Otherwise code rots, and a rotting codebase makes life rot too.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/19/1305.txt
+
+Source_time:
+2026-02-19 1305
+
+Extraction_time:
+2026-02-19 1330
