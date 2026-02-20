@@ -39,9 +39,17 @@ The new way: thoughts about the problem and solution are captured → translated
 
 The decision for now: Project Zero is both — the system for streamlining this process AND the system being built with it. Will separate and deploy for others later.
 
+Then came the moment of sitting down to actually build. And resistance showed up immediately — this time wearing the mask of perfectionism. The temptation to invent a perfect starting point, a clean history, comprehensive setup with generated videos from day one. The worry that it won't be good enough if it's not perfect from the start. But the overwhelm was itself the signal: this is resistance again, wearing a new costume.
+
+A foundational principle got sharper: raw thoughts are the only real data. Projects, atomic thoughts, summaries, story — all are views on top. Data must be separable from any system instantly. And Project Zero must be rebuildable from raw thoughts alone — give them to any LLM or human and they should be able to build it. The spec refines through iterations, but the source is always raw thoughts.
+
+A gap in the spec also surfaced: projects need to store not just thoughts but events with operational details — credentials, config values, cleanup procedures. Without capturing these from the start, the project can't be fully reproduced from its source material. Config and secrets need a place too.
+
+And a quiet insight: the right decision doesn't get made — it arises when there is clarity. Don't force it.
+
 The latest concern is friction. Thoughts happen everywhere — not just at the desk. The system needs to meet that. A concrete automation pipeline took shape: record with Easy Voice Recorder, auto-save to Google Drive, Make.com moves the file to the right dated folder, AssemblyAI transcribes it, the transcript lands in the git repo. Processing and extraction come after — Cursor handles that for now. The repo-based approach will eventually give way to a proper backend, but setting up the automation now is worth the short-term smoothness. Some rework is acceptable.
 
-But tension kept surfacing throughout: *Is this all just thinking? Where's the visible output?* The fear of being stuck in dreams without proof. The counter-thought, borrowed from Kobe: *I don't know what failure is. I do things, I see how it goes. I do things again.*
+But tension kept surfacing throughout: *Is this all just thinking? Where's the visible output?* The fear of being stuck in dreams without proof. The counter-thought, borrowed from Kobe: *I don't know what failure is. I do things, I see how it goes. I do things again.* And now a new one: the more you wait, the more resistance gains momentum. Too much deliberation means the mind is more active than the situation demands.
 
 ## Timeline
 - **Feb 6** — Published first thought on jithusunny.com. Then a second. Decided to stop waiting for a perfect plan and just begin. Shared the raw thoughts with ChatGPT for brainstorming. The bigbang method insight emerged.
@@ -57,11 +65,12 @@ But tension kept surfacing throughout: *Is this all just thinking? Where's the v
 - **Feb 19 (early)** — Self-censorship recognized as a real problem — cutting off a gold mine of self-understanding. Privacy layers (private/public with access levels) identified as a need but architecturally complex. Intent to release a thought tracker for others crystallized. Rule established: software must be generatable from specs, not hand-maintained. Also felt a pull toward recording songs.
 - **Feb 19 (mid)** — Felt the need to capture thoughts from mobile more easily. Sketched a concrete automation pipeline: Easy Voice Recorder → Google Drive → Make.com → AssemblyAI → git repo. Decided the repo-based approach is temporary but worth the short-term smoothness — rework is acceptable.
 - **Feb 19 (night)** — Deeper reflection. The world bombards with inputs that break momentum — need to become your own radio jockey. Decided raw thoughts should stay private (maybe public in 5 years). The don't-touch-code vision matured: specs regenerate all levels, polylith-style modularity. Concrete capabilities list emerged (notes, events, thoughts, projects, portfolio). Decision to face fear and move from static GitHub site to dynamic website. Named the planner/builder tension — is the relief of planning just the planner in disguise?
-- **Feb 20** — Wrote the fullest articulation of the new software process: 10 problems with existing software engineering, and a step-by-step new approach (thoughts → specs → generate → test → deploy). Core principles crystallized: zero gap, zero tech debt, data sacred/software disposable, daily rebuilds, auto-generated documentation with zoom. Decided Project Zero is both the method and the first product built with it.
+- **Feb 20 (morning)** — Wrote the fullest articulation of the new software process: 10 problems with existing software engineering, and a step-by-step new approach (thoughts → specs → generate → test → deploy). Core principles crystallized: zero gap, zero tech debt, data sacred/software disposable, daily rebuilds, auto-generated documentation with zoom. Decided Project Zero is both the method and the first product built with it.
+- **Feb 20 (afternoon)** — Sat down to actually build. Resistance appeared as perfectionism — wanting a clean starting point, comprehensive setup from day one. Recognized it as resistance in a new mask. Sharpened the foundational principle: raw thoughts are the only real data, everything else is views. Project Zero must be rebuildable from raw thoughts alone. Identified a spec gap: events need operational details (credentials, config, cleanup). Noticed that the right decision arises from clarity — it doesn't get forced.
 
 ## Last seen breadcrumbs
-- Project Zero is now both method and product — building the system with the system is the next move
-- The full software process is articulated — it needs its first real test project
-- Moving from GitHub static site to a dynamic website is the next technical leap
+- The builder sat down — resistance showed up as perfectionism, but it was recognized; the next step is to start building imperfectly
+- Raw thoughts as the sole source, everything else as views — this principle is clear and ready to be implemented
+- Events with operational details (config, secrets, cleanup) need a place in the system
 - The voice-to-repo automation pipeline is fully specced and ready to be wired up with Make.com
-- A portfolio of real-problem-solving software is how the value gets shown to others
+- Moving from GitHub static site to a dynamic website remains the next technical leap

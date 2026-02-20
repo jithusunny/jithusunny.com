@@ -1,0 +1,14 @@
+Thought:
+Projects need to store not just thoughts but events with operational details — e.g., "Created OAuth client in GCP" with credentials, config values, maintenance needs, cleanup procedures. Also need a place for config/secrets/variables. Without capturing these from the start, the project can't be fully reproduced from its source material.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/20/1411.txt
+
+Source_time:
+2026-02-20 1411
+
+Extraction_time:
+2026-02-20 1430

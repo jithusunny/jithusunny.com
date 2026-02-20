@@ -28,13 +28,15 @@ Time is noticed more carefully now. Four days can vanish and it stings. I've sta
 
 Plans have become suspect. Long todo lists feel like debts imposed by a past self who had different energy and different understanding. I've started preferring stories over plans — here's what happened and why it mattered — and breadcrumbs over roadmaps — here are a few things that seem alive right now, pick one and walk. Like a game where you can only see the nearest path.
 
-Resistance is a daily companion. It shows up as the urge to research one more option, define one more spec, think through one more scenario — before doing anything. The counter-move, when it works, is just to start. The relief that follows action is always disproportionate to the effort. But there's a subtler version too — a planner inside me that flies high with ideas while a builder part bears all the pressure. The planner keeps shifting the ground. The builder can't build steadily on shifting ground. Sometimes the relief I feel after a good planning session is just the planner pretending to be the builder.
+Resistance is a daily companion. It shows up as the urge to research one more option, define one more spec, think through one more scenario — before doing anything. The counter-move, when it works, is just to start. The relief that follows action is always disproportionate to the effort. But there's a subtler version too — a planner inside me that flies high with ideas while a builder part bears all the pressure. The planner keeps shifting the ground. The builder can't build steadily on shifting ground. Sometimes the relief I feel after a good planning session is just the planner pretending to be the builder. And the longer you wait, the more resistance gains momentum. Too much deliberation is the mind being more active than the situation demands.
 
 ## How software should be built
 
 I've been writing code in exchange for money for 14 years, and the problems with how software gets made have been accumulating the whole time. The gap between the person with the vision and the person writing the code widens with every person added. Things get watered down, the original story dissolves, compromises dull the sharpness. It takes too long — months, years. It wastes human potential on symbol manipulation that people hate. It creates confusion and unnecessary conflict. Tech debt compounds until maintainers curse creators. Documentation is scary to write and scary to read. Software rots. Migrations are nightmares. Knowledge transfers are theater. And the cost of all this wasted energy is enormous.
 
 The new way I'm working toward changes all of this. Capture thoughts about the problem and solution. Translate those into specs — software, UI/UX, tests, user guide, creation story. Generate the software and tests. Run them. Deploy. Check production. Feedback loops at every level escalate questions back to the human. Zero gap between thoughts and software — because software is literally a generated translation of thoughts. Zero tech debt — no human touches code. Data is sacred, software is disposable — rebuild fearlessly, daily if needed, with automatic migration. Documentation is never human-edited: auto-generated animations, auto-recorded UI flows, zoom in/zoom out on content density. Always 100% up to date.
+
+A foundational principle has gotten sharper: raw thoughts are the only real data. Everything else — projects, atomic thoughts, summaries, story, code — are views on top. Data must be separable from any system instantly. And the system must be rebuildable from raw thoughts alone — give them to any LLM or human and they should be able to reconstruct it. The spec refines through iterations, but the source is always thoughts.
 
 For now, Project Zero is both — the system for streamlining this process and the first system built with it. At some point it separates and becomes something others can use.
 
@@ -51,6 +53,8 @@ None of these are separate from each other. A morning walk can touch three of th
 ## What keeps repeating
 
 Resistance keeps wearing the mask of planning. I'll research one more tool, define one more spec, think through one more edge case — and call it preparation. The moments of actual progress have always come from interrupting that loop and just starting. Publishing the first thought. Signing up for Shopify. Putting the first product up. The relief afterward is always larger than I expected.
+
+And now resistance has a new costume: perfectionism about the starting point. The temptation to craft a clean origin story, a comprehensive setup, generated videos from day one. The worry that it won't be good enough if it's not perfect from the start. But the overwhelm that comes with it is itself the signal. The right decision doesn't get made — it arises when there is clarity.
 
 If a process is boring, I will abandon it. I've seen this enough times to stop pretending otherwise. It's not a character flaw — it's a design constraint. The work has to stay interesting, or at least not feel like a chore, or it won't last. Alan Watts said to make it like play. That keeps proving true.
 
@@ -78,8 +82,8 @@ And there is the recurring doubt about whether any of this will actually lead so
 
 ## Last seen breadcrumbs
 
-- The software process is fully articulated — Project Zero is both method and first product; building it with itself is the next move
-- Moving from GitHub static site to a dynamic website is the next technical leap
+- The builder sat down and resistance appeared as perfectionism — it was recognized; the next step is to start building imperfectly
+- Raw thoughts as the sole source, everything else as views — this principle is clear and ready to be the foundation
+- Moving from GitHub static site to a dynamic website remains the next technical leap
 - Elsa's store is live with one product — product videos are the next step to keep Mridhu moving
 - Showing how software is built, live and transparent, could be the way YouTube finally starts
-- The planner has had its say — the builder's turn now

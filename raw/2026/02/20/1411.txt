@@ -1,0 +1,125 @@
+I realised the more we wait the more resistance gains momentum.
+
+There is also some relation this has to zen and all that.
+
+Do without much deliberation. Too much planning, dithering, stickiness, getting hung up is when mind is too active than the situation demands.
+
+
+Okay, now let's go ahead with Project Zero building.
+
+We are going to build Project Zero using Project Zero.
+
+And Project Zero will be used to build all other projects that will bloom through me.
+
+This is what looks like a good direction.
+
+The data needs to be separable from any system I build instantly.
+Maybe there is always a Google drive backup of the entire data.
+Maybe there is always a json backup being updated.
+Maybe this plain data in Google drive or something is the main database itself if the software is light, etc.
+Maybe some software may need only local data in some plain data format.
+
+In the case of project zero, raw thoughts is the only real data.
+Projects, atomic thoughts, summaries, story - all are views on top of the raw thoughts.
+
+There is also mridhu project docs. Not too important at the moment, but let's not lose that.
+
+This current website that project zero or jithusunny.com is was generated via manual chat with ChatGPT.
+That is a no-no when it comes to the Project zero approach.
+
+The entire development process happens based on thoughts. There can be feedback for each downstream step, but that will again be thoughts fed to the inital step.
+
+I could create a new app within this project, or a completely new one. Or transmute the current one into the new approach.
+Confused what to do.
+
+In anycase, Project Zero should be rebuildable exactly the same way based on the raw thoughts alone.
+
+The quality of my attention isn't great now. After lunch, a bit sleepy, plus also not feeling great generally.
+
+It makes sense to do the most important work when the attention is the sharpest, strongest, etc.
+That is the morning time I think.
+
+Afternoons can also be good for work, but I don't know.
+Maybe if I do enough exercise, take naps, etc. etc. I would be able to work well.
+
+
+About project folder, etc. - let me think about the situation when this is built.
+Software is not the thing. Project Zero is the thoughts.
+
+If anybody give those thoughts to an LLM/human and ask it to build Project Zero, it should be able to build it.
+
+Through phases and/or iterations and all that we would have refined the spec.
+
+There is only one source - raw thoughts.
+Raw thoughts are analyzed to find atomic thoughts that are decisions, facts, problems, solutions, tips, preferences, dos, donts, etc.
+Some events also would need to be captured.
+
+I'm feeling something.
+
+I'm tempted to invent a perfect starting point for Project Zero.
+A perfect opening line for Project Zero.
+Comprehensive setup for writing the story, generating videos with visuals of what is in each stage of project zero, etc. etc.
+I'm worried it won't be good if I don't do all those right from the beginning.
+
+What to do?
+
+There is a beauty to it, if I can present a clean, perfect story.
+
+But it is also overwhelming to think up the best one.
+
+What to do?
+
+Part of the concern I got is, this current project contains a lot of going in circles, some private info, etc. etc.
+Should I keep that in the thing that is going to be the source of Project Zero?
+
+On the other hand, these most of the thoughts that I had till now is really indicating the 
+thoughts behind project zero.
+
+May be I can think of some future that's ideal:
+
+There is a landing page for Project Zero.
+People see what it is, a video maybe.
+They can sign in and use the project zero console to create software that they need
+Connect github
+Create project
+record thoughts
+generate spec
+generate code
+do infra
+check security
+check performance
+test
+feedback
+deploy
+etc. etc.
+
+the thoughts and everything needed to run, deploy that project will be in its own repo.
+
+The first project on Project Zero and the only project whose raw thoughts go into the project zero repo
+will be Project zero itself.
+
+So project zero will have thoughts about project zero - a kind of self-ishness? :D
+That is fine, I had some thoughts some time back about trying to software that has as self, tries to preserve, promote, itself ,etc.
+
+Right now I have sessions when I record thoughts about anything that comes up - about project zero, about life, about family, about house, about other projects, etc.
+So if I need a clean history for project zero, I will have to edit the raw thoughts. 
+
+Hmm, it is to be decided.
+
+Right decision comes when there is clarity. You don't make the right decision. It arises.
+
+Also, another thing that I just realised is.
+Project zero or any project will have not just thoughts.
+We would also need to store events that happened around that Project.
+Eg: Created Oauth client in GCP
+With clarity on what are the credentials, config, values, some maintenance required for that?
+Can we do that programmatically if required?
+Can we decommision it programmatically or cleanup? how? etc etc.
+
+There would also be lots of config/secrets/variables, etc. I guess.
+Where would I store those? Premature optimization?
+
+Also I'm worried if I don't start perfectly I may miss some config or something that then makes the project inferior coz
+not everything since the beginnign is there, it cant be repeated just by looking at the raw thoguths, events ,etc. etc.
+
+What to do?

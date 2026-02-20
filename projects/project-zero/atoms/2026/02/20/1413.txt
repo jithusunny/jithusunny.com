@@ -1,0 +1,14 @@
+Thought:
+Project Zero must be rebuildable from raw thoughts alone. If anyone gives those thoughts to an LLM or a human and asks them to build it, they should be able to. The spec refines through phases and iterations, but the source is always raw thoughts.
+
+Tags:
+rule, spec
+
+Source:
+raw/2026/02/20/1411.txt
+
+Source_time:
+2026-02-20 1411
+
+Extraction_time:
+2026-02-20 1430

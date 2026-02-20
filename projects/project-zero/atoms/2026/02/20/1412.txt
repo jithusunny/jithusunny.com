@@ -1,0 +1,14 @@
+Thought:
+Raw thoughts are the only real data in Project Zero. Projects, atomic thoughts, summaries, story — all are views on top of raw thoughts. Data must be separable from any system instantly — always a backup in plain format.
+
+Tags:
+rule, insight
+
+Source:
+raw/2026/02/20/1411.txt
+
+Source_time:
+2026-02-20 1411
+
+Extraction_time:
+2026-02-20 1430
