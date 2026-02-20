@@ -1,0 +1,14 @@
+Thought:
+For now, Project Zero is both — the system for streamlining this software process AND the system being built with it. Will separate and deploy for others to use later.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/20/1041.txt
+
+Source_time:
+2026-02-20 1041
+
+Extraction_time:
+2026-02-20 1100

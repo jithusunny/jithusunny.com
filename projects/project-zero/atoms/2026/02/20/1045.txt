@@ -1,0 +1,14 @@
+Thought:
+Data is sacred, software is disposable. Any changes to software can be made fearlessly — data stays safe. As code changes, data migration is planned and automatic. Ideally the whole thing gets rebuilt daily. No room for human errors.
+
+Tags:
+rule, insight
+
+Source:
+raw/2026/02/20/1041.txt
+
+Source_time:
+2026-02-20 1041
+
+Extraction_time:
+2026-02-20 1100

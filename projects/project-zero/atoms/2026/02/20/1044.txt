@@ -1,0 +1,14 @@
+Thought:
+Documentation should never be human-edited or AI-generated junk. Auto-generated animations, auto-recorded UI flows, zoom in/zoom out on content density. Videos > animations > images > text. Always 100% up to date — main flows instantly screen-recorded after each rebuild.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/20/1041.txt
+
+Source_time:
+2026-02-20 1041
+
+Extraction_time:
+2026-02-20 1100

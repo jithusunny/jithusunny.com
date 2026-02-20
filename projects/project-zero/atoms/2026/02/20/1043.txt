@@ -1,0 +1,14 @@
+Thought:
+Zero tech debt is the guarantee. No human touches code. Boring, repetitive symbol manipulation is for the machine. Suitable work for the machine, suitable work for the human being. Most issues fixable easily as they arise.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/20/1041.txt
+
+Source_time:
+2026-02-20 1041
+
+Extraction_time:
+2026-02-20 1100

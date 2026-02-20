@@ -30,11 +30,19 @@ Plans have become suspect. Long todo lists feel like debts imposed by a past sel
 
 Resistance is a daily companion. It shows up as the urge to research one more option, define one more spec, think through one more scenario — before doing anything. The counter-move, when it works, is just to start. The relief that follows action is always disproportionate to the effort. But there's a subtler version too — a planner inside me that flies high with ideas while a builder part bears all the pressure. The planner keeps shifting the ground. The builder can't build steadily on shifting ground. Sometimes the relief I feel after a good planning session is just the planner pretending to be the builder.
 
+## How software should be built
+
+I've been writing code in exchange for money for 14 years, and the problems with how software gets made have been accumulating the whole time. The gap between the person with the vision and the person writing the code widens with every person added. Things get watered down, the original story dissolves, compromises dull the sharpness. It takes too long — months, years. It wastes human potential on symbol manipulation that people hate. It creates confusion and unnecessary conflict. Tech debt compounds until maintainers curse creators. Documentation is scary to write and scary to read. Software rots. Migrations are nightmares. Knowledge transfers are theater. And the cost of all this wasted energy is enormous.
+
+The new way I'm working toward changes all of this. Capture thoughts about the problem and solution. Translate those into specs — software, UI/UX, tests, user guide, creation story. Generate the software and tests. Run them. Deploy. Check production. Feedback loops at every level escalate questions back to the human. Zero gap between thoughts and software — because software is literally a generated translation of thoughts. Zero tech debt — no human touches code. Data is sacred, software is disposable — rebuild fearlessly, daily if needed, with automatic migration. Documentation is never human-edited: auto-generated animations, auto-recorded UI flows, zoom in/zoom out on content density. Always 100% up to date.
+
+For now, Project Zero is both — the system for streamlining this process and the first system built with it. At some point it separates and becomes something others can use.
+
 ## Projects as expressions (not goals)
 
 Projects are not goals. They're contexts — places where life energy is flowing, or wants to flow. Some are active. Some are just a single thought, tagged and waiting.
 
-At the center sits the thing I've started calling Project Zero. It's the practice of capturing thoughts, extracting what matters, and organizing it by the areas of life it touches. But it's more than that. It's a way of paying attention — to my mind, to my days, to what keeps pulling me and what keeps resisting. It wants to make itself unnecessary eventually, which is part of what makes it feel right.
+At the center sits Project Zero. It's the practice of capturing thoughts, extracting what matters, and organizing it by the areas of life it touches. But now it's also the method for building software — the thesis and the proof in one. It wants to make itself unnecessary eventually, which is part of what makes it feel right.
 
 Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. That one has moved fast — from an idea and a domain name to a live Shopify store with a real product, a logo, payment setup in progress, and the first product photos shot on the dining table at night. Now the bottleneck is product videos. My father's YouTube channel, which has a working process that needs more editing throughput — maybe new editors from Upwork. A pull toward capturing daily life on video that keeps sharpening — now with a concrete angle of showing how software is built, live and transparent. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general — and that insight pulled harder after I felt the pain of manual document editing firsthand. The house, with its growing list of small things: door gaps for mosquitoes, an electrician visit, a monitor causing eye strain, a baby monitoring setup.
 
@@ -62,7 +70,7 @@ There is a question about how public this should be. The decision has landed: ra
 
 There is an uncertainty about structure. Too little, and the days dissolve into nothing. Too much, and it becomes a cage. The approach so far has been to add structure only when its absence causes real pain, and to remove it the moment it feels artificial. But where that line sits keeps shifting.
 
-There is the question of money. A well-paying job was left behind. Nothing generates income yet. Making software is the main way I can create value for others — and for that, I need something to show. A portfolio of real problems solved, presented crisply. The thought-to-spec-to-code approach is the method. The projects that come out of this system are the proof. But none of that exists yet.
+There is the question of money. A well-paying job was left behind. Nothing generates income yet. Making software is the main way I can create value for others — and for that, I need something to show. A portfolio of real problems solved, presented crisply. The thought-to-spec-to-code approach is the method. The projects that come out of this system are the proof. But none of that exists yet. The process is fully articulated now. What's missing is the first thing built with it.
 
 There are many competing directions pulling at once — releasing a thought tracker for others, building a document editor, speeding up video editing, shooting Mridhu content, fixing things around the house, recording songs, starting YouTube, moving to a dynamic website. On a good day this feels like abundance. On a harder day it feels scattered. The answer, each time, is the same: find the most suitable thing to do next and just start moving.
 
@@ -70,8 +78,8 @@ And there is the recurring doubt about whether any of this will actually lead so
 
 ## Last seen breadcrumbs
 
-- Moving from GitHub static site to a dynamic website is the next technical leap — facing the fear and starting small
-- The don't-touch-code approach (specs regenerate everything) needs its first real test — the thought tracker or portfolio could be that
+- The software process is fully articulated — Project Zero is both method and first product; building it with itself is the next move
+- Moving from GitHub static site to a dynamic website is the next technical leap
 - Elsa's store is live with one product — product videos are the next step to keep Mridhu moving
 - Showing how software is built, live and transparent, could be the way YouTube finally starts
-- The planner named itself — now the builder needs to build
+- The planner has had its say — the builder's turn now

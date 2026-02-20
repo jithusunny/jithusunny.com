@@ -1,0 +1,14 @@
+Thought:
+Zero gap between captured thoughts and software — software is literally a generated translation of thoughts. One person does the whole thing, so no communication gaps. All human communication happens only in the first stage where problems and solutions are discussed.
+
+Tags:
+insight, rule
+
+Source:
+raw/2026/02/20/1041.txt
+
+Source_time:
+2026-02-20 1041
+
+Extraction_time:
+2026-02-20 1100

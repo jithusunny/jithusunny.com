@@ -1,0 +1,14 @@
+Thought:
+The new software process: capture thoughts about the problem/solution → translate to specs (software, UI/UX, tests, user guide, creation story/video) → generate code + tests → run tests → deploy → production checks. Feedback loops at each level escalate questions back to the human. A simple UI for supervising the multi-step process.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/20/1041.txt
+
+Source_time:
+2026-02-20 1041
+
+Extraction_time:
+2026-02-20 1100

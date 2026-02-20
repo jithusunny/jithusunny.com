@@ -1,0 +1,118 @@
+So when we do software thing, we also need to chat with ChatGPT or cursor.
+
+Haha, that was funny, when we do ... we need to ...
+
+But it is true that tools like ChatGPT/Cursor are a great assistance, only you need to be really careful and disciplined.
+Or it will fall down like a house of cards.
+
+
+So there is a bunch of thoughts behind a software:
+a pain somebody is facing
+an opportunity for making some tedious activity easier
+a way to do something that was not possible before
+automating things
+scaling some process
+etc.
+
+This is the starting point of any software.
+
+People think about how to build a software that will solve the respective problem.
+People always talk in terms of solutions to problems. I feel there are not just solutions, there are things that 
+we do to do something new, etc etc. Anyway.
+
+So those thoughts in essence tell: this is the problem, and it could be solved with software like this.
+And the software gets built.
+
+I've been writing code in exchange for money for the past 14 years.
+
+Some issues I see in the existing software engineering process:
+1. Gap arises between the person who has the vision(problem/solution) and the person who tries to solve it. As the number of people involved increases: 
+- things get watered down
+- original problem story dissolves
+- compromises will be made on many steps that will reduce the sharpness/impact/effectiveness of output.
+In the new way I'm proposing, there will be zero gap between the captured thoughts and software. 
+Because software is literally a generated translation of thoguhts. 
+It takes only one person to do all the stuff in this, so no communication gaps.
+Anyway all communication happens only in the first stage where problems, solutions are discussed.
+Zero gap.
+
+2. It takes a lot time. A lot of time. Years, Months, Weeks.
+In the new way, we are talking Days, Hours, Minutes.
+
+3. Wastes the precious human potential and creativity. The people involved in the whole process - they hate the work.
+They sense there is a better way. Today's software engineering process evolved to what it is today due to reasons. 
+It could not have been any other way. But it is high time we learned from the past and made this thing humane.
+In the new way - Boring, repetitive, symbol manipulation and all that is for the machine. 
+Human being only supervise, never touches code. Suitable work for the machine, suitable work for the human being.
+
+4. This is harmful to mind and body: this creates unnecessary confusion among people.
+Couple this with the inevitable people problems and you get conflicts and stress that are not really necessary.
+We must choose our battles. These battles are waste battles. Why die fighting a meaningless war?
+In the new way, there is not much room for confusion and conflict. Any mismatches, issues are caught immediately and communicated automatically to human being(s)
+And resolution is made immediately. The entire process is supervised, monitored, etc.
+
+5. Hard to maintain. Tech debt is inevitable in the current way of building software. 
+Also tech debt compounds. People who maintain curse the creators. 
+Creators regret for the rest of their lives for not having paid enough attention so that others are not burdened with their complicated/wrong/half-baked code.
+In the new process, Zero tech debt is the guarantee. There could still be inevitable issues: in the libraries we use, some edge case that was missed, etc.
+But most issues can be fixed easily as they arise. No human issues can occur except in the first stage, or cooperating to the feedback process.
+
+6. User guides are scary - both for users and creators.
+Editing text takes a lot of attention and care. And editing huge sets of documents as per changes in software sometimes made by others, is scary.
+And reading that is also draining and scary for users.
+
+Documentation should be crisp, to the point and creative with videos, animations, etc.
+The new way will never make humans edit Documentation. It will also not be AI generated junk.
+It will be just enough, using auto generated animations, autorecorded UI flows, etc.
+There will also be zoom in zoom out available on content. So people can understand by calibrating the information density, presentation style, etc.
+Also whenever possible videos > animations > imagess > text
+
+The main flows will be instantly tried and screenrecorded. There is never an issue of, Oh this video is of an old version.
+All Documentation, videos, images, etc. will be 100% uptodate.
+
+7. Software rots, just like apple.
+As days pass changes happen to the dependencies, problem domain, opinions of stakeholders, thought from users.
+There will also be signals from usage that indicate performance issues, suboptimal usage patterns, etc. etc.
+These needs to be listened to on a daily basis. Ideally the whole thing needs to be rebuilt on a daily basis.
+
+8. Migrations are hard
+Libraries, languages, teams, architecture, dependencies, companies, etc. - change can come from any quarter.
+In the old approach, software is notoriously complex to migrate.
+In the new, every iteration that could happen on a daily basis, proves that data is sacred and safe.
+Software is above data, any changes to software can be made fearlessly. Now worries, data will be safe.
+As code changes, the data may also need some minor changes to be compatible with the new code. But this will be planned and automatically taken care of.
+No room for human errors.
+
+9. KTs are a pain.
+Nobody can remember all the things the other person said in a 1 hour meeting and just get all the experience, insights, gotchas and tips and tricks and hacks and what not transferred.
+In the new way, one can get started in a matter of hours.
+
+10. Finally the cost. Wasting energy (effort/time/attention) is wasting money.
+If none of the other issues matter to you, this should.
+Needless to say, the new method is far more efficient to build, maintain ( and destroy).
+I'm not kidding, once you build you maintain it. And someday you'll have to dispose it, clean up.
+The existing way of creating software leaves with you software that is a pain even to get rid of and cleanup.
+
+The new, evolved way of doing software is this:
+1. Capture thoughts about the problem and the solution
+2. Translate the thoughts into software specification, UI/UX spec, test specification(unit, e2e), user guide, creation story/video
+3. Generate software, tests
+4. Run tests
+5. Deploy
+6. Some kinda tests to see things are alright in production.
+
+We can also add more levels for more accurate, reliable, secure, performant software creation.
+
+There also needs to be a feedback for each level:
+If during translation of thoughts into spec, there arises some question, this needs to be clarified with the human being.
+So that question can be passed to the previous level, may be some notifiation to human.
+
+Same way, if there is some issue while running tests. This needs to be investigated by backtracking to the thought level.
+And the question needs to be raised to the human.
+
+There can also be a simple UI for this multi-step process. So it is easy to supervise, easy to control, easy to visualise, easy to see feedbacks for each step, etc.
+
+For now, let project zero be both:
+both the system for streamlining this process and the system that is getting built.
+
+At some point, we can separate it out and deploy as a separate thing that others can use.
