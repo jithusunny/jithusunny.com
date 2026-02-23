@@ -1,0 +1,14 @@
+Event:
+Figured out HEIC to JPG and MOV to MP4 conversion via command line for Mridhu product media — took 80 minutes to resolve issues with local conversion and online converter limits.
+
+Tags:
+setup, issue
+
+Source:
+raw/2026/02/23/1130.txt
+
+Source_time:
+2026-02-23 1130
+
+Extraction_time:
+2026-02-23 1530

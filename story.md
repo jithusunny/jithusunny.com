@@ -16,7 +16,7 @@ This wasn't about building an app or starting a business. Those things would com
 
 The days have a loose rhythm. I wake up, sometimes early. There are morning walks where I talk into my phone, recording whatever comes up. Sometimes it flows. Sometimes it's stilted because people are around, looking at the guy talking to himself. I come home, help with Ian — bathe him, play with him, take him downstairs for some sun. Elsa gets ready for work. I eat, maybe nap if the night was short. Then I sit down and try to do something.
 
-The "something" varies. Some days it's writing. Some days it's setting up Elsa's store. Some days it's just thinking, which looks like nothing from the outside.
+The "something" varies. Some days it's writing. Some days it's setting up Elsa's store. Some days it's wrestling with file format conversions for 80 minutes. Some days it's just thinking, which looks like nothing from the outside.
 
 I capture whatever comes up as raw text — messy, unstructured, stream-of-consciousness. The mess is the point. From those dumps, smaller pieces get extracted: decisions I've made, things I want to do, tensions I'm feeling, things that actually happened. That extraction used to be manual but it was boring, and I've learned that boring things get abandoned. So I handed it off to AI. I keep the thinking. The filing happens on its own.
 
@@ -46,19 +46,19 @@ Projects are not goals. They're contexts — places where life energy is flowing
 
 At the center sits Project Zero. It's the practice of capturing thoughts, extracting what matters, and organizing it by the areas of life it touches. But now it's also the method for building software — the thesis and the proof in one. It wants to make itself unnecessary eventually, which is part of what makes it feel right.
 
-Around it, other things orbit. Elsa's boutique business, which I'm helping stand up, because her happiness and energy affect everything in this house. That one has moved fast — from an idea and a domain name to a live Shopify store with a real product, a logo, payment setup in progress, and the first product photos shot on the dining table at night. Now the bottleneck is product videos. My father's YouTube channel, which has a working process that needs more editing throughput — maybe new editors from Upwork. A pull toward capturing daily life on video that keeps sharpening — now with a concrete angle of showing how software is built, live and transparent. A tool I built for someone's matrimony profile that turned into an insight about structured documents in general — and that insight pulled harder after I felt the pain of manual document editing firsthand. The house, with its growing list of small things: door gaps for mosquitoes, an electrician visit, a monitor causing eye strain, a baby monitoring setup.
+Around it, other things orbit. Elsa's boutique business has moved faster than anything else — from an idea and a domain name to a live Shopify store with multiple products, a logo, and a fully functional payment system accepting cards, UPI, netbanking, and wallets. The full order flow works: checkout, payment, refund. A repeatable product listing workflow is forming — shoot, convert media, generate details with ChatGPT using the last product as template, upload. The remaining gaps are concrete: packaging supplies, shipping rates, pricing, product videos. My father's YouTube channel has a working process that needs more editing throughput. A pull toward capturing daily life on video keeps sharpening. A tool I built for someone's matrimony profile turned into an insight about structured documents in general. The house, with its growing list of small things.
 
 None of these are separate from each other. A morning walk can touch three of them at once. Progress on one often unblocks another. They're not compartments — they're different angles on the same life.
 
 ## What keeps repeating
 
-Resistance keeps wearing the mask of planning. I'll research one more tool, define one more spec, think through one more edge case — and call it preparation. The moments of actual progress have always come from interrupting that loop and just starting. Publishing the first thought. Signing up for Shopify. Putting the first product up. The relief afterward is always larger than I expected.
+Resistance keeps wearing the mask of planning. I'll research one more tool, define one more spec, think through one more edge case — and call it preparation. The moments of actual progress have always come from interrupting that loop and just starting. Publishing the first thought. Signing up for Shopify. Putting the first product up. Adding more products, enabling payments, testing the full order flow. The relief afterward is always larger than I expected.
 
 And now resistance has a new costume: perfectionism about the starting point. The temptation to craft a clean origin story, a comprehensive setup, generated videos from day one. The worry that it won't be good enough if it's not perfect from the start. But the overwhelm that comes with it is itself the signal. The right decision doesn't get made — it arises when there is clarity.
 
 If a process is boring, I will abandon it. I've seen this enough times to stop pretending otherwise. It's not a character flaw — it's a design constraint. The work has to stay interesting, or at least not feel like a chore, or it won't last. Alan Watts said to make it like play. That keeps proving true.
 
-Small visible results unlock energy for everything else. The first thought published, a store taking shape, a surprisingly good PDF preview, a live site with one product that actually looks good — each one creates momentum. The absence of visible results drains it. This is why the fear of "all thinking, no output" is not irrational. It's a signal.
+Small visible results unlock energy for everything else. The first thought published, a store taking shape, a surprisingly good PDF preview, a live site with products that actually looks good, a test payment going through, the full order flow working end to end — each one creates momentum. The absence of visible results drains it. This is why the fear of "all thinking, no output" is not irrational. It's a signal.
 
 Most of what runs through my mind on any given day already ran through it yesterday. Writing it down makes the loops visible. And seeing them — just seeing them — seems to loosen their grip slightly.
 
@@ -82,8 +82,8 @@ And there is the recurring doubt about whether any of this will actually lead so
 
 ## Last seen breadcrumbs
 
-- The builder sat down and resistance appeared as perfectionism — it was recognized; the next step is to start building imperfectly
-- Raw thoughts as the sole source, everything else as views — this principle is clear and ready to be the foundation
-- Moving from GitHub static site to a dynamic website remains the next technical leap
-- Elsa's store is live with one product — product videos are the next step to keep Mridhu moving
+- Mridhu's store is fully functional — payments work end to end; the next push is more products, proper videos, packaging, and pricing
+- UPI checkout friction (hosted Razorpay page vs inline) — support ticket raised, waiting
+- A repeatable product listing workflow is forming: shoot → convert → generate details with ChatGPT → upload
+- Moving from GitHub static site to a dynamic website remains the next technical leap for Project Zero
 - Showing how software is built, live and transparent, could be the way YouTube finally starts

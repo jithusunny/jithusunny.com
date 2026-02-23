@@ -1,0 +1,17 @@
+Got the payment part setup completely - now UPI, netbanking, wallets are also supported in addition to cards.
+Still card payment is the main, default option on checkout page.
+For UPI and all people have to click away into a hosted Razorpay page - raised a support ticket to know if there's a way to show UPI and all in checkout page itself.
+
+Also tried orders - checkout, order, refund, etc etc. - all seems to be working perfect!
+
+Took 1 hour for all this work.
+
+Next on mridhu is adding more products, polishing the shopify site looks, getting product video edited by an editor.
+
+We would also need to assess the situation on packing side once more - will ahv to buy the brown bag. THe one we bought earleir was small, Elsa returned it.
+It may also help if we get a label printer kinda thing - can use it to create label/stickers for home organization as well.
+Can also use it to print quick notes - like a zettelkasten, etc.
+
+One other thing is to check with the DTDC office nearby about the shipping rates.
+
+Then we need to decide on pricing, shipping charge, etc.

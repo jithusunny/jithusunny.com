@@ -1,0 +1,14 @@
+Event:
+Raised a Razorpay support ticket asking if UPI can be shown directly on the Shopify checkout page instead of redirecting to a hosted Razorpay page.
+
+Tags:
+issue
+
+Source:
+raw/2026/02/23/1515.txt
+
+Source_time:
+2026-02-23 1515
+
+Extraction_time:
+2026-02-23 1545

@@ -1,0 +1,14 @@
+Event:
+Completed Razorpay payment setup on Shopify — ran a test payment, archived the test order, and enabled real payments. Only card payments supported so far; UPI still needs enabling.
+
+Tags:
+setup
+
+Source:
+raw/2026/02/23/1130.txt
+
+Source_time:
+2026-02-23 1130
+
+Extraction_time:
+2026-02-23 1530

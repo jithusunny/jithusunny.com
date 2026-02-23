@@ -1,0 +1,14 @@
+Thought:
+Razorpay currently only supports card payments on the Mridhu Shopify store — UPI must be enabled or customers in India won't buy.
+
+Tags:
+risk, tension
+
+Source:
+raw/2026/02/23/1130.txt
+
+Source_time:
+2026-02-23 1130
+
+Extraction_time:
+2026-02-23 1530

@@ -1,0 +1,14 @@
+Event:
+Added documentation about HEIC→JPG and MOV→MP4 conversion commands in mridhu docs for future reference.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/23/1130.txt
+
+Source_time:
+2026-02-23 1130
+
+Extraction_time:
+2026-02-23 1530

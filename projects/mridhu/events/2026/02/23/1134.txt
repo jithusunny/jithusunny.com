@@ -1,0 +1,14 @@
+Event:
+Added photos and videos of 2 bedsheets to the Mridhu Shopify store.
+
+Tags:
+publish
+
+Source:
+raw/2026/02/23/1130.txt
+
+Source_time:
+2026-02-23 1130
+
+Extraction_time:
+2026-02-23 1530

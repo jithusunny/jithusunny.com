@@ -1,0 +1,21 @@
+Let me add the new photos and videos that we shot of 2 bedsheets for Mridhu in mridhu.in
+
+
+Faced some issues while converting heic locally in laptop itself.
+Tried online converters, they had some limits, etc. also not very convenient.
+Wanted a commandline way.
+
+Added note in mridhu docs about issues faced, and commands to convert heic to jpg and mov to mp4.
+It took 80 minutes to figure all this out!
+
+Next is adding product details for the new bedsheet, I will give the previous bedsheet's content and new bedsheet image to generate metadata using ChatGPT
+Done in 20 minutes
+
+Next is finishing the payment setup
+15 minutes and done, tried a test payment, then archived order.
+Enabled real payments!
+
+But I see only cards supported by Razorpay.
+Need to check how to support UPI or no one will buy.
+
+Updated theme to whisper. Need to configure things properly in it next.
