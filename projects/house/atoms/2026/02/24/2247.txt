@@ -1,0 +1,14 @@
+Thought:
+Want to build a House app that tracks all items in the house and their locations, plus cleaning schedules per area with periodicity (daily, weekly, monthly). Sounds extreme but feels required.
+
+Tags:
+intent, spec
+
+Source:
+raw/2026/02/24/2247.txt
+
+Source_time:
+2026-02-24 2247
+
+Extraction_time:
+2026-02-24 2300

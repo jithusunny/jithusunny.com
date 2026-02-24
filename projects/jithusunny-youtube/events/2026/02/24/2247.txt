@@ -1,0 +1,14 @@
+Event:
+Uploaded first YouTube video: "12 benefits of putting everything in its own place."
+
+Tags:
+publish
+
+Source:
+raw/2026/02/24/2247.txt
+
+Source_time:
+2026-02-24 2247
+
+Extraction_time:
+2026-02-24 2300

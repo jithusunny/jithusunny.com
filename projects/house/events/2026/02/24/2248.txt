@@ -1,0 +1,14 @@
+Event:
+Wrote a cleaning schedule for the flat — a list of areas with periodicity (daily, weekly, monthly).
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/24/2247.txt
+
+Source_time:
+2026-02-24 2247
+
+Extraction_time:
+2026-02-24 2300

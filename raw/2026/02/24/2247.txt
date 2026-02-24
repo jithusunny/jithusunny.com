@@ -1,0 +1,102 @@
+I want to do it perfectly may be?
+
+I have tried and failed before and the discomfort is what I'm trying to avoid by avoiding to do the main things?
+
+What can I really do next?
+
+So many ways Jithu!
+
+I was listening to the 37 signals guy and I agreed with almost everything he was saying.
+There were many things that I told myself in these past recent days. And I felt a relief.
+I mean, I don't hear many other people saying those common sensical things and I'm like, am I crazy or what?
+etc etc.
+
+Anyway, some good ideas both from him and from recent thoughts over the past few days:
+
+Shut down well.
+When the day ends, clean up the room. Anything out of place? Keep it in its own place.
+Next day when you wake up and you see this disorder before you, you feel bad.
+That guy should not have done this to you. 
+
+I had added my first youtube video: 12 benefits of putting everything in its own place.
+Now I got a 13th point: you start to like yourself more. When you get everything quickly and easily, you feel cared for and grateful for, etc.
+You will want to give what you received and your future self will benefit. This will improve the way you feel overall about your self.
+
+I have this idea about doing versions of youtube videos like the above. So when I do a video like that, it need not be perfect.
+I just talk about my thoughts on something at that point, and I call it V1.
+
+Next time I make the same video, better editing, one more point, more energetic, less uhms, etc. - V2.
+So the pressure is off of me. This leads to better content.
+
+Will I get bored when I repeat the same thing again as if it is some prayer?
+Maybe. Maybe not.
+
+Maybe it might get better, I might be more confident, etc.
+
+I think overall, I will get better at one-shotting videos.
+Little to no planning, little to no editing, decent lighting. I already got awesome mic and camera.
+etc, etc. I can do content easily over time.
+
+Hmm, we'll do that.
+Why not do one now?
+
+I could, but I'm sleepy. 
+
+I have to shutdown properly to start up fine.
+
+So the ideas I wanted to jot down before they disappear from last few days:
+1. Consider your life is just one day long. And treat every moment, time in the day like that.
+Start up with an attitude that befits that belief. Fill the lungs with fresh air, get the body moving, sweat a little bit, meditate, wash our body, pursue an interesting direction,
+pay attention to others - I mean really pay attention - but need to make sure you don't get sucked into the emotional games or make sure your consciousness
+does not get colored in a way that you don't like. Attitude is contagious. More work, but better - let your vibe infect others.
+So do a day well, shutdown well. Make sure as each day passes, the shutdown gets more complete and relieving and beautiful.
+You will sleep much much better, your mind will be at peace. The finance situation is all captured fine, wife doesn't have to worry too much what we got, about the nominee situation ,etc .etc.
+No unnecessary files lingering in systems, that will get painful to deal with later, etc .etc.
+
+Slowly clean up and make shutdowns more and more complete as days pass.
+I can die any moment, but when this is practiced I will be ready to die any moment.
+And when you are ready to die fully, that is when you are ready to live fully.
+Nothing is sticky and holding you back from yesterday - all good to be open and fresh to the moment.
+
+2. Start up the day well.
+I consider it a responsibility now to let my son develop good habits, and live a good life.
+I'm reminded of the Chinese farmer thing. I don't know. I love my son, so I will do things I know will be good for him.
+Even it there is no absolute good or bad.
+
+My son had cough and these were some rough days and nights, sleepless and all that.
+
+Things will come up, and there will be this or that and that will eat time up if we are not conscious what is happening to us and through us.
+I have cleaned up a lot of things in the recent past days, and packed a number of trolleys and bags with things that we will not use.
+I'm a bit worried my mom would scold me for packing so many dress out of this house.
+She'd say these are good shirts and pants, why are you leaving all that. Because I will not use them.
+I kept so much stuff for a long time, but I never use it. I dont feel good when I wear certain dress, etc.
+I've decided to give that away or throw away instead of just keeping it around me abd drown in it.
+
+I'm also softly forcing my wife to also cleanup and be more organized, etc.
+There is no other way. There is stuff everywhere and picking up things and keeping them in the right place itself is taking a lot of my time.
+I can't also not be at peace if I see things out of order. So better reduce stuff first.
+
+I'd also written down a long list of places to clean up in the flat and the periodicity - daily, weekly, monthly, etc.
+It would be ideal to have someone who will do that like I like.
+I think there should be an app to do this. Will come back to this - House app.
+
+In the same app, I will also track all items in the house and their locations. May sound a bit extreme, but I think that is required.
+Let's see.
+
+Overall I think I better make a move to have thoughts app to a dynamic cloud one.
+But I need to do it in a thought-based development manner. Different repo? Same one?
+
+What about old thoughts, unrelated thoughts?
+
+This is the beginning of a great journey, etc.
+
+I think we will revisit all that and get the thoughts thing v1 done tomorrow.
+Dont hate me future self, I'm saying no more research. Just get the thoughts thing moved to a server app that I can use from web. Use some simple Key to login maybe.
+Can have the same file based thing, no need to even have a DB? but do it via the Thoughts -> spec -> tests, etc. etc. way only.
+We need to refine that.
+
+But think about repo, thoughts, etc. etc. before you go.
+Pick up something fine, even if not perfect if it is somehow reversible or something.
+Life's short.
+
+Let's go.

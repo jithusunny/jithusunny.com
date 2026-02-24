@@ -51,6 +51,10 @@ The latest concern is friction. Thoughts happen everywhere — not just at the d
 
 But tension kept surfacing throughout: *Is this all just thinking? Where's the visible output?* The fear of being stuck in dreams without proof. The counter-thought, borrowed from Kobe: *I don't know what failure is. I do things, I see how it goes. I do things again.* And now a new one: the more you wait, the more resistance gains momentum. Too much deliberation means the mind is more active than the situation demands.
 
+By late February, a decision finally landed with clarity: no more research. Build the thoughts app v1 tomorrow as a dynamic cloud server app, accessible from the web. File-based storage is fine — no database needed. Use the thought-based development approach (thoughts → spec → tests). Even if not perfect, pick something reversible and go. Life's short.
+
+Alongside this, two life practices crystallized into rules. First: consider your life is just one day long. Start up well — fresh air, body movement, meditation. Pay real attention to others, but don't let your consciousness get colored in ways you don't like. Attitude is contagious — let your vibe infect others. Second: shut down the day properly. Clean up the room. Put everything in its place. Capture finances. No lingering files. As each day passes, make the shutdown more complete and relieving. When you are ready to die fully, you are ready to live fully. Nothing sticky from yesterday — open and fresh to the moment.
+
 ## Timeline
 - **Feb 6** — Published first thought on jithusunny.com. Then a second. Decided to stop waiting for a perfect plan and just begin. Shared the raw thoughts with ChatGPT for brainstorming. The bigbang method insight emerged.
 - **Feb 8** — Decided to keep raw thoughts radically minimal: just time and text. Plain text as the sole source of truth.
@@ -67,10 +71,11 @@ But tension kept surfacing throughout: *Is this all just thinking? Where's the v
 - **Feb 19 (night)** — Deeper reflection. The world bombards with inputs that break momentum — need to become your own radio jockey. Decided raw thoughts should stay private (maybe public in 5 years). The don't-touch-code vision matured: specs regenerate all levels, polylith-style modularity. Concrete capabilities list emerged (notes, events, thoughts, projects, portfolio). Decision to face fear and move from static GitHub site to dynamic website. Named the planner/builder tension — is the relief of planning just the planner in disguise?
 - **Feb 20 (morning)** — Wrote the fullest articulation of the new software process: 10 problems with existing software engineering, and a step-by-step new approach (thoughts → specs → generate → test → deploy). Core principles crystallized: zero gap, zero tech debt, data sacred/software disposable, daily rebuilds, auto-generated documentation with zoom. Decided Project Zero is both the method and the first product built with it.
 - **Feb 20 (afternoon)** — Sat down to actually build. Resistance appeared as perfectionism — wanting a clean starting point, comprehensive setup from day one. Recognized it as resistance in a new mask. Sharpened the foundational principle: raw thoughts are the only real data, everything else is views. Project Zero must be rebuildable from raw thoughts alone. Identified a spec gap: events need operational details (credentials, config, cleanup). Noticed that the right decision arises from clarity — it doesn't get forced.
+- **Feb 24** — Decision landed: no more research, build the thoughts app v1 as a dynamic cloud server app. File-based, no DB needed. Use the thought-based development approach (thoughts → spec → tests). Two life rules crystallized: treat your life as one day long (start up well, shut down well), and practice complete daily shutdowns so nothing is sticky from yesterday — "when you are ready to die fully, you are ready to live fully."
 
 ## Last seen breadcrumbs
-- The builder sat down — resistance showed up as perfectionism, but it was recognized; the next step is to start building imperfectly
-- Raw thoughts as the sole source, everything else as views — this principle is clear and ready to be implemented
-- Events with operational details (config, secrets, cleanup) need a place in the system
+- The decision to build v1 tomorrow is firm — file-based, cloud, web-accessible, thought-based development
+- The daily startup/shutdown practice is becoming a core life rule
+- Events with operational details (config, secrets, cleanup) still need a place in the system
 - The voice-to-repo automation pipeline is fully specced and ready to be wired up with Make.com
-- Moving from GitHub static site to a dynamic website remains the next technical leap
+- The repo question (same or new for the dynamic app) needs a quick decision, not research

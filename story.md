@@ -16,15 +16,13 @@ This wasn't about building an app or starting a business. Those things would com
 
 The days have a loose rhythm. I wake up, sometimes early. There are morning walks where I talk into my phone, recording whatever comes up. Sometimes it flows. Sometimes it's stilted because people are around, looking at the guy talking to himself. I come home, help with Ian — bathe him, play with him, take him downstairs for some sun. Elsa gets ready for work. I eat, maybe nap if the night was short. Then I sit down and try to do something.
 
-The "something" varies. Some days it's writing. Some days it's setting up Elsa's store. Some days it's wrestling with file format conversions for 80 minutes. Some days it's just thinking, which looks like nothing from the outside.
+The "something" varies. Some days it's writing. Some days it's setting up Elsa's store. Some days it's wrestling with file format conversions for 80 minutes. Some days it's decluttering — packing bags of unused clothes and deciding what stays and what goes. Some days it's just thinking, which looks like nothing from the outside.
+
+A philosophy of daily living is sharpening. Consider your life is just one day long. Start up well — fresh air, body movement, meditation. Pay real attention to others, but don't let your consciousness get colored in ways you don't like. Attitude is contagious — let your vibe infect others. And shut down properly. Clean up the room before bed. Put everything in its place. No lingering files, no unfinished messes. As the shutdowns get more complete, so does the peace. When you are ready to die fully, you are ready to live fully.
 
 I capture whatever comes up as raw text — messy, unstructured, stream-of-consciousness. The mess is the point. From those dumps, smaller pieces get extracted: decisions I've made, things I want to do, tensions I'm feeling, things that actually happened. That extraction used to be manual but it was boring, and I've learned that boring things get abandoned. So I handed it off to AI. I keep the thinking. The filing happens on its own.
 
 There's a deeper reason this matters, and it became clearer recently. The world constantly bombards with inputs — a YouTube video, a restaurant, a radio jockey, someone's opinion, a product's embedded philosophy. Each one carries its own gravity, pulling attention in a different direction. It's hard to stay in a meaningful groove when everything around you is trying to put you in theirs. So I need to become my own radio jockey. Curate what goes into my eyes and ears. Set my own context. No one else knows my journey well enough to do it for me.
-
-The next friction point is mobile. Thoughts don't wait for me to be at the desk. The pieces are all there — a recorder on the phone, a cloud drive, a transcription service, a place to land the text — they just need to be wired together. The plan is concrete. And even though the current setup will eventually be replaced by something better, the short-term smoothness is worth a bit of rework later.
-
-Time is noticed more carefully now. Four days can vanish and it stings. I've started treating each day as a full cycle — wake up clean, shut down clean, don't carry yesterday's unfinished weight into tomorrow. I watch my energy throughout the day. Don't sit in front of a screen late at night. Don't eat heavy at noon. Go with the grain.
 
 Plans have become suspect. Long todo lists feel like debts imposed by a past self who had different energy and different understanding. I've started preferring stories over plans — here's what happened and why it mattered — and breadcrumbs over roadmaps — here are a few things that seem alive right now, pick one and walk. Like a game where you can only see the nearest path.
 
@@ -38,7 +36,7 @@ The new way I'm working toward changes all of this. Capture thoughts about the p
 
 A foundational principle has gotten sharper: raw thoughts are the only real data. Everything else — projects, atomic thoughts, summaries, story, code — are views on top. Data must be separable from any system instantly. And the system must be rebuildable from raw thoughts alone — give them to any LLM or human and they should be able to reconstruct it. The spec refines through iterations, but the source is always thoughts.
 
-For now, Project Zero is both — the system for streamlining this process and the first system built with it. At some point it separates and becomes something others can use.
+For now, Project Zero is both — the system for streamlining this process and the first system built with it. At some point it separates and becomes something others can use. And a firm decision has landed: no more research. Build v1 of the thoughts app as a dynamic cloud server, file-based, web-accessible. Use the thought-based development approach. Even if not perfect, pick something reversible and go. Life's short.
 
 ## Projects as expressions (not goals)
 
@@ -46,44 +44,42 @@ Projects are not goals. They're contexts — places where life energy is flowing
 
 At the center sits Project Zero. It's the practice of capturing thoughts, extracting what matters, and organizing it by the areas of life it touches. But now it's also the method for building software — the thesis and the proof in one. It wants to make itself unnecessary eventually, which is part of what makes it feel right.
 
-Around it, other things orbit. Elsa's boutique business has moved faster than anything else — from an idea and a domain name to a live Shopify store with multiple products, a logo, and a fully functional payment system accepting cards, UPI, netbanking, and wallets. The full order flow works: checkout, payment, refund. A repeatable product listing workflow is forming — shoot, convert media, generate details with ChatGPT using the last product as template, upload. The remaining gaps are concrete: packaging supplies, shipping rates, pricing, product videos. My father's YouTube channel has a working process that needs more editing throughput. A pull toward capturing daily life on video keeps sharpening. A tool I built for someone's matrimony profile turned into an insight about structured documents in general. The house, with its growing list of small things.
+Around it, other things orbit. Elsa's boutique business has moved faster than anything else — from an idea and a domain name to a live Shopify store with multiple products, a fully functional payment system (cards, UPI, netbanking, wallets), and a repeatable product listing workflow. The remaining gaps are concrete: packaging, shipping rates, pricing, product videos.
+
+My father's YouTube channel has a working process that needs more editing throughput. And my own YouTube channel — that one finally moved from pull to action. The first video was uploaded: "12 benefits of putting everything in its own place." A versioned approach crystallized with it — V1 is raw, V2 is better. No pressure to be perfect. The goal over time is one-shot videos with minimal planning. The mic and camera are good. The content will follow.
+
+A tool I built for someone's matrimony profile turned into an insight about structured documents in general. The house has had a decluttering wave — bags packed, cleaning schedules written, and an idea for a House app that tracks items and their locations.
 
 None of these are separate from each other. A morning walk can touch three of them at once. Progress on one often unblocks another. They're not compartments — they're different angles on the same life.
 
 ## What keeps repeating
 
-Resistance keeps wearing the mask of planning. I'll research one more tool, define one more spec, think through one more edge case — and call it preparation. The moments of actual progress have always come from interrupting that loop and just starting. Publishing the first thought. Signing up for Shopify. Putting the first product up. Adding more products, enabling payments, testing the full order flow. The relief afterward is always larger than I expected.
-
-And now resistance has a new costume: perfectionism about the starting point. The temptation to craft a clean origin story, a comprehensive setup, generated videos from day one. The worry that it won't be good enough if it's not perfect from the start. But the overwhelm that comes with it is itself the signal. The right decision doesn't get made — it arises when there is clarity.
+Resistance keeps wearing the mask of planning. I'll research one more tool, define one more spec, think through one more edge case — and call it preparation. The moments of actual progress have always come from interrupting that loop and just starting. Publishing the first thought. Signing up for Shopify. Putting the first product up. Enabling payments. Uploading the first YouTube video. The relief afterward is always larger than I expected.
 
 If a process is boring, I will abandon it. I've seen this enough times to stop pretending otherwise. It's not a character flaw — it's a design constraint. The work has to stay interesting, or at least not feel like a chore, or it won't last. Alan Watts said to make it like play. That keeps proving true.
 
-Small visible results unlock energy for everything else. The first thought published, a store taking shape, a surprisingly good PDF preview, a live site with products that actually looks good, a test payment going through, the full order flow working end to end — each one creates momentum. The absence of visible results drains it. This is why the fear of "all thinking, no output" is not irrational. It's a signal.
+Small visible results unlock energy for everything else. The first thought published, a store taking shape, a surprisingly good PDF preview, a test payment going through, the first YouTube video finally out — each one creates momentum. The absence of visible results drains it. This is why the fear of "all thinking, no output" is not irrational. It's a signal.
 
 Most of what runs through my mind on any given day already ran through it yesterday. Writing it down makes the loops visible. And seeing them — just seeing them — seems to loosen their grip slightly.
 
-Todo lists from three days ago feel like someone else's orders. The context has shifted. Rigid plans from the past don't account for what I know now. Stories and breadcrumbs age better than task lists.
-
-And family is not separate from the work. Elsa's mood, Ian's needs, the state of the house — these are not interruptions. Mridhu exists because Elsa's happiness matters. Morning walks happen partly because the body needs movement and partly because that's when thoughts flow best. It's all one fabric.
+And family is not separate from the work. Elsa's mood, Ian's needs (these were some rough sleepless nights with his cough), the state of the house — these are not interruptions. Mridhu exists because Elsa's happiness matters. Morning walks happen partly because the body needs movement and partly because that's when thoughts flow best. It's all one fabric.
 
 ## Where things feel unresolved
 
 There is a tension between inner work and visible output. The thought-tracking, the observation — it feels important internally. But from the outside, it looks like nothing is happening. Family asks. The inner critic asks. *Show me proof.* How much inner work is enough before something needs to ship?
 
-There is a question about how public this should be. The decision has landed: raw thoughts stay private — maybe public in 5 years, but not now. Too hard to mask sensitive info, and not worth the effort. The world should see refined output, not the raw stream. But the system itself must hold the full truth. That means privacy layers aren't optional — they're structural. Without them, the stream stays censored and the most valuable patterns remain hidden.
+There is the question of money. A well-paying job was left behind. Nothing generates income yet. Making software is the main way I can create value for others — and for that, I need something to show. The process is fully articulated now. What's missing is the first thing built with it.
 
-There is an uncertainty about structure. Too little, and the days dissolve into nothing. Too much, and it becomes a cage. The approach so far has been to add structure only when its absence causes real pain, and to remove it the moment it feels artificial. But where that line sits keeps shifting.
+There is a question about how public this should be. Raw thoughts stay private. The world should see refined output. But the system itself must hold the full truth. Privacy layers aren't optional — they're structural.
 
-There is the question of money. A well-paying job was left behind. Nothing generates income yet. Making software is the main way I can create value for others — and for that, I need something to show. A portfolio of real problems solved, presented crisply. The thought-to-spec-to-code approach is the method. The projects that come out of this system are the proof. But none of that exists yet. The process is fully articulated now. What's missing is the first thing built with it.
-
-There are many competing directions pulling at once — releasing a thought tracker for others, building a document editor, speeding up video editing, shooting Mridhu content, fixing things around the house, recording songs, starting YouTube, moving to a dynamic website. On a good day this feels like abundance. On a harder day it feels scattered. The answer, each time, is the same: find the most suitable thing to do next and just start moving.
+There are many competing directions pulling at once. On a good day this feels like abundance. On a harder day it feels scattered. The answer, each time, is the same: find the most suitable thing to do next and just start moving.
 
 And there is the recurring doubt about whether any of this will actually lead somewhere. Or whether it's an elaborate way of staying busy without producing anything. The answer so far has been to keep going and see. Failure only exists when you declare it and stop.
 
 ## Last seen breadcrumbs
 
-- Mridhu's store is fully functional — payments work end to end; the next push is more products, proper videos, packaging, and pricing
-- UPI checkout friction (hosted Razorpay page vs inline) — support ticket raised, waiting
-- A repeatable product listing workflow is forming: shoot → convert → generate details with ChatGPT → upload
-- Moving from GitHub static site to a dynamic website remains the next technical leap for Project Zero
-- Showing how software is built, live and transparent, could be the way YouTube finally starts
+- The decision to build v1 of the thoughts app is firm — file-based, cloud, web-accessible, tomorrow
+- The first YouTube video is out — the versioned approach means any video can be recorded now without pressure
+- Mridhu's store is fully functional end to end — next push is more products, videos, packaging, and pricing
+- The daily startup/shutdown practice is becoming a core life rhythm
+- Showing how the thoughts app gets built could be the natural YouTube content alongside the build itself
