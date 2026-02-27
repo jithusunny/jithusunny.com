@@ -1,0 +1,103 @@
+All right, so we have been talking about thought tracker, right? So I have some thoughts already recorded and kept in a place. Next, what I want to do is is have a software which makes it easy for me to track thoughts. But here is the— here is the twist.
+
+I don't want to vibe code it, okay? I also got this other thought or group of thoughts right here in my mind. Which says software, the code— code should— writing code is not for human beings anymore. That, that is— it's time up.
+
+I mean, human beings should not code. That is what I think, because human beings these days, we have written enough code that the LLMs have already been trained on, they can write any code that we want to write. They are better suited for maintaining code, for editing code, for writing code, for understanding code.
+
+Okay, we have emotions and we have bad times and we have low attention times when we don't have much attention, much focus, we are distracted, blah blah blah, all those things. So we tend to make mistakes which kind of snowball and turn code bases into huge, uh, piles of mess. So the alternative that I want to explore is making the LLM code.
+
+How will it code? Um, what is code? Code is basically thoughts. What is thought? I don't know, but Thoughts contain information. So if there are a bunch of thoughts which says, hey, we need a software like this, it should work like this, when I open it, it should show this, and then I click here and then shows that, it should be of this color, when I click here, it should get closed, when I click here, it should export all the data, it should send all the data to my email or Google Drive, whatever, and, and when I click here, my account should get deleted, etc.,
+
+etc. So there are these bunch of thoughts, which is what basically is translated to code, which is what the software is. It is the thoughts, a set of thoughts in another form.
+
+It is just a translation, it is a transformation, it is another way of looking at— thoughts. Right? We just need to select, we just need to pick which are the thoughts based on which we want to create the software. That is what we need to do.
+
+We need to decide— Or we may be thinking of a lot of things and the software may not need all those things. So what we need to do is let the thoughts come up 'Let us record all that.' Okay, that's what the thought tracker is for.
+
+But the way to build the thought tracker is also, uh, starting with thought tracking. Wow, wow, wow! Oh my God! I don't know how to explain this. I myself am getting confused, but I think it's natural because this thing is— what I'm trying to do, nobody has done before.
+
+I'm the first person trying to do this thing. Many people have done similar things, I'm guessing. I'm not the smartest person on the face of the earth, but this is not something I've heard anybody else doing.
+
+Okay, so this is supposed to be confusing and hard and, and, and all that. Okay, let me acknowledge that fact and just try to articulate the thing that I'm trying to say. So what I want right now, I mean, I want so many things.
+
+I want to do so many things. I want to build so, so, so many things. But the first thing that I want to do is the thought tracker.
+
+I will start with that. And with the help of it, I will build more things. If I start to talk about those things, I will never be able to, um, describe everything.
+
+So that's why I'm starting small and I'm focusing only on the thought tracker thing, because that is a, that is the kind of, uh, you know, small scope. I hate the word scope, but let me use it. It is a small thing that I want to build.
+
+The Thought Tracker is a small thing. It's a clean, simple, straightforward, small, useful thing. Okay, what does it do? You tap, open it, you talk, whatever thoughts are coming up, it records the thoughts and keeps somewhere.
+
+That's all it does. How is that useful? It is not useful if you use it only for recording and keeping your thoughts somewhere. It is not useful.
+
+I mean, actually, there is some advantage if you give yourself some time to talk about the things that is there in your mind. If you just let yourself— release all those thoughts through this talking from your mind's prison, maybe your mind will get a little more spacious, isn't it? Wouldn't it? Oh, I need to learn this question tag thing properly. So that itself is— there is an advantage actually, but that is not— that, that's not enough.
+
+I mean, we can have more, we can get more from this whole thing. So you record the thoughts and then you can analyze the thoughts. It can tell you things.
+
+There can be patterns that you're not aware of right now about yourself. For example, in my case, I already knew that I have this issue of perfectionism. I want to be— I want things to be 100% perfect from the very start.
+
+Every single thing about it, all the aspects, the view from all angles and dimensions and blah blah blah. Everything should be perfect, should be future-proof. I should be able to extend it into anything.
+
+I should be able to maintain it with zero effort. It should look awesome. It should take no one to maintain it, but should be infinitely scalable, and it should support every person's preferences, and it should be, um, comprehensible to every single person on the earth, and it should be usable for everyone, and so on, so on, so on, so on.
+
+So that's the kind of perfection I want from everything that I do. So this is the problem that I got. Okay, and this is getting much, much more clear as I let myself, um, uh, as I let my thoughts just flow into these kind of systems.
+
+So it's recorded, and I just tell them, hey, just can you just analyze these thoughts that I have and tell me what my patterns are? It just tells me, it tells me to my face that, hey, you're a perfectionist, you have this issue. You try for— strive for perfection, you get nothing done. That's it.
+
+It's, it's, it's, uh, it's very clear. LLM tells— the system tells, hey, you thought about this thought on this day, on this day, on this day, at this time, at this place, and you again thought about the same thing again on this day, and then you keep thinking about it, but you don't do anything because you wanted to be perfect, but you're unable to arrive at a plan or design or specification that you think is perfect, then as you start, you again stop and think, hey, is this perfect? You keep doing more analysis and more designing and more, you know, planning and all those things and research and all those things, and that never ends. That never ends.
+
+That is a pattern that I got. And this is getting more and more clear as I observe my thoughts. So there are at least 10 other patterns, you know, distinct patterns that I can— that can be useful to know about in myself.
+
+Okay? Like that, you also got your own patterns. So if you use the software, you will be aware of those patterns.— and if you want to do something about it, you know what? You cannot do anything about it.
+
+When you observe it, the thing that you observe changes. That is the only way to change anything. Observation changes what you're observing.
+
+That is the only way to change anything. You give more and more attention on that —thing or that aspect or that process or that person or that place or that thing or that direction or whatever it is, you place— you give it more attention, careful attention, not serious attention, but like Alan Watts says, sincere attention, pure attention. What is it? What is happening? I want to have a clear view of, uh, the thing, of this place, of this person, of the situation, of this process, of the system, of this idea, of this set of thoughts, of this pattern, etc.,
+
+etc., etc. That kind of clarity just that will change the thing.
+
+That is the only way to change anything meaningfully and in the right way. Otherwise, we are just trying things and that's not going to help. That will not help change the thing.
+
+That's what I want to claim. I don't have any real proof to back it up, but but, uh, that's what I think is the case. So yeah, so I was saying I want a thought tracker and I want to build the thought tracker using thoughts.
+
+Oh my God, that is, that is an ambitious thing to do, but let me try to describe how I'm going to do it. I'm sorry about it. I burped into this recording, but what to do? I'm a human being.
+
+I got my own human side, right? This is my human side. Burps, a fart, I lie, I am greedy, I have desires, I have lust in me, and blah blah blah. That's a human side of me.
+
+I'm not ashamed of it, but I'm not really proud of it either. Anyway, anyway, anyway, anyway. Mm, so I wanna build a thought tracker and how do I wanna build it? I want to have a process of doing it.
+
+If it is a public thing, it would be nice because I'll be getting feedback and I will have something to show. Maybe it'll motivate me to do more. You need motivation, you need rewards to keep doing something.
+
+Otherwise it'll feel boring and dry and useless and not rewarding, and there is no incentive in doing this, and the whole thing will just— You know, shut down. But the worry is that if I put this idea out there, will someone copy that? Will some nasty evil corporation understand that this is a great thing to do and they'll just copy that, do that before me because they got money and muscle? And all those things, and that just kill my business. That is what I'm afraid of.
+
+But I think, I mean, the people who want to do this will do this. And there's also a beauty in someone trying to do this alone. No company will be able to do it like I am doing it.
+
+Because this is coming out of a sincere, real pain. I felt the need for this software because my mind was messy. It was full of thoughts.
+
+You know, most days I'm having similar thoughts like the last day. Last day I had some thoughts, and then the next day I have like similar thoughts, and the next day I'm again having similar thoughts. And on the same day I'm having the same thought like multiple times.
+
+Isn't this bad? Isn't this stupid? Isn't this a wastage? Etc., etc. And it's like, I want to do this.
+
+Oh, it's a great idea. I want to do that. I want to build that.
+
+I want to go there. I want to see that person. I want to talk to different people.
+
+I want to do interviews. I want to build these kinds of products. I want to build a space which will be like this.
+
+It'll be a great space for people to hang out. I want to have a 24 hours— real-time streamed thing which I want to call Super Space, blah blah blah. It's like my mind was flooding with ideas.
+
+It was idea after idea after idea after idea after idea. Every day I get new ideas. Today I got like 5 new ideas that I want to do.
+
+But the idea comes up, I entertain the idea for like 5 minutes, Then there are so many other things that I have to do, right? I have to feed my family. I have a kid, I have an infant, I have a wife, I have family. I definitely, uh, would be fine living in the forest wearing something and eating fruits and just looking at the waterfall and just be there and breathe and relax and fight the leopard and die and all that.
+
+That's kind— that lifestyle is fine for me, or at least I think I will be fine doing that. I don't know when it actually happens, but I like it or not, I don't know. I always tell everyone that I'm fine with that kind of lifestyle, but that is not the kind of lifestyle I'm living right now.
+
+I got a family and they will be asking things. Hey, you resigned from your well-paying job and you're saying you want to build something. 'What is it that you want to build? Can you explain to us? How are you going to earn from it? Can you explain to us?' They may not be— I mean, some family members, especially my father, will be so direct, and he will be asking me things like, 'Hey, what are you doing? How are you going to earn? Where will money come from?' Etc.,
+
+etc. Some others, not so direct, they may subtly indicate or signal their worries about my job situation. Say, how is it going? Um, and did you make any progress? Etc.,
+
+etc. That carries some kind of emotional thing with it, so it's not a simple plain question that I can just answer in a matter-of-fact way, okay? There is a problem with questions coming from people whose lives are so intertwined with ours. Because a simple question can carry with it a big history, a lot of memories and emotion and all those things.
+
+So even a small question can actually disturb you. It can intimidate you. it can be scary, etc.
+
+So— Oh, if I'm coming back to the thing that I want to do— oh my God, can you finally describe the thing and just keep moving? Okay, what I'm going to do is I'm going to do a livestream And somebody's calling.

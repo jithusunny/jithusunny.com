@@ -1,0 +1,131 @@
+Hey, uh, so like I said, what I want to do is I want to record my thoughts, document my thoughts, track my thoughts, observe my thoughts, see my thoughts, however you want to look at it, however you want to talk about it. That is what I want to do. I want to see the contents of my mind, whatever I can verbalize.
+
+What I can represent using English language or any language. That is what I want to do. That is something that I'm already doing.
+
+I actually created a static website which I have deployed using GitHub, and it is live on jithusani.com right now. And what is happening there is I just open a new text file, I write what comes to my mind there.
+
+That's That's what I call the raw thoughts. And I've been doing that for a couple of days now. And not just typing, right? I just record, um, my voice like this.
+
+Whatever is coming to my mind, I directly stream that to my tongue, and that gets transcribed, and then I get the text of the raw thoughts. That's also another way in which I have been recording the raw thoughts. So I want to take it to the next level.
+
+How do I do it? I will, I will, I will, I will create a software which will make it easy for me to, to, um, what do you say, easy for me to record my thoughts. I can simply do that using, uh, with cursor in an hour, right? In one hour I can get this done. With cursor or ChatGPT or whatever.
+
+But I want to do that in a different way, some— a radically different way. Um, radically different is something that I keep using all the time because I, I like that, that phrase, radically different. I want to be a radically different person compared to other people.
+
+Compared to other people. So 'Um, what is this radically different way of doing things? Can you tell me that in a simple way?' I'm sorry, I cannot tell things in a simple way. No simplicity in my description, in my articulation, in my explanation.
+
+The way I talk is always going to complicate things. If I just shut the fuck up, things will be much, much more clearer. But what to do? I have to speak, else how will the idea become vain? Clarity is not what we're trying to do.
+
+Okay, so the raw thoughts to be captured, we need a software which will— when we open that software, um, it will just list the, the, the latest thoughts. When I click on any of the thought, um, it will open the full thought stream. Okay, and there will be a button to Record the audio.
+
+If I hit that button, I'll be able to talk into the mic and that will get recorded as an audio file. It will be kept in a place and then that'll get transcribed. So it can be a queued thing like a job, transcription job or whatever, and it just gets transcribed into a text tab which is what we already have.
+
+There will be a place for— for thoughts, and we kept in a place, and that's it. That's it. That's the thing that I want to do next.
+
+And here's the twist: the way I want to do it is— I don't want to write a single line of code. I don't want to write it, but I also don't want to do the wipe coding thing, which is madness. I don't want to keep doing the same thing again and again and again as whenever I get a new idea or whenever I want to change something and so on.
+
+I don't want to accumulate tech debt. I don't want to repeat this process. It's a boring thing to do.
+
+Once I create it, again to go through the motions of the thing and blah blah blah, same thing, I mean, it doesn't make sense. It's not a useful use of my time. It's a bad thing to do.
+
+So what is this radically different way of doing this? There will be raw thoughts about this initial version of the software that I want to do. The raw thoughts will be— The raw thoughts will be, will be, will be, will be typed in somewhere. Or maybe I'll do a livestream, a YouTube livestream thing.
+
+So I'll be recording all my thoughts about the software So I'll just start off saying, hey, I want to create a software to track thoughts, and I'm going to create it in a different way. This livestream that I'm doing right now will contain the description of the specification in a human-understandable way. I'm going to describe the software in a human-understandable way in this livestream, and once this livestream ends, I'm going to get the transcript of— the livestream, and I'm going to pass that to ChatGPT, and I'll tell ChatGPT to give me a spec that I can pass to Cursor, which will then build this software.
+
+That's it. And then I go on describing the software, which is like, hey, I want something written in Python and basic HTML, CSS, JavaScript thing, no fancy React, blah, blah, blah. The thoughts can be saved as.md
+
+files, no need of a database right now. And that's it. And yeah, when it comes to what happens when we run the software, we just need to have a command which will be able to— uh, there needs to be setup instructions, or as fast as possible setup should be automatic or whatever.
+
+It should be easy to set up or install, whatever. And then you can use FastAPI as a web framework if you want, because that's something that I think is minimal and lean and latest and modern and blah blah blah blah. So you can use that, I don't care.
+
+I mean, I do care, but you can use that. And when we run it, um, what should happen is I should be able to see a list of the latest thoughts that I've recorded in the system. And if I click on a thought, it'll show the detailed thought.
+
+That's it. and there will be a button to add thought. But that button will, uh, for now there is no audio.
+
+It's just when I click on the like create thought or whatever, it just opens up a text editor kind of a view. I type in the things that I want to type into that, and, uh, and I click save, and that becomes the latest thought. Again, it gets saved as a text file, not database or anything like that.
+
+That's it. That is it. Uh, that's the plan.
+
+So, and, um, I'll say, hey, uh, this livestream audio is going to be transcripted. I don't know how to describe it. The transcript of this livestream will be given to ChatGPT, and I'll be requesting for a spec for the software I'm describing this livestream.
+
+And, uh, once that is done, I'll give that to Elsa, and I'll try to— I'll tell it to, um, give me ChatGPT will give me a spec, or maybe I'll just use Cursore, no ChatGPT, okay? I'll just hand this— I'll just save this as a raw thought in a brand new, uh, project folder. I'll tell Cursore, hey, analyze this, and this contains a description of a software, please give me a specification for that same thing. And Cursore will give me the spec for that.
+
+And then I also— Cursore, hey, this is the spec that we want to build a software as per this, and Cursore will build a software for that. And then what I do is I'll do another livestream, which is the second livestream, and in that I will be observing, I will take a look at the software that the cursor has built as per the task and as per the spec and everything. And then I will have thoughts about it, you know, further thoughts about the thing that was just built.
+
+So these thoughts will be like feedback, right? It's like feedback. And next I will ask cursor. You know, I do a live stream where I inspect the software.
+
+I say, hey, this is good and blah, blah, blah. I also, okay, I forgot something. Between these two live streams, I will also have to note down the events that happened.
+
+I did this, I got the transcript from the live video thing and I uploaded that to No, I got the audio from the livestream one, I uploaded that to, what do you say, uh, AssemblyAI, I got the transcript, I saved that in there, blah blah blah, all those events. Or maybe I installed FastAPI, I create a virtual environment, or whatever whatever whatever, all those things that I did which is relevant to this project will be, uh, recorded. So there should be a raw thoughts folder or thoughts folder, um, and then there will be an events folder.
+
+So within each of these things, in a chronological manner, I'll be noting down the thoughts and events and everything. And then in the livestream too, I'll be showing the software that the cursor has built. And, um, and then what? And then I'll be opening the software, I'll be sharing my screen, I'll be showing, hey, this is what happened.
+
+Um, when I click on this thing, it's not opening up. So that's feedback one. And this is— there's no button.
+
+And when I click this button, this is what is happening. This is not what I said I want, blah blah blah. So all those 10, 15, 20 different feedbacks, if any, about the software, how it is working or how it's not working, and so on.
+
+And about the— if everything is working, if something is not working, then I will first fix all those things first, I would say. Okay, so all that feedback is described in the live video, and I hit stop. And then again, off the live video, what I'll do is I will get the audio, I'll try to get transcript, I'll save that as raw thoughts in the same project.
+
+And then I will ask Cursor, hey, this was a raw thoughts one, this was a spec that was generated from those raw thoughts, and you also have the code based on the spec in the same project repo. What I want you to do next is, hey, the second raw thought file contains feedback about the software that you just created. there were some issues probably.
+
+That's what the feedback is about most probably. Or that may be also about this, the new addition that we want in the software, etc. So what I want you to do is update the spec as per the new set of thoughts.
+
+So now it's not just the Thoughtfell 1, it's Thoughtfell 1 and 2, right? Based on that, I want you to update the spec and based on the updates that you did to the spec, update the code as well. Okay, and so on and so on and so on. So this is what I want to do.
+
+But there is a catch. I want the software to be generated fresh every time from the spec. That is something that I wanted to do since the beginning.
+
+From the beginning. That is, there will be some reusable pieces, those can be reused, but overall the software should be as if it was generated from the spec the first time, like directly. It's not built, you know, updated, edited, edited, edited.
+
+Even LLM shouldn't be editing stuff. It should be a one-to-one mapping between the thoughts to the spec to the software. There should not be any drift or anything like that.
+
+There should not be gaps. So if I hand out the spec to something else and ask it to build it, it should give me this exact software. So that's why I'm saying every time the spec is updated, the software should— the whole software thing, all the code must be generated fresh.
+
+Again, like I said, this can be done in an efficient way if we do the architecture in a careful you know, beautiful smart way where we have a lot of reusable blocks, something like the polyglot architecture where we have a lot of reusable blocks lying around. We just, we don't rebuild the blocks themselves, but the way we arrange the things, maybe some tweaking is required in the building block or something as we discover some issue or some room for improvement or some kind of a change that will make it more usable or more adaptable or whatever. those things are fine, but otherwise we don't have to build these reusable things every time.
+
+We can just reuse it across these iterations. But across iterations, in each iteration, the whole thing should be as if it's built from scratch in that iteration. Should be like that.
+
+How to achieve that, I don't know, but at least in the first iterations, I don't think we have to do that. We need to have something that is working, which makes this process itself easier, so that we are able to, um, easily record thoughts and make cursor do something, and so on. Easily record, easily talk and get that transcribed in real time to some text file and take action on that.
+
+So we want to get to that state first before we can attempt this reusable building blocks, building software, entire thing, fresh thing. Before attempting that, we need this basic thing which makes this process itself itself a bit smooth, then we can attempt it. So this is what I want to do.
+
+So this, this raw thought is going to be saved somewhere in my current project thing, and I want— I will feed this into ChatGPT. And hey, ChatGPT, what I want you to do is summarize this whole thing. I've been just dumping my thoughts about this whole process that I want to do, and please summarize this in a crisp, succinct way and tell me how to proceed with this live stream.
+
+off the screen thing, then livestream, then off the screen— that process. I want a clean, repeatable process through which I can do iterations in the same way. So while doing that, I'll be capturing the thoughts and the main events around all these, uh, all these things.
+
+Like, I got the audio file from the livestream, I uploaded that to AssemblyAI, I saved the output from AssemblyAI into this repository. It was initially empty, but then I got the first raw thought in this folder, and I also have this event also recorded. So the history of this whole process, uh, the history of this whole project is there from the very beginning.
+
+So that the live stream is going to be the first, um, first thing in the project. That's the first thing. And then the events, right? So, uh, live stream ended at this time, and then I, uh, got the audio from the live stream at this time.
+
+I downloaded that and kept it here, and I uploaded that to AssemblyAI, blah blah blah, all those things. So, and I saved the output from SplyEye in this test. So that those events may not be exactly like this, but the main events needs to be noted down in chronological order in the events folder or whatever.
+
+So events, thoughts needs to be recorded, and I need to do this livestream thing because I want to— I think that would be fun if I explain that in a public place. And, you know, that's a collaborative way of doing things. I think people can give me feedback in this process.
+
+and they can give me some— they can tell me things that I'm not seeing but still useful and so on and so on and be fun as well. I want to show as well, right? Because this whole universe is about showing us, like Alan Watts says, this is a show. So this is maybe my show.
+
+This is how it's looking like right now. It can get more exciting and interesting and entertaining and fun and useful and so on in the future. But right now, this is how it looks.
+
+So yeah, that's what I want to do. So ChatGPT, when I give this transcript, this transcript of this audio session to you, I want you to prepare a crisp plan which I can follow tomorrow and do this livestream thing. And hopefully in a few iterations I will have this thought tracker thing ready, which will be able to— which is something that I'll be able to use to record thoughts, to type thoughts.
+
+I can click photos of handwritten notes and that would be saved as thoughts and all those things. So all that. But first, again, I said, like I said, I'll be attempting to do the basic thing first in via the live stream thing.
+
+So what I want to do is just give me an outline of the, of how to execute this. This do the live stream thing first, then then the next live stream. So this is what you need to take care of.
+
+This is what you will say in the live stream. This is you have to describe the first basic version of the software in the live stream. You also have to give instructions to ChatGPT in the live stream itself saying, hey, this is going to be an instruction to ChatGPT.
+
+GPT, so, or ChatGPT, or Cursor, let's say Cursor. Cursor saying this is what the thing is, I want you to generate a spec for that, and then also give me the prompts for that. So in the live stream itself, I can say, hey, in this transcript, um, request Cursor to give you two things.
+
+One is the prompt to generate spec as per this transcript. Second is, once the spec is ready, create a software, create— I mean, generate code which will implement the software that is described by the spec. And the software should be built in Python.
+
+It should use HTML, CSS, JavaScript only. Very basic, minimal, bare minimum thing that just works. Nothing extra, but exactly like how the thoughts describe the software.
+
+And it should just work. It should not fail, should not be complicated, should be easy to install, set up, or whatever. Um, the setup instructions and everything should be as automated as possible.
+
+There should be very minimal manual steps and it should just work. Things should be saved in as files, I mean the raw thoughts should be saved as.md files, etc.,
+
+etc. So, so the second prompt which actually creates the software may need some input. I mean, I think this.md
+
+file, Python, HTML, all this can go into spec itself, right? So maybe I don't need a second prompt which I need to pass to tell Cursor, hey, this is a spec, create software based on that. Maybe that prompt is not required, I don't know, you tell So you give me this outline, how to execute this. I've already given you all the information that you need.
+
+Um, when I say this, uh, share this transcript with you, I want you to share the execution plan, which is very crisp, succinct, and something that I can just follow. Imagine I'm Elon Musk and I don't want to waste any time. I want to be as efficient as possible.
+
+I want to, uh, I want to go straight to the point. I just want to execute. So what are the things I need to do? What are the things I need to take care of? What is the outline of the plan I need to follow? This is what I want you to tell me, okay? Thank you so much and have a great night.

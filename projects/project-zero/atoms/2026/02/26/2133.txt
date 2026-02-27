@@ -1,0 +1,14 @@
+Thought:
+What's wanted next for thought capture: tap phone, speak, auto-saved with metadata (date/time only). Multi-device — phone, laptop, maybe smart TV. Cannot be local-only: data must survive losing a device. Needs a backend.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/26/2130.txt
+
+Source_time:
+2026-02-26 2130
+
+Extraction_time:
+2026-02-27 1000

@@ -1,0 +1,14 @@
+Thought:
+Code is just thoughts in another form — a translation, a transformation. We just need to select which thoughts become software. The thought tracker itself needs to be built by thought tracking — recording thoughts about the software, generating spec, generating code, inspecting, feeding back. Nobody has done this before.
+
+Tags:
+insight, spec
+
+Source:
+raw/2026/02/26/2214.txt
+
+Source_time:
+2026-02-26 2214
+
+Extraction_time:
+2026-02-27 1000

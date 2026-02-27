@@ -1,0 +1,14 @@
+Thought:
+Human beings should not write code anymore. LLMs have been trained on enough code to write, maintain, edit, and understand code better than humans — who have emotions, low-attention times, distractions, and make mistakes that snowball codebases into piles of mess.
+
+Tags:
+decision, insight
+
+Source:
+raw/2026/02/26/2214.txt
+
+Source_time:
+2026-02-26 2214
+
+Extraction_time:
+2026-02-27 1000

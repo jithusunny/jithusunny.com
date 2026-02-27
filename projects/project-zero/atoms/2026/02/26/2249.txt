@@ -1,0 +1,14 @@
+Thought:
+Thought tracker v1 concrete spec: open app → see list of latest thoughts. Click thought → see full stream. Button to add thought → text editor view → type → save as .md file. No database. Python + FastAPI + basic HTML/CSS/JS. Easy setup, minimal manual steps. Later: audio recording button → transcription → saved as text.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/26/2249.txt
+
+Source_time:
+2026-02-26 2249
+
+Extraction_time:
+2026-02-27 1000

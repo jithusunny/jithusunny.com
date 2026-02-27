@@ -1,0 +1,147 @@
+So, um, we have been thinking about or researching about how to start the coding part for the notes software or for the thought software. Which is dynamic and more capable and so on. So till now we had been using the GitHub static website, the GitHub static website for tracking the thoughts.—
+
+or documenting the thoughts. I somehow don't like the word tracking, so— I have been using static GitHub website for documenting thoughts that I'm having. But it is a bit limited.
+
+There are many limitations for that. So it naturally has reached that, that point where I am now limited by what it can support. So— —We need to move into a new shape that can be deployed on machines, like a dynamic application.
+
+It will be more capable. It will have capabilities like add a thought, process thoughts, etc., etc.
+
+So right now, for adding the thought, I am editing the source code directly. Using an editor. That was good to start off, um, but that is not— it is not smooth.
+
+I cannot do it from my phone, or I have to, like I'm doing right now, I have to record my audio and that gets saved into my Google Drive. — and then I have to upload that to AssemblyAI or something and get that transcribed, and again I have to manually copy-paste that into the source code repository. Okay, so— Now, the main question is how to start perfectly so that the history is perfect.
+
+What do you mean? I mean— I mean, these thoughts that I'm having, these are the basis of all the software that comes up from it, comes out of it. So doesn't it make sense to capture all of these thoughts? —Yes, but the thing is, often thoughts will have— will be talking about all the things in my life, not just the software. And all the things in my life are contributing to the software.
+
+Mm-hmm. So, it makes sense not to publish. Raw thoughts because it may contain private things, and it makes sense to publish all raw thoughts then because only then it will be complete source.
+
+Mhm. Okay. What about— This is also the beginning of, um, of this entire system that we call Projject Zero.
+
+This is the beginning of the Projject Zero. So in every iteration, on every day, what are the things that I want to create? I want software. Why? Because software is what will help me to document my thoughts, see what I'm thinking, organize my— organize the stuff in my mind, and so on.
+
+So that software is inevitable. I cannot just write down and organize with my hand. Organize the content in my mind with my hand.
+
+That is not happening. Um, so I think one output of my daily life will have to be software. And Another output is around the software, as part of the software there are a few things.
+
+One is documentation, documentation about the software, what it is, who is it for, how to use it, and some qualities of the software it should have. It should be test-driven. So out of these thoughts, the— There should be a prompt which would be fed into an LLM, which will say, hey, look at these thoughts.
+
+We want to create a software based on this. So what you need to do is translate this into a spec. And once the spec is ready, what I'll have to do— um, not really spec, right? Um, should I create tests first? Makes sense, right? Whatever.
+
+Um— Whatever I am saying, we— the raw thoughts— The raw thoughts need to be converted to tests. Tests are basically saying what happens when someone uses the software in different, different conditions. That is tests, right? Or should we call it something else, like user story? I just hate that word, but story, something like that.
+
+Okay, so So the first thing that needs to be generated from raw thoughts is a description of the software. Right, the first, um, is a detailed description that may not be in a form that we can just share with people so that they understand what the— no, I think that it should be a human-readable description of the software. Right, what should we call it? We should call it, um, what, what is it, what is this software.
+
+So that is the first thing. It's like a story, describes what the software is in a human-readable thing. No, no, no, I think it should be— it's the first thing that comes out should be— a detailed description of the software.
+
+The what, the how, the why, everything. How? Should we have how? No, but the what and why, maybe, yeah, in full details. And— All these details— [SIGH] Should this be called the spec? Yeah, why not? Let's create a spec.
+
+Specs are boring. We need a story. What is the story behind the software? That is the why.
+
+Spec is the what. Right? Okay, so— okay, so we should generate the why, which is the story. Why is basically linking events.
+
+This, so this, so this, so this. That is the causal connection between different events. There are no separate events.
+
+And story is making sense of this so-called separate events. So you see the linking, linkage between the events or the flow of things. That is what the point of story is.
+
+Story is what makes it possible for us to make sense of the world, of the existence, of the experience, of the happenings. Okay, so we want the story. What is the story of this Mridhu? Why was it made? Why was it made? Mmm, what are the different things that— what are the different things that— What are the different things? One thing is with full details of what the thing is.
+
+And in this raw thoughts, what would come up is, I used the software that you generated, I saw the TDD that you generated, I saw the story that you generated, I saw the spec sheet that you generated. But what happened is the software that resulted from that, um, was fine, but it had this difference. From what I wanted.
+
+It was imperfect here, that button was not right, etc., etc. So, there will be feedback too as raw thoughts.
+
+So, hmm, we need to have like the full details So, the raw thoughts come in first, we build the spec and story and code and tests and documentation and all those things, okay. And then we use it, and even before we use it, we generate the tests, we may realize that something is missing. Something is not clear, something is ambiguous, we need more input, etc.
+
+So we go back to the first step. So there can even be a simple UI. There can even be a simple UI which can be used to smoothly do this, right? But that UI should also be generated the same way.
+
+This is a bootstrap— I think this is called the bootstrap problem. Uh, anyway, let's not have the UI right now. Let's start with the thoughts, start with some basic— okay, or I can do this, I can restrict the thoughts.
+
+Um, okay, again I'm coming back to this. So right now I have recorded so many thoughts about so many things. That is actually the launchpad of this thing, but it also contains some thoughts about other things, other projects and so on.
+
+So should I be including all of that, or should I start fresh? That's the thing. Ideally, the thought should be there in the source code, in the repo itself. Maybe I can start fresh.
+
+I can start fresh just for Projject Zero. Ah, I don't know. How about this? Hmm.
+
+So what are my problems? My problems is that row thoughts can contain thoughts about anything. I cannot really enforce, um, I cannot say that it should have thoughts only about this blah blah blah. It'll be— It will be a bit restrictive to do that and Another issue is that if I don't like filter thoughts and share with the world, I may be sharing private things or unrelated things or irrelevant things or meanderings and so on and so on.
+
+—So, what should I do? I'm like confused. I'm confused about this, how to deal with this. Ideally, I should be sharing everything with the world, right? Because my thoughts are not my thoughts.
+
+And, um, all these things are connected, and these things contribute. Everything is interrelated. So, for people to see the full picture, I should be sharing everything that happened till now.
+
+But there are practical issues in it. I could be jailed for thinking something and talking about it. People can— people can get offended.
+
+Because of some thoughts that I have, that I talk about, of course. If I don't talk about my thoughts, then that's fine. But if I talk about some of the thoughts I have, then definitely people are going to be mad at me.
+
+Then I'll have to deal with it. Not that I will be— I don't want to engage with such people because it's a waste of time. It's a waste of time because there will be so many people there will be simply so many people I have to deal with.
+
+So better not, you know, get into all that mess. I'm not really afraid of explaining what I think, but there are so many people. There are simply so many people that I'll have to talk to.—
+
+which is a trouble. So what to do? I cannot just stay like this. I need to move or I'll— I have been stuck for the past few days and I cannot let myself be like this.
+
+I care about myself, my mind, my body, my life, and blah blah blah. So I better make a decision and move. Make a decision about how much to share with the world.
+
+Should I share everything? Should I share all my raw thoughts about everything? Should I share everything that I think with the world or not? Should I share the history of Projekct Zero from right from the beginning, the very beginning, or not? These are the two main questions I have to answer. For the first one, should I share everything that I think with the world? No. Because the society is a bit insecure, and, um, it, um, does not like you saying about some stuff.
+
+People can get offended quickly if you just let your raw thoughts out like that without any filter. It can land you in trouble. It's simply not worth it.
+
+Or what you can do— Yeah, so— I can— I have to record all my thoughts. I have to listen to everything that comes up in my mind. Every single thing.
+
+There is no question. —there is no question that I will let go of some topic, some content, etc. I want to see everything that is happening in my mind.
+
+My attention, I want to separate my attention from the content, consciousness from the contents of the consciousness. So the contents, whatever it is, I want to document that. And That means at any point I will still be capturing all the happenings, all the thoughts, all the events, etc.
+
+So I'll be capturing everything, there's no question about it. So that is almost what I'm doing right now, except I don't have capability to capture events yet into the system. I note down all of that.
+
+in the journal. Soon I'll have the system also being able to take events. So what I think we can do is keep recording raw thoughts and events like we are doing right now, but have a filter.
+
+Don't let people, um, don't let people see the raw thoughts. Later on, we can even have a sophisticated mechanism which can filter out raw thoughts or mask details or curate raw thoughts, etc., etc.
+
+But the thing is, when we extract the atomic thoughts only and share that with the next level, we miss so many signals. Especially the why. We miss the why, maybe.
+
+Or maybe the extraction process can be improved so that the whys are not missed. So there's a story-like thing, right? And that to be extracted as atomic thoughts is really— I don't think that's going to be smooth and convenient. The thoughts that I'm having, is it the thoughts of Projject Zero or is it thoughts by me? Okay, I'm getting a brand new idea now.
+
+So whenever I want to work on Projject Zero, I become Projject Zero and I see what thoughts come up for Projject Zero. But that requires discipline, that requires practice, that requires a lot of dedication. I cannot always step into Projject Zero's personality just like that.
+
+I also had questions about whether I'm modeling a different being, or am I modeling a digital twin of myself, or should there be different entities like house, and myself and so on and so on and so on. So there are questions like that, but I think I need to move forward. So just to move forward from where I am right now, I think I can try experimenting in one direction, any one direction that makes sense.
+
+The direction that makes the most sense now is— to have the raw thoughts And generate the why, the story, the human-readable story, the what, the spec, which can be zoomed in and out, and presentation be tweaked as per the reader. I mean, that is a different thing. It can come in later.
+
+For now, you can just think there will be the why, the story. There will be the what, which is detailed spec. And then the— The tests, the different kinds of tests.
+
+And the software itself. And the documentation about how to use it. So how about something very radical? We generate the documentation Along with the why and what.
+
+So the why, the what, how to use, all these things get generated first. And then the tests, how the automated tests, and then the software itself, and then the testing happens and make sure that everything is as per the thoughts. If not, there will be questions raised to the previous levels so that the human being can answer those, and those become inputs to the second iteration, second iteration or generation.
+
+And, um— Fever. I mean, Yeah, so. So each iteration will have as input these thoughts.
+
+So the next iteration, next generation will have as its input the thoughts or the answers to these questions posed by the first iteration, by the first round of generation. Yeah, I think I can do this thing. Thing is, I'm still searching if there is a way to— if there is a way to start this perfectly.
+
+How to start this perfectly so that people see the very beginning, the beautiful beginning of this story, everything. How to do this perfectly? That's what I'm still trying to figure out. From day one, it should be perfect.
+
+That is the mindset I have, but that is also a bit problematic. I'm not able to find a way to do it. Mmm, what to do? How about this? The raw thoughts will always be there.
+
+For now— The raw thoughts will never be published. It will be— raw thoughts will be always private. It will always be private.
+
+So what I can do is I create a new repository which is like public and everything, and the data part will be there which will be private, not committed to the source code. Not committed to the source code. So a different repository altogether, or maybe a different branch in the same repository.
+
+And, uh, different branch in the same repository. Mhm. Yeah, so what to do, what to do? Maybe I can sit down for a while and figure out— Maybe I can sit down for a while and figure out— I think I need to make a reversible decision here.
+
+Make a reversible decision instead of getting stuck. So what is a reversible decision or path? Here, the reversal thing is just continue what you are doing right now and start having thoughts about the software, this process itself, and generate the software. Or maybe create a new folder and have new thoughts about this thing alone and things like that.
+
+Later on, when it is time to publish the raw thoughts— I think I should be publishing the raw thoughts from day one. Only then will it make sense to the people who are watching or seeing this. So I need to publish raw thoughts from day one.
+
+That's the first constraint. I need to publish atomic thoughts. I need to publish the spec, the story, the what, the why, the software, the source code for that, the video tutorial, the audio tutorial, the documentation, blah blah blah.
+
+All those things need to be shared from day one. That is, uh, and the deployment guide and everything, everything. It need not be perfect on day one, right? Nobody is going to deploy it on day one, so the deployment thing can be manual.
+
+Many of these things can be manual at first, but the core needs to be, needs to be done, and then we automate and have thoughts about each of those things. things that are manual right now but needs to be automated, and we generate the artifacts like whatever Terraform or, um, CI/CD or whatever and do that in an automated manner later on. Hmm.
+
+—Ah, problem, eh? Audio message jalega. So, um, what to do about this? I'm like so, so confused. I'm confused, I'm confused, I'm confused is all I'm saying now.
+
+But I'm not really willing to check. See, the thing is I'm trying to find a way to something that already exists. I'm just not being systematic enough.
+
+The thing that I'm trying to find already exists. So— The thing that I'm trying to create already exists. It is like a— it is like a spot in the forest.
+
+I just need to find my way to that. And how do I find my way to that? By being systematic about this process. This decision-making, these thoughts, these constraints, this what-ifs and everything, I need to write those down and figure out the next step.
+
+That is what I need to do. Simply by walking and talking, it's not revealing itself, the path. So let's do that.
+
+For now, let's wrap up. 

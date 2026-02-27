@@ -1,0 +1,14 @@
+Thought:
+Livestream iteration process for building software: Livestream 1 — describe the software in human terms, include instructions to Cursor for generating spec and code. Get transcript, save as raw thought, feed to Cursor. Livestream 2 — inspect the software on screen, give feedback on what works and what doesn't. Get transcript, save as raw thought, update spec, regenerate code. Events recorded in chronological order alongside. Repeat.
+
+Tags:
+spec, intent
+
+Source:
+raw/2026/02/26/2249.txt
+
+Source_time:
+2026-02-26 2249
+
+Extraction_time:
+2026-02-27 1000

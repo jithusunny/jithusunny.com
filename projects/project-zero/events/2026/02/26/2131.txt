@@ -1,0 +1,14 @@
+Event:
+Recorded first thought stream while driving — a new mode of thought capture alongside walking and typing.
+
+Tags:
+workflow
+
+Source:
+raw/2026/02/26/2130.txt
+
+Source_time:
+2026-02-26 2130
+
+Extraction_time:
+2026-02-27 1000

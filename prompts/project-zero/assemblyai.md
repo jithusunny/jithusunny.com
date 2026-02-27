@@ -1,0 +1,5 @@
+- Transcribe spoken Indian English accurately. 
+- Ignore filler sounds and background traffic noise. 
+- Preserve sentence meaning and punctuation.
+- Preserve paragraph breaks where the topic shifts
+- Key terms: Mridhu, Elsa, Jithu, Project Zero, Ian, SVK

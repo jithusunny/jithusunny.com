@@ -1,0 +1,14 @@
+Thought:
+Raw thoughts will always be private. But everything else — atomic thoughts, spec, story, software, source code, documentation, tutorials — should be published from day one. It need not be perfect on day one. Many things can be manual at first, but the core needs to be done and visible.
+
+Tags:
+decision
+
+Source:
+raw/2026/02/25/0834.txt
+
+Source_time:
+2026-02-25 0834
+
+Extraction_time:
+2026-02-27 1000

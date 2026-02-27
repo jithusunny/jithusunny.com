@@ -1,0 +1,14 @@
+Thought:
+The pipeline for building software from thoughts: raw thoughts → story (the why, causal connections between events) + spec (the what, full details) + documentation (how to use) → tests → code → deploy. If anything is unclear at any step, questions go back to the previous level for the human to answer. Those answers become input to the next iteration.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/25/0834.txt
+
+Source_time:
+2026-02-25 0834
+
+Extraction_time:
+2026-02-27 1000

@@ -1,0 +1,14 @@
+Thought:
+Each iteration must regenerate the entire software fresh from the spec. No editing on top of editing. One-to-one mapping from thoughts to spec to software with no drift. Reusable building blocks (polyglot/polylith architecture) don't get rebuilt — only the arrangement changes. But overall it should be as if built from scratch each iteration.
+
+Tags:
+spec, rule
+
+Source:
+raw/2026/02/26/2214.txt
+
+Source_time:
+2026-02-26 2214
+
+Extraction_time:
+2026-02-27 1000

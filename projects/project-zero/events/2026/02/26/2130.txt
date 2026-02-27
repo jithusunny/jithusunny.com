@@ -1,0 +1,14 @@
+Event:
+Did a YouTube livestream to establish the thought-to-software process, then deleted it due to perfectionism and self-judgment.
+
+Tags:
+publish, issue
+
+Source:
+raw/2026/02/26/2130.txt
+
+Source_time:
+2026-02-26 2130
+
+Extraction_time:
+2026-02-27 1000

@@ -1,0 +1,135 @@
+Hey, how's it going? Today I'm doing the Thought Streaming a bit differently. Today I'm driving and thinking at the same time. I mean, that is not the new thing.
+
+I have been doing that all the time. I have been driving and thinking always. That's not new.
+
+What's new is— I'm recording Thoughts that are popping up in my mind while I'm driving. In, uh, when what I'm trying to do is materialized as I speak, the systems that I'm speaking about, their spec gets updated. Of course, there will be some sort of confirmation and all that, but they get updated.
+
+And when I give the go-ahead again during this conversation with myself, um, I, I give this go-ahead Okay, let's do it. Confirming that this kind of a change in this system is, uh, fine. Let's do that.
+
+It is a good thing to do. I confirm it. When I say it, the spec gets updated.
+
+The— it is not some idea that could be good, etc. I mean the system that listens to my thought in real time, ready to take action, understands the nature of the suggestion or decision or whatever it is, and it just does it. Okay.
+
+So, of course, this is possible only in the case of software as of now, but as we, um, proceed, more and more things, um, that is non-software will also be able to be designed and tweaked and updated and refreshed and redesigned and so on in this way. Okay, that is a grand vision, isn't it? That's a very ambitious thing to say and dream. I mean, when you dream, you have to dream big, isn't it? Otherwise, why would you call it a dream? It's just, uh, normal thinking.
+
+Okay, so I have been wanting to do this, start doing this the most perfect way, and that has been delaying progress. That's— that has been delaying progress. Um, What do I mean? I actually did a livestream, uh, after a lot of thinking and deliberation and all that, saying, hey, this is going to be it, this is going to be the first video which establishes the process through which I'm going to do this, and I deleted it.
+
+So that is the kind of, uh, mental, uh, analysis and judgment and— that kind of a thing that's going on in my mind. I analyze too, too, too much. Maybe not so systematically, which is what is preventing progress, maybe.
+
+But it is a fact that I care too much about the presentation, how it looks, what other people will think about it, how it started, how perfect the starting of the story is, and all that. Which is— Good, I would say that is actually good. My striving for perfection in this or that or whatever is actually helping me because that is a reflection of my insistence on rigour or whatever.
+
+You know, it is a reflection of that aspect in me which wants to go to the most precise understanding of things or representation of things. But that you can, you can keep doing that till the end of time and you will still have not seen the shape of what this could become. I mean, you keep refining, polishing, ideating, analyzing and defining and specifying and observing and, you know, refreshing and all that.
+
+You keep doing all that— Um, for just the first step of the palace that you're trying to build, where would you go? You can keep polishing, you can keep refining, you can make perfect the first step in the staircase to the palace, and you can do that till the end of time. You can do more and more research and research and research and analysis and reading and whatnot. And dreaming and all that.
+
+You can keep doing that till the end of time just for a piece of tile. That is possible. That is possible.
+
+Because in one square nanometer, there are millions of particles. What if you want perfection till to that level? You know, the electrons should not be moving that way, blah blah blah. I mean, that is possible if what you want is perfection, absolute perfection.
+
+Maybe you're trying to evade something, maybe you're trying to escape the discomfort of doing the actual work, which involves some kind of, you know, public view of this thing. You know, when you actually build this [Speaker:Mridhu] Somebody's going to see it, and what they say, you don't want that to be negative because this is your life project. And if someone says something bad about your life project, it's about someone saying bad about your whole life.
+
+You're saying this is your thing, this is the most important thing in your life, and you, you show it, and others are like, "Meh, it's not good." It's like— it's like a, you know, a verdict about yourself, about myself. Maybe that's the thing.
+
+I mean, that's what people say is— that's what people say is the reason for this pattern. I'm not sure. I don't know, actually.
+
+To be honest, I don't know if that is what is happening to me. But anyway, Anyway, anyway is something that I keep saying when I realize that I'm going in circles. I'm not making any progress.
+
+I'm analyzing the, you know, the rut that I'm in. I'm stuck and I keep talking about the fact that I'm stuck and I keep listing the reasons for that. And I make this work about what all the reasons could be, should be, would be and all that, and I just can't stop doing it.
+
+And then I realize I'm doing that, this is not going anywhere. I say, anyway, that's when this thing comes out of my mouth. Anyway, um, I think we need to— I think we need to— we need to do something different here.
+
+I mean, things are not that bad. Things are not that bad. The progress that I've made with that static thing that I've made till now, and the thing that I've been using to record my thoughts till now, that's actually— that's actually okay.
+
+That's a good start. It's good. Okay, let me describe what I have right now.
+
+It is a static website. What does it mean? It means the contents of the website is static. It doesn't dynamically, you know, there's nothing dynamic about it.
+
+Whatever I have specified in the project, in the HTML, or whatever, the repository, that is all there is in the website, okay? So that is why, what I mean by static. So what does it do? It just, uh, it is a place where I document my thoughts, whatever I think, whatever I think, uh, not, you know, the entire 24 hours, but whenever I can note down things, whenever I can record my thoughts like this. I transcribe that.
+
+For example, this what you're reading right now— hopefully you're reading and not listening. Maybe I have shared the audio as well at some point and you're listening to that, I don't know. But if you're reading, this is a transcription from the audio recording, uh, that I did.
+
+So whatever is coming up in my mind, I've connected streamed that directly through to my tongue, and that is connected to the microphone, and that is connected to the phone's memory, and that is going into some kind of cloud storage, and that is something that I'm going to retrieve and transcribe and put on the static website. So that is what we have right now. Sorry about it, that's chicken rust.
+
+So, so we have this audio to texting. Otherwise what I do is I just open the text editor and I just type out whatever is coming to my mind. So we have text, basically the thoughts as text is what we have now.
+
+Um, thoughts as text is what we have now. Static website, that's what we have now. So what I want to do next is, um, make this process easy.
+
+Okay, um, make this process— what do you mean? I want to be able to record my thoughts a little more easily. I don't want to just document my thoughts using a text editor, editing my website's, you know, source. I don't want to do that.
+
+What I want to do is I want to open my mobile phone app— or whatever, there should be a shortcut or something. So I tap on it and I just speak. And that gets automatically added with all the required metadata.
+
+For example, at what time did I start blabbering? So that is metadata, right? On what date, on what day, at what time did I start blabbering about this? That is the only metadata we need, okay? And then the thoughts, and then the information that is popping up in my mind. That is the only thing that we need. It's very simple.
+
+So this data needs to go and sit somewhere, all right? So it can be local-first, it can be synced to the server, blah blah blah, all those things, local-only, blah blah blah, all those things. It can be anything like that. But what I want to be able to do is it cannot be local-only.
+
+—because sometimes— No, it cannot be local only because I want to use different devices. Okay, I don't want the data to be dead or gone or lost forever if I somehow lose my mobile phone. So I want to be able to do this on my mobile phone for some time, then I want to continue on my laptop, then I want to continue on my smart TV maybe.
+
+So there needs to be a backend, blah blah blah, those things. So you understand, right? So this is the kind of convenience I want to be there in this whole process. I want to talk about the things that I'm thinking, and the system needs to store that— and there are going to be so many other things that will be done with these things that we call the raw thoughts.
+
+Okay, there will be many, many things that we will do with this source that we call the raw thoughts. Raw thoughts. These raw thoughts— is the source of every single thing that we do.
+
+Okay? It may not be the reason why we do things, but it is like a signal of, "Hey, you're about to go and buy biryani and eat it." There will be a thought before you do that. The thought is not the reason why you do it, Thought is only like 1%, like in a causal kind of a relationship.
+
+Thought has some role in this whole, you know, things actually happening. Because there are thousands and millions of other reasons why you will want to eat biryani at a particular time. The thought itself is not the reason.
+
+But the thought indicates that it is going to happen. That is one, one, what do you, what do you say, that is one thing about thought. It, it tells us what is going to happen through the mechanism that you are, through the vehicle that you are, vehicle that you are.
+
+Plus, when you, um, you know, when you start paying attention to your thoughts, you actually understand more about yourself. Okay, what am I doing here? I want to talk about something else, right? I want to talk about that, that, uh, thought to software thing. But now what am I doing? I'm just explaining what thought— why we should listen to thoughts and all that.
+
+Okay, um, why not? Let me describe that. So The reason why I'm doing all this is— there is no single reason. There are thousands of reasons.
+
+Okay, that was an exaggeration. There aren't thousands of reasons. There's maybe, uh, 4 or 5 reasons.
+
+The first reason is I think it's an interesting thing to do. It is a fun thing to do. list out the thoughts that you're having, note down all the thoughts that you're having.
+
+It tells a story. It, it tells you, uh, it shows you the kinds of patterns that you are actually living out. Okay, that is not always available.
+
+That information is not always easily available for for investigation for 99.9999% of the people out there. So if it is available to me, isn't that good? Yeah, it's good.
+
+So you, you get more self-aware. That is one benefit of this thing. If you pay attention to what you are thinking, you get— more self-awareness.
+
+You become more self-aware. It can be a bad thing too. If you're too self-aware, you'll be too self-conscious and you can go into loops and all those kinds of messy things, and that can actually turn you into a, uh, psychologically unstable person as well.
+
+So this is not for everyone, or it should be done, uh, keeping in mind that this can go bad as well if you do it in a, in a, you know, if you try to not do it. How do I say? I mean, it can backfire as well. Okay.
+
+So that should be kept in mind. So that's like a disclaimer. That's like a warning.
+
+This is not for everyone. You have to take responsibility for your psychological safety and security and well-being.— you have to understand the risks in doing this because this is a self-referential thing.
+
+Uh, I mean, you can also go mad in other ways, like crazy in other ways. You can go insane living in this insane society, the crazy world that we inhabit right now. There are millions of other ways to do it, but there is a possibility of, um, you getting psychologically a bit messy too, even, uh, by doing something like this, which is supposed to make you feel good and clear and sane and all that.
+
+So, you know, there is a saying in Malayalam, my mother tongue. It says, which is, in excess, even ambrosia can kill ya. Ambrosia is the food of gods, I believe.
+
+The gods eat that. Okay, uh, okay, it is not, it is not the direct translation of that Malayalam proverb. Amritu is something that is, as per the myth or the Hindu story, it is what gives you immortality.
+
+If you have Amrit, you will never die. That is what Amrit is. But the saying goes, if you have even that in excess, that turns into poison.
+
+Basically, moderation is good. That's what it's saying. So even while doing this, if you try to, you know, not do that in a way— I mean, if it makes you feel um, uncomfortable in a bad way.
+
+I mean, you can be uncomfortable, you can feel discomfort in a good way too. What do I mean? When you're paying attention to the thoughts, some of the thoughts, the content of the thought can be disturbing. It can be about some bad experience that you had.
+
+So that kind of discomfort is actually— can be, it can be good. So you're paying attention to the contents in your contents of your experience, of the consciousness, whatever is in your mind, right? And you spot this one which has been lurking around, it has been there, it is about some trauma that you had or blah blah blah, all those things. So it can cause some kind of discomfort, definitely.
+
+That is not the kind of discomfort I'm talking about. I'm talking about, you know, you going on a loop. So I do, I have— I have experienced that, I do experience that even now sometimes I experience that.
+
+I tell myself that is the magic of reality, that is one of the magical phenomenons about this, whatever I'm feeling right now, it is a part of this whole experience. I tell, I console myself saying that, but that can be really uncomfortable, I can say, like if you go on a loop, like— — it's like you're trying to find yourself, but you are trying to find yourself, right? So how can you find yourself? That is impossible. But you still try to do that anyway, because the part in you that is trying to find is so adamant, and it will never give up.
+
+It's like, I need to find out. I need to know who is looking. I will find it out.
+
+And when I find out, I'll be the most self-aware person. I'll be the one who has finally done it, like achieved, you know, liberation, enlightenment, blah, blah, blah, all those things. And I will be like, you know, the— You know, I will have surpassed the ego, I have transcended the ego and all that.
+
+So before that, I need to see the ego, right? But the ego is what is looking, so it can never find it.— and it may feel that, okay, this kind of a pattern is the— that pattern is mostly what my ego is. But the thing that declares victory after spotting that pattern, that pattern which declared victory after spotting the other pattern, that is where the ego is now.
+
+It's like that Alan Watts example of the— the thief going upstairs when the police arrives, uh, on the floor it was, blah blah blah. That thing, it's like that story. So it can go on like that and it can disappoint you, it can take you on a ride and can be rough and choppy and patchy and all that.
+
+So it can be uncomfortable and it may not be for everyone, I would say. I don't No. If you think you are ready for the ride, you can take it, you can try it, you can experiment with it.
+
+Experiment with what? Experiment with this software that I'm in the process of building. It is the Thought Tracker. Thought Tracker— the word tracking has got all this baggage, um, from the popular usage.
+
+And what am I doing? I'm not tracking the thoughts. I'm just observing the thoughts. What is there? That's it.
+
+Just looking, really. So what is there? Just clearly seeing what is there in my mind. I tend to say this because I've gone through a lot of content which says thoughts, the patterns themselves can be like entities.
+
+So if— If you tell yourself or you have this attitude of being the one who is trying to put everything in its place and straighten things out and, you know, fix the issues that these thoughts are bringing up, etc., etc., those, that can, you know, that can produce a lot of resistance from these entities and spirits and beings and patterns that are like self, reinforcing, blah blah blah.
+
+You understand, you get the point. Somebody is calling, I need to attend. Um, did that get— what happened? I spoke for some— 
