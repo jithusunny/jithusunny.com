@@ -1,0 +1,80 @@
+Starting will provide the energy and bring the right mood, etc.
+Waiting for the right time can just make us postpone things forever - it is good to go with the flow and see the time/tide of the things, etc.
+But it is diffcult to say if that is resistance/mind in disguise, etc.
+
+Let's start.
+
+Let's start simple.
+
+Yesterday I made cursor analyse my thoughts and tell me my patterns, what I should do, etc.
+
+It said, I better code up the first version of the dynamic thought tracker app - the next step from current static one.
+Livestreaming, pure thought -> spec -> code thing, story, video, etc. - all this can come later.
+
+We'll at some point say we are livestreaming the day n of this project - it is fine to not start it from day 1.
+Similarly the evolution of the software that we are building - it can be recorded from day n - no need to start from day 1 if that is making day 1 difficult.
+etc etc.
+
+I will save this stream of thought and this is the command for cursor.
+
+Analyse all my thoughts so far, see how the ideas evolved, what the immediate next version of the thought tracker thing we want.
+Then based on that synthesize a human readable(not spec like) story of the software - it should be a coherent, complete, clear, unambiguous one.
+It should start with an intriguing question/quote around the power of thought or about how many thoughts we have or about the 
+nature of mind, or about how mind is the basis of all of our life, or how paying attention to thoughts and what they are saying can help close the loop, or
+about what distraction is - mind going after thoughts taht pop up, etc. etc. - some strong quote that reminds or sensitizes anyone about the relevance/importance/utility
+of keeping a soft eye on the thoughts we have. It should be short, but really relevant to the thought tracker project. It may be authored by some famous person, etc.
+Then it can write a 2-3 sentence history of the software - Jithu felt overwhelmed by all the ideas he wanted to purse, things we wanted to fix in life, feeling drained/distracted, not closing loops, etc.
+He has also explored the spirituality, meditation, etc. which revealed the mind-blowing fact that his thoughts are not his own. Or as Sam harris says, "We don't author our thoughts".
+He explored various traditions like Buddhism, Zen, Advaita Vedanta, Christian Mysticism. He also listened to concepts around time and space - scientific.
+He listened to spiritual teachers like Eckhart tolle, Mooji, etc. etc. as well. He thought he got enlightened when he felt the difference in his life
+after he did some months of meditation and mindful living in general. A feeling of peace, well-being, joy and calm power filled his life during that time.
+It is unmistakeable. It is a thing. There is a vastly superior way to live. But time flew, many things happened since then.
+And that feeling has passed. Thoughts are out of control again. But Jithu is now not really pursuing Enlightenment anymore. He is also not very comfortable
+going with the flow. He has a family and a son and left his job. He wants to pay attention to the thoughts in the mind, and bring some discipline and order
+into the everyday life based on the contents of the thoughts, and the thoughts about the thoughts. He also thinks noting down the thoughts is the 
+foundation - we can easily grow projects, manage house, maintain and enliven relationships, etc, etc.
+
+I think no need to go into that level of details, just write a 2-3 lines of history that tells that this project is coming from a real person, based on his lived experience, and is believed to become
+a milestone in the history of human beings - or something like that. Just tell he thinks that is a great direction to pursue or something.
+
+Then tell how one may use it: When we realise we had some thought - eg: A genuine, natural smile is beautiful. A forced smile is coming from fear. or something, I quickly open my mobile and note it down.
+In the initial version of spec, let's not go for mobile though. Let's say, we can just start the app in laptop and start typing thoughts.
+There will be a way to retrive and read previous thoughts also. So home page lists thoughts, there is a button to add thoughts. Thoughts get saved as .md files in the raw/2026/02... path like we manually do now.
+In list view, show links to thoughts, include metadata (date, time), and show a initial patr of thought - how it starts and ellipsis.
+
+So the story version 1 is that much. Keep that in story/project-zero/story.txt
+
+We then need a spec. 
+
+In both story and spec 1, dont include anything about deployment, about mobile access ,etc etc. Yet.
+
+In spec be clear about the things to use - python, html, css, js, .md files.
+Also the UI/UX should be simple, minimal, straightforward:
+1. Home page: list of thoughts - each item is a link, etc. Show basic metadata
+2. Also have an add Thought button at top right. Clicking on it opens a new page with a big white area to enter text - plain text.
+Protect from acciddenatl back button, escape, close, etc. and save as .md file in the timestamp based path in repo.
+3. After saving go to home page.
+4.When someone clicks on a thought link, the user is taken to read thought page -simple, plain text view. there is also a home button to go back.
+Overall, it must be lightning fast and clear to use.
+
+Code should be minimal, simple, straightforward, readable, maintainable, modular, etc. etc.
+It should have a clear, succinct readme as well which tell if any setup is needed, how to run ,etc.
+
+When possible group code into reusable blocks that the later iterations can reuse - to avoid regeneration of the whole codebase.
+
+We will update the spec later after taking a look at the v1, and then have thoughts about next steps, etc. etc.
+
+The raw thougths contain a lot about project zero, and not jsut about project zero - it talks about so many things.
+But this story.txt (when the next version comes, this becomes story-v1.txt, story.txt will always be the latest) and spec.txt(similar to story-v1.txt, we will ahve
+spec-v1.txt, etc.) will be equivalent. It contains info only about the first small version that I just described in this stream of thoughts. Not all other things.
+Those will be picked up in the next versions.
+
+The subset of the scope(thoughts about project zero version 1) we discussed just now, the corresponding story, the corresponding spec = all these should be equivalent.
+No difference at all(expect for the story which contains some history, etc.)
+If I give the subset of thoughts and tell someone to create the spec for that I should get the exact same spec we would have.
+Similarly if I give cursor that spec and it creates the software, it should be exact same as ours, etc.
+
+Okay, we're ready to go. I will save this thought and then share with cursor. 
+I want the story and spec.
+
+once I get that I will make cursor create the software.

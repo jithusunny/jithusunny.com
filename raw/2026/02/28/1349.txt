@@ -1,0 +1,10 @@
+Looks like the code generation is done, cursor also did some testing.
+
+Some feedback for the next iteration:
+You said in chat response:
+cd projects/project-zero/app
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+1. we better install deps in a virtualenv? in the next iteration please follow that and such best practices
+2. Also when I run app, I got Address already in use error. Next time, please make shutdown and cleanup proper once you test.

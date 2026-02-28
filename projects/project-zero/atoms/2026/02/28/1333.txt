@@ -1,0 +1,14 @@
+Thought:
+App code goes in projects/project-zero/app/. Task tracker goes in projects/project-zero/tasks/current.txt. When Cursor builds the software, it should update task statuses and add process notes under each task — not about code logic, but about why/how the code was generated and organized. This helps future iterations understand the generation process.
+
+Tags:
+spec, decision
+
+Source:
+raw/2026/02/28/1333.txt
+
+Source_time:
+2026-02-28 1333
+
+Extraction_time:
+2026-02-28 1340

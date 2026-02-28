@@ -1,0 +1,18 @@
+Next, let's have a task tracker based on the spec current version.
+
+It should include all the things that cursor will ahve to do to turn the spec into a working software that I can look at readme and setup and use.
+
+Keep it in projects/project-zero/tasks/current.txt
+
+The app code should go into projects/project-zero/app/
+
+Also give a prompt that I can give next to tell cursor to use that tasks list and go ahead and build the software.
+The prompt should instruct cursor to add any helpful notes to each task it performs in the task tracker file.
+This will help in the future iterations. For example, anything that may not be clear by looking at the code/comments itself, can be put in the task notes - not a separate file.
+Same tasks file, under the respective task -if any, dont force.
+
+Ideally code should be readbale and sufficnet to undertand what is happening.
+Task notes is about, some why/what about the process of generating/organizing the code - not about the logic/architecture of the code.
+
+So in next iterations, if required, these can be referred to get more context on how the current version was generated, etc.
+

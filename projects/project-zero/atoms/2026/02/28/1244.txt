@@ -1,0 +1,14 @@
+Thought:
+V1 scope locked. Home page lists thoughts with metadata (date, time) and preview text with ellipsis. Add thought button at top right opens a big white text area — plain text, protected from accidental back/escape/close — saves as .md file in timestamp-based path. After saving, go to home page. Click a thought to read it in a simple plain text view with a home button. Python, HTML, CSS, JS, .md files. No deployment, no mobile, no database. Lightning fast and clear.
+
+Tags:
+spec, decision
+
+Source:
+raw/2026/02/28/1243.txt
+
+Source_time:
+2026-02-28 1243
+
+Extraction_time:
+2026-02-28 1300

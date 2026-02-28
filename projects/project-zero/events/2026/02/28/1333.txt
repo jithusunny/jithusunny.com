@@ -1,0 +1,14 @@
+Event:
+Created the v1 task list (7 tasks) and a build prompt for Cursor, both derived from the spec. Task tracker placed at projects/project-zero/tasks/current.txt. Build prompt placed at projects/project-zero/prompts/build-v1.txt.
+
+Tags:
+build
+
+Source:
+raw/2026/02/28/1333.txt
+
+Source_time:
+2026-02-28 1333
+
+Extraction_time:
+2026-02-28 1340

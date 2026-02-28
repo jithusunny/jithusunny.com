@@ -1,0 +1,14 @@
+Thought:
+Story and spec file paths corrected. Story lives at projects/project-zero/story/current.txt, spec lives at projects/project-zero/spec/current.txt. current.txt is always the latest version. When the next version comes, rename current.txt to v1.txt and current.txt becomes the new version.
+
+Tags:
+decision, spec
+
+Source:
+raw/2026/02/28/1329.txt
+
+Source_time:
+2026-02-28 1329
+
+Extraction_time:
+2026-02-28 1335

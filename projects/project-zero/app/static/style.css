@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+header time {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.45rem 1.1rem;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    border: 1px solid #1a1a1a;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #1a1a1a;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background: #f5f5f5;
+}
+
+.thought-list {
+    list-style: none;
+}
+
+.thought-list li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.thought-list li:last-child {
+    border-bottom: none;
+}
+
+.thought-list a {
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.thought-list a:hover {
+    background: #fafafa;
+    margin: 0 -1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.thought-list time {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+.thought-list p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.empty {
+    color: #999;
+    font-style: italic;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Add thought page */
+#thought-form {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 10rem);
+}
+
+#thought-form textarea {
+    flex: 1;
+    width: 100%;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+}
+
+#thought-form textarea:focus {
+    border-color: #aaa;
+}
+
+#thought-form .btn {
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+/* Read thought page */
+.thought-content {
+    white-space: pre-wrap;
+    font-size: 1rem;
+    line-height: 1.8;
+}

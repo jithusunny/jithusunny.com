@@ -1,0 +1,14 @@
+Thought:
+Story, spec, and the subset of thoughts they cover must be equivalent. No difference except the story has some history. If you give the same thoughts to someone else they should produce the same spec. If you give the spec to another Cursor it should produce the same software. One-to-one mapping, no drift. Versioning: story.txt is always latest, story-v1.txt is the previous.
+
+Tags:
+rule, spec
+
+Source:
+raw/2026/02/28/1243.txt
+
+Source_time:
+2026-02-28 1243
+
+Extraction_time:
+2026-02-28 1300

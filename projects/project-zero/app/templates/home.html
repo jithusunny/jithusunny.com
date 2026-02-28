@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Thoughts</h1>
+        <a href="/add" class="btn">Add Thought</a>
+    </header>
+    <main>
+        {% if thoughts %}
+        <ul class="thought-list">
+            {% for t in thoughts %}
+            <li>
+                <a href="/thought/{{ t.path }}">
+                    <time>{{ t.date_display }}</time>
+                    <p>{{ t.preview }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty">No thoughts yet.</p>
+        {% endif %}
+    </main>
+</body>
+</html>

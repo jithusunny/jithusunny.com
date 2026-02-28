@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought — {{ thought.date_display }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <time>{{ thought.date_display }}</time>
+        <a href="/" class="btn btn-secondary">Home</a>
+    </header>
+    <main>
+        <div class="thought-content">{{ thought.content }}</div>
+    </main>
+</body>
+</html>

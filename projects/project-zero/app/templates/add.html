@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Thought</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Add Thought</h1>
+        <a href="/" class="btn btn-secondary">Home</a>
+    </header>
+    <main>
+        <form method="post" action="/add" id="thought-form">
+            <textarea name="content" id="content" placeholder="What's on your mind?" autofocus></textarea>
+            <button type="submit" class="btn">Save</button>
+        </form>
+    </main>
+    <script>
+        const textarea = document.getElementById("content");
+        function hasContent() {
+            return textarea.value.trim().length > 0;
+        }
+        window.addEventListener("beforeunload", function (e) {
+            if (hasContent()) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+Thought Tracker — Version 1 Specification
+
+Overview
+A local web application for capturing and reading thoughts. Thoughts are stored as plain text .md files. No database. No authentication. No deployment. Runs on a laptop.
+
+Technology
+- Backend: Python, FastAPI
+- Frontend: Plain HTML, CSS, JavaScript (no frameworks)
+- Storage: .md files on disk
+- No database, no external services
+
+File Storage
+- Thoughts are saved as .md files
+- Path structure: raw/{YYYY}/{MM}/{DD}/{HHMM}.txt
+- Filename is derived from the timestamp when the thought is saved
+- If a file with that timestamp already exists, increment the minute (HHMM → HH(MM+1))
+- Create directories automatically if they don't exist
+
+Pages
+
+1. Home Page (/)
+- Lists all thoughts, newest first
+- Each item shows:
+  - Date and time (human-readable, e.g. "Feb 28, 2026 · 12:43 PM")
+  - Preview: first ~120 characters of the thought text, followed by ellipsis if truncated
+- Each item is a clickable link to the read page for that thought
+- "Add Thought" button fixed at the top right corner
+- Must load fast — no unnecessary assets, no heavy CSS frameworks
+
+2. Add Thought Page (/add)
+- Large white text area filling most of the screen
+- Plain text input (no rich text, no markdown preview)
+- "Save" button clearly visible
+- Protect against accidental loss:
+  - Warn on browser back button if text area has content
+  - Warn on page close/refresh if text area has content (beforeunload)
+- On save:
+  - Write content to .md file at the timestamp-based path
+  - Redirect to home page
+
+3. Read Thought Page (/thought/{path})
+- Displays the full text of the thought in a simple, readable layout
+- Plain text, preserving line breaks
+- "Home" button/link to go back to the list
+- No editing capability in v1
+
+Design Principles
+- Lightning fast — minimal CSS, no JavaScript frameworks, no unnecessary assets
+- Clean, readable typography — generous line height, comfortable width
+- White background, dark text, minimal UI chrome
+- Works in any modern browser
+
+Code Principles
+- Minimal, readable, maintainable
+- Group into reusable modules where natural (e.g., file I/O, path generation, thought listing)
+- Clear separation: routes, templates, storage logic
+- Include a README with:
+  - Any setup needed (e.g., pip install)
+  - How to run the app
+  - Where thoughts are stored
+
+What Is NOT In V1
+- No deployment instructions or configuration
+- No mobile-specific design
+- No audio recording or transcription
+- No authentication or multi-user support
+- No search or filtering
+- No editing or deleting thoughts
+- No database
+- No processing/extraction of atomic thoughts
