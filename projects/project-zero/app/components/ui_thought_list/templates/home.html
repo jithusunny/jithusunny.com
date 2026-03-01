@@ -23,6 +23,14 @@
             </li>
             {% endfor %}
         </ul>
+        <nav class="pagination">
+            {% if has_prev %}
+            <a href="/?page={{ page - 1 }}" class="btn btn-secondary">← Previous</a>
+            {% endif %}
+            {% if has_next %}
+            <a href="/?page={{ page + 1 }}" class="btn btn-secondary">Next →</a>
+            {% endif %}
+        </nav>
         {% else %}
         <p class="empty">No thoughts yet.</p>
         {% endif %}

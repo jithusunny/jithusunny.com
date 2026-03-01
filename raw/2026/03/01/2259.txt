@@ -1,0 +1,18 @@
+Got the code generation pipeline a little more better(hopefully) with the help of chatgpt
+
+We have a blueprint step now in between spec and tasks.
+
+From chatgpt:
+Raw thoughts
+   ↓
+Spec        (what the software is)
+   ↓
+Blueprint   (what parts exist)
+   ↓
+Tasks       (how to build those parts this iteration)
+   ↓
+Build       (generate code)
+
+For now this is what we have done, chatGPT gave detailed prompts to do the above workflow.
+
+It also suggested more stuff that will come in later.

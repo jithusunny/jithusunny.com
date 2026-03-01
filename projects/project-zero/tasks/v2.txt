@@ -1,0 +1,71 @@
+Thought Tracker v2 — Task List
+Derived from: projects/project-zero/spec/current.txt
+Previous version: projects/project-zero/spec/v1.txt, projects/project-zero/tasks/v1.txt
+App code location: projects/project-zero/app/
+
+---
+
+Task 1: Project setup
+- Delete existing projects/project-zero/app/ and create it fresh
+- Create virtualenv setup in README
+- Create requirements.txt with FastAPI and uvicorn (and jinja2, python-multipart)
+- Create main.py as the app entry point
+- Create README.md with virtualenv setup, run instructions, and where thoughts are stored
+Status: done
+Notes: Same dependency set as v1 (fastapi, uvicorn, jinja2, python-multipart). README now includes virtualenv creation steps. PER_PAGE constant defined in main.py rather than storage.py — keeps the storage module unaware of presentation concerns.
+
+Task 2: Storage module
+- Create a storage module that handles all file I/O
+- list_thoughts(page, per_page) — return a page of thoughts sorted newest first, plus total count for pagination
+- read_thought(rel_path) — read a single thought file, return metadata + content
+- save_thought(content) — save as .md file at timestamp-based path, auto-create dirs, handle collision
+- Return thought metadata: date, time, file path, preview text (~120 chars + ellipsis)
+Status: done
+Notes: list_thoughts now returns a tuple (page_items, total_count) instead of a flat list. Sorting and slicing happen inside the storage module. _all_thoughts_sorted() is a private helper that does the full scan — pagination is just a slice on top. This means every page load scans all files, which is fine for now but would need caching if the file count grows large.
+
+Task 3: Home page route and template
+- GET / — list thoughts, newest first, 10 per page
+- Accept ?page=N query parameter (default 1)
+- Each item shows: human-readable date/time, preview with ellipsis
+- Each item links to the read page for that thought
+- "Add Thought" button fixed at top right
+- Pagination at bottom: "Previous" and "Next" links, shown only when applicable
+- Minimal HTML/CSS, no frameworks
+Status: done
+
+Task 4: Add thought page route and template
+- GET /add — render the add thought page
+- Large white text area filling most of the screen, plain text
+- "Save" button clearly visible
+- beforeunload warning if text area has content
+- On form submit: disable the beforeunload handler BEFORE the form posts, so Save does not trigger the warning
+- POST /add — save thought, redirect to home
+Status: done
+Notes: The beforeunload fix uses a `submitting` flag and removeEventListener on form submit. The guard function checks both `!submitting` and `textarea has content` before preventing unload. This ensures: (1) typing + close/back = warning, (2) typing + Save = no warning, (3) empty textarea + anything = no warning.
+
+Task 5: Read thought page route and template
+- GET /thought/{path} — display full text of a thought
+- Plain text, preserving line breaks
+- "Home" button/link to return to list
+- Simple, readable layout
+Status: done
+
+Task 6: CSS and design
+- Single CSS file shared across all pages
+- White background, dark text
+- Clean typography: generous line height, comfortable max-width
+- Minimal UI chrome
+- Pagination styling: simple, clear prev/next links
+- Responsive enough to not break, but no mobile-specific design
+Status: done
+Notes: Pagination uses flexbox with space-between so Previous sits left and Next sits right. If only one link is present, it naturally aligns to its side.
+
+Task 7: Final check and README
+- Verify all three pages work end to end
+- Confirm pagination works (page 1 shows 10, page 2 shows next batch, prev/next links correct)
+- Confirm Save does NOT trigger beforeunload warning
+- Confirm accidental back/close/refresh DOES trigger warning when text area has content
+- Clean up: kill any test server processes, leave port free
+- Finalize README with virtualenv setup steps
+Status: done
+Notes: Tested via curl — page 1 returns exactly 10 items and a "Next" link; page 2 returns items and a "Previous" link; read page renders thought content; add page includes the removeEventListener fix. Server process killed and port 8000 freed after testing. beforeunload behavior should be verified in a real browser for the v1 bug — curl can't trigger JS events.

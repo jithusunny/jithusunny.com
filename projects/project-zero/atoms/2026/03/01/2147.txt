@@ -1,0 +1,14 @@
+Thought:
+Adding a blueprint generation step to the workflow. Brainstormed with ChatGPT: instead of trying to reuse code across iterations (which increases input token load), use blueprints, architecture graphs, and invariants to stabilize structure across regenerations.
+
+Tags:
+decision, spec
+
+Source:
+raw/2026/03/2146.txt
+
+Source_time:
+2026-03-01 2146
+
+Extraction_time:
+2026-03-01 2200

@@ -1,0 +1,14 @@
+Thought:
+Building blocks: reusable code organized by language (python/, html/, js/, css/) inside a building_blocks/ folder at repo root. Each block gets its own folder with a readme.md (precise definition, usage, examples) and code files. No project-specific stuff. Must be standalone where possible. Planner checks existing blocks for reuse and identifies new ones to create.
+
+Tags:
+spec, decision
+
+Source:
+raw/2026/02/28/1547.txt
+
+Source_time:
+2026-02-28 1547
+
+Extraction_time:
+2026-02-28 1600

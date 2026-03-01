@@ -1,0 +1,14 @@
+Thought:
+Show only 7 thoughts per page on home (not 10) — no scrolling. Read thought page should have a Back button (top left) that returns to the previous state (e.g., page 3 of the listing), not just a hardcoded Home link. Add a .gitignore for the project.
+
+Tags:
+spec
+
+Source:
+raw/2026/03/2146.txt
+
+Source_time:
+2026-03-01 2146
+
+Extraction_time:
+2026-03-01 2200

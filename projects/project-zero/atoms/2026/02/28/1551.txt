@@ -1,0 +1,14 @@
+Thought:
+Each iteration deletes the app folder and recreates it fresh from the current spec and building blocks. Tasks are complete — they describe the full build, not incremental changes from the previous version. The planner should look at the previous version's spec and tasks to understand patterns, avoid repeating bugs, and reduce design effort.
+
+Tags:
+rule, spec
+
+Source:
+raw/2026/02/28/1547.txt
+
+Source_time:
+2026-02-28 1547
+
+Extraction_time:
+2026-02-28 1600

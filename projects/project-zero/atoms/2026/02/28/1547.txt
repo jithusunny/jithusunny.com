@@ -1,0 +1,14 @@
+Thought:
+Bug: clicking Save on the add thought page triggers the beforeunload "Changes may not be saved" popup. It should only warn on accidental navigation (back, close, refresh), not on intentional save.
+
+Tags:
+todo
+
+Source:
+raw/2026/02/28/1547.txt
+
+Source_time:
+2026-02-28 1547
+
+Extraction_time:
+2026-02-28 1600

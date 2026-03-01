@@ -1,0 +1,65 @@
+Thought Tracker v1 — Task List
+Derived from: projects/project-zero/spec/current.txt
+App code location: projects/project-zero/app/
+
+---
+
+Task 1: Project setup
+- Create projects/project-zero/app/ directory
+- Create requirements.txt with FastAPI and uvicorn
+- Create main.py as the app entry point
+- Create README.md with setup and run instructions
+Status: done
+Notes: Added jinja2 and python-multipart to requirements.txt — jinja2 is needed for FastAPI's template rendering, python-multipart is needed for form data parsing (POST /add). These aren't in the spec but are required by FastAPI for the features the spec describes.
+
+Task 2: Storage module
+- Create a storage module that handles all file I/O
+- Read all .md files from raw/{YYYY}/{MM}/{DD}/{HHMM.txt}
+- Write new thought to .md file at timestamp-based path
+- Auto-create directories if they don't exist
+- Handle timestamp collision: increment minute if file exists
+- Return thought metadata: date, time, file path, preview text
+Status: done
+Notes: Extracted a shared _parse_thought_path() helper used by both list_thoughts() and read_thought() to avoid duplicating the path-parsing logic. RAW_DIR is computed relative to __file__ (4 levels up to repo root + "raw/"), so the app works regardless of where it's launched from. index.txt files are filtered out during listing.
+
+Task 3: Home page route and template
+- GET / — list all thoughts, newest first
+- Each item shows: human-readable date/time, first ~120 chars as preview with ellipsis
+- Each item links to the read page for that thought
+- "Add Thought" button fixed at top right
+- Minimal HTML/CSS, no frameworks, fast loading
+Status: done
+
+Task 4: Add thought page route and template
+- GET /add — render the add thought page
+- Large white text area filling most of the screen, plain text
+- "Save" button clearly visible
+- beforeunload warning if text area has content
+- POST /add — save thought, redirect to home
+Status: done
+Notes: POST /add returns a 303 redirect (not 302) to prevent browser resubmission on refresh. The beforeunload handler uses e.preventDefault() which is the modern standard — older returnValue approach is not needed for current browsers.
+
+Task 5: Read thought page route and template
+- GET /thought/{path} — display full text of a thought
+- Plain text, preserving line breaks
+- "Home" button/link to return to list
+- Simple, readable layout
+Status: done
+Notes: Used {path:path} in the FastAPI route to capture the full nested path (e.g., 2026/02/28/1243.txt). Line breaks are preserved via CSS white-space: pre-wrap on the content div, keeping the HTML template simple.
+
+Task 6: CSS and design
+- Single CSS file shared across all pages
+- White background, dark text
+- Clean typography: generous line height, comfortable max-width
+- Minimal UI chrome
+- Responsive enough to not break, but no mobile-specific design
+Status: done
+Notes: Used system font stack (-apple-system, BlinkMacSystemFont, etc.) for zero font loading time. Max-width 720px with auto margin centers content. The textarea on /add uses flex layout to fill available viewport height. Hover state on thought list items extends to full width using negative margins for a larger click target feel.
+
+Task 7: Final check and README
+- Verify all three pages work end to end
+- Confirm new thoughts appear in the list after saving
+- Confirm accidental navigation protection works
+- Finalize README: setup steps, how to run, where thoughts are stored
+Status: done
+Notes: Tested all three pages via curl. Home page listed all existing thoughts from raw/. POST /add saved a new file with correct timestamp path and returned 303 redirect. Read page displayed full thought content. Test thought was deleted after verification. One observation: curl doesn't send em dashes correctly (encoding artifact), but browser form submissions handle UTF-8 fine.

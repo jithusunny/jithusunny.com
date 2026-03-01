@@ -30,19 +30,21 @@ I've been writing code for money for 14 years, and a conviction has hardened: hu
 
 The pipeline: raw thoughts → story (the why) + spec (the what) + documentation (how to use) → tests → code → deploy. Feedback at any step goes back to the human. Each iteration regenerates the entire software fresh from the spec — no editing on top of editing. One-to-one mapping from thoughts to spec to software with no drift. Reusable building blocks don't get rebuilt — only the arrangement changes.
 
-For now, Project Zero is both — the system for streamlining this process and the first system built with it. The concrete v1 spec has crystallized: open app → see list of latest thoughts. Click a thought → see the full stream. Button to add thought → text editor → save as .md file. No database. Python + FastAPI + basic HTML/CSS/JS. Easy setup. Later: audio → transcription → text.
-
-And a concrete process for building it: YouTube livestreams. Describe the software in human terms → transcribe → feed to Cursor for spec and code → inspect in next livestream → give feedback → update spec → regenerate code. Repeat. One livestream was attempted and deleted — perfectionism again. But the process is designed and ready.
-
-A foundational principle is sharp: raw thoughts are the only real data. Everything else is views on top. Data must be separable from any system instantly. The system must be rebuildable from raw thoughts alone. Raw thoughts will always be private. Everything else — atomic thoughts, spec, story, software, docs — published from day one.
+For now, Project Zero is both — the system for streamlining this process and the first system built with it.
 
 ## The build begins
 
-On Feb 28 I sat down and made a choice. Starting will provide the energy — waiting for the right time is just the mind finding another way to postpone. Livestreaming, video, perfect documentation — all of it can come later, from day N, not necessarily day 1. Similarly, the evolution of the software can be recorded from wherever it is — there's no need to capture the absolute beginning if that's what's making the beginning difficult.
+On Feb 28 I sat down and made a choice. Starting will provide the energy — waiting for the right time is just the mind finding another way to postpone. Livestreaming, video, perfect documentation — all of it can come later, from day N, not necessarily day 1.
 
-I saved a stream of thought and gave Cursor the command: analyse all my thoughts, see how the ideas evolved, figure out what the immediate next version needs to be. Then synthesize a story of the software — not a spec, a story. Something a person would read and understand. And alongside it, a spec — the technical equivalent with no drift from the story. The story and spec were created. A rule was articulated clearly for the first time: story, spec, and the subset of thoughts they cover must be equivalent. If you hand the same thoughts to someone else, they should produce the same spec. If you hand that spec to another Cursor, it should produce the same software.
+I saved a stream of thought and gave Cursor the command: analyse all my thoughts, figure out what v1 needs to be, synthesize the story, create the spec, then build it. The story and spec were created. A rule was articulated: story, spec, and the subset of thoughts they cover must be equivalent. One-to-one mapping, no drift. Then the software was built — Python, FastAPI, plain HTML/CSS/JS, .md files on disk, no database. All existing thoughts appeared in the list. New thoughts could be added and read back. It worked.
 
-The next step is building the software itself.
+## The first iteration
+
+Within an hour of the first build, the loop started. Two issues: the browser's "are you sure you want to leave?" warning fired even when clicking Save (it should only fire on accidental navigation), and the home page showed all thoughts at once (needed pagination — 10 per page with next/prev).
+
+Feedback was given as a raw thought. The v1 artifacts were versioned. New story, spec, and tasks were written from scratch — complete, self-sufficient, not incremental patches. The rule crystallized: each iteration deletes the app and recreates it fresh from the current spec. The spec alone should be enough for anyone to rebuild the software.
+
+A building blocks concept emerged — reusable code organized by language, no project-specific logic, with a planner that checks the library before inventing new things. And three reusable prompts were created for the repeating loop: generate spec from thoughts, generate tasks from spec, build from tasks. The same process, every time.
 
 ## Projects as expressions (not goals)
 
@@ -52,7 +54,7 @@ At the center sits Project Zero. It's the practice of capturing thoughts, extrac
 
 Elsa's boutique business has moved faster than anything else — a live Shopify store with multiple products, fully functional payments (cards, UPI, netbanking, wallets), and a repeatable product listing workflow. The remaining gaps are concrete: packaging, shipping rates, pricing, product videos.
 
-My YouTube channel finally moved from pull to action. The first video was uploaded. A versioned approach removes pressure. And now livestreams are designed as the medium for building the thought tracker publicly. A livestream was attempted and deleted — but the next one is waiting.
+My YouTube channel finally moved from pull to action. The first video was uploaded. A versioned approach removes pressure. And now livestreams are designed as the medium for building the thought tracker publicly.
 
 A tool built for someone's matrimony profile turned into an insight about structured documents in general. The house had a major decluttering wave and a cleaning schedule was written. An idea for a House app surfaced.
 
@@ -64,21 +66,21 @@ Resistance keeps wearing the mask of planning. The moments of actual progress ha
 
 If a process is boring, I will abandon it. The work has to stay interesting or it won't last.
 
-Small visible results unlock energy for everything else. The absence of visible results drains it.
+Small visible results unlock energy for everything else. The absence of visible results drains it. The v1 build proved this — seeing the app list my actual thoughts was energizing enough to immediately start iterating. V2 was built and used the same day. The first thought was streamed through the actual app. Then feedback flowed naturally — too much scrolling, the back button goes to the wrong place — and v3 spec was born within hours.
 
 Most of what runs through my mind on any given day already ran through it yesterday. Writing it down makes the loops visible. And seeing them seems to loosen their grip. But there's a warning here too: self-observation can backfire. The ego trying to find itself creates loops — like Alan Watts' thief going upstairs when the police arrive. Even ambrosia in excess is poison. Don't try to fix thought patterns — just observe. Trying to fix creates resistance.
 
-Family is not separate from the work. Elsa's mood, Ian's needs, the state of the house — these are not interruptions. It's all one fabric. Family members ask about the job situation. Some directly, some subtly. Even a small question can carry a big history. It can intimidate.
+Family is not separate from the work. Elsa's mood, Ian's needs, the state of the house — these are not interruptions. It's all one fabric.
 
 ## Where things feel unresolved
 
 There is a tension between inner work and visible output. *Show me proof.* How much inner work is enough before something needs to ship?
 
-There is the question of money. A well-paying job was left behind. Nothing generates income yet. The process is fully articulated now. What's missing is the first thing built with it.
+There is the question of money. A well-paying job was left behind. Nothing generates income yet. The process is now running — thoughts → spec → software — but nothing is deployed publicly yet.
 
 There is a fear about going public. What if a corporation copies the idea? The counter: "No company will be able to do it like I am doing it. This comes from sincere, real pain."
 
-There are many competing directions pulling at once. On a good day this feels like abundance. On a harder day it feels scattered. The answer, each time: find the most suitable thing and just start moving.
+The original building blocks idea — reusable code copied into each build — ran into a practical problem: sending full code to the AI each time increases token load. A conversation with ChatGPT surfaced a better approach: blueprints. Stable component names and purposes that persist across iterations, giving the code generator architectural consistency without needing to ingest old code. The first blueprint was created for v3: six components (storage_fs, api_thoughts, ui_shell, ui_thought_list, ui_thought_form, ui_thought_read). Whether this actually makes regeneration smarter remains to be seen.
 
 And there is the recurring doubt about whether any of this will actually lead somewhere. The answer so far: failure only exists when you declare it and stop.
 
@@ -86,9 +88,9 @@ An insight cuts through the confusion: "The thing I'm trying to create already e
 
 ## Last seen breadcrumbs
 
-- Story and spec for v1 are written — the next step is the software itself
-- The equivalence rule is now explicit: thoughts ↔ story ↔ spec ↔ software, no drift between them
-- Livestreaming and video can join the process from any day — the beginning doesn't need to be captured perfectly to be real
+- Pipeline is explicit: thoughts → spec → blueprint → tasks → build; ChatGPT gave detailed prompts for each step
+- V3 built with component-based structure; the cycle (spec → blueprint → tasks → build) ran successfully
+- Blueprints define what parts exist; tasks define how to build them this iteration
+- More suggestions from ChatGPT noted for later
 - Mridhu's store is fully functional — next push is packaging, pricing, and product videos
 - Raw thoughts private, everything else public from day one — this is final
-- Finding the path requires being systematic, not more walking and talking

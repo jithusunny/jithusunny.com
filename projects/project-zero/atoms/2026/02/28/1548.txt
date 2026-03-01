@@ -1,0 +1,14 @@
+Thought:
+Home page should show only the top 10 thoughts with next/prev pagination at the bottom.
+
+Tags:
+spec
+
+Source:
+raw/2026/02/28/1547.txt
+
+Source_time:
+2026-02-28 1547
+
+Extraction_time:
+2026-02-28 1600

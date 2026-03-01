@@ -1,0 +1,14 @@
+Event:
+V1 code generation by Cursor completed and tested. App ran successfully. Encountered address-already-in-use error because the test server wasn't shut down properly.
+
+Tags:
+build, issue
+
+Source:
+raw/2026/02/28/1349.txt
+
+Source_time:
+2026-02-28 1349
+
+Extraction_time:
+2026-02-28 1600

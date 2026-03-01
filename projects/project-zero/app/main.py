@@ -1,38 +1,27 @@
-from fastapi import FastAPI, Request, Form
-from fastapi.responses import HTMLResponse, RedirectResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
 from pathlib import Path
 
-from storage import list_thoughts, read_thought, save_thought
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 
-app = FastAPI()
+from components.api_thoughts import router as thoughts_router
+
+PER_PAGE = 7
 
 BASE_DIR = Path(__file__).resolve().parent
-app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
-templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
+app = FastAPI()
+app.mount("/static", StaticFiles(directory=BASE_DIR / "components" / "ui_shell" / "static"), name="static")
 
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
-    thoughts = list_thoughts()
-    return templates.TemplateResponse("home.html", {"request": request, "thoughts": thoughts})
+template_dirs = [
+    BASE_DIR / "components" / "ui_thought_list" / "templates",
+    BASE_DIR / "components" / "ui_thought_form" / "templates",
+    BASE_DIR / "components" / "ui_thought_read" / "templates",
+]
+templates = Jinja2Templates(directory=str(template_dirs[0]))
+templates.env.loader.searchpath = [str(d) for d in template_dirs]
 
+app.state.templates = templates
+app.state.per_page = PER_PAGE
 
-@app.get("/add", response_class=HTMLResponse)
-async def add_page(request: Request):
-    return templates.TemplateResponse("add.html", {"request": request})
-
-
-@app.post("/add")
-async def add_thought(content: str = Form(...)):
-    save_thought(content)
-    return RedirectResponse(url="/", status_code=303)
-
-
-@app.get("/thought/{path:path}", response_class=HTMLResponse)
-async def read_page(request: Request, path: str):
-    thought = read_thought(path)
-    if thought is None:
-        return HTMLResponse("<h1>Not found</h1>", status_code=404)
-    return templates.TemplateResponse("read.html", {"request": request, "thought": thought})
+app.include_router(thoughts_router, tags=["thoughts"])

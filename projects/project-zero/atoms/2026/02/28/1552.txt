@@ -1,0 +1,14 @@
+Thought:
+Need three reusable prompts that work across iterations: (1) generate spec from thoughts — paying more attention to latest thoughts when things are superseded or contradicted, focusing only on the subset concretely defined for the next version; (2) generate task tracker from spec — designing execution using existing building blocks and planning new ones; (3) implement code from tasks — delete app, recreate fresh using building blocks.
+
+Tags:
+spec, todo
+
+Source:
+raw/2026/02/28/1547.txt
+
+Source_time:
+2026-02-28 1547
+
+Extraction_time:
+2026-02-28 1600

@@ -1,0 +1,13 @@
+components:
+  storage_fs:
+    purpose: Read, write, and list thought files from the filesystem using timestamp-based paths.
+  api_thoughts:
+    purpose: HTTP routes for listing, creating, and reading individual thoughts.
+  ui_shell:
+    purpose: Shared page layout, header, navigation, and base styling.
+  ui_thought_list:
+    purpose: Paginated list view of thoughts with date, preview, and navigation links.
+  ui_thought_form:
+    purpose: Full-screen text area for composing a new thought with accidental-loss protection.
+  ui_thought_read:
+    purpose: Plain text display of a single thought with back and home navigation.

@@ -1,11 +1,10 @@
 from pathlib import Path
 from datetime import datetime
 
-RAW_DIR = Path(__file__).resolve().parent.parent.parent.parent / "raw"
+RAW_DIR = Path(__file__).resolve().parent.parent.parent.parent.parent.parent / "raw"
 
 
 def _parse_thought_path(txt_file: Path) -> dict | None:
-    """Parse a thought file path into metadata. Returns None if path doesn't match expected structure."""
     try:
         rel = txt_file.relative_to(RAW_DIR)
     except ValueError:
@@ -29,8 +28,7 @@ def _parse_thought_path(txt_file: Path) -> dict | None:
     return {"rel_path": str(rel), "datetime": dt}
 
 
-def list_thoughts() -> list[dict]:
-    """Return all thoughts sorted newest first, with metadata and preview."""
+def _all_thoughts_sorted() -> list[dict]:
     thoughts = []
     if not RAW_DIR.exists():
         return thoughts
@@ -56,8 +54,15 @@ def list_thoughts() -> list[dict]:
     return thoughts
 
 
+def list_thoughts(page: int = 1, per_page: int = 10) -> tuple[list[dict], int]:
+    all_thoughts = _all_thoughts_sorted()
+    total = len(all_thoughts)
+    start = (page - 1) * per_page
+    end = start + per_page
+    return all_thoughts[start:end], total
+
+
 def read_thought(rel_path: str) -> dict | None:
-    """Read a single thought by its path relative to RAW_DIR."""
     file_path = RAW_DIR / rel_path
     if not file_path.exists() or not file_path.is_file():
         return None
@@ -77,7 +82,6 @@ def read_thought(rel_path: str) -> dict | None:
 
 
 def save_thought(content: str) -> str:
-    """Save a new thought and return its path relative to RAW_DIR."""
     now = datetime.now()
     dir_path = RAW_DIR / now.strftime("%Y") / now.strftime("%m") / now.strftime("%d")
     dir_path.mkdir(parents=True, exist_ok=True)

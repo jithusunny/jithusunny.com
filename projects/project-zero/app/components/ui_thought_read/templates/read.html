@@ -8,10 +8,13 @@
 </head>
 <body>
     <header>
-        <time>{{ thought.date_display }}</time>
-        <a href="/" class="btn btn-secondary">Home</a>
+        <nav class="header-nav">
+            <a href="javascript:history.back()" class="btn btn-secondary">← Back</a>
+            <a href="/" class="btn btn-secondary">Home</a>
+        </nav>
     </header>
     <main>
+        <time style="display:block; margin-bottom: 1rem; color: #888; font-size: 0.95rem;">{{ thought.date_display }}</time>
         <div class="thought-content">{{ thought.content }}</div>
     </main>
 </body>

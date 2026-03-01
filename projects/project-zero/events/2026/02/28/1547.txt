@@ -1,0 +1,14 @@
+Event:
+Identified beforeunload bug on save. Defined the v2 changes (bug fix + pagination). Articulated the building blocks architecture, the delete-and-recreate-fresh approach, and the need for three reusable prompts (spec generation, task generation, implementation).
+
+Tags:
+build
+
+Source:
+raw/2026/02/28/1547.txt
+
+Source_time:
+2026-02-28 1547
+
+Extraction_time:
+2026-02-28 1600

@@ -1,0 +1,83 @@
+Generate the next version of the Thought Tracker spec.
+
+Read these files:
+- All raw thoughts in raw/ (use state/processed_raw.txt to see the full list)
+- projects/project-zero/story/current.txt (the current story of the software)
+- projects/project-zero/spec/current.txt (the current spec — this is what you are replacing)
+- projects/project-zero/atoms/ (extracted atomic thoughts, especially recent ones)
+- projects/project-zero/blueprint/current.yaml (if it exists)
+
+Your job:
+
+1. Understand the overall vision from the story and the full arc of thoughts.
+
+2. Identify what the NEXT version of the spec should contain.
+   - Pay more attention to the latest thoughts. When something is superseded or contradicted by a later thought, the later thought wins.
+   - The user may have talked about many future features. Only include what is concretely defined for the next version — not everything ever mentioned.
+   - If unsure whether something belongs in the next version, leave it out.
+
+3. Write a complete, self-sufficient spec.
+   - Anyone with just this spec should be able to hand it to a coding agent and get working software.
+   - Do not reference previous versions, do not describe incremental changes. Describe the full software as it should be.
+   - Follow the same structure as the current spec:
+     (Overview, Technology, File Storage, Pages, Design Principles, Code Principles, What Is NOT In This Version).
+
+4. Update the story to match the new spec.
+   - The story and spec must be equivalent in scope.
+   - The story is human and narrative; the spec is technical and precise.
+
+5. ALSO generate a system blueprint describing the major components of the software.
+
+   PURPOSE OF THE BLUEPRINT:
+   - The blueprint names the major components of the system.
+   - It exists to stabilize architectural boundaries across iterations and across projects.
+   - It is NOT an implementation plan.
+
+   WHAT IS A COMPONENT:
+   - A cohesive unit of responsibility.
+   - Conceptually reusable across different applications.
+   - Something that could be deleted and regenerated independently.
+
+   GOOD COMPONENT EXAMPLES:
+   - auth
+   - users
+   - storage_fs
+   - notifications
+   - ui_shell
+   - ui_table
+   - ui_form
+   - api_thoughts
+
+   BAD COMPONENT EXAMPLES (DO NOT CREATE):
+   - utils
+   - helpers
+   - misc
+   - common
+   - v2_logic
+
+   RULES FOR BLUEPRINT:
+   - Prefer fewer, stable components over many small ones.
+   - Reuse existing component names from the previous blueprint unless behavior clearly changed.
+   - Do NOT rename components for cosmetic reasons.
+   - Do NOT include file paths, dependencies, or implementation details.
+   - Each component must have:
+     - name
+     - purpose (one clear sentence)
+
+   BLUEPRINT FORMAT (STRICT YAML):
+
+   components:
+     <component_name>:
+       purpose: <one sentence description>
+
+Before writing:
+- Rename the existing spec/current.txt to the next version number (e.g., v2.txt).
+- Rename the existing story/current.txt to the same version number.
+- Write the new spec as spec/current.txt.
+- Write the new story as story/current.txt.
+- Write the new blueprint as blueprint/current.yaml.
+
+Output ONLY these files:
+- projects/project-zero/spec/current.txt
+- projects/project-zero/story/current.txt
+- projects/project-zero/blueprint/current.yaml

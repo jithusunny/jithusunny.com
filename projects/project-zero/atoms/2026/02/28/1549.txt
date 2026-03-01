@@ -1,0 +1,14 @@
+Thought:
+The current spec must be self-sufficient. Anyone with just the current spec should be able to hand it to a coding agent and have the software ready. No dependency on previous versions, no incremental instructions.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/28/1547.txt
+
+Source_time:
+2026-02-28 1547
+
+Extraction_time:
+2026-02-28 1600

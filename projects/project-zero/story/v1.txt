@@ -4,8 +4,6 @@ Jithu felt overwhelmed. Ideas flooding in daily, loops replaying, plans shifting
 
 This software — the Thought Tracker — is the first tool born from that practice. It is deliberately small. It does one thing: lets you capture and revisit your thoughts with zero friction.
 
-Here's how you use it. You're at your laptop. A thought surfaces — something about a project, a feeling, a decision, an observation. You open the app. You see a compact list of your most recent thoughts — seven at a time, no scrolling needed. Each one shows when it was captured and how it begins. You page through older thoughts using Next and Previous at the bottom. You click "Add Thought." A blank page opens. You type. You hit Save. The thought is stored instantly and you're back at the list. If you accidentally hit the back button or try to close the tab while typing, the browser warns you — but saving is seamless, no warnings, no friction.
-
-You click on any thought to read it in full — plain text, nothing fancy. A Back button takes you right where you were in the list (same page, same scroll position). A Home link is there too if you want to jump to the top.
+Here's how you use it. You're at your laptop. A thought surfaces — something about a project, a feeling, a decision, an observation. You open the app. You see a list of your previous thoughts — each one showing when it was captured and how it begins. You click "Add Thought." A blank page opens. You type. You save. That's it. The thought is now outside your head, in a place where you can find it again. You go back to the list. Your latest thought is at the top. Later, you click on it and read it again — maybe something new surfaces from it.
 
 No accounts, no databases, no cloud sync, no mobile app. Just a local web app, plain text files, and your thoughts. Everything else will come in later versions.

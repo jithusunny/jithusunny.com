@@ -104,7 +104,14 @@ header time {
     text-align: center;
 }
 
-/* Add thought page */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e5e5;
+}
+
 #thought-form {
     display: flex;
     flex-direction: column;
@@ -133,9 +140,15 @@ header time {
     margin-top: 1rem;
 }
 
-/* Read thought page */
 .thought-content {
     white-space: pre-wrap;
     font-size: 1rem;
     line-height: 1.8;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }

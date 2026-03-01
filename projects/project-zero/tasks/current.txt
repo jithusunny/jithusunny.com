@@ -1,65 +1,87 @@
-Thought Tracker v1 — Task List
+Thought Tracker v3 — Task List
 Derived from: projects/project-zero/spec/current.txt
+Blueprint: projects/project-zero/blueprint/current.yaml
+Previous: projects/project-zero/tasks/v2.txt, projects/project-zero/spec/v2.txt
 App code location: projects/project-zero/app/
+Building blocks used: none (library empty)
 
 ---
 
-Task 1: Project setup
-- Create projects/project-zero/app/ directory
-- Create requirements.txt with FastAPI and uvicorn
-- Create main.py as the app entry point
-- Create README.md with setup and run instructions
+Task 1: [setup] Project scaffolding
+- Delete existing projects/project-zero/app/ and create it fresh
+- Create subdirectories: static/, templates/
+- Create requirements.txt (fastapi, uvicorn, jinja2, python-multipart)
+- Create .gitignore (venv/, __pycache__/, *.pyc, .env)
+- Create main.py as the FastAPI entry point with PER_PAGE = 7
+- Create README.md with virtualenv setup, run instructions, where thoughts are stored
 Status: done
-Notes: Added jinja2 and python-multipart to requirements.txt — jinja2 is needed for FastAPI's template rendering, python-multipart is needed for form data parsing (POST /add). These aren't in the spec but are required by FastAPI for the features the spec describes.
+Notes: Per build rules, structure is component-based. No flat static/ or templates/ at app root — created components/storage_fs, components/api_thoughts, components/ui_shell/static, components/ui_thought_list/templates, components/ui_thought_form/templates, components/ui_thought_read/templates. main.py only wires app, mounts static from ui_shell, sets Jinja2 searchpath to all three template dirs, stores templates and per_page on app.state, includes api_thoughts router.
 
-Task 2: Storage module
-- Create a storage module that handles all file I/O
-- Read all .md files from raw/{YYYY}/{MM}/{DD}/{HHMM.txt}
-- Write new thought to .md file at timestamp-based path
-- Auto-create directories if they don't exist
-- Handle timestamp collision: increment minute if file exists
-- Return thought metadata: date, time, file path, preview text
+Task 2: [storage_fs] Filesystem storage module
+- Create storage.py
+- RAW_DIR computed relative to __file__ (4 levels up to repo root + "raw/")
+- _parse_thought_path(txt_file) — shared helper, parses YYYY/MM/DD/HHMM.txt, filters out index.txt and non-4-part paths
+- _all_thoughts_sorted() — scans RAW_DIR recursively, returns metadata list sorted newest first
+- list_thoughts(page, per_page) → (page_items, total_count) — paginated slice of all thoughts
+- read_thought(rel_path) → dict or None — read single thought, return path, datetime, date_display, content
+- save_thought(content) → str — write .txt file at timestamp path, auto-create dirs, increment minute on collision
+- Metadata per thought: path, datetime, date_display (e.g. "Feb 28, 2026 · 12:43 PM"), preview (~120 chars + ellipsis)
 Status: done
-Notes: Extracted a shared _parse_thought_path() helper used by both list_thoughts() and read_thought() to avoid duplicating the path-parsing logic. RAW_DIR is computed relative to __file__ (4 levels up to repo root + "raw/"), so the app works regardless of where it's launched from. index.txt files are filtered out during listing.
+Notes: storage_fs lives at components/storage_fs/storage.py. RAW_DIR is 6 parents up from storage.py (storage_fs → components → app → project-zero → projects → repo root) then / "raw". Exported via components/storage_fs/__init__.py.
 
-Task 3: Home page route and template
-- GET / — list all thoughts, newest first
-- Each item shows: human-readable date/time, first ~120 chars as preview with ellipsis
-- Each item links to the read page for that thought
-- "Add Thought" button fixed at top right
-- Minimal HTML/CSS, no frameworks, fast loading
+Task 3: [api_thoughts] HTTP routes
+- GET / — list thoughts with ?page=N (default 1), pass thoughts + pagination flags to template
+- GET /add — render add thought form
+- POST /add — call save_thought(), redirect to / with 303
+- GET /thought/{path:path} — call read_thought(), render or return 404
+Status: done
+Notes: Routes in components/api_thoughts/routes.py. Use request.app.state.templates and request.app.state.per_page to avoid circular import with main. Router included in main with no prefix so /, /add, /thought/... work at root.
+
+Task 4: [ui_shell] Shared layout and base styling
+- Create static/style.css — single CSS file for all pages
+- System font stack, no font loading
+- White background, dark text (#1a1a1a), max-width 720px, centered
+- Generous line-height (1.7+), comfortable padding
+- Header: flex, space-between, bottom border
+- .btn and .btn-secondary styles
+- Minimal UI chrome, no frameworks
+Status: done
+Notes: style.css at components/ui_shell/static/style.css. Mounted at /static in main. All templates link to /static/style.css. Added .header-nav for read page Back/Home row.
+
+Task 5: [ui_thought_list] Home page template
+- templates/home.html
+- Header: "Thoughts" title + "Add Thought" button (top right)
+- List: 7 items per page, each item is a link showing date/time + preview
+- Pagination at bottom: "← Previous" (if not page 1) and "Next →" (if more items)
+- Empty state: "No thoughts yet."
+- No scrolling needed at 7 items
 Status: done
 
-Task 4: Add thought page route and template
-- GET /add — render the add thought page
-- Large white text area filling most of the screen, plain text
-- "Save" button clearly visible
-- beforeunload warning if text area has content
-- POST /add — save thought, redirect to home
+Task 6: [ui_thought_form] Add thought template
+- templates/add.html
+- Header: "Add Thought" title + "Home" link
+- Full-screen textarea, plain text, autofocus
+- "Save" button at bottom right
+- beforeunload guard: warn if textarea has content AND user is not submitting
+- On form submit: set submitting flag, remove beforeunload listener, then post
 Status: done
-Notes: POST /add returns a 303 redirect (not 302) to prevent browser resubmission on refresh. The beforeunload handler uses e.preventDefault() which is the modern standard — older returnValue approach is not needed for current browsers.
 
-Task 5: Read thought page route and template
-- GET /thought/{path} — display full text of a thought
-- Plain text, preserving line breaks
-- "Home" button/link to return to list
+Task 7: [ui_thought_read] Read thought template
+- templates/read.html
+- Header: "← Back" button at left (uses javascript:history.back() to preserve page state) + "Home" link at right
+- Date/time display
+- Thought content in pre-wrap div
 - Simple, readable layout
 Status: done
-Notes: Used {path:path} in the FastAPI route to capture the full nested path (e.g., 2026/02/28/1243.txt). Line breaks are preserved via CSS white-space: pre-wrap on the content div, keeping the HTML template simple.
+Notes: Back uses <a href="javascript:history.back()"> so the user returns to the exact previous state (e.g. page 3 of the list). Home goes to /.
 
-Task 6: CSS and design
-- Single CSS file shared across all pages
-- White background, dark text
-- Clean typography: generous line height, comfortable max-width
-- Minimal UI chrome
-- Responsive enough to not break, but no mobile-specific design
+Task 8: [setup] Final verification and cleanup
+- Create virtualenv, install deps, start server
+- Verify home page shows 7 items with correct pagination
+- Verify add page saves without beforeunload warning on Save
+- Verify read page Back button returns to previous page state
+- Verify .gitignore excludes venv/ and __pycache__/
+- Kill test server, free port
+- Confirm README is complete
 Status: done
-Notes: Used system font stack (-apple-system, BlinkMacSystemFont, etc.) for zero font loading time. Max-width 720px with auto margin centers content. The textarea on /add uses flex layout to fill available viewport height. Hover state on thought list items extends to full width using negative margins for a larger click target feel.
-
-Task 7: Final check and README
-- Verify all three pages work end to end
-- Confirm new thoughts appear in the list after saving
-- Confirm accidental navigation protection works
-- Finalize README: setup steps, how to run, where thoughts are stored
-Status: done
-Notes: Tested all three pages via curl. Home page listed all existing thoughts from raw/. POST /add saved a new file with correct timestamp path and returned 303 redirect. Read page displayed full thought content. Test thought was deleted after verification. One observation: curl doesn't send em dashes correctly (encoding artifact), but browser form submissions handle UTF-8 fine.
+Notes: curl confirmed GET / 200, 7 list items, Next link; /add has beforeunload guard; /thought/... has history.back(). Server killed, port 8000 freed. .gitignore and README in place.

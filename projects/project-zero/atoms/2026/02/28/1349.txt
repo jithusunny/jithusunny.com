@@ -1,0 +1,14 @@
+Thought:
+Use virtualenv for Python dependencies instead of system/global install. Also clean up server processes properly after testing — don't leave ports occupied.
+
+Tags:
+rule
+
+Source:
+raw/2026/02/28/1349.txt
+
+Source_time:
+2026-02-28 1349
+
+Extraction_time:
+2026-02-28 1600

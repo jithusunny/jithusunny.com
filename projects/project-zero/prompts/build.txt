@@ -1,0 +1,38 @@
+Build the Thought Tracker from the current spec and task list.
+
+Read these files:
+- projects/project-zero/spec/current.txt (the full spec)
+- projects/project-zero/tasks/current.txt (the task list — work through these in order)
+- projects/project-zero/story/current.txt (context on what this is)
+- projects/project-zero/blueprint/current.yaml (component map)
+- building_blocks/ (reusable code blocks — use as directed by the tasks)
+
+Rules:
+1. Delete the existing projects/project-zero/app/ folder and create it fresh.
+
+2. IMPORTANT STRUCTURE RULE:
+   - Organize the generated app by components from the blueprint.
+   - All generated code must live under:
+     projects/project-zero/app/components/<component_name>/
+   - projects/project-zero/app/main.py must be a thin wiring file only (FastAPI app setup + route inclusion + template/static setup). No business logic in main.py.
+   - Keep templates and static assets inside their owning UI component folder under:
+     projects/project-zero/app/components/<ui_component>/templates/
+     projects/project-zero/app/components/<ui_component>/static/
+
+3. Work through the tasks in order. For each task:
+   - Build what it describes, following the spec exactly.
+   - If tasks mention files at app root (e.g., storage.py, templates/, static/), adapt the file locations to the component structure above, without changing behavior.
+   - Update the task status to "done" in the tasks file.
+   - If anything notable happened — a choice not obvious from the code, a tradeoff, a reason for how you organized things — add a short "Notes:" section under that task. Keep notes about the generation/organization process, not code logic (the code should speak for itself). Don't force notes if there's nothing worth noting.
+
+4. Copy and use building blocks as specified in the tasks. Do not modify building blocks in place — if a block needs project-specific changes, copy it into the app and adapt there.
+
+5. Use virtualenv for Python dependencies.
+
+6. After all tasks are done:
+   - Verify the app runs (start server, test key pages, confirm no errors).
+   - Kill the test server and free the port.
+   - Confirm the README has clear setup and run instructions.
+   - Briefly tell the user how to start the app.
+
+Thoughts are stored at raw/{YYYY}/{MM}/{DD}/{HHMM}.txt (relative to repo root).

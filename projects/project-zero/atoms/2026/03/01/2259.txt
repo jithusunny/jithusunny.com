@@ -1,0 +1,14 @@
+Thought:
+The code generation pipeline is now: Raw thoughts → Spec (what the software is) → Blueprint (what parts exist) → Tasks (how to build those parts this iteration) → Build (generate code). Blueprint sits between spec and tasks. ChatGPT provided detailed prompts for this workflow.
+
+Tags:
+decision, spec
+
+Source:
+raw/2026/03/01/2259.txt
+
+Source_time:
+2026-03-01 2259
+
+Extraction_time:
+2026-03-01 2305

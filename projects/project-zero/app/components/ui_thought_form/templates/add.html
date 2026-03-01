@@ -19,13 +19,20 @@
     </main>
     <script>
         const textarea = document.getElementById("content");
-        function hasContent() {
-            return textarea.value.trim().length > 0;
-        }
-        window.addEventListener("beforeunload", function (e) {
-            if (hasContent()) {
+        const form = document.getElementById("thought-form");
+        let submitting = false;
+
+        function guard(e) {
+            if (!submitting && textarea.value.trim().length > 0) {
                 e.preventDefault();
             }
+        }
+
+        window.addEventListener("beforeunload", guard);
+
+        form.addEventListener("submit", function () {
+            submitting = true;
+            window.removeEventListener("beforeunload", guard);
         });
     </script>
 </body>

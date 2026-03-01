@@ -43,11 +43,15 @@ And a deeper warning about the practice itself: self-observation can backfire. T
 
 An insight cut through the confusion: "The thing I'm trying to create already exists. It is like a spot in the forest. I just need to find my way to it by being systematic about this process."
 
-The concrete spec for v1 finally crystallized: open app → see list of latest thoughts. Click a thought → see the full stream. Button to add thought → text editor → type → save as .md file. No database. Python + FastAPI + basic HTML/CSS/JS. Easy setup. Later: audio recording → transcription → saved as text.
+On Feb 28, the waiting ended. Sat down, wrote the command, and Cursor generated the v1 story, spec, task list, and built the app in one session. Python + FastAPI + plain HTML/CSS/JS + .md files. It worked. All existing raw thoughts appeared in the list. New thoughts could be added and read back.
 
-And a concrete process for building it: YouTube livestreams. Livestream 1 — describe the software in human terms, include Cursor instructions. Get transcript, save as raw thought, feed to Cursor for spec and code. Livestream 2 — inspect the software, give feedback. Get transcript, update spec, regenerate code. Events recorded alongside in chronological order. Repeat.
+Immediately after the first build, the iteration loop began. Two issues surfaced: the beforeunload warning fired even on intentional save (should only fire on accidental navigation), and the home page needed pagination (showing only 10 thoughts at a time with next/prev). Feedback was also noted: use virtualenv, clean up test servers properly.
 
-On Feb 28, the waiting ended. Sat down, acknowledged that starting provides the energy — waiting for the right time is just another face of resistance. Made a deliberate choice: livestreaming, video, story — all that can come later, from day N, not day 1. Wrote the command for Cursor: analyse all thoughts, synthesize the story of the software, create the spec, then build it. The story and spec were created. A new rule was articulated: story, spec, and the subset of thoughts they cover must be equivalent — one-to-one mapping, no drift. If you give the same thoughts to someone else they should produce the same spec, and if you give that spec to another Cursor it should produce the same software.
+The v1 story, spec, and tasks were versioned (renamed to v1.txt). New current versions were created incorporating the bug fix and pagination. A deeper process insight was articulated: each iteration should delete the app and regenerate it fresh from the current spec — no incremental patching. The spec must be self-sufficient: anyone with just the spec should be able to hand it to a coding agent and get working software.
+
+The building blocks concept took shape: a `building_blocks/` directory at repo root, organized by language (python, html, js, css). Each block has its own folder with a readme and code files. No project-specific logic. The planner checks this library before defining tasks — reuse before creation.
+
+Three reusable prompts were created for the development loop: (1) generate spec from thoughts, (2) generate task list from spec, (3) build from tasks. These prompts work across iterations — the same process every time, regardless of what version is being built.
 
 ## Timeline
 - **Feb 6** — Published first thought on jithusunny.com. Decided to stop waiting for a perfect plan and just begin. The bigbang method insight emerged.
@@ -67,11 +71,15 @@ On Feb 28, the waiting ended. Sat down, acknowledged that starting provides the 
 - **Feb 26 (driving)** — First thought stream while driving. Perfectionism diagnosed as fear of public exposure — criticism of life project = verdict on whole life. Did and then deleted a livestream. Warning: self-observation can backfire (ego loops). Don't fix patterns, just observe. Wanted: tap phone → speak → auto-saved with metadata, multi-device, backend.
 - **Feb 26 (evening)** — "Human beings should not write code anymore." Code is thoughts in another form. Each iteration regenerates software fresh from spec — no drift. Reusable building blocks, polylith style. Fear of corporations copying → "No company can do it like me, this comes from real pain." Observation is the only way to change anything.
 - **Feb 26 (night)** — Concrete v1 spec: list thoughts, add thought as text, .md files, Python+FastAPI+HTML/CSS/JS, no DB. Livestream iteration process designed: describe → transcribe → spec → code → inspect → feedback → repeat. Plan to do this publicly via YouTube.
-- **Feb 28** — Sat down and started. Decided livestreaming, video, story can begin from day N — no need to capture the beginning perfectly. Wrote the command to Cursor: synthesize story, create spec, build the software. Story and spec for v1 created. Rule: story, spec, and thoughts must be equivalent — one-to-one mapping, no drift. The build has begun.
+- **Feb 28 (morning)** — Sat down and started. Decided livestreaming, video, story can begin from day N. Wrote the command to Cursor: synthesize story, create spec, build the software. Story, spec, and task list created. V1 app built in one session — all pages working, existing thoughts visible, new thoughts saveable.
+- **Feb 28 (afternoon)** — First iteration loop. Found beforeunload bug and need for pagination. Gave feedback: use virtualenv, clean up servers. Versioned v1 artifacts. Created v2 story, spec, and tasks with fixes. Articulated the delete-and-recreate-fresh rule. Set up building_blocks/ directory. Created three reusable prompts (spec generation, task generation, build) for the repeatable development loop.
+- **Feb 28 (evening)** — V2 built: deleted app/, recreated fresh with pagination (10/page) and beforeunload fix. Virtualenv used. First thought streamed through the actual app — confirmed working.
+- **Mar 1** — UX feedback after real use: reduce to 7 per page (no scrolling), add Back button on read page that preserves page state (not just Home), add .gitignore. Brainstormed with ChatGPT about regeneration efficiency — decided to add blueprints (stable component names across iterations) instead of trying to reuse code blocks directly (which increases token load). Updated generate-spec prompt to include blueprint generation. V3 spec, story, and blueprint created.
+- **Mar 1 (evening)** — Refined the code generation pipeline with ChatGPT. Pipeline is now explicit: Raw thoughts → Spec (what the software is) → Blueprint (what parts exist) → Tasks (how to build those parts this iteration) → Build (generate code). Blueprint step sits between spec and tasks. ChatGPT gave detailed prompts for the full workflow. More suggestions noted for later.
 
 ## Last seen breadcrumbs
-- Story and spec for v1 exist — the next step is building the actual software
-- The equivalence rule (thoughts ↔ spec ↔ software, no drift) is now explicit and versioned
-- Livestreaming and video can join the process from any day — the pressure to start from day 1 has been released
+- Pipeline is explicit: thoughts → spec → blueprint → tasks → build; blueprint defines parts, tasks define how to build them this iteration
+- V3 built with component structure; generate-tasks and build prompts used successfully
+- The development workflow now includes blueprints for architectural stability across regenerations
+- ChatGPT provided detailed prompts for the workflow; more suggestions to come later
 - Raw thoughts private, everything else public from day one — this decision is final
-- "The thing already exists — find it by being systematic"

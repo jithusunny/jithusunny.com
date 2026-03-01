@@ -1,0 +1,14 @@
+Event:
+Refined the code generation pipeline with ChatGPT's help. Added an explicit blueprint step between spec and tasks. ChatGPT gave detailed prompts for the full workflow (thoughts → spec → blueprint → tasks → build). More suggestions from ChatGPT noted for later.
+
+Tags:
+build
+
+Source:
+raw/2026/03/01/2259.txt
+
+Source_time:
+2026-03-01 2259
+
+Extraction_time:
+2026-03-01 2305

@@ -1,0 +1,15 @@
+A couple of minor changes I'd like:
+1. I dont like scrolling. Have only 7 thoughts in the listing
+2. Have a back button on left top to go back to the previous state when we go into a thoguht. Right now we can only go back to home. So we cant go to 3rd page or something if we went into thought details from there.
+3. Let's have an appropriate .gitignore file for the project.
+
+
+I also brainstormed with chatgpt how to improve the efficiency of the regeneration part.
+I was thinking I can reuse code across iterations, but that will increase the input token load.
+So ChatGPT suggested a better looking approach with blueprints, architecture graphs, invariants ,etc e.total_count
+
+Sounds great.
+
+Going to go there step by step.
+
+First adding a blueprint generation in the workflow.

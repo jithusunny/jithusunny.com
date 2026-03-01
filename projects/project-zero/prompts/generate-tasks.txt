@@ -1,0 +1,51 @@
+Generate the task list for building the Thought Tracker from the current spec.
+
+Read these files:
+- projects/project-zero/spec/current.txt
+- projects/project-zero/story/current.txt
+- projects/project-zero/blueprint/current.yaml
+- projects/project-zero/tasks/v*.txt (previous task lists — for patterns and lessons only)
+- projects/project-zero/spec/v*.txt (previous specs — for context only)
+- building_blocks/ (existing reusable building blocks)
+
+Your job:
+
+1. Read the current spec completely.
+
+2. Read the blueprint and understand the components of the system.
+   - Components define the major parts of the software.
+   - Tasks MUST be organized by component.
+   - Do NOT invent new components in tasks.
+
+3. For each component in the blueprint:
+   - Identify what must be built to satisfy the spec.
+   - Check the building_blocks/ library:
+     - If a block already covers the need, reference it in the task.
+     - If a new reusable block is clearly justified, plan it explicitly as a task.
+     - Otherwise, keep the logic project-specific.
+
+4. Review previous task lists for:
+   - Ordering patterns that worked well
+   - Known pitfalls or cleanup steps
+   - Notes worth preserving
+
+5. Produce a complete task list that builds the ENTIRE application from scratch.
+   - Tasks are not incremental patches.
+   - The first task must delete the existing app/ directory and start fresh.
+   - Tasks must be specific and actionable.
+   - Each task MUST clearly state which component it belongs to.
+
+STRUCTURE OF TASKS (REQUIRED):
+
+- Group tasks under clear component headings.
+- Each task should begin with the component name, e.g.:
+  [storage_fs] Implement filesystem persistence
+  [ui_thought_list] Render paginated list of thoughts
+
+Before writing:
+- Rename the existing tasks/current.txt to the next version number.
+- Write the new task list as tasks/current.txt.
+
+Output:
+- projects/project-zero/tasks/current.txt (new)
+- Any new or updated building blocks in building_blocks/

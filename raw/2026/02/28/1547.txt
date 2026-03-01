@@ -6,6 +6,8 @@ Another change I want is, show only top 10 thoughts in home page, have next butt
 Also prev when we go to the next page.
 
 Let's add a new story, spec, task tracker based on this change.
+The new story/spec/tasks will be called the current. The previous iteration one will be called v1.
+(next time existing current will become v2, new will be current)
 
 Ideally I want the current spec, current story to be the only things we need if everything else is lost.
 
@@ -28,11 +30,25 @@ So when it is time to define the tasks at any point, the planner that defines th
 Then it must see the spec and the library of building blocks. And based on what is already available, it must define the tasks.
 The library of building blocks can be outside projects folder - building_blocks - it can be called.
 Inside it, let's have folders: python, html, js, css. And inside each, we will have one folder per building block.
-Building blocks may have to be used together with other building blocks. 
+Inside the building block folder we will have a readme.md that precisely and succintly define what taht building block is, how to use it, and also provide a couple of examples to show how to use it.
+It has to be just right - not too long, not ambiguous.
+
+Other than that there can be one or more files that contain the code for building block.
+
+Building blocks are great when they standalone. Let's try to keep them like that as much as possible.
+
+But in some cases they may have to be used together with other building blocks. 
 For example a certain backend functionality may need a certain HTML block and a js block in the frontend.
 Yet, there should not be any project specific stuff in the building blocks. Projects can be anything.
 
+The planner has two responsibilities specifically around building_blocks:
+- see what existing building blocks can be (updated if required and) used
+- see what new building blocks can be added and used
+
 Let's not overdo this part - try and do as good as possible.
+
+Also as you know, this is just a part of planning the whole implementation.
+
 
 Once the planner is done with the tasks definition - again remember this tasks definition is complete - it does not append to the previous task definition.
 It does not only say what more is needed, etc.
@@ -41,4 +57,23 @@ It is by itself the tasks that are needed to build the newly imagined complete s
 
 Once tasks are ready, the implementation is to be done.
 
-This will have to be done in a peculiar way
+This also will have to be done in a peculiar way - it should delete the current projects/project-zero/app folder 
+and create it fresh based on the new spec. The thing to note is, it should copy and use any and all building blocks as identified by the planner.
+
+Next I'm saving this thought and ask cursor to process it - this makes cursor extract the atomic thoughts and generate summaries, etc.
+
+What I want it to do in addition is, synthesize precise and unambiguous prompts that can be used to generate spec based on the thoughts on project zero.
+It should pay more attention to the latest thoughts when something is being superseded, when there is a contradiction, etc.
+Sometimes we think up a lot of things that can be done in the future, but the latest thoughts may be more concretely defining only a subset of all features 
+we taked about for the spec that we want next. So I must be able to use this prompt next time onwards whenever I record some thoughts. 
+
+Another prompt I need is for the task tracker generation. This is an important step. 
+Here we design the execution process of the entire system based on new spec, using the existing building blocks, also planning new building blocks when needed, etc.
+So this prompt also should be reusable across iterations/versions.
+
+Finally I need a prompt to prompt cursor to implement the code (changes)
+Again the tasks should ideally be having all details about the building blocks stuff, but give a succint prompt to make sure implementaion goes as planned.
+
+Just realised that when a new spec/tasks list is being created - it makes sense to take a look at the spec, tasks for the version just before that.
+That can help to see why some bug was caused, or it can help reduce the amount of designing/thinking required if there are no changes at all in some areas, etc.
+Or some design/implementaion pattern or something can be picked up, etc.
